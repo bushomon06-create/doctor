@@ -1,0 +1,599 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style="width: 1280px; height: 1666px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-background":"#0d1c2e","surface-container-highest":"#d5e3fc","error-container":"#ffdad6","on-error":"#ffffff","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#d2bbff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-primary-container":"#cbe4ff","on-surface-variant":"#40474f","on-secondary-container":"#006f66","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#25005a","inverse-surface":"#233144","on-primary-fixed-variant":"#004b74","primary":"#00507d","on-secondary":"#ffffff","on-tertiary-container":"#e9dbff","on-error-container":"#93000a","surface-variant":"#d5e3fc","secondary-container":"#86f2e4","background":"#f8f9ff","outline":"#707881","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","error":"#ba1a1a","on-surface":"#0d1c2e","primary-container":"#0369a1","tertiary-container":"#7936ea","primary-fixed":"#cde5ff","on-secondary-fixed":"#00201d","surface-container-high":"#dce9ff","surface-tint":"#006399","tertiary-fixed":"#eaddff","on-primary-fixed":"#001d32","outline-variant":"#c0c7d1","surface-container-low":"#eff4ff","tertiary":"#6003d1","primary-fixed-dim":"#94ccff","surface-container":"#e6eeff","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","inverse-primary":"#94ccff","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#5a00c6","surface-dim":"#ccdbf3"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"2.5rem","space-xl":"2.5rem","space-xs":"0.5rem","space-lg":"1.75rem","space-sm":"0.75rem","gutter-mobile":"1rem","space-md":"1.25rem",gutter:"1.5rem","margin-mobile":"1.25rem"},fontFamily:{"display":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"]},fontSize:{"display":["3rem",{lineHeight:"3.75rem",letterSpacing:"0",fontWeight:"700"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.375rem",letterSpacing:"0",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"400"}],"headline-lg":["2.25rem",{lineHeight:"3rem",letterSpacing:"0",fontWeight:"700"}],"headline-md":["1.5rem",{lineHeight:"2.125rem",letterSpacing:"0",fontWeight:"600"}],"body-sm":["0.875rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"label-sm":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0",fontWeight:"600"}],"label-md":["0.9375rem",{lineHeight:"1.375rem",letterSpacing:"0",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"600"}],"label-lg":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"600"}],"body-lg":["1.125rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6"><div class="flex flex-col gap-6 px-4"><div class="flex items-center gap-3 px-3 py-2"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">جسر</span><span class="font-label-sm text-label-sm text-secondary font-medium">للرعاية والتأهيل</span></div></div><div class="px-3"><div class="bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">بوابة الأخصائي المعالج</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div></div><nav class="flex flex-col gap-1.5 px-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="">لوحة التحكم</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span class="">المستفيدون</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span class="">خطط التأهيل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="">التقارير السريرية</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="">المواعيد والجدول</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="messages-communication" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">chat</span><span class="">الرسائل والتواصل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="communities-groups" href="../الرسائل و التواصل/المجموعات.html"><span class="material-symbols-outlined text-[22px]">forum</span><span class="">المجتمعات والمجموعات</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="exercises-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="">مكتبة التمارين</span></a></nav></div><div class="px-4 flex flex-col gap-2"><nav class="flex flex-col px-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl"><a class="flex items-center gap-3 px-3.5 py-3 transition-all text-on-surface-variant" data-path="profile-settings" href="./الملف الشخصي.html" aria-current="page"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="">الملف الشخصي والإعدادات</span></a></nav><div class="bg-surface-container-low p-3 rounded-xl flex items-center gap-3 mt-1"><div class="w-9 h-9 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">support_agent</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">دعم الرعاية الشامل</span><span class="font-body-sm text-body-sm text-on-surface-variant">خط الأخصائي المباشر</span></div></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-4 flex-1 max-w-lg cursor-pointer" title="الملف الشخصي" onclick="window.location.href='./الملف الشخصي.html'"<div class="w-full flex items-center gap-2.5 bg-surface-container-lowest px-4 py-2 rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant" placeholder="البحث عن مستفيد، تقرير سريري، أو جلسة تأهيل..." type="text"></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">بث مرئي ومسموع نشط</span></div><button class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative shadow-[0_1px_4px_rgba(0,0,0,0.02)] cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='./الاشعارات.html'"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-8 w-[1px] bg-outline-variant/40 mx-1"></div><div class="flex items-center gap-3 bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAtfqhe_C9KSGkymgm1R88MTA1DqrXaIEOdPy2z7zS3l3JeXdMQ8NmsGcbP0oGaqfgwq7qIsa-L-353nME8DGAujsh0fz1AB11egy1JV0cArGtRi85uxmwFw1C5VB_1VHjQmpwIc_B13UgGcdXOzbHTMK4t4hlw9Ldcdx8FVXMqjO7YHLURgbPrO-WhgCXMVxsEaqLZ3Ju5GAj6chfP2rZs2Cj8rAcowKcHtGqwm4xvTGA7sHp6W3pHgwTW_5L45NpP-Myl_4I"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-on-surface-variant">أخصائي تأهيل أول</span></div></div></div></header><main class="relative pt-16 w-full px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Toast Feedback Notification -->
+<div class="fixed bottom-8 left-8 z-50 transform transition-all duration-300 pointer-events-none flex items-center gap-3 bg-surface-container-lowest px-5 py-3.5 rounded-2xl shadow-xl translate-y-24 opacity-0" id="toastNotification">
+<div class="w-8 h-8 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">تم حفظ التغييرات بنجاح</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تم تطبيق التفضيلات السريرية فوراً</span>
+</div>
+</div>
+<!-- Header Area -->
+<div class="py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex flex-col gap-1.5 text-right">
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">الإعدادات</h1>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="">تم حفظ كافة التفضيلات السريرية ✓</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        تخصيص تفضيلات حسابك السريري، إعدادات الأمان والإشعارات، وتجربة الاستخدام في منصة جسر للرعاية.
+      </p>
+</div>
+<!-- Navigation Action to Profile -->
+<a class="group flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md shadow-sm transition-all duration-200" href="./الملف الشخصي.html">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_forward</span>
+<span class="">العودة إلى الملف الشخصي</span>
+</a>
+</div>
+<!-- Main Settings Content Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-16">
+<!-- Left Column: Primary Security & Clinical Alerts (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Section 1: Account & Security -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">encrypted</span>
+</div>
+<div class="flex flex-col text-right">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">الحساب والأمان</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">حماية البيانات السريرية وتوثيق الدخول الطبي</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-lg bg-surface-container-low text-primary">آمن ومعتمد</span>
+</div>
+<!-- Password Setting Panel -->
+<div class="bg-surface-container-low/70 rounded-xl p-5 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">تغيير كلمة المرور</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">آخر تحديث لكلمة المرور: منذ شهرين (22 ديسمبر 2024)</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm shadow-sm transition-all" onclick="togglePasswordModal(true)" type="button">
+              تحديث الكلمة
+            </button>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">مستوى حماية الحساب:</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">ممتاز (88%)</span>
+</div>
+</div>
+<!-- Two-Factor Authentication -->
+<div class="flex items-start justify-between gap-4 p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<div class="flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/40 text-secondary flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-[20px]">phonelink_lock</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">المصادقة الثنائية (2FA)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إرسال رمز تحقق مؤقت لرسائل SMS وتطبيق Authenticator المعتمد لمنع الدخول غير المصرح</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full p-0.5 transition-colors duration-200 bg-primary-container" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+<!-- Active Sessions Panel -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">إدارة الجلسات والأجهزة النشطة</span>
+<button class="text-error hover:bg-error-container/40 px-3 py-1.5 rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1.5" onclick="terminateSessions()" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span class="">إنهاء الجلسات الأخرى</span>
+</button>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Current Session -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low/50">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">laptop_mac</span>
+</div>
+<div class="flex flex-col text-right">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface">جهاز MacBook Pro 16" - متصفح Chrome</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container">الجلسة الحالية</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الرياض، المملكة العربية السعودية • نشط الآن</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<!-- Past Session -->
+<div class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low/30 opacity-80">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface">iPhone 15 Pro - تطبيق جسر الأخصائي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">الرياض • آخر نشاط: أمس 08:30 م</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مسجل</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Clinical Notifications -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">notifications_active</span>
+</div>
+<div class="flex flex-col text-right">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">الإشعارات والتنبيهات السريرية</h2>
+
+</div>
+</div>
+
+</div>
+<div class="flex flex-col gap-3">
+<!-- Toggle 1 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">chat</span>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">الرسائل والمحادثات المباشرة الجديدة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تنبيهات فورية عند وصول استفسار من المستفيدين أو أسرهم</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full p-0.5 transition-colors duration-200 bg-primary-container" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+<!-- Toggle 2 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">assignment_turned_in</span>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">ملاحظات المشرفين الميدانيين على خطط التأهيل</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إشعارات التقييم الميداني للتمارين والجلسات المنزلية</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full p-0.5 transition-colors duration-200 bg-primary-container" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+<!-- Toggle 3 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">fitness_center</span>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">تحديثات وإضافات مكتبة التمارين المعتمدة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إشعارك بكل بروتوكول تأهيلي أو مقطع حركي جديد معتمد</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+<!-- Toggle 4 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-error mt-0.5">warning</span>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">تنبيهات المستفيدين العاجلة والتقارير الطبية الجديدة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تنبيهات ذات أولوية قصوى تتطلب تدخل أو مراجعة سريرية عاجلة</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+<!-- Toggle 5 Channels -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low/70 transition-colors">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-secondary mt-0.5">forward_to_inbox</span>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">قنوات التنبيه: المنصة والبريد الإلكتروني</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إرسال ملخص يومي سريري إلى s.almansour@jisrcare.sa</span>
+</div>
+</div>
+<button aria-checked="true" class="setting-toggle relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200" role="switch" type="button">
+<span class="pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow-sm transition duration-200 -translate-x-5"></span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Appearance, Region, Support, About (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Section 3: Appearance & Display Preferences -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div class="flex flex-col text-right">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">المظهر وتجربة العرض</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مواءمة السطوع وحجم الخط لدقة القراءة</span>
+</div>
+</div>
+<!-- Mode Preview Cards -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-right">سمة العرض (Theme)</span>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Light Mode (Active) -->
+<button class="theme-card flex flex-col items-center gap-2 p-3 rounded-xl shadow-sm hover:scale-[1.02] transition-transform bg-surface-container-low text-primary" type="button">
+<div class="w-full h-12 rounded-lg bg-surface-container-lowest shadow-inner flex flex-col p-1.5 gap-1">
+<div class="h-2 w-8 bg-primary rounded-full"></div>
+<div class="h-1.5 w-12 bg-surface-variant rounded-full"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">light_mode</span> فاتح
+              </span>
+</button>
+<!-- Dark Mode -->
+<button class="theme-card flex flex-col items-center gap-2 p-3 rounded-xl hover:bg-surface-container-low hover:scale-[1.02] transition-transform bg-surface-container-lowest text-on-surface-variant" type="button">
+<div class="w-full h-12 rounded-lg bg-inverse-surface shadow-inner flex flex-col p-1.5 gap-1">
+<div class="h-2 w-8 bg-primary-fixed rounded-full"></div>
+<div class="h-1.5 w-12 bg-outline-variant/30 rounded-full"></div>
+</div>
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">dark_mode</span> داكن
+              </span>
+</button>
+<!-- System Mode -->
+<button class="theme-card flex flex-col items-center gap-2 p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-on-surface-variant hover:scale-[1.02] transition-transform" type="button">
+<div class="w-full h-12 rounded-lg bg-surface-variant shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">brightness_auto</span>
+</div>
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+                تلقائي
+              </span>
+</button>
+</div>
+</div>
+<!-- Font Size Scale -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-right">حجم خط الواجهة السريرية</span>
+<div class="grid grid-cols-2 gap-3">
+<button class="font-size-btn flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" onclick="selectFontSize(this)" type="button">
+<span class="font-bold">A</span>
+<span class="">عادي (افتراضي)</span>
+</button>
+<button class="font-size-btn flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" onclick="selectFontSize(this)" type="button">
+<span class="font-bold text-lg">A+</span>
+<span class="">كبير ومريح</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Language & Region -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">language</span>
+</div>
+<div class="flex flex-col text-right">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">اللغة والمنطقة</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">التوطين والتقويم المعتمد في التقارير</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Language Selector -->
+<div class="flex flex-col gap-1.5 text-right">
+<label class="font-label-sm text-label-sm text-on-surface">لغة واجهة المنصة</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-low rounded-xl px-4 py-2 font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer" onchange="showSaveToast()">
+<option selected="">العربية (المملكة العربية السعودية) - الافتراضية</option>
+<option>English (Medical Standards)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute left-3 top-3.5 text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">دعم كامل لاتجاه النص العربي (RTL) ومعايير سهولة الوصول</span>
+</div>
+<!-- Calendar Selector -->
+<div class="flex flex-col gap-1.5 text-right">
+<label class="font-label-sm text-label-sm text-on-surface">نظام التقويم المعتمد للمواعيد</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-low rounded-xl px-4 py-2 font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer" onchange="showSaveToast()">
+<option selected="">تقويم أم القرى (الهجري مع الميلادي المصاحب)</option>
+<option>التقويم الميلادي (Gregorian Calendar)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute left-3 top-3.5 text-on-surface-variant text-[20px]">calendar_month</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Help & Technical Support -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">contact_support</span>
+</div>
+<div class="flex flex-col text-right">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">المساعدة والدعم الفني</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أدلة الأخصائي وفرق الدعم المباشر</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<a class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">الأسئلة الشائعة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أدلة الأخصائيين (FAQ)</span>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">بروتوكولات التأهيل</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">دليل منصة جسر</span>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">الدعم المباشر</span>
+<span class="font-body-sm text-body-sm text-secondary">متاح 24/7 للأخصائيين</span>
+</div>
+</a>
+<a class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high transition-colors group" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">report_problem</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">إبلاغ عن مشكلة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ملاحظة تقنية أو سريرية</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Section 6: About Jisr Care & Policies -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-md text-label-md text-on-surface">منصة جسر للرعاية والتأهيل</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">النظام السريري المعتمد لرعاية وتأهيل ذوي الإعاقة</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container">v2.4 مستقر</span>
+</div>
+<div class="flex items-center justify-between pt-2 border-none">
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">policy</span>
+<span class="">ميثاق سياسة الخصوصية وأمن البيانات الصحية</span>
+</a>
+<span class="text-outline-variant">•</span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span class="">شروط الاستخدام والامتثال الطبي</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Page Actions (Logout Session Trigger) -->
+<div class="flex items-center justify-between pt-4 pb-12">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+<span class="font-body-sm text-body-sm">جلسة أخصائي مشفرة ومتوافقة مع المعايير الصحية الوطنية.</span>
+</div>
+<button class="group flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-error-container/40 hover:bg-error-container text-error font-label-md text-label-md shadow-sm transition-all duration-200" onclick="toggleLogoutModal(true)" type="button">
+<span class="material-symbols-outlined text-[22px] transition-transform group-hover:-translate-x-1">logout</span>
+<span class="">تسجيل الخروج من الحساب</span>
+</button>
+</div>
+<!-- Logout Confirmation Modal Dialog -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm transition-opacity" id="logoutModal">
+<div class="bg-surface-container-lowest rounded-3xl p-7 max-w-md w-full shadow-2xl flex flex-col gap-6 text-right transform transition-transform scale-95 duration-200">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">logout</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">تسجيل الخروج</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إنهاء الجلسة السريرية النشطة</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        هل أنت متأكد من رغبتك في تسجيل الخروج من جلسة الأخصائي المعالج؟ سيتم إيقاف المزامنة اللحظية للتقارير حتى تسجيل الدخول مجدداً.
+      </p>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="toggleLogoutModal(false)" type="button">
+          إلغاء
+        </button>
+<button class="px-5 py-2.5 rounded-xl bg-error hover:bg-error/90 text-on-error font-label-md text-label-md shadow-sm transition-colors flex items-center gap-2" onclick="confirmLogoutAction()" type="button">
+<span class="">تأكيد الخروج</span>
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Password Update Quick Modal -->
+<div class="fixed inset-0 z-50 items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm transition-opacity hidden" id="passwordModal">
+<div class="bg-surface-container-lowest rounded-3xl p-7 max-w-lg w-full shadow-2xl flex flex-col gap-5 text-right">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">lock_reset</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">تحديث كلمة المرور</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تعيين كلمة مرور قوية جديدة للحساب السريري</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="togglePasswordModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-3.5">
+<div class="flex flex-col gap-1.5 text-right">
+<label class="font-label-sm text-label-sm text-on-surface">كلمة المرور الحالية</label>
+<input class="h-12 bg-surface-container-low rounded-xl px-4 font-body-md text-body-md outline-none focus:bg-surface-container-lowest" placeholder="••••••••••••" type="password">
+</div>
+<div class="flex flex-col gap-1.5 text-right">
+<label class="font-label-sm text-label-sm text-on-surface">كلمة المرور الجديدة</label>
+<input class="h-12 bg-surface-container-low rounded-xl px-4 font-body-md text-body-md outline-none focus:bg-surface-container-lowest" id="newPassInput" oninput="updatePasswordStrength(this.value)" placeholder="أدخل كلمة مرور قوية" type="password">
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary w-2/3 transition-all duration-300" id="passStrengthBar"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary" id="passStrengthLabel">قوية (8/10)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 text-right">
+<label class="font-label-sm text-label-sm text-on-surface">تأكيد كلمة المرور الجديدة</label>
+<input class="h-12 bg-surface-container-low rounded-xl px-4 font-body-md text-body-md outline-none focus:bg-surface-container-lowest" placeholder="أعد إدخال الكلمة للتأكيد" type="password">
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md" onclick="togglePasswordModal(false)" type="button">
+          إلغاء
+        </button>
+<button class="px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm" onclick="saveNewPassword()" type="button">
+          حفظ كلمة المرور
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Toast Display Trigger
+  function showSaveToast() {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  // Toggles Switch Interactivity
+  document.querySelectorAll('.setting-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const isChecked = this.getAttribute('aria-checked') === 'true';
+      const thumb = this.querySelector('span');
+      if (isChecked) {
+        this.setAttribute('aria-checked', 'false');
+        this.classList.remove('bg-primary-container');
+        this.classList.add('bg-outline-variant');
+        thumb.classList.remove('-translate-x-5');
+        thumb.classList.add('-translate-x-0.5');
+      } else {
+        this.setAttribute('aria-checked', 'true');
+        this.classList.add('bg-primary-container');
+        this.classList.remove('bg-outline-variant');
+        thumb.classList.add('-translate-x-5');
+        thumb.classList.remove('-translate-x-0.5');
+      }
+      showSaveToast();
+    });
+  });
+
+  // Modal Controls
+  function toggleLogoutModal(show) {
+    const modal = document.getElementById('logoutModal');
+    if (!modal) return;
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function confirmLogoutAction() {
+    toggleLogoutModal(false);
+    showSaveToast();
+  }
+
+  function togglePasswordModal(show) {
+    const modal = document.getElementById('passwordModal');
+    if (!modal) return;
+    if (show) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function saveNewPassword() {
+    togglePasswordModal(false);
+    showSaveToast();
+  }
+
+  function updatePasswordStrength(val) {
+    const bar = document.getElementById('passStrengthBar');
+    const label = document.getElementById('passStrengthLabel');
+    if (!bar || !label) return;
+    if (val.length === 0) {
+      bar.style.width = '10%';
+      bar.className = 'h-full bg-error transition-all duration-300';
+      label.textContent = 'ضعيفة جداً';
+      label.className = 'font-label-sm text-label-sm text-error';
+    } else if (val.length < 6) {
+      bar.style.width = '35%';
+      bar.className = 'h-full bg-error transition-all duration-300';
+      label.textContent = 'متوسطة (أقل من 6 خانات)';
+      label.className = 'font-label-sm text-label-sm text-error';
+    } else if (val.length < 10) {
+      bar.style.width = '70%';
+      bar.className = 'h-full bg-secondary transition-all duration-300';
+      label.textContent = 'جيدة';
+      label.className = 'font-label-sm text-label-sm text-secondary';
+    } else {
+      bar.style.width = '100%';
+      bar.className = 'h-full bg-secondary transition-all duration-300';
+      label.textContent = 'ممتازة وقوية ✓';
+      label.className = 'font-label-sm text-label-sm text-secondary font-bold';
+    }
+  }
+
+  function terminateSessions() {
+    showSaveToast();
+  }
+
+  function selectFontSize(btn) {
+    document.querySelectorAll('.font-size-btn').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary');
+      b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary', 'text-on-primary');
+    btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+    showSaveToast();
+  }
+
+  // Theme selector card clicks
+  document.querySelectorAll('.theme-card').forEach(card => {
+    card.addEventListener('click', function() {
+      document.querySelectorAll('.theme-card').forEach(c => {
+        c.classList.remove('bg-surface-container-low', 'text-primary');
+        c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      this.classList.add('bg-surface-container-low', 'text-primary');
+      this.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      showSaveToast();
+    });
+  });
+</script></main></div>
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div></body></html>

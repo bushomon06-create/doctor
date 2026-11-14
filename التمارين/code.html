@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#cbe4ff", "inverse-surface": "#233144", "surface-bright": "#f8f9ff", "on-secondary": "#ffffff", "tertiary": "#6003d1", "surface-tint": "#006399", "inverse-primary": "#94ccff", "on-error-container": "#93000a", "on-error": "#ffffff", "outline-variant": "#c0c7d1", "on-surface-variant": "#40474f", "surface-container-highest": "#d5e3fc", "on-secondary-fixed": "#00201d", "surface-container": "#e6eeff", "surface-dim": "#ccdbf3", "primary": "#00507d", "error-container": "#ffdad6", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#5a00c6", "background": "#f8f9ff", "on-primary-fixed": "#001d32", "primary-fixed-dim": "#94ccff", "on-surface": "#0d1c2e", "on-background": "#0d1c2e", "surface-variant": "#d5e3fc", "primary-container": "#0369a1", "surface-container-low": "#eff4ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-primary-fixed-variant": "#004b74", "tertiary-container": "#7936ea", "error": "#ba1a1a", "surface": "#f8f9ff", "secondary-fixed": "#89f5e7", "on-primary": "#ffffff", "primary-fixed": "#cde5ff", "on-tertiary-fixed": "#25005a", "on-secondary-fixed-variant": "#005049", "on-tertiary-container": "#e9dbff", "tertiary-fixed-dim": "#d2bbff", "secondary": "#006a61", "outline": "#707881", "surface-container-high": "#dce9ff", "surface-container-lowest": "#ffffff", "on-secondary-container": "#006f66", "on-tertiary": "#ffffff", "tertiary-fixed": "#eaddff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "space-xs": "0.5rem", "space-lg": "1.75rem", "gutter": "1.5rem", "margin": "2.5rem", "gutter-mobile": "1rem", "space-sm": "0.75rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem" }, "fontFamily": { "body-lg": ["IBM Plex Sans"], "label-sm": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"], "label-md": ["IBM Plex Sans"], "display": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "body-sm": ["IBM Plex Sans"], "label-lg": ["IBM Plex Sans"], "headline-lg": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"] }, "fontSize": { "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400" }], "label-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.375rem", "letterSpacing": "0", "fontWeight": "700" }], "body-md": ["1rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }], "label-md": ["0.9375rem", { "lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "600" }], "display": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg": ["2.25rem", { "lineHeight": "3rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-md": ["1.5rem", { "lineHeight": "2.125rem", "letterSpacing": "0", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3 py-2"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-2xl">vital_signs</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant">بوابة الأخصائي المعالج</span></div></div><div class="h-px w-full bg-surface-container"></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md shadow-sm"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-md text-label-md">لوحة التحكم</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-xl">accessible</span><span class="font-label-md text-label-md">المستفيدون</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-xl">assignment</span><span class="font-label-md text-label-md">خطط التأهيل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-xl">clinical_notes</span><span class="font-label-md text-label-md">التقارير السريرية</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="font-label-md text-label-md">المواعيد والجدول</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="messages-communication" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-xl">forum</span><span class="font-label-md text-label-md">الرسائل والتواصل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="communities-groups" href="../الرسائل و التواصل/المجموعات.html"><span class="material-symbols-outlined text-xl">diversity_3</span><span class="font-label-md text-label-md">المجتمعات والمجموعات</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-3 rounded-xl transition-all bg-primary-container text-on-primary font-label-md shadow-sm" data-path="exercise-library" href="./code.html"><span class="material-symbols-outlined text-xl">fitness_center</span><span class="font-label-md text-label-md">مكتبة التمارين</span></a></nav></div><div class="flex flex-col gap-2 pt-4"><div class="bg-surface-container-low rounded-xl p-3.5 flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">hearing</span><span class="font-label-sm text-label-sm text-on-surface">وضع الوصول السريع</span></div><span class="material-symbols-outlined text-outline text-base">tune</span></div><div class="px-2 py-1 text-center font-label-sm text-label-sm text-outline">منصة جسر للرعاية والتأهيل v2.4</div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-lg cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="relative w-full"><span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-xl">search</span><input class="w-full h-11 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="البحث عن مستفيد، تمرين، أو تقرير سريري..." type="search"/></div></div><div class="flex items-center gap-4"><button aria-label="قراءة صوتية ومساعدة" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-xl">volume_up</span></button><button aria-label="التنبيهات السريرية" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-px bg-surface-container"></div><div class="flex items-center gap-3"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight text-right">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight text-right">أخصائي علاج طبيعي وتأهيلي</span></div><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida/ALJJyrAtfqhe_C9KSGkymgm1R88MTA1DqrXaIEOdPy2z7zS3l3JeXdMQ8NmsGcbP0oGaqfgwq7qIsa-L-353nME8DGAujsh0fz1AB11egy1JV0cArGtRi85uxmwFw1C5VB_1VHjQmpwIc_B13UgGcdXOzbHTMK4t4hlw9Ldcdx8FVXMqjO7YHLURgbPrO-WhgCXMVxsEaqLZ3Ju5GAj6chfP2rZs2Cj8rAcowKcHtGqwm4xvTGA7sHp6W3pHgwTW_5L45NpP-Myl_4I"/></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive View Container -->
+<div class="px-6 lg:px-10 py-6 max-w-[1440px] mx-auto w-full flex flex-col gap-6">
+<!-- Toast Notification (Fixed Floating Alert) -->
+<div class="fixed bottom-6 left-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-inverse-on-surface font-semibold" id="toastTitle">تم التنفيذ بنجاح</span>
+<span class="font-body-sm text-body-sm text-outline-variant" id="toastDesc">تم إرسال الملاحظة للمشرف الحركي بنجاح.</span>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- STATE 1: LIBRARIES VIEW (عرض المكتبات)     -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-6 transition-all duration-300" id="stateLibraries">
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<div class="flex flex-col gap-1.5 max-w-3xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">local_library</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">مكتبة التمارين</h1>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-3 py-1 rounded-full">6 مكتبات معتمدة</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            مستودع المجموعات والبروتوكولات الحركية المعتمدة للمستفيدين، تتيح استعراض تمارين التأهيل ومراجعتها وتقديم الملاحظات السريرية للمشرفين الميدانيين.
+          </p>
+</div>
+<div class="flex items-center gap-3 self-start md:self-center">
+<button class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 shadow-sm active:scale-95" id="btnOpenCreateLib">
+<span class="material-symbols-outlined text-xl">add</span>
+<span>+ إنشاء مكتبة جديدة</span>
+</button>
+</div>
+</div>
+<!-- Search, Filter & Quick Stats Bar -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex flex-col lg:flex-row gap-4 items-center justify-between">
+<!-- Search Input -->
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-xl">search</span>
+<input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="libSearchInput" placeholder="ابحث عن مكتبة أو تخصص سريري..." type="text"/>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="flex items-center gap-6 text-on-surface-variant w-full lg:w-auto overflow-x-auto pb-1 lg:pb-0">
+<div class="flex items-center gap-2 shrink-0">
+<span class="material-symbols-outlined text-secondary text-lg">verified</span>
+<span class="font-label-sm text-label-sm">بروتوكولات معتمدة طبياً: <strong>78 تمريناً</strong></span>
+</div>
+<div class="h-4 w-px bg-surface-container shrink-0"></div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="material-symbols-outlined text-primary text-lg">supervisor_account</span>
+<span class="font-label-sm text-label-sm">المشرفون النشطون: <strong>14 أخصائياً وميدانياً</strong></span>
+</div>
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary transition-all" data-category="all">الكل (6)</button>
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="عظام ومفاصل">تأهيل الركبة والمفاصل</button>
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="تأهيل عصبي">السكتة الدماغية والأعصاب</button>
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="التوازن والمشي">التوازن والمشي</button>
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="العمود الفقري">حركة العمود الفقري</button>
+<button class="filter-pill shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="كبار السن">تأهيل كبار السن</button>
+</div>
+</div>
+<!-- Libraries Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="librariesGrid">
+<!-- Library Card 1 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="عظام ومفاصل" data-exercises="16" data-phase="المرحلة الثانية والثالثة للتأهيل الحركي" data-title="مكتبة تأهيل الركبة والرباط الصليبي">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">orthopedics</span>
+                عظام ومفاصل
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                16 تمريناً
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة تأهيل الركبة والرباط الصليبي</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              بروتوكولات استعادة المدى الحركي (ROM) وتقوية العضلات الرباعية وأوتار المأبض بعد الجراحة أو الإصابة، وتهيئة الركبة لحمل الأوزان الوظيفية.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: منذ يومين</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Library Card 2 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="تأهيل عصبي" data-exercises="12" data-phase="إعادة التعلم الحركي وضبط التشنج" data-title="مكتبة إعادة التأهيل العصبي والسكتة الدماغية">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">psychology</span>
+                تأهيل عصبي
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                12 تمريناً
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة إعادة التأهيل العصبي والسكتة الدماغية</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              تدريبات التناسق الحركي العضلي والتحكم الإرادي في الأطراف وتخفيف التشنج وإعادة تنشيط المسارات الحركية الدماغية للمستفيد.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: 4 أيام</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Library Card 3 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="التوازن والمشي" data-exercises="14" data-phase="تحسين نمط المشي وتفادي السقوط" data-title="مكتبة الاتزان والثبات الحركي">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">directions_walk</span>
+                التوازن والمشي
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                14 تمريناً
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة الاتزان والثبات الحركي</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              تمارين الوقوف الأحادي ونقل الوزن الحركي لتقليل مخاطر السقوط وزيادة ثقة المستفيد في البيئات المنزلية والأنشطة المجتمعية.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: أسبوع</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Library Card 4 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="العمود الفقري" data-exercises="10" data-phase="استقرار الجذع وتخفيف الضغط الغضروفي" data-title="مكتبة المرونة وحركة العمود الفقري">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">accessibility_new</span>
+                العمود الفقري
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                10 تمارين
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة المرونة وحركة العمود الفقري</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              بروتوكولات مكنزي وتقوية عضلات الجذع وتخفيف الإجهاد الغضروفي القطني لمرضى الانزلاق الغضروفي وضعف العضلات العميقة.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: منذ 3 أسابيع</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Library Card 5 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="عظام ومفاصل" data-exercises="11" data-phase="استعادة الحركة الوظيفية للذراع" data-title="مكتبة تأهيل الطرف العلوي والكتف">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">front_hand</span>
+                عظام وتأهيل وظيفي
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                11 تمريناً
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة تأهيل الطرف العلوي والكتف</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              استعادة مرونة مفصل الكتف وتمارين الأوتار الدوارة والأنشطة الوظيفية اليومية للوصول والاستخدام الحر للأطراف العلوية.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: شهر</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Library Card 6 -->
+<div class="library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between" data-category="كبار السن" data-exercises="9" data-phase="الحفاظ على الاستقلالية اليومية وتنشيط المفاصل" data-title="مكتبة الرعاية الحركية لكبار السن">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">elderly</span>
+                كبار السن
+              </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+                9 تمارين
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">مكتبة الرعاية الحركية لكبار السن</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              تمارين الجلوس والنهوض (Sit-to-Stand) والتنقل الآمن للحفاظ على الاستقلالية اليومية وتقوية العضلات المضادة للجاذبية.
+            </p>
+</div>
+<div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-outline">history</span>
+<span>تحديث: شهر ونصف</span>
+</div>
+<button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+<span>عرض المكتبة</span>
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- STATE 2: EXERCISES VIEW (عرض تمارين المكتبة)-->
+<!-- ========================================== -->
+<section class="hidden flex-col gap-6 transition-all duration-300" id="stateExercises">
+<!-- Top Navigation & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<div class="flex flex-col gap-2">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<button class="hover:text-primary flex items-center gap-1 transition-colors" id="btnBreadcrumbBack">
+<span class="material-symbols-outlined text-base">local_library</span>
+<span>مكتبة التمارين</span>
+</button>
+<span class="material-symbols-outlined text-sm text-outline">chevron_left</span>
+<span class="text-primary font-semibold" id="breadcrumbCurrentLibrary">مكتبة تأهيل الركبة والرباط الصليبي</span>
+</nav>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold" id="selectedLibTitle">مكتبة تأهيل الركبة والرباط الصليبي</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-3xl" id="selectedLibDesc">
+            بروتوكولات استعادة المدى الحركي (ROM) وتقوية العضلات الرباعية وأوتار المأبض بعد الجراحة أو الإصابة، وتهيئة الركبة لحمل الأوزان الوظيفية.
+          </p>
+</div>
+<button class="inline-flex items-center gap-2 h-11 px-5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all self-start md:self-center shrink-0" id="btnReturnToLibraries">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+<span>العودة إلى المكتبات</span>
+</button>
+</div>
+<!-- Permission & Clinical Role Notice Banner -->
+<div class="bg-surface-container-high/60 p-4 rounded-xl flex items-start sm:items-center gap-3.5 shadow-sm text-on-surface">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+<div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface">
+<strong>صلاحيات الأخصائي السريري:</strong> استعراض التمارين، الاطلاع على البروتوكولات، وتقديم الملاحظات السريرية للمشرفين. إضافة وتعديل التمارين موكلة للمشرفين الحركيين الميدانيين.
+          </p>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest text-primary px-3 py-1 rounded-full shrink-0">
+            وضع القراءة والتقييم السريري
+          </span>
+</div>
+</div>
+<!-- Exercises Search and Meta Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">قائمة التمارين المعتمدة</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">4 تمارين معروضة</span>
+</div>
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-10 pr-10 pl-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="exerciseSearchInput" placeholder="بحث داخل هذه المكتبة..." type="text"/>
+</div>
+</div>
+<!-- Exercises Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="exercisesGrid">
+<!-- Exercise Card 1 -->
+<div class="exercise-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-5" data-date="18 أكتوبر 2024" data-name="تمرين بسط وثني الركبة بمقاومة الشريط المرن (Terminal Knee Extension)" data-objective="تقوية العضلة رباعية الرؤوس وتثبيت المفصل في الدرجات الأخيرة من الامتداد الكامل." data-steps="1. تثبيت طرف الحبل المطاطي بحائط أو نقطة ارتكاز ثابتة على ارتفاع الركبة.||2. وضع الطرف الآخر خلف الركبة المصابة مع الحفاظ على القدمين متباعدتين بعرض الكتفين.||3. فرد الركبة بالكامل ببطء ضد مقاومة الشريط مع شد عضلة الفخذ الأمامية لمدة 3 ثوانٍ ثم العودة بحذر." data-supervisor="ك. طارق الزهراني (مشرف حركي ميداني)" data-supervisor-name="ك. طارق الزهراني" data-tools="شريط مطاطي مقاوم (Theraband متوسط المقاومة)، حذاء تدريبي مانع للانزلاق." data-warnings="تجنب فرط البسط الحاد (Hyper-extension) في حال وجود ألم حاد خلف الركبة. الحفاظ على اتزان الحوض دون دوران.">
+<div class="flex flex-col gap-4">
+<!-- Exercise Media Mockup -->
+<div class="relative w-full h-48 rounded-xl bg-surface-container overflow-hidden group/media flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A clean professional rehabilitation clinic illustration showing a patient performing a seated and standing terminal knee extension exercise with an elastic resistance band attached to a stable fixture, soothing calm clinical lighting, soft blue and teal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcYWG93ZoaHJiR84iMaV-_BMvMVG5hFE5ceL3P-WbTCQgPBk7K7SyFV7Yy1fGlz7WCbdJqXCElLcTzoDpHCj3MZrmap3JpRARrudN19uLhEK3iVabZWAPFK-rFbXcY93fEyeMVOWFqbbGfQV-5MWWNpgzWmG1ENk2PuF2dk2XLZlKG5CCShM-1rm3xw97dVLkdZAh4AsSKmwD930fWWuEfW88f3IwNwRWjIqDhxA"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px] group-hover/media:bg-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg transform group-hover/media:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-md backdrop-blur-sm">01:45 دقيقة</span>
+</div>
+<!-- Title & Brief -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2.5 py-0.5 rounded-full font-medium">مقاومة مطاطية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 مجموعات × 12 تكرار</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تمرين بسط وثني الركبة بمقاومة الشريط المرن (TKE)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                تقوية العضلة رباعية الرؤوس وتثبيت المفصل في الدرجات الأخيرة من الامتداد الكامل دون إجهاد المفصل الصابوني.
+              </p>
+</div>
+</div>
+<!-- Footer Meta & Actions -->
+<div class="pt-4 border-t border-surface-container flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">person</span>
+<span>المشرف: <strong>ك. طارق الزهراني</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline">calendar_today</span>
+<span>18 أكتوبر 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-view-details inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">visibility</span>
+<span>عرض التفاصيل</span>
+</button>
+<button class="btn-comment-exercise inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-container transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+<span>التعليق على التمرين</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Exercise Card 2 -->
+<div class="exercise-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-5" data-date="22 أكتوبر 2024" data-name="تمرين تمديد أوتار المأبض والساق (Hamstring &amp; Calf Stretch)" data-objective="استعادة مرونة الأنسجة الخلفية وتخفيف التيبس الصباحي بعد الجلسات الحركية." data-steps="1. الجلوس على حافة السرير أو الكرسي مع مد الساق المصابة للأمام وإبقاء الكعب على الأرض.||2. الحفاظ على استقامة الظهر مع الانحناء اللطيف للأمام من مفصل الورك وليس من الظهر.||3. الثبات على وضع الشد اللطيف لمدة 20-30 ثانية والتنفس بهدوء دون ارتداد." data-supervisor="أ. هند السالم (مشرفة تأهيل وظيفي)" data-supervisor-name="أ. هند السالم" data-tools="حزام إطالة أو منشفة طويلة، كرسي ثابت بدون عجلات." data-warnings="تجنب الشد العنيف الذي يسبب ألماً حاداً أو وخزاً عصبياً في أسفل الساق أو القدم.">
+<div class="flex flex-col gap-4">
+<!-- Exercise Media Mockup -->
+<div class="relative w-full h-48 rounded-xl bg-surface-container overflow-hidden group/media flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Physiotherapy patient performing a gentle seated hamstring and calf stretch on a modern padded medical therapy plinth, bright tranquil interior with natural light, assistive strap in use" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOvxA85SHWZHpFMtcKuBwEMsRzF9B8fC9_e8ufrBIsgmjsaMjNE_A5RwLIZlBbZztKMjSSdIP2eUXWTV3I9x6blXNtPBJL5cSE5JekoL72grscktlbqRtB1JEdCMIfDB4xCUA3pQmHQtaFcEXJoBxjazEClsGvzgnxPZqWvLyovQlzuCU0RKRBGAeJPVEeIMbU5pKmsJniYiWVUJl3NAWVmtXeziXZH7uSWlRIxQ"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px] group-hover/media:bg-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg transform group-hover/media:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-md backdrop-blur-sm">02:10 دقيقة</span>
+</div>
+<!-- Title & Brief -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2.5 py-0.5 rounded-full font-medium">إطالة ومرونة</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 جولات × 30 ثانية</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تمرين تمديد أوتار المأبض والساق</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                استعادة مرونة الأنسجة الخلفية وتخفيف التيبس الصباحي بعد الجلسات الحركية وتحسين حركة مشط القدم.
+              </p>
+</div>
+</div>
+<!-- Footer Meta & Actions -->
+<div class="pt-4 border-t border-surface-container flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">person</span>
+<span>المشرفة: <strong>أ. هند السالم</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline">calendar_today</span>
+<span>22 أكتوبر 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-view-details inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">visibility</span>
+<span>عرض التفاصيل</span>
+</button>
+<button class="btn-comment-exercise inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-container transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+<span>التعليق على التمرين</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Exercise Card 3 -->
+<div class="exercise-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-5" data-date="15 أكتوبر 2024" data-name="تمرين رفع الساق المستقيمة (Straight Leg Raise - SLR)" data-objective="تدريب عضلة الفخذ الأمامية دون تحميل وزن زائد أو إجهاد على الغضروف المفصلي للركبة." data-steps="1. الاستلقاء على الظهر مع ثني الركبة السليمة بزاوية 90 درجة ومد الركبة المستهدفة تماماً.||2. شد عضلات الفخذ الأمامية وسحب أصابع القدم للأعلى باتجاه الجسم.||3. رفع الساق المستقيمة ببطء حتى مستوى فخذ الساق الأخرى، والانتظار لثانيتين ثم النزول بتحكم تام." data-supervisor="ك. طارق الزهراني (مشرف حركي)" data-supervisor-name="ك. طارق الزهراني" data-tools="سجادة تمارين أرضية سميكة ومريحة، وسادة صغيرة تحت الرأس عند الحاجة." data-warnings="الحرص على عدم تقوس أسفل الظهر أثناء الرفع؛ يجب إبقاء أسفل الظهر ملامساً للأرض تماماً.">
+<div class="flex flex-col gap-4">
+<!-- Exercise Media Mockup -->
+<div class="relative w-full h-48 rounded-xl bg-surface-container overflow-hidden group/media flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Physical therapy specialist observing a supine patient performing a controlled straight leg raise exercise on a therapy mat in an accessible rehabilitation center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzbaZgSGsT6BzwloyBohB00JVZkqk2jPS3ZxHJzlbXkQFPyia8wli6VJeQW5ujW98gI-ymkSmd-A8PclKwE-X_hYe17PH1zx4XhF4K1BxhCVOaQrA5qrfnhCtwjMvchnp37rq8jqsn5fp3YjiJ8iyvTQnA-63jnkh6RyLAShX9QHPw9wQx5qTca08VMOW2XKBg9qItD68ZCsTD6Nrlb_UtLTh_JL6jqmRZZydaQw"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px] group-hover/media:bg-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg transform group-hover/media:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-md backdrop-blur-sm">01:15 دقيقة</span>
+</div>
+<!-- Title & Brief -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2.5 py-0.5 rounded-full font-medium">تقوية ثابتة</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 مجموعات × 10 تكرارات</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تمرين رفع الساق المستقيمة (SLR)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                تدريب عضلة الفخذ الأمامية دون تحميل وزن زائد أو إجهاد على الغضروف المفصلي، تمهيداً لحمل الأوزان.
+              </p>
+</div>
+</div>
+<!-- Footer Meta & Actions -->
+<div class="pt-4 border-t border-surface-container flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">person</span>
+<span>المشرف: <strong>ك. طارق الزهراني</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline">calendar_today</span>
+<span>15 أكتوبر 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-view-details inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">visibility</span>
+<span>عرض التفاصيل</span>
+</button>
+<button class="btn-comment-exercise inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-container transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+<span>التعليق على التمرين</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Exercise Card 4 -->
+<div class="exercise-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-5" data-date="24 أكتوبر 2024" data-name="تمرين التوازن بالاستناد الأحادي مع ثبات الحوض (Single Leg Balance)" data-objective="تنشيط التوافق الحسي العصبي العضلي وتحسين الثبات المفصلي التلقائي." data-steps="1. الوقوف منتصباً بجانب طاولة دعم أو درابزين أمان دون الإمساك به ما لم تدعُ الحاجة.||2. رفع إحدى القدمين عن الأرض مع ثني الركبة قليلاً والحفاظ على مستوى الحوض أفقياً.||3. المحافظة على التوازن لمدة 20-30 ثانية مع تثبيت النظر على نقطة ثابتة في الأفق." data-supervisor="د. فيصل الشمري (أخصائي علاج طبيعي)" data-supervisor-name="د. فيصل الشمري" data-tools="درابزين أمان أو طاولة ثابتة للمساندة، أرضية مستوية غير زلقة." data-warnings="في حالات الدوار أو الارتجاف الحركي الشديد، يجب تأدية التمرين بوجود مرافق أو ملامسة خفيفة للدرابزين.">
+<div class="flex flex-col gap-4">
+<!-- Exercise Media Mockup -->
+<div class="relative w-full h-48 rounded-xl bg-surface-container overflow-hidden group/media flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Rehabilitation therapist supervising a balanced posture exercise where adult beneficiary stands on one leg near support parallel bars in a modern assistive clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA01gBMDKSJbeL58dT-05veNp-1pZ_txFDMpf7E7yuSKb4DOz40MJynxQtBg6Gu6fNGrPb5p5eRga9VrYRtQURiMkUcn6ZLCgWRimqkGuzjcJF2ZO6f-qkcbWoBPVLDxdybYIHjMj7-KOMj2cWIWEFSlCGr_GvmzRvaHQg77Z_ZMgpcIwPHElVEn-1SetLtJ7VmINTva9QqJT6PgU11RraFYi9sQbImX2fLo103Yw"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center backdrop-blur-[1px] group-hover/media:bg-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg transform group-hover/media:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-md backdrop-blur-sm">01:30 دقيقة</span>
+</div>
+<!-- Title & Brief -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2.5 py-0.5 rounded-full font-medium">اتزان عصبي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 جولات × 25 ثانية</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تمرين التوازن بالاستناد الأحادي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                تنشيط التوافق الحسي العصبي العضلي وتحسين الثبات المفصلي التلقائي وتدريب المستقبلات الحسية الدقيقة.
+              </p>
+</div>
+</div>
+<!-- Footer Meta & Actions -->
+<div class="pt-4 border-t border-surface-container flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">person</span>
+<span>المشرف: <strong>د. فيصل الشمري</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-outline">calendar_today</span>
+<span>24 أكتوبر 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="btn-view-details inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-lg">visibility</span>
+<span>عرض التفاصيل</span>
+</button>
+<button class="btn-comment-exercise inline-flex items-center justify-center gap-1.5 h-11 rounded-xl bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-container transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+<span>التعليق على التمرين</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL 1: CREATE NEW LIBRARY (إنشاء مكتبة جديدة)         -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="modalCreateLibrary">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-2xl p-6 sm:p-8 flex flex-col gap-6 transform transition-transform">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">create_new_folder</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">إنشاء مكتبة تمارين جديدة</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">إضافة مستودع علاجي جديد للبروتوكولات التأهيلية</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" id="btnCloseCreateLib">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-4" id="formCreateLibrary">
+<!-- Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="newLibName">اسم المكتبة التأهيلية *</label>
+<input class="h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="newLibName" placeholder="مثال: مكتبة تأهيل متلازمة النفق الرسغي" required="" type="text"/>
+</div>
+<!-- Category & Phase -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="newLibCategory">التصنيف الطبي *</label>
+<select class="h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="newLibCategory" required="">
+<option value="عظام ومفاصل">عظام ومفاصل</option>
+<option value="تأهيل عصبي">تأهيل عصبي</option>
+<option value="التوازن والمشي">التوازن والمشي</option>
+<option value="العمود الفقري">العمود الفقري</option>
+<option value="كبار السن">كبار السن</option>
+<option value="تأهيل الأطفال">تأهيل الأطفال</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="newLibPhase">المرحلة التأهيلية المستهدفة</label>
+<input class="h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="newLibPhase" placeholder="مثال: المرحلة الحادة المبكرة" type="text"/>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="newLibDesc">الهدف السريري ووصف المكتبة *</label>
+<textarea class="p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="newLibDesc" placeholder="اكتب وصفاً موجزاً للأهداف العلاجية للمكتبة والمستفيدين المستهدفين..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="h-12 px-6 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="btnCancelCreateLib" type="button">إلغاء</button>
+<button class="h-12 px-6 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" type="submit">إنشاء وحفظ المكتبة</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL 2: CLINICAL COMMENT MODAL (التعليق على التمرين)   -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="modalComment">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-2xl p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">clinical_notes</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">إرسال ملاحظة سريرية</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مراجعة التمرين وتوجيه الملاحظات للمشرف الميداني</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" id="btnCloseCommentModal">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Exercise Reference Info Badge -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">التمرين المستهدف:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug" id="commentExerciseName">تمرين بسط وثني الركبة بمقاومة الشريط المرن</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="commentSupervisorMeta">المشرف المسؤول: ك. طارق الزهراني</span>
+</div>
+<!-- Form -->
+<form class="flex flex-col gap-4" id="formClinicalComment">
+<!-- Delivery Channel Options -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface font-semibold">طريقة إيصال الملاحظة للمشرف:</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="delivery-option relative flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low border-2 border-primary-container cursor-pointer transition-all">
+<input checked="" class="mt-1 text-primary-container focus:ring-primary-container h-4 w-4" name="commentChannel" type="radio" value="notification"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">مركز الإشعارات</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">إشعار مباشر مع وسم التمرين</span>
+</div>
+</label>
+<label class="delivery-option relative flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low cursor-pointer transition-all">
+<input class="mt-1 text-primary-container focus:ring-primary-container h-4 w-4" name="commentChannel" type="radio" value="chat"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">محادثة المشرف</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تحويل مباشر لقسم الرسائل</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Note Text Area -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="clinicalFeedbackText">نص التوجيه أو الملاحظة السريرية *</label>
+<textarea class="p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="clinicalFeedbackText" placeholder="اكتب الملاحظات الطبية، مثل: يرجى تقليل زاوية الانحناء بمقدار 10 درجات لتجنب إجهاد الوتر الصابوني للمستفيدين في المرحلة الأولى..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-end gap-3 pt-3">
+<button class="h-12 px-6 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="btnCancelCommentModal" type="button">إلغاء</button>
+<button class="h-12 px-6 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-2 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-lg">send</span>
+<span>إرسال الملاحظة السريرية</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- DRAWER: EXERCISE DETAILS (عرض تفاصيل التمرين)            -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="drawerBackdrop"></div>
+<aside class="fixed top-0 left-0 bottom-0 w-full sm:w-[540px] bg-surface-container-lowest shadow-2xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between overflow-y-auto" id="drawerExerciseDetails">
+<!-- Drawer Header -->
+<div class="p-6 border-b border-surface-container flex items-center justify-between sticky top-0 bg-surface-container-lowest/90 backdrop-blur-md z-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تفاصيل البروتوكول الحركي</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">المرجع السريري ومعايير السلامة</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors" id="btnCloseDrawer">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="p-6 flex flex-col gap-6">
+<!-- Video / Simulation Banner -->
+<div class="relative w-full h-56 rounded-2xl bg-surface-container overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Close up medical animation rendering showing knee joint biomechanics and quadriceps muscle activation during rehabilitation exercise in soft blue studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwncoxWyhWzeFLTEEzWucl8qEq5uon3GpqR8H6al_LQsrFFubNCVMvpA0G4CSbWyn-gwPeOC5Guq80aubQe3Q7dTaKjXeJI2SceebSKGHeA7o-uBPAHyh3BiqJeap7pX6sQa2KY0WPuVumx2f8Mtjs0YAylZCcN16yEXSRa6xwA0_Fxk-KTvx2SW8Rnco-QgqGFrMYpkmpBK7Dg464XXlAspzjXjlbDSGgYWOpHg"/>
+<div class="absolute inset-0 bg-inverse-surface/30 flex items-center justify-center">
+<button class="w-14 h-14 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1.5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-base">3d_rotation</span>
+<span>محاكاة بيوميكانيكية معتمدة</span>
+</div>
+</div>
+<!-- Title & Purpose -->
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold leading-snug" id="drawerExTitle">اسم التمرين الكامل</h2>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">الهدف السريري:</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="drawerExObjective"></p>
+</div>
+</div>
+<!-- Execution Steps -->
+<div class="flex flex-col gap-3">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">format_list_numbered</span>
+<span>خطوات التنفيذ السريرية</span>
+</h4>
+<div class="flex flex-col gap-2.5" id="drawerExSteps">
+<!-- Dynamically populated steps -->
+</div>
+</div>
+<!-- Tools & Equipment -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">handyman</span>
+<span>الأدوات والتجهيزات المساعدة</span>
+</h4>
+<div class="p-3.5 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface" id="drawerExTools">
+<!-- Dynamically populated -->
+</div>
+</div>
+<!-- Warnings & Contraindications -->
+<div class="flex flex-col gap-2.5">
+<h4 class="font-headline-sm text-headline-sm text-error font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-xl">warning</span>
+<span>محاذير وتنبيهات أمان للمريض</span>
+</h4>
+<div class="p-3.5 rounded-xl bg-error-container/40 text-on-surface font-body-sm text-body-sm leading-relaxed" id="drawerExWarnings">
+<!-- Dynamically populated -->
+</div>
+</div>
+<!-- Supervisor & Audit Meta -->
+<div class="p-4 rounded-xl bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">أضيف بواسطة المشرف الحركي:</span>
+<span class="font-label-md text-label-md text-on-surface font-bold" id="drawerExSupervisor"></span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تاريخ الاعتماد:</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold" id="drawerExDate"></span>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-5 border-t border-surface-container bg-surface-container-lowest sticky bottom-0 flex gap-3">
+<button class="flex-1 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md hover:bg-secondary-container transition-colors flex items-center justify-center gap-2" id="btnDrawerComment">
+<span class="material-symbols-outlined text-lg">rate_review</span>
+<span>تقديم ملاحظة سريرية</span>
+</button>
+<button class="px-6 h-12 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="btnDrawerDone">
+        إغلاق
+      </button>
+</div>
+</aside>
+<!-- ======================================================== -->
+<!-- VANILLA JAVASCRIPT CONTROLLERS                           -->
+<!-- ======================================================== -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const stateLibraries = document.getElementById('stateLibraries');
+      const stateExercises = document.getElementById('stateExercises');
+      
+      const btnReturnToLibraries = document.getElementById('btnReturnToLibraries');
+      const btnBreadcrumbBack = document.getElementById('btnBreadcrumbBack');
+      const breadcrumbCurrentLibrary = document.getElementById('breadcrumbCurrentLibrary');
+      const selectedLibTitle = document.getElementById('selectedLibTitle');
+      const selectedLibDesc = document.getElementById('selectedLibDesc');
+
+      const modalCreateLibrary = document.getElementById('modalCreateLibrary');
+      const btnOpenCreateLib = document.getElementById('btnOpenCreateLib');
+      const btnCloseCreateLib = document.getElementById('btnCloseCreateLib');
+      const btnCancelCreateLib = document.getElementById('btnCancelCreateLib');
+      const formCreateLibrary = document.getElementById('formCreateLibrary');
+
+      const modalComment = document.getElementById('modalComment');
+      const btnCloseCommentModal = document.getElementById('btnCloseCommentModal');
+      const btnCancelCommentModal = document.getElementById('btnCancelCommentModal');
+      const formClinicalComment = document.getElementById('formClinicalComment');
+      const commentExerciseName = document.getElementById('commentExerciseName');
+      const commentSupervisorMeta = document.getElementById('commentSupervisorMeta');
+      const clinicalFeedbackText = document.getElementById('clinicalFeedbackText');
+
+      const drawerBackdrop = document.getElementById('drawerBackdrop');
+      const drawerExerciseDetails = document.getElementById('drawerExerciseDetails');
+      const btnCloseDrawer = document.getElementById('btnCloseDrawer');
+      const btnDrawerDone = document.getElementById('btnDrawerDone');
+      const btnDrawerComment = document.getElementById('btnDrawerComment');
+
+      const drawerExTitle = document.getElementById('drawerExTitle');
+      const drawerExObjective = document.getElementById('drawerExObjective');
+      const drawerExSteps = document.getElementById('drawerExSteps');
+      const drawerExTools = document.getElementById('drawerExTools');
+      const drawerExWarnings = document.getElementById('drawerExWarnings');
+      const drawerExSupervisor = document.getElementById('drawerExSupervisor');
+      const drawerExDate = document.getElementById('drawerExDate');
+
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastDesc = document.getElementById('toastDesc');
+
+      let currentActiveExerciseData = null;
+
+      // Toast utility
+      function showToast(title, desc) {
+        toastTitle.textContent = title;
+        toastDesc.textContent = desc;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 4000);
+      }
+
+      // Transition to State 2 (Exercises View)
+      function openLibraryDetails(title, desc) {
+        selectedLibTitle.textContent = title;
+        selectedLibDesc.textContent = desc;
+        breadcrumbCurrentLibrary.textContent = title;
+
+        stateLibraries.classList.add('hidden');
+        stateExercises.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Transition to State 1 (Libraries View)
+      function returnToLibrariesList() {
+        stateExercises.classList.add('hidden');
+        stateLibraries.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Attach library card open events
+      document.querySelectorAll('.btn-open-library').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.library-card');
+          const title = card.getAttribute('data-title');
+          const desc = card.querySelector('p').textContent.trim();
+          openLibraryDetails(title, desc);
+        });
+      });
+
+      btnReturnToLibraries.addEventListener('click', returnToLibrariesList);
+      btnBreadcrumbBack.addEventListener('click', returnToLibrariesList);
+
+      // Filtering in Libraries View
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const libCards = document.querySelectorAll('.library-card');
+
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary');
+            p.classList.add('bg-surface-container-low', 'text-on-surface');
+          });
+          pill.classList.remove('bg-surface-container-low', 'text-on-surface');
+          pill.classList.add('bg-primary-container', 'text-on-primary');
+
+          const category = pill.getAttribute('data-category');
+          libCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Search in Libraries View
+      const libSearchInput = document.getElementById('libSearchInput');
+      libSearchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        libCards.forEach(card => {
+          const title = card.getAttribute('data-title').toLowerCase();
+          const desc = card.querySelector('p').textContent.toLowerCase();
+          if (title.includes(query) || desc.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+
+      // Search in Exercises View
+      const exerciseSearchInput = document.getElementById('exerciseSearchInput');
+      const exerciseCards = document.querySelectorAll('.exercise-card');
+      exerciseSearchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        exerciseCards.forEach(card => {
+          const name = card.getAttribute('data-name').toLowerCase();
+          const obj = card.getAttribute('data-objective').toLowerCase();
+          if (name.includes(query) || obj.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+
+      // Drawer Open/Close Handler
+      function openDrawer(card) {
+        currentActiveExerciseData = {
+          name: card.getAttribute('data-name'),
+          supervisor: card.getAttribute('data-supervisor'),
+          supervisorName: card.getAttribute('data-supervisor-name'),
+          date: card.getAttribute('data-date'),
+          objective: card.getAttribute('data-objective'),
+          steps: card.getAttribute('data-steps').split('||'),
+          tools: card.getAttribute('data-tools'),
+          warnings: card.getAttribute('data-warnings')
+        };
+
+        drawerExTitle.textContent = currentActiveExerciseData.name;
+        drawerExObjective.textContent = currentActiveExerciseData.objective;
+        drawerExTools.textContent = currentActiveExerciseData.tools;
+        drawerExWarnings.textContent = currentActiveExerciseData.warnings;
+        drawerExSupervisor.textContent = currentActiveExerciseData.supervisor;
+        drawerExDate.textContent = currentActiveExerciseData.date;
+
+        drawerExSteps.innerHTML = '';
+        currentActiveExerciseData.steps.forEach(step => {
+          const p = document.createElement('p');
+          p.className = 'font-body-sm text-body-sm text-on-surface leading-relaxed p-3 bg-surface-container-low rounded-xl';
+          p.textContent = step;
+          drawerExSteps.appendChild(p);
+        });
+
+        drawerBackdrop.classList.remove('hidden');
+        drawerExerciseDetails.classList.remove('-translate-x-full');
+      }
+
+      function closeDrawer() {
+        drawerBackdrop.classList.add('hidden');
+        drawerExerciseDetails.classList.add('-translate-x-full');
+      }
+
+      document.querySelectorAll('.btn-view-details').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.exercise-card');
+          openDrawer(card);
+        });
+      });
+
+      btnCloseDrawer.addEventListener('click', closeDrawer);
+      btnDrawerDone.addEventListener('click', closeDrawer);
+      drawerBackdrop.addEventListener('click', closeDrawer);
+
+      // Comment Modal Handler
+      function openCommentModal(cardData) {
+        commentExerciseName.textContent = cardData.name;
+        commentSupervisorMeta.textContent = `المشرف المسؤول: ${cardData.supervisor}`;
+        clinicalFeedbackText.value = '';
+        modalComment.classList.remove('hidden');
+      }
+
+      function closeCommentModal() {
+        modalComment.classList.add('hidden');
+      }
+
+      document.querySelectorAll('.btn-comment-exercise').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.exercise-card');
+          const data = {
+            name: card.getAttribute('data-name'),
+            supervisor: card.getAttribute('data-supervisor')
+          };
+          openCommentModal(data);
+        });
+      });
+
+      btnDrawerComment.addEventListener('click', () => {
+        if (currentActiveExerciseData) {
+          closeDrawer();
+          openCommentModal(currentActiveExerciseData);
+        }
+      });
+
+      btnCloseCommentModal.addEventListener('click', closeCommentModal);
+      btnCancelCommentModal.addEventListener('click', closeCommentModal);
+
+      // Send Comment Submit
+      formClinicalComment.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const selectedChannel = document.querySelector('input[name="commentChannel"]:checked').value;
+        closeCommentModal();
+        if (selectedChannel === 'chat') {
+          showToast('تم إرسال الملاحظة وتوجيهها للمحادثة', 'تم إنشاء سجل ملاحظة سريرية مرفق بمحادثة المشرف في قسم الرسائل.');
+        } else {
+          showToast('تم إرسال الملاحظة السريرية بنجاح', 'وصل إشعار رسمي للمشرف الحركي متضمناً تقييمك الطبي للتمرين.');
+        }
+      });
+
+      // Create Library Modal Handlers
+      btnOpenCreateLib.addEventListener('click', () => {
+        formCreateLibrary.reset();
+        modalCreateLibrary.classList.remove('hidden');
+      });
+
+      function closeCreateLibModal() {
+        modalCreateLibrary.classList.add('hidden');
+      }
+
+      btnCloseCreateLib.addEventListener('click', closeCreateLibModal);
+      btnCancelCreateLib.addEventListener('click', closeCreateLibModal);
+
+      formCreateLibrary.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('newLibName').value;
+        const category = document.getElementById('newLibCategory').value;
+        const desc = document.getElementById('newLibDesc').value;
+
+        // Create DOM element for newly created library card
+        const grid = document.getElementById('librariesGrid');
+        const newCard = document.createElement('div');
+        newCard.className = 'library-card group bg-surface-container-lowest p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between';
+        newCard.setAttribute('data-category', category);
+        newCard.setAttribute('data-title', name);
+        newCard.setAttribute('data-exercises', '0');
+
+        newCard.innerHTML = `
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+                <span class="material-symbols-outlined text-base">bookmark</span>
+                ${category}
+              </span>
+              <span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2.5 py-1 rounded-lg">
+                <span class="material-symbols-outlined text-sm">fitness_center</span>
+                0 تمارين (جديدة)
+              </span>
+            </div>
+
+            <h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">${name}</h2>
+            <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+              ${desc}
+            </p>
+          </div>
+
+          <div class="pt-5 mt-4 flex items-center justify-between bg-surface-container-low/50 -mx-6 -mb-6 p-5 rounded-b-2xl">
+            <div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-base text-outline">history</span>
+              <span>أنشئت للتو</span>
+            </div>
+            <button class="btn-open-library inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all active:scale-95 shadow-sm">
+              <span>عرض المكتبة</span>
+              <span class="material-symbols-outlined text-lg">arrow_back</span>
+            </button>
+          </div>
+        `;
+
+        // Attach event listener to new button
+        newCard.querySelector('.btn-open-library').addEventListener('click', () => {
+          openLibraryDetails(name, desc);
+        });
+
+        grid.prepend(newCard);
+        closeCreateLibModal();
+        showToast('تم إنشاء المكتبة بنجاح', `أُضيفت "${name}" وأصبحت متاحة لربط التمارين بواسطة المشرفين الميدانيين.`);
+      });
+    });
+  </script>
+</div></main></div></body></html>

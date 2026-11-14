@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#94ccff", "primary-fixed": "#cde5ff", "on-tertiary": "#ffffff", "on-primary-fixed": "#001d32", "background": "#f8f9ff", "on-primary-fixed-variant": "#004b74", "on-tertiary-container": "#e9dbff", "inverse-on-surface": "#eaf1ff", "surface-variant": "#d5e3fc", "on-secondary": "#ffffff", "surface-container-low": "#eff4ff", "surface-container": "#e6eeff", "tertiary-container": "#7936ea", "on-secondary-fixed": "#00201d", "primary-container": "#0369a1", "secondary": "#006a61", "tertiary-fixed-dim": "#d2bbff", "surface-bright": "#f8f9ff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "primary": "#00507d", "on-primary-container": "#cbe4ff", "tertiary": "#6003d1", "on-surface-variant": "#40474f", "outline-variant": "#c0c7d1", "secondary-fixed-dim": "#6bd8cb", "on-error": "#ffffff", "tertiary-fixed": "#eaddff", "secondary-fixed": "#89f5e7", "secondary-container": "#86f2e4", "inverse-surface": "#233144", "on-secondary-fixed-variant": "#005049", "surface-container-high": "#dce9ff", "surface": "#f8f9ff", "on-primary": "#ffffff", "surface-container-highest": "#d5e3fc", "on-surface": "#0d1c2e", "on-tertiary-fixed": "#25005a", "outline": "#707881", "primary-fixed-dim": "#94ccff", "error": "#ba1a1a", "on-secondary-container": "#006f66", "on-background": "#0d1c2e", "surface-dim": "#ccdbf3", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#5a00c6", "surface-tint": "#006399" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2.5rem", "space-md": "1.25rem", "gutter": "1.5rem", "space-xs": "0.5rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-sm": "0.75rem", "space-lg": "1.75rem" }, "fontFamily": { "display": ["IBM Plex Sans"], "headline-lg": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "body-sm": ["IBM Plex Sans"], "label-sm": ["IBM Plex Sans"], "label-lg": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"], "label-md": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"] }, "fontSize": { "display": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-lg": ["2.25rem", { "lineHeight": "3rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-md": ["1.5rem", { "lineHeight": "2.125rem", "letterSpacing": "0", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "label-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "600" }], "label-lg": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400" }], "body-md": ["1rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }], "label-md": ["0.9375rem", { "lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.375rem", "letterSpacing": "0", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-gutter flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary">health_and_safety</span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-primary">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant">بوابة الأخصائي المعالج</span></div></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">لوحة التحكم</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-md text-label-md">المستفيدون</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rehab-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[20px]">assignment_turned_in</span><span class="font-label-md text-label-md">خطط التأهيل</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span class="font-label-md text-label-md">التقارير السريرية</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-label-md rounded-xl" data-path="appointments-and-schedule" href="./المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span class="font-label-md text-label-md">المواعيد والجدول</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="font-label-md text-label-md">الرسائل والتواصل</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="exercises-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[20px]">fitness_center</span><span class="font-label-md text-label-md">مكتبة التمارين</span></a></nav></div><div class="px-space-md"><div class="bg-surface-container p-space-sm rounded-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">local_hospital</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">مركز الأمل للتأهيل الطبي</span><span class="font-body-sm text-body-sm text-on-surface-variant">قسم العلاج الطبيعي</span></div></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="flex items-center w-full bg-surface-container-lowest rounded-xl px-space-sm py-space-xs shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-outline text-[20px] ml-space-xs">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="بحث عن مستفيد، ملف طبي، أو جلسة تأهيل..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-all cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[20px]">tune</span></button><button class="relative w-10 h-10 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-all" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-8 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface">د. سارة المنصور</span><span class="font-body-sm text-body-sm text-on-surface-variant">أخصائي أول تأهيل حركي</span></div></div></div></div></header><main class="w-full pt-20 px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Dynamic Audio/A11y Bar & Navigation Trail -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="../الرئيسية/code.html">الرئيسية</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="text-primary font-semibold">المواعيد والجدول</span>
+</nav>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">المواعيد والجدول</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">إدارة وتنسيق الجلسات التأهيلية السريرية والافتراضية للمستفيدين</span>
+</div>
+</div>
+<!-- Actions & Quick Controls -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<!-- Availability Management Trigger -->
+<a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-high text-primary hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all shadow-sm" href="./ادارة اوقات التوافر.html">
+<span class="material-symbols-outlined text-[20px] text-primary">edit_calendar</span>
+<span>إدارة أوقات التوفر</span>
+</a>
+<!-- Date Stepper Group -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="px-space-sm py-1.5 rounded-lg text-primary hover:bg-surface-container-low font-label-sm text-label-sm transition-all" id="btn-today" type="button">
+          اليوم الحالي
+        </button>
+<div class="w-px h-5 bg-surface-variant mx-1"></div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" id="btn-prev-week" title="الأسبوع السابق" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="px-space-sm font-label-sm text-label-sm text-on-surface select-none" id="current-range-label">الأربعاء، 30 أكتوبر 2024</span>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" id="btn-next-week" title="الأسبوع القادم" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Compact KPI Cards Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-xs sm:gap-space-sm mb-space-md">
+<!-- Total Appointments -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm transition-all hover:bg-surface-container-low/50">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">event_note</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">إجمالي مواعيد اليوم</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">8</span>
+<span class="font-label-sm text-[11px] text-outline">جلسات</span>
+</div>
+</div>
+</div>
+<!-- Remote Sessions -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm transition-all hover:bg-surface-container-low/50">
+<div class="w-10 h-10 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">videocam</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">استشارات عن بُعد</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">5</span>
+<span class="font-label-sm text-[11px] text-outline">منظمة</span>
+</div>
+</div>
+</div>
+<!-- On-Premise Appointments -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm transition-all hover:bg-surface-container-low/50">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">مواعيد حضورية</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">3</span>
+<span class="font-label-sm text-[11px] text-outline">بالمركز</span>
+</div>
+</div>
+</div>
+<!-- Completed Sessions -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm transition-all hover:bg-surface-container-low/50">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">مكتملة وموثقة</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-secondary-container">3</span>
+<span class="font-label-sm text-[11px] text-outline">سجلات مكتملة</span>
+</div>
+</div>
+</div>
+<!-- Waiting / Action Required -->
+<div class="col-span-2 md:col-span-1 bg-surface-container-lowest p-space-sm rounded-xl flex items-center gap-space-sm shadow-sm transition-all hover:bg-surface-container-low/50">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0 relative">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+<span class="w-2.5 h-2.5 rounded-full bg-error absolute -top-0.5 -right-0.5 animate-pulse"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">بانتظار إجراء / وصل</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">2</span>
+<span class="font-label-sm text-[11px] text-outline">قيد الانتظار</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-time Contextual Alerts Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mb-space-md">
+<!-- Waiting Room Arrival Alert -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high/60 rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md text-on-surface font-semibold">وصل المستفيد: فيصل العتيبي</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-[11px] font-bold">الدور #07</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">عيادة التأهيل 2 • بانتظار بدء الكشف السريري</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary hover:bg-primary/90 font-label-sm text-label-sm shrink-0 mr-space-xs transition-colors" onclick="openDrawer('apt-3')" type="button">
+        بدء الكشف
+      </button>
+</div>
+<!-- Approaching Telehealth Session Alert -->
+<div class="flex items-center justify-between p-space-sm bg-primary-fixed/40 rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">video_call</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-md text-label-md text-on-surface font-semibold">استشارة عن بُعد بعد 15 دقيقة</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-primary-container font-label-sm text-[11px] font-bold">الساعة 11:30 ص</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">مع محمد السبيعي (جلسة متابعة تأهيل حركي منزلي)</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary hover:bg-primary-container/90 font-label-sm text-label-sm shrink-0 mr-space-xs transition-colors" onclick="openDrawer('apt-5')" type="button">
+        تجهيز الغرفة
+      </button>
+</div>
+</div>
+<!-- Primary Calendar Workspace -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0px_2px_8px_-2px_rgba(15,23,42,0.04),0px_8px_24px_-4px_rgba(15,23,42,0.06)] p-space-md sm:p-space-lg">
+<!-- View Switcher & Category Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md border-b-0 mb-space-md">
+<!-- Calendar View Mode Tabs -->
+<div class="inline-flex bg-surface-container-low p-1 rounded-xl shadow-inner self-start">
+<button class="view-btn active-view px-space-md py-1.5 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary font-bold shadow-sm" id="view-tab-week" onclick="switchView('week')" type="button">
+          العرض الأسبوعي
+        </button>
+<button class="view-btn px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="view-tab-day" onclick="switchView('day')" type="button">
+          العرض اليومي
+        </button>
+<button class="view-btn px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="view-tab-month" onclick="switchView('month')" type="button">
+          العرض الشهري
+        </button>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1 hidden lg:inline">نوع الجلسة:</span>
+<button class="filter-chip active-filter px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold transition-all" data-filter="all" onclick="applyFilter('all')">
+          الكل (8)
+        </button>
+<button class="filter-chip px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter="remote" onclick="applyFilter('remote')">
+          عن بُعد (5)
+        </button>
+<button class="filter-chip px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter="clinic" onclick="applyFilter('clinic')">
+          حضوري (3)
+        </button>
+</div>
+</div>
+<!-- VIEW 1: WEEKLY VIEW (Default Active) -->
+<div class="flex flex-col gap-space-md" id="calendar-week-view">
+<!-- Week Days Selector Strip -->
+<div class="grid grid-cols-7 gap-2 pb-2 overflow-x-auto text-center select-none">
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all" onclick="selectDay('sun')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الأحد</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5"></span>
+</button>
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all" onclick="selectDay('mon')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الإثنين</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5"></span>
+</button>
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all" onclick="selectDay('tue')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الثلاثاء</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5"></span>
+</button>
+<!-- Current Active Day (Wednesday) -->
+<button class="day-tab active-day flex flex-col items-center py-2.5 px-1 rounded-xl bg-primary text-on-primary shadow-sm transition-all ring-offset-2" onclick="selectDay('wed')">
+<span class="font-label-sm text-label-sm text-on-primary/90">الأربعاء</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary mt-0.5">30</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+</div>
+</button>
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all" onclick="selectDay('thu')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الخميس</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">31</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5"></span>
+</button>
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low opacity-60 transition-all" onclick="selectDay('fri')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الجمعة</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">01</span>
+<span class="font-label-sm text-[10px] text-outline mt-1">عطلة</span>
+</button>
+<button class="day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all" onclick="selectDay('sat')">
+<span class="font-label-sm text-label-sm text-on-surface-variant">السبت</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface mt-1">02</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5"></span>
+</button>
+</div>
+<!-- Schedule Timeline / Cards Stream for Wednesday Oct 30 -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">جدول مواعيد الأربعاء 30 أكتوبر (8 مواعيد متتالية)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">توقيت الرياض (GMT+3)</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-sm" id="appointments-container">
+<!-- Card 1: Completed Early Session (Remote) -->
+<div class="apt-card bg-surface-container-low p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-1" data-type="remote" onclick="openDrawer('apt-1')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of adult male patient Ahmed with friendly calm expression against soft neutral indoor background, high quality medical profile photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcaJHxttUM2p_6ZhpD6bT7y7l3_T4VcF0hYDD-KWJCF7YAwebBcpq390fTmzdtfbZMv4RmTKjuKy-2O-GHMlWixjEgxe-K4g1mMJ0SjM8XhuyqkC17UuCslk-TKpHwAemvd_TeUocPgW-gQWRW5dTzHJcm6vBQa9m_61fTcY6udJHm3DnxKdmZMk-F6EfQ-o_qpWZUsxd7uDbWUrfsp_wABrCVq2OWEPiyuPrkrg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">أحمد الهاشمي</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10294</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium">مكتملة وموثقة</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+                  استشارة عن بُعد (WebRTC)
+                </span>
+<span class="text-on-surface-variant">45 دقيقة</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">08:30 ص - 09:15 ص</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+                  تم توثيق التقرير
+                </span>
+</div>
+</div>
+</div>
+<!-- Card 2: Completed Clinic Session -->
+<div class="apt-card bg-surface-container-low p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-2" data-type="clinic" onclick="openDrawer('apt-2')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of young woman Noura with serene confident expression in modest attire, clean studio rehabilitation lighting, high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE3sZsTEW_RBF9YJNao0Y1xOiruZfBlWzQyWs963ByCCbAfE56eLi8neOwy8XOZJFYeWa4gaSv6Gg3g4-i9dWvaNdq0T1oxbxieg5ogKxAmpaSjgVLFBW29fSWGB-MkoXpRjXS2mk8tRGiKHOaxNe7v8znvCyfVj44bK0h-JI1UrTDLKHriOKsyzfbhLkzEK0UALm0i9fc_fduWocQWACmBNJiKilG3tLOZ5c7bA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">نورة الدوسري</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10482</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium">مكتملة وموثقة</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+                  حضوري بالمركز • عيادة 1
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-bold font-label-sm text-[11px]">الدور #04</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">09:30 ص - 10:15 ص</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+                  تم تقييم المدى الحركي
+                </span>
+</div>
+</div>
+</div>
+<!-- Card 3: Arrived Now / In Waiting Room (Clinic) -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-xl transition-all group relative overflow-hidden flex flex-col justify-between shadow-[0px_4px_16px_rgba(0,80,125,0.08)]" data-id="apt-3" data-type="clinic" onclick="openDrawer('apt-3')">
+<div class="absolute top-0 right-0 left-0 h-1.5 bg-primary"></div>
+<div class="flex items-start justify-between gap-2 mb-space-sm pt-1">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of young Saudi male Faisal Al-Otaibi looking attentively, warm ambient daylight, healthcare clinical intake record portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvMWJYRcn3d9e7So2SuI9G7-7bhVvh8pIuWfmJrSO_ckuDjedaLUxdNmHZtvSDKXDp1sll9Uzm_2Tp7_BTQWSo9yoxoXzQ_bCWEr2zfxR5bNot-_BF1sJSfx5ncHXosbviP3utsmhRM4maibeSpmFySFobJDnRfaC5zzTw39jkoPn975MLSGDM4UXgIPPse8A7iVeNroWiMwpAXh60Jj34-SuZHKgVdXKLair0dQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors truncate">فيصل العتيبي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10483</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+                وصل المستفيد
+              </span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">meeting_room</span>
+                  عيادة التأهيل 2
+                </span>
+<span class="px-2.5 py-0.5 rounded-lg bg-surface-container-high text-primary font-extrabold font-label-sm text-label-sm">الدور #07</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">10:30 ص - 11:15 ص</span>
+<button class="text-primary font-label-sm text-label-sm font-bold flex items-center gap-0.5 hover:underline" type="button">
+                  استدعاء إلى العيادة
+                  <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Approaching Remote Session (In 15 Min) -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-xl transition-all group relative overflow-hidden flex flex-col justify-between shadow-[0px_4px_16px_rgba(3,105,161,0.08)]" data-id="apt-5" data-type="remote" onclick="openDrawer('apt-5')">
+<div class="absolute top-0 right-0 left-0 h-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between gap-2 mb-space-sm pt-1">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of adult Saudi male Mohammed smiling gently, professional lighting, telehealth medical portal profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Bl1QurcygHfYgWY-mFxgRtpxBsTNZ-k1i3Ofsubxj--M8u0baCWBavVmKh1TbiksH1XL9I4NZhMAu3i2WeY36H80pJUkwZZgyA7YVXOfSxmqC1RLWFAIMTm3ERWDeVU9pztTSO8okDo0ouAZSnZ4tuswLd-nyf2HJxsDXVexQDDUViWck-DPvrk_z4f1Hs6nP1B3j6RE-xvYRYEbrUfPQQOdyGhcE9dKdh5fXA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors truncate">محمد السبيعي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10485</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                بعد 15 دقيقة
+              </span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-primary-container font-bold">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+                  استشارة عن بُعد (مرئية)
+                </span>
+<span class="text-on-surface-variant">45 دقيقة</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">11:30 ص - 12:15 م</span>
+<span class="text-primary-container font-label-sm text-label-sm font-bold flex items-center gap-0.5 hover:underline">
+                  فتح الغرفة الافتراضية
+                  <span class="material-symbols-outlined text-[16px]">call</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Confirmed Remote Session -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-4" data-type="remote" onclick="openDrawer('apt-4')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of adult female Sarah Al-Shammari with composed dignified posture, high contrast clean photography for healthcare directory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0Q2dV8G9Uy_Esj97IZ4EWlN0tXhvKGFpVlHalE3ZZTSBfItxfI3kJeh0vtu1ISZGi9Q8rlNf0paMxRQUpsHYNeqixHDT8P4d-ThWUr0fdAehAm0fK4XTk5B7USmsn1AkDty3fhNOSuEtc97ItO8BqNHScT1jVY_iOYxbxq-I744jq9wgqya7wfP-hwFoB_HcDU7fSP0Z20bIISuaOKjaHxTmnV_nHE3wdP8ktkw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">سارة الشمري</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10484</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">مؤكد</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+                  استشارة عن بُعد
+                </span>
+<span class="text-on-surface-variant">45 دقيقة</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">01:00 م - 01:45 م</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تم إرسال الرابط</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Confirmed Clinic Session -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-6" data-type="clinic" onclick="openDrawer('apt-6')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center font-bold text-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait of elderly Saudi male Sultan Al-Zahrani with serene expression, warm soft natural lighting, respectful geriatric rehabilitation profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArv8vNLBmU9mhIn3uJFuQyVwECO8nGEQMVxW4B-pgV0e8oAIFL9tSEGFsbxv4jTDFUcxadfHFz1RHFzATvKY8mvwgChV5P5ojo57Iw0kKL7y1iPnltIjcHEZP0E93s8WFYjsSDtPR7RPGxiGoyPsFcSkAM2rWY05tVwOCE8LNII1wUR2zGNy2QvIpTjCTMqiJDBFDzQ0VbOw8cZPTvZiNDhGnB0U24wz9jdR9owQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">سلطان الزهراني</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10489</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">مؤكد</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[18px]">domain</span>
+                  حضوري • صالة التمارين الكبرى
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-bold font-label-sm text-[11px]">الدور #12</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">02:00 م - 02:45 م</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">جلسة علاج وظيفي</span>
+</div>
+</div>
+</div>
+<!-- Card 7: Remote Consultation Later Today -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-7" data-type="remote" onclick="openDrawer('apt-7')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-variant flex items-center justify-center text-primary font-bold text-headline-sm">
+                  م
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">مها الحربي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10512</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">مؤكد</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+                  استشارة عن بُعد
+                </span>
+<span class="text-on-surface-variant">30 دقيقة</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">03:00 م - 03:30 م</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تحديث خطة التمارين</span>
+</div>
+</div>
+</div>
+<!-- Card 8: Remote Follow-up (Waiting Confirmation) -->
+<div class="apt-card bg-surface-container-lowest p-space-md rounded-2xl cursor-pointer hover:shadow-md transition-all group relative overflow-hidden flex flex-col justify-between" data-id="apt-8" data-type="remote" onclick="openDrawer('apt-8')">
+<div class="flex items-start justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-variant flex items-center justify-center text-primary font-bold text-headline-sm">
+                  خ
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors truncate">خالد التميمي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ملف: MRN-10540</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">بانتظار التأكيد</span>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+                  استشارة عن بُعد
+                </span>
+<span class="text-on-surface-variant">45 دقيقة</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface">03:45 م - 04:30 م</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sms</span>
+                  أُرسل تذكير SMS
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: DAILY VIEW (Hidden by default) -->
+<div class="hidden flex-col gap-space-md" id="calendar-day-view">
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">view_agenda</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">المخطط الزمني الكامل لليوم</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">الأربعاء 30 أكتوبر 2024 • من 08:00 صباحاً حتى 05:00 مساءً</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+          8 فترات علاجية
+        </span>
+</div>
+<!-- Linear Hourly Timeline -->
+<div class="flex flex-col gap-3">
+<!-- 08:00 - 09:00 -->
+<div class="flex gap-space-md items-start p-space-sm rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all">
+<span class="w-20 font-label-md text-label-md text-on-surface-variant text-center shrink-0 pt-1">08:30 ص</span>
+<div class="flex-1 bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">أحمد الهاشمي (MRN-10294)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• استشارة عن بُعد</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">مكتملة وموثقة</span>
+</div>
+</div>
+<!-- 09:30 - 10:15 -->
+<div class="flex gap-space-md items-start p-space-sm rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-all">
+<span class="w-20 font-label-md text-label-md text-on-surface-variant text-center shrink-0 pt-1">09:30 ص</span>
+<div class="flex-1 bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">نورة الدوسري (MRN-10482)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• حضوري في المركز (عيادة 1)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">مكتملة وموثقة</span>
+</div>
+</div>
+<!-- 10:30 - 11:15 (Active/Waiting) -->
+<div class="flex gap-space-md items-start p-space-sm rounded-xl bg-surface-container-high/40">
+<span class="w-20 font-label-md text-label-md text-primary font-bold text-center shrink-0 pt-1">10:30 ص</span>
+<div class="flex-1 bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">فيصل العتيبي (MRN-10483)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold text-label-sm">الدور #07</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• عيادة التأهيل 2</span>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold" onclick="openDrawer('apt-3')">
+              بدء الكشف
+            </button>
+</div>
+</div>
+<!-- 11:30 - 12:15 -->
+<div class="flex gap-space-md items-start p-space-sm rounded-xl bg-primary-fixed/20">
+<span class="w-20 font-label-md text-label-md text-primary-container font-bold text-center shrink-0 pt-1">11:30 ص</span>
+<div class="flex-1 bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">محمد السبيعي (MRN-10485)</span>
+<span class="font-body-sm text-body-sm text-primary-container font-semibold">• استشارة عن بُعد (بعد 15 دقيقة)</span>
+</div>
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold" onclick="openDrawer('apt-5')">
+              تجهيز الجلسة
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 3: MONTHLY VIEW (Compact Grid preview) -->
+<div class="hidden flex-col gap-space-md" id="calendar-month-view">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">أكتوبر - نوفمبر 2024</span>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span> أيام فيها مواعيد
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center font-label-md text-label-md">
+<span class="text-on-surface-variant py-2">الأحد</span>
+<span class="text-on-surface-variant py-2">الإثنين</span>
+<span class="text-on-surface-variant py-2">الثلاثاء</span>
+<span class="text-on-surface-variant py-2">الأربعاء</span>
+<span class="text-on-surface-variant py-2">الخميس</span>
+<span class="text-on-surface-variant py-2">الجمعة</span>
+<span class="text-on-surface-variant py-2">السبت</span>
+<!-- Calendar Month Cells Sample -->
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">20</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">21</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">22</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">23</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">24</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-30">25</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-50">26</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface">27</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface">28</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface">29</div>
+<!-- Active Wednesday 30 -->
+<div class="p-3 rounded-xl bg-primary text-on-primary font-bold shadow-md cursor-pointer" onclick="switchView('week')">
+          30
+          <span class="block text-[10px] mt-0.5 text-secondary-fixed">8 مواعيد</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface">31</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface-variant opacity-40">1</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-on-surface">2</div>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over Details Drawer (Off-canvas) -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 transition-opacity duration-300 opacity-0 pointer-events-none" id="drawer-backdrop" onclick="closeDrawer()"></div>
+<aside class="fixed top-0 left-0 bottom-0 w-full max-w-md bg-surface-container-lowest shadow-[0px_12px_32px_-4px_rgba(3,105,161,0.12)] z-50 transform -translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between overflow-y-auto" id="appointment-drawer">
+<!-- Drawer Header -->
+<div class="p-space-lg border-b-0 flex items-center justify-between bg-surface-container-low">
+<a href="./تفاصيل الموعد.html" class="flex items-center gap-space-sm group cursor-pointer hover:opacity-85 transition-opacity">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]" id="drawer-header-icon">clinical_notes</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">تفاصيل الموعد والجلسة <span class="material-symbols-outlined text-sm align-middle">open_in_new</span></h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="drawer-sub">رقم الحجز: APT-2024-8842</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="closeDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Body -->
+<div class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Beneficiary Identity Box -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-low rounded-2xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest overflow-hidden flex items-center justify-center text-primary font-bold text-headline-md" id="drawer-avatar-wrap">
+<span id="drawer-avatar-letter">ف</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="drawer-name">فيصل العتيبي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="drawer-mrn">رقم الملف: MRN-10483</span>
+<span class="font-body-sm text-body-sm text-primary mt-0.5 font-medium" id="drawer-program">برنامج تأهيل إصابات العمود الفقري</span>
+</div>
+</div>
+<a class="p-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container text-[18px] transition-colors" href="#" title="الانتقال لملف المستفيد">
+<span class="material-symbols-outlined">badge</span>
+</a>
+</div>
+<!-- Appointment Properties Card -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">التوقيت والمدة</span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1" id="drawer-time">10:30 ص (45 دقيقة)</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">طبيعة الموعد</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-1" id="drawer-type-badge">حضوري في المركز</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">الموقع / الغرفة</span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1" id="drawer-location">عيادة التأهيل 2 (الدور #07)</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">حالة الحضور</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-1" id="drawer-status">وصل للمركز • بالانتظار</span>
+</div>
+</div>
+<!-- Clinical Protocol & Goals Note -->
+<div class="flex flex-col gap-1.5 p-space-md bg-surface-container-low rounded-2xl">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">target</span>
+            الأهداف السريرية للجلسة
+          </span>
+<span class="font-label-sm text-[11px] text-outline">الجلسة 4 من 12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="drawer-notes">
+          تقييم استجابة العضلات القطنية بعد التمارين المنزلية، والبدء في تمارين التوازن الديناميكي على المنصة الهوائية مع قياس درجات الألم ومجال الحركة.
+        </p>
+</div>
+<!-- Family / Companion Information -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">family_restroom</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">المرافق: سعد العتيبي (أخ)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">موجود مع المستفيد في صالة الانتظار</span>
+</div>
+</div>
+<a class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary hover:bg-surface-container transition-colors" href="tel:+966500000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-space-xs">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary/90 transition-all active:scale-[0.98]" id="drawer-action-btn" onclick="window.location.href='./تفاصيل الموعد.html'" type="button">
+<span class="material-symbols-outlined text-[20px]">stethoscope</span>
+<span>بدء الكشف السريري الآن</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2.5 px-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all text-center" onclick="closeDrawer()" type="button">
+          إغلاق النافذة
+        </button>
+<button class="py-2.5 px-space-md rounded-xl bg-surface-container text-error hover:bg-error-container/40 font-label-sm text-label-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+          اعتذار / تأجيل
+        </button>
+</div>
+</div>
+</aside>
+</div>
+<script>
+  // Mock Data Store for Rapid Drawer Inspection
+  const appointmentRecords = {
+    'apt-1': {
+      name: 'أحمد الهاشمي',
+      mrn: 'MRN-10294',
+      program: 'تأهيل إصابات الأطراف العلوية',
+      time: '08:30 ص - 09:15 ص',
+      type: 'استشارة عن بُعد (WebRTC)',
+      location: 'عيادة افتراضية #1',
+      status: 'مكتملة وموثقة',
+      notes: 'تم فحص نطاق حركة المفصل عبر الكاميرا، وتقديم 3 تمارين استطالة جديدة في مكتبة التمارين مع قياس تحسن بمقدار 15%.',
+      actionText: 'عرض التقرير السريري الموثق',
+      actionIcon: 'description',
+      isCompleted: true
+    },
+    'apt-2': {
+      name: 'نورة الدوسري',
+      mrn: 'MRN-10482',
+      program: 'إعادة التأهيل بعد الجراحة',
+      time: '09:30 ص - 10:15 ص',
+      type: 'حضوري في المركز',
+      location: 'عيادة 1 (الدور #04)',
+      status: 'مكتملة وموثقة',
+      notes: 'تمت إزالة الجبيرة الجزئية بنجاح وقياس المدى الحركي. توصية بالاستمرار على كمادات دافئة قبل التمارين المسائية.',
+      actionText: 'عرض التقرير السريري الموثق',
+      actionIcon: 'description',
+      isCompleted: true
+    },
+    'apt-3': {
+      name: 'فيصل العتيبي',
+      mrn: 'MRN-10483',
+      program: 'تأهيل إصابات العمود الفقري',
+      time: '10:30 ص - 11:15 ص',
+      type: 'حضوري في المركز',
+      location: 'عيادة التأهيل 2 (الدور #07)',
+      status: 'وصل المستفيد • بانتظار الكشف',
+      notes: 'تقييم استجابة العضلات القطنية بعد التمارين المنزلية، والبدء في تمارين التوازن الديناميكي على المنصة الهوائية.',
+      actionText: 'بدء الكشف السريري واستدعاء المستفيد',
+      actionIcon: 'stethoscope',
+      isCompleted: false
+    },
+    'apt-4': {
+      name: 'سارة الشمري',
+      mrn: 'MRN-10484',
+      program: 'تأهيل النطق والتخاطب الحركي',
+      time: '01:00 م - 01:45 م',
+      type: 'استشارة عن بُعد',
+      location: 'غرفة افتراضية مشفرة',
+      status: 'مؤكد',
+      notes: 'متابعة تمارين التنفس والتحكم الحجابي، ومراجعة تسجيلات الممارسة المرسلة من الأسرة خلال عطلة نهاية الأسبوع.',
+      actionText: 'فتح الغرفة الافتراضية',
+      actionIcon: 'videocam',
+      isCompleted: false
+    },
+    'apt-5': {
+      name: 'محمد السبيعي',
+      mrn: 'MRN-10485',
+      program: 'برنامج تقوية عضلات الحوض والركبة',
+      time: '11:30 ص - 12:15 م',
+      type: 'استشارة عن بُعد (بعد 15 دقيقة)',
+      location: 'بوابة جسر المرئية WebRTC',
+      status: 'قيد الاستعداد • بعد 15 دقيقة',
+      notes: 'جلسة تدريبية تفاعلية مباشرة لتصحيح وضعية القرفصاء والمشي المساعد، بالتعاون مع مقدم الرعاية.',
+      actionText: 'دخول جلسة الفيديو المباشرة',
+      actionIcon: 'video_call',
+      isCompleted: false
+    },
+    'apt-6': {
+      name: 'سلطان الزهراني',
+      mrn: 'MRN-10489',
+      program: 'تأهيل وظيفي لكبار السن',
+      time: '02:00 م - 02:45 م',
+      type: 'حضوري في المركز',
+      location: 'صالة التمارين الكبرى (الدور #12)',
+      status: 'مؤكد',
+      notes: 'تمارين الثبات ومنع السقوط مع المعالج المساعد، واستخدام أجهزة المقاومة الهيدروليكية الخفيفة.',
+      actionText: 'تسجيل وصول المستفيد',
+      actionIcon: 'how_to_reg',
+      isCompleted: false
+    },
+    'apt-7': {
+      name: 'مها الحربي',
+      mrn: 'MRN-10512',
+      program: 'تأهيل الأوتار والأربطة',
+      time: '03:00 م - 03:30 م',
+      type: 'استشارة عن بُعد',
+      location: 'غرفة افتراضية #3',
+      status: 'مؤكد',
+      notes: 'مراجعة قياس الألم بعد زيادة وتيرة المشي، وتحديد موعد الجلسة الحضورية القادمة للفحص اليدوي.',
+      actionText: 'فتح الغرفة الافتراضية',
+      actionIcon: 'videocam',
+      isCompleted: false
+    },
+    'apt-8': {
+      name: 'خالد التميمي',
+      mrn: 'MRN-10540',
+      program: 'العلاج الطبيعي الرياضي',
+      time: '03:45 م - 04:30 م',
+      type: 'استشارة عن بُعد',
+      location: 'غرفة افتراضية #2',
+      status: 'بانتظار التأكيد',
+      notes: 'تم إرسال تذكير عبر رسالة نصية قصيرة في انتظار اعتماد المستفيد للتوقيت المقترح.',
+      actionText: 'إعادة إرسال رابط التأكيد',
+      actionIcon: 'send',
+      isCompleted: false
+    }
+  };
+
+  // View Switcher logic
+  function switchView(mode) {
+    const views = {
+      week: document.getElementById('calendar-week-view'),
+      day: document.getElementById('calendar-day-view'),
+      month: document.getElementById('calendar-month-view')
+    };
+
+    const tabs = {
+      week: document.getElementById('view-tab-week'),
+      day: document.getElementById('view-tab-day'),
+      month: document.getElementById('view-tab-month')
+    };
+
+    Object.keys(views).forEach(key => {
+      if (key === mode) {
+        views[key].classList.remove('hidden');
+        views[key].classList.add('flex');
+        tabs[key].className = 'view-btn px-space-md py-1.5 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary font-bold shadow-sm';
+      } else {
+        views[key].classList.add('hidden');
+        views[key].classList.remove('flex');
+        tabs[key].className = 'view-btn px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all';
+      }
+    });
+  }
+
+  // Filter logic (All, Remote, Clinic)
+  function applyFilter(filter) {
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+      if (chip.getAttribute('data-filter') === filter) {
+        chip.className = 'filter-chip active-filter px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold transition-all';
+      } else {
+        chip.className = 'filter-chip px-space-sm py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all';
+      }
+    });
+
+    const cards = document.querySelectorAll('.apt-card');
+    cards.forEach(card => {
+      const type = card.getAttribute('data-type');
+      if (filter === 'all' || type === filter) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Day strip selector highlight
+  function selectDay(dayKey) {
+    document.querySelectorAll('.day-tab').forEach(btn => {
+      btn.className = 'day-tab flex flex-col items-center py-2.5 px-1 rounded-xl hover:bg-surface-container-low transition-all';
+      const indicator = btn.querySelector('.active-indicator');
+      if (indicator) indicator.remove();
+    });
+
+    const target = window.event.currentTarget;
+    target.className = 'day-tab active-day flex flex-col items-center py-2.5 px-1 rounded-xl bg-primary text-on-primary shadow-sm transition-all';
+  }
+
+  // Side Drawer details controller
+  function openDrawer(aptId) {
+    const data = appointmentRecords[aptId] || appointmentRecords['apt-3'];
+
+    document.getElementById('drawer-name').textContent = data.name;
+    document.getElementById('drawer-mrn').textContent = 'رقم الملف: ' + data.mrn;
+    document.getElementById('drawer-program').textContent = data.program;
+    document.getElementById('drawer-time').textContent = data.time;
+    document.getElementById('drawer-type-badge').textContent = data.type;
+    document.getElementById('drawer-location').textContent = data.location;
+    document.getElementById('drawer-status').textContent = data.status;
+    document.getElementById('drawer-notes').textContent = data.notes;
+    document.getElementById('drawer-avatar-letter').textContent = data.name.charAt(0);
+
+    const actionBtn = document.getElementById('drawer-action-btn');
+    actionBtn.innerHTML = `<span class="material-symbols-outlined text-[20px]">${data.actionIcon}</span><span>${data.actionText}</span>`;
+
+    const backdrop = document.getElementById('drawer-backdrop');
+    const drawer = document.getElementById('appointment-drawer');
+
+    backdrop.classList.remove('pointer-events-none', 'opacity-0');
+    backdrop.classList.add('opacity-100');
+    drawer.classList.remove('-translate-x-full');
+    drawer.classList.add('translate-x-0');
+  }
+
+  function closeDrawer() {
+    const backdrop = document.getElementById('drawer-backdrop');
+    const drawer = document.getElementById('appointment-drawer');
+
+    backdrop.classList.remove('opacity-100');
+    backdrop.classList.add('opacity-0', 'pointer-events-none');
+    drawer.classList.remove('translate-x-0');
+    drawer.classList.add('-translate-x-full');
+  }
+
+  // Close drawer on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDrawer();
+    }
+  });
+</script></main></div></body></html>

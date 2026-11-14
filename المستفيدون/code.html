@@ -1,0 +1,704 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style="width: 100%; min-height: 100vh; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "surface-container-highest": "#d5e3fc", "tertiary-container": "#7936ea", "primary-container": "#0369a1", "surface-container-low": "#eff4ff", "on-secondary-container": "#006f66", "surface-variant": "#d5e3fc", "primary-fixed-dim": "#94ccff", "on-tertiary-fixed-variant": "#5a00c6", "outline-variant": "#c0c7d1", "tertiary": "#6003d1", "surface-container-high": "#dce9ff", "on-tertiary-fixed": "#25005a", "on-primary": "#ffffff", "primary": "#00507d", "on-primary-container": "#cbe4ff", "on-surface-variant": "#40474f", "error-container": "#ffdad6", "primary-fixed": "#cde5ff", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eaf1ff", "secondary-container": "#86f2e4", "secondary-fixed": "#89f5e7", "tertiary-fixed-dim": "#d2bbff", "on-background": "#0d1c2e", "on-secondary-fixed": "#00201d", "on-surface": "#0d1c2e", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "inverse-primary": "#94ccff", "on-primary-fixed": "#001d32", "on-tertiary-container": "#e9dbff", "surface-dim": "#ccdbf3", "surface-container": "#e6eeff", "error": "#ba1a1a", "inverse-surface": "#233144", "outline": "#707881", "on-secondary": "#ffffff", "tertiary-fixed": "#eaddff", "on-error-container": "#93000a", "surface": "#f8f9ff", "on-primary-fixed-variant": "#004b74", "surface-tint": "#006399", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "background": "#f8f9ff", "secondary": "#006a61" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "space-lg": "1.75rem", "gutter-mobile": "1rem", "space-md": "1.25rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-sm": "0.75rem", "margin-mobile": "1.25rem", "margin": "2.5rem" }, "fontFamily": { "body-sm": ["IBM Plex Sans"], "body-lg": ["IBM Plex Sans"], "label-md": ["IBM Plex Sans"], "label-lg": ["IBM Plex Sans"], "headline-lg-mobile": ["IBM Plex Sans"], "label-sm": ["IBM Plex Sans"], "headline-lg": ["IBM Plex Sans"], "headline-sm": ["IBM Plex Sans"], "display": ["IBM Plex Sans"], "headline-md": ["IBM Plex Sans"], "body-md": ["IBM Plex Sans"] }, "fontSize": { "body-sm": ["0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400" }], "label-md": ["0.9375rem", { "lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "600" }], "label-lg": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.375rem", "letterSpacing": "0", "fontWeight": "700" }], "label-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg": ["2.25rem", { "lineHeight": "3rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-sm": ["1.25rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "600" }], "display": ["3rem", { "lineHeight": "3.75rem", "letterSpacing": "0", "fontWeight": "700" }], "headline-md": ["1.5rem", { "lineHeight": "2.125rem", "letterSpacing": "0", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed right-0 top-0 h-screen bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto w-64"><div class="flex flex-col"><div class="h-16 flex items-center gap-space-sm px-space-md bg-surface-container-lowest"><img alt="Logo" class="w-8 h-8 rounded-lg object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1XFSB5Zji7-QJ2ffNCLZ5hsRCO2TMnGW9QZa4A6f7SjmVWyXJ1ecTJo11p6fV3_fhIudoTOdVd3vShlKMsiehbXi0pTkSxuTDyD6smlDrImSn29KqIX9NxqPnzg1elqtbJLZq2z91H_J8Gi6BrFoqVaTfNtKoqFduitYCTSl8qVE1qR9-AMaMwJlRUcen1_gSe7zMhJYcZDGOsMcNjdcqNQe7T7OkVr-FgfM6OvGO6BcZIG8X1z0RLkO5Gt3RFdiXKsRrkdoYE"><div class="flex flex-col"><span class="font-headline-sm text-base text-primary leading-tight font-bold">جسر للرعاية</span><span class="font-label-sm text-xs text-on-surface-variant">بوابة الأخصائي المعالج</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">الوضع السريري</span><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>متاح للاستشارة</span></div></div><nav class="flex flex-col gap-1.5 px-space-sm mt-space-sm" data-active-classes="bg-primary text-on-primary font-label-md rounded-xl shadow-[0_2px_8px_-2px_rgba(0,80,125,0.2)]"><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-xl">dashboard</span><span>لوحة التحكم</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-3 transition-all bg-primary text-on-primary font-label-md rounded-xl shadow-[0_2px_8px_-2px_rgba(0,80,125,0.2)]" data-path="beneficiaries" href="./code.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">diversity_3</span><span>المستفيدون</span></div><span class="mr-auto px-2 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm" id="sidebarBeneficiariesBadge">29</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="clinical-assessments" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-xl">clinical_notes</span><span>التقييمات السريرية</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="rehab-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-xl">assignment</span><span>خطط التأهيل</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="progress-and-reports" href="../التقدم و التقارير/الرئيسية التقدم و الالتزام.html"><span class="material-symbols-outlined text-xl">monitoring</span><span>التقدم والتقارير</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments-and-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-xl">calendar_clock</span><span>المواعيد والجدول</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-xl">chat_bubble</span><span>الرسائل والتواصل</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-xl">fitness_center</span><span>مكتبة التمارين</span></a></nav></div><div class="flex flex-col gap-1.5 px-space-sm pb-space-md pt-space-sm bg-surface-container-lowest"><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile-and-settings" href="../الملف الشهصي و الاعدادات/الملف الشخصي.html"><span class="material-symbols-outlined text-xl">settings</span><span>الملف المهني والإعدادات</span></a><a class="flex items-center justify-between px-space-md py-3 rounded-xl font-label-md text-label-md text-secondary hover:bg-secondary-container/30 transition-all" data-path="clinical-support" href="../الرسائل و التواصل/الرسائل و التواصل.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">support_agent</span><span>الدعم السريري</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">24/7</span></a></div></aside><div class="min-h-screen flex flex-col pr-64"><header class="fixed top-0 left-0 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg h-16" style="right: 14rem;"><div class="w-96 cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="relative flex items-center"><span class="material-symbols-outlined absolute right-3 text-outline pointer-events-none text-xl">search</span><input class="w-full h-9 pr-10 pl-4 py-2 rounded-xl bg-surface-container-low font-body-sm text-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="بحث عن مستفيد، رقم ملف طبي..." type="search"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-secondary">verified_user</span><span>مركز الرياض للتأهيل العصبي</span></div><div class="relative"><button class="w-11 h-11 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors cursor-pointer" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-xl">notifications</span></button><span class="absolute top-2 left-2 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></div><div class="flex items-center gap-3 pl-2"><div class="text-left"><p class="font-label-md text-label-md text-on-surface leading-tight text-right">د. سارة المنصور</p><p class="font-label-sm text-label-sm text-on-surface-variant text-right">أخصائية علاج طبيعي أول</p></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1XFSB5Zji7-QJ2ffNCLZ5hsRCO2TMnGW9QZa4A6f7SjmVWyXJ1ecTJo11p6fV3_fhIudoTOdVd3vShlKMsiehbXi0pTkSxuTDyD6smlDrImSn29KqIX9NxqPnzg1elqtbJLZq2z91H_J8Gi6BrFoqVaTfNtKoqFduitYCTSl8qVE1qR9-AMaMwJlRUcen1_gSe7zMhJYcZDGOsMcNjdcqNQe7T7OkVr-FgfM6OvGO6BcZIG8X1z0RLkO5Gt3RFdiXKsRrkdoYE"></div></div></header><main class="w-full px-space-lg py-space-lg bg-background flex-1 pt-16"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Toast Notification Container -->
+<div class="fixed bottom-6 left-6 z-50 transform transition-all duration-300 ease-out flex items-center gap-3 bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-2xl opacity-0 pointer-events-none translate-y-24" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">تمت إضافة المستفيد بنجاح • تحديث العداد إلى 29 مستفيداً</span>
+</div>
+<!-- Section 1: Page Header & Quick Metric Chips -->
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<h1 class="font-bold text-xl md:text-2xl text-primary tracking-tight">المستفيدون</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span id="heroCounterBadge">29</span>
+<span class="font-body-sm text-body-sm font-normal">مستفيداً مسجلاً</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        إدارة ملفات المستفيدين ومتابعة احتياجاتهم التأهيلية بدقة وسرعة ضمن خطة الرعاية متعددة التخصصات.
+      </p>
+</div>
+<!-- Right Side Actions & Add Beneficiary CTA -->
+<div class="flex items-center gap-3 w-full xl:w-auto justify-between xl:justify-end">
+<div class="hidden sm:flex items-center gap-2 bg-surface-container-low px-3 py-2 rounded-xl text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-lg">sync</span>
+<span>مزامنة سريرية نشطة الآن</span>
+</div>
+
+</div>
+</div>
+<!-- Metric Overview Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"><div class="bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between"><div class="flex flex-col gap-0.5"><span class="font-label-sm text-xs text-on-surface-variant">إجمالي المستفيدين</span><div class="flex items-baseline gap-2"><span class="text-2xl font-bold text-on-surface" id="statTotalCount">29</span><span class="font-label-sm text-xs text-secondary flex items-center"><span class="material-symbols-outlined text-sm">trending_up</span> +3 هذا الشهر</span></div></div><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center"><span class="material-symbols-outlined text-xl">group</span></div></div><div class="bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between"><div class="flex flex-col gap-0.5"><span class="font-label-sm text-xs text-on-surface-variant">خطط تأهيلية سارية</span><div class="flex items-baseline gap-2"><span class="text-2xl font-bold text-primary" id="statActivePlans">22</span><span class="font-label-sm text-xs text-on-surface-variant">من أصل <span id="statActivePlansTotal">29</span></span></div></div><div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined text-xl">assignment_turned_in</span></div></div><div class="bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between"><div class="flex flex-col gap-0.5"><span class="font-label-sm text-xs text-on-surface-variant">تقييمات سريرية مكتملة</span><div class="flex items-baseline gap-2"><span class="text-2xl font-bold text-on-secondary-container" id="statCompletedAssessments">20</span><span class="font-label-sm text-xs text-secondary flex items-center"><span class="material-symbols-outlined text-sm">done_all</span> <span id="statAssessmentPercentage">71%</span></span></div></div><div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-xl">verified</span></div></div><div class="bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between"><div class="flex flex-col gap-0.5"><span class="font-label-sm text-xs text-on-surface-variant">بحاجة لمتابعة سريرية عاجلة</span><div class="flex items-baseline gap-2"><span class="text-2xl font-bold text-error" id="statUrgentFollowups">4</span><span class="font-label-sm text-xs text-error flex items-center"><span class="material-symbols-outlined text-sm">priority_high</span> تستدعي التدخل</span></div></div><div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center"><span class="material-symbols-outlined text-xl">vital_signs</span></div></div></div>
+<!-- Section 2: Active Controls & Filter Bar -->
+<div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center gap-3">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-xl">search</span>
+<input class="w-full h-12 pr-11 pl-10 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="beneficiarySearch" placeholder="ابحث باسم المستفيد أو رقم الملف (مثال: MRN-10481)..." type="search">
+<button class="absolute left-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface text-sm hidden" id="clearSearchBtn">
+<span class="material-symbols-outlined text-lg">cancel</span>
+</button>
+</div>
+<!-- Dropdown 1: File Status -->
+<div class="relative min-w-[150px]">
+<select class="w-full h-12 px-3.5 pl-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="filterFileStatus">
+<option value="all">حالة الملف: الكل</option>
+<option value="active">نشط</option>
+<option value="inactive">غير نشط</option>
+<option value="pending">معلق</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg">expand_more</span>
+</div>
+<!-- Dropdown 2: Assessment Status -->
+<div class="relative min-w-[170px]">
+<select class="w-full h-12 px-3.5 pl-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="filterAssessment">
+<option value="all">حالة التقييم: الكل</option>
+<option value="مكتمل">مكتمل</option>
+<option value="بانتظار المراجعة">بانتظار المراجعة</option>
+<option value="غير متوفر">غير متوفر</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg">expand_more</span>
+</div>
+<!-- Dropdown 3: Rehab Plan Status -->
+<div class="relative min-w-[180px]">
+<select class="w-full h-12 px-3.5 pl-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="filterPlan">
+<option value="all">خطة التأهيل: الكل</option>
+<option value="نشطة">نشطة</option>
+<option value="تحتاج إلى مراجعة">تحتاج إلى مراجعة</option>
+<option value="لا توجد خطة">لا توجد خطة</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg">expand_more</span>
+</div>
+<!-- Dropdown 4: Priority / Urgency -->
+<div class="relative min-w-[160px]">
+<select class="w-full h-12 px-3.5 pl-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="filterUrgency">
+<option value="all">حالات المتابعة: الكل</option>
+<option value="عاجل">عاجل</option>
+<option value="روتيني">روتيني</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg">expand_more</span>
+</div><div class="relative min-w-[170px]" id="supervisorDropdownWrapper"><button type="button" id="supervisorFilterBtn" class="w-full h-12 px-3.5 pl-8 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center justify-between focus:outline-none cursor-pointer transition-all" aria-haspopup="listbox" aria-expanded="false"><span id="supervisorFilterLabel" class="truncate">المشرف الحركي: الكل</span><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-lg transition-transform duration-200" id="supervisorChevron">expand_more</span></button><div id="supervisorDropdownMenu" class="hidden absolute right-0 top-full mt-1.5 w-full bg-surface-container-lowest rounded-xl shadow-2xl p-1.5 z-50 flex flex-col gap-0.5" role="listbox"><button type="button" class="supervisor-option w-full px-3 py-2 text-right rounded-lg font-label-sm text-label-sm text-primary font-bold bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between" data-supervisor="all"><span class="truncate">الكل</span><span class="material-symbols-outlined text-base text-primary check-icon">check</span></button><button type="button" class="supervisor-option w-full px-3 py-2 text-right rounded-lg font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors flex items-center justify-between" data-supervisor="طارق الزهراني"><span class="truncate">طارق الزهراني</span><span class="material-symbols-outlined text-base text-primary check-icon hidden">check</span></button><button type="button" class="supervisor-option w-full px-3 py-2 text-right rounded-lg font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors flex items-center justify-between" data-supervisor="هند السالم"><span class="truncate">هند السالم</span><span class="material-symbols-outlined text-base text-primary check-icon hidden">check</span></button><button type="button" class="supervisor-option w-full px-3 py-2 text-right rounded-lg font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors flex items-center justify-between" data-supervisor="ريم التميمي"><span class="truncate">ريم التميمي</span><span class="material-symbols-outlined text-base text-primary check-icon hidden">check</span></button><button type="button" class="supervisor-option w-full px-3 py-2 text-right rounded-lg font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors flex items-center justify-between" data-supervisor="فهد الدوسري"><span class="truncate">فهد الدوسري</span><span class="material-symbols-outlined text-base text-primary check-icon hidden">check</span></button></div></div>
+<!-- Reset Filters Button -->
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-xl" id="supervisorQuickPills"></div><button class="flex items-center justify-center gap-1.5 h-12 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors whitespace-nowrap" id="resetFiltersBtn">
+<span class="material-symbols-outlined text-lg">restart_alt</span>
+<span>إعادة تعيين</span>
+</button>
+</div>
+<!-- Visual active filter summary -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<div class="flex items-center gap-2"><span>عرض السجلات:</span><span class="font-bold text-primary text-base" id="visibleRecordsCount">29</span><span>من أصل <span id="totalRecordsAnchor">29</span> سجلاً سريرياً</span></div>
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> تقييم مكتمل</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span> بانتظار المراجعة</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span> غير متوفر</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Infinite Continuous Scroll Table Container (28 Records) -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col">
+<!-- Header of the Table (Sticky) -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse min-w-[1080px]">
+<thead>
+<tr class="bg-surface-container-low/70 text-on-surface-variant font-label-sm text-xs select-none"><th class="py-2.5 px-3">المستفيد</th><th class="py-2.5 px-3">ملخص الحالة والتشخيص</th><th class="py-2.5 px-3 text-center">حالة التقييم</th><th class="py-2.5 px-3 text-center">حالة خطة التأهيل</th><th class="py-2.5 px-3">آخر تحديث</th><th class="py-2.5 px-3">الموعد القادم</th><th class="py-2.5 px-3">المشرف الحركي</th><th class="py-2.5 px-3 text-center">الإجراءات</th></tr>
+</thead>
+<tbody class="font-body-sm text-body-sm" id="beneficiariesTableBody"><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors bg-primary-fixed/20" data-assessment="بانتظار المراجعة" data-id="29" data-mrn="MRN-10509" data-name="باسل بن خالد الشمري" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="ك. طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">ب</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">باسل بن خالد الشمري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10509</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تأهيل بعد كسر مشط القدم واستعادة النمط الطبيعي للمشي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">الآن (تم الاعتماد)</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>غداً 11:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(29, 'باسل بن خالد الشمري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="1" data-mrn="MRN-10481" data-name="عبدالله بن فهد التميمي" data-plan="نشطة" data-status="active" data-urgency="عاجل" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">ع</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">عبدالله بن فهد التميمي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10481</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تأهيل ما بعد الرباط الصليبي (ACL)</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">اليوم 09:15 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>غداً 10:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(1, 'عبدالله بن فهد التميمي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="2" data-mrn="MRN-10482" data-name="نورة بنت سعد الدوسري" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">ن</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">نورة بنت سعد الدوسري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10482</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">متلازمة النفق الرسغي لليد اليمنى (CTS)</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">أمس 04:20 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأحد 11:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(2, 'نورة بنت سعد الدوسري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="3" data-mrn="MRN-10483" data-name="فيصل بن متعب العتيبي" data-plan="تحتاج إلى مراجعة" data-status="pending" data-urgency="عاجل" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold text-label-md">ف</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">فيصل بن متعب العتيبي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10483</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">انزلاق غضروفي قطني L4-L5 وتيبس عضلي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>تحتاج إلى مراجعة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">24 أكتوبر 02:00 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>اليوم 03:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(3, 'فيصل بن متعب العتيبي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="4" data-mrn="MRN-10484" data-name="سارة بنت خالد الشمري" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="ريم التميمي"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">س</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">سارة بنت خالد الشمري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10484</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">التواء شديد في الكاحل الأيسر - الدرجة الثانية</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">23 أكتوبر 11:10 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الثلاثاء 09:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. ريم التميمي</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(4, 'سارة بنت خالد الشمري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="5" data-mrn="MRN-10485" data-name="محمد بن إبراهيم السبيعي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-bold text-label-md">م</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">محمد بن إبراهيم السبيعي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10485</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تبديل كامل لمفصل الركبة (TKR) تأهيل ما بعد الجراحة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">22 أكتوبر 01:45 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأربعاء 04:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(5, 'محمد بن إبراهيم السبيعي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="غير متوفر" data-id="6" data-mrn="MRN-10486" data-name="هند بنت ناصر المطيري" data-plan="لا توجد خطة" data-status="inactive" data-urgency="روتيني" data-supervisor="سارة المنصور"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-md">هـ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">هند بنت ناصر المطيري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10486</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">الكتف المتجمد والتهاب أوتار الكفة المدورة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>غير متوفر</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>لا توجد خطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">22 أكتوبر 10:00 ص</td><td class="py-4 px-4"><span class="text-outline font-label-sm text-label-sm">غير محدد بعد</span></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">د. سارة المنصور</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(6, 'هند بنت ناصر المطيري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="7" data-mrn="MRN-10487" data-name="تركي بن عبدالعزيز المقرن" data-plan="نشطة" data-status="active" data-urgency="عاجل" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">ت</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">تركي بن عبدالعزيز المقرن</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10487</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">إعادة تأهيل عصبي وظيفي بعد شلل عصب وجهي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">21 أكتوبر 03:30 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الخميس 10:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(7, 'تركي بن عبدالعزيز المقرن')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="8" data-mrn="MRN-10488" data-name="ريم بنت سليمان الخاطر" data-plan="تحتاج إلى مراجعة" data-status="pending" data-urgency="روتيني" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">ر</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">ريم بنت سليمان الخاطر</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10488</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تقوس العمود الفقري وتصحيح القوام الوظيفي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>تحتاج إلى مراجعة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">21 أكتوبر 12:15 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأحد القادم 01:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(8, 'ريم بنت سليمان الخاطر')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="9" data-mrn="MRN-10489" data-name="سلطان بن صالح الزهراني" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">س</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">سلطان بن صالح الزهراني</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10489</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تمزق وتر أخيل الأيمن - مرحلة تقوية التحمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">20 أكتوبر 04:40 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الإثنين 08:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(9, 'سلطان بن صالح الزهراني')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="10" data-mrn="MRN-10490" data-name="منيرة بنت عبدالله القحطاني" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="ريم التميمي"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">م</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">منيرة بنت عبدالله القحطاني</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10490</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">هشاشة عظام وتأهيل الاتزان والوقاية من السقوط</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">20 أكتوبر 10:20 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الثلاثاء 11:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. ريم التميمي</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(10, 'منيرة بنت عبدالله القحطاني')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="11" data-mrn="MRN-10491" data-name="خالد بن بدر الحازمي" data-plan="لا توجد خطة" data-status="pending" data-urgency="روتيني" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-md">خ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">خالد بن بدر الحازمي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10491</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">خلع متكرر في مفصل الكتف الأيسر</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>لا توجد خطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">19 أكتوبر 09:00 ص</td><td class="py-4 px-4"><span class="text-outline font-label-sm text-label-sm">غير محدد</span></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(11, 'خالد بن بدر الحازمي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="12" data-mrn="MRN-10492" data-name="لطيفة بنت حمد البواردي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">ل</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">لطيفة بنت حمد البواردي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10492</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">علاج وذمة لمفية وتمارين التصريف بعد استئصال</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">18 أكتوبر 03:10 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأربعاء 01:30 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(12, 'لطيفة بنت حمد البواردي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="13" data-mrn="MRN-10493" data-name="فهد بن راشد الغامدي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="سارة المنصور"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-bold text-label-md">ف</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">فهد بن راشد الغامدي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10493</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تأهيل شلل نصفي حركي بعد سكتة دماغية إقفارية</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">18 أكتوبر 11:45 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الخميس 09:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">د. سارة المنصور</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(13, 'فهد بن راشد الغامدي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="14" data-mrn="MRN-10494" data-name="العنود بنت فايز الشهري" data-plan="تحتاج إلى مراجعة" data-status="pending" data-urgency="عاجل" data-supervisor="ريم التميمي"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">ع</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">العنود بنت فايز الشهري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10494</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">احتكاك وخشونة مفصل الركبة المتقدمة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>تحتاج إلى مراجعة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">17 أكتوبر 01:15 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الإثنين 02:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. ريم التميمي</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(14, 'العنود بنت فايز الشهري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="15" data-mrn="MRN-10495" data-name="مشعل بن عبدالمجيد الدخيل" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">م</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">مشعل بن عبدالمجيد الدخيل</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10495</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تأهيل كسر عظم الفخذ بعد التثبيت الداخلي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">16 أكتوبر 04:30 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الثلاثاء 01:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(15, 'مشعل بن عبدالمجيد الدخيل')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="16" data-mrn="MRN-10496" data-name="جواهر بنت نايف الرشيد" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">ج</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">جواهر بنت نايف الرشيد</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10496</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">التهاب أوتار الكاحل والقدم المسطحة الوظيفية</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">16 أكتوبر 10:45 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأربعاء 10:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(16, 'جواهر بنت نايف الرشيد')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="غير متوفر" data-id="17" data-mrn="MRN-10497" data-name="عمر بن طارق السديري" data-plan="لا توجد خطة" data-status="inactive" data-urgency="روتيني" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-md">ع</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">عمر بن طارق السديري</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10497</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تيبس فقرات الرقبة وآلام عضلية مزمنة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>غير متوفر</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>لا توجد خطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">15 أكتوبر 08:30 ص</td><td class="py-4 px-4"><span class="text-outline font-label-sm text-label-sm">غير محدد</span></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(17, 'عمر بن طارق السديري')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="18" data-mrn="MRN-10498" data-name="شهد بنت وليد السليم" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="سارة المنصور"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed-dim text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">ش</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">شهد بنت وليد السليم</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10498</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">ضعف عضلات الحوض وسلس إجهادي ما بعد الولادة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">14 أكتوبر 02:15 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأحد 10:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">د. سارة المنصور</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(18, 'شهد بنت وليد السليم')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="19" data-mrn="MRN-10499" data-name="زياد بن منصور الشريف" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">ز</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">زياد بن منصور الشريف</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10499</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تمزق غضروف هلالي في الركبة اليمنى</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">14 أكتوبر 11:00 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الثلاثاء 03:00 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(19, 'زياد بن منصور الشريف')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="20" data-mrn="MRN-10500" data-name="أسماء بنت عبدالكريم الخالدي" data-plan="تحتاج إلى مراجعة" data-status="pending" data-urgency="عاجل" data-supervisor="ريم التميمي"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">أ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">أسماء بنت عبدالكريم الخالدي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10500</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">اعتلال العصب الوركي (عرق النسا) والتنميل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>تحتاج إلى مراجعة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">13 أكتوبر 05:20 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الإثنين 04:30 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. ريم التميمي</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(20, 'أسماء بنت عبدالكريم الخالدي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="21" data-mrn="MRN-10501" data-name="ريان بن عاصم الحربي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center font-bold text-label-md">ر</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">ريان بن عاصم الحربي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10501</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">كسر الترقوة وتيبس مفصل لوح الكتف</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">13 أكتوبر 01:10 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأربعاء 08:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(21, 'ريان بن عاصم الحربي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="22" data-mrn="MRN-10502" data-name="غادة بنت عبدالملك النعيمي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">غ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">غادة بنت عبدالملك النعيمي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10502</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">متلازمة فيبروميالجيا وتيبس عام وآلام حركية</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">12 أكتوبر 11:35 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الخميس 11:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(22, 'غادة بنت عبدالملك النعيمي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="23" data-mrn="MRN-10503" data-name="يزن بن حمود الحارثي" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">ي</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">يزن بن حمود الحارثي</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10503</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">إصابة العضلة الخلفية للفخذ من الدرجة الثانية</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">11 أكتوبر 03:00 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأحد القادم 09:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(23, 'يزن بن حمود الحارثي')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="بانتظار المراجعة" data-id="24" data-mrn="MRN-10504" data-name="هيفاء بنت منصور البابطين" data-plan="تحتاج إلى مراجعة" data-status="pending" data-urgency="روتيني" data-supervisor="سارة المنصور"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">هـ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">هيفاء بنت منصور البابطين</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10504</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">انحناء جانبي للمراهقين (الجنف مجهول السبب)</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>بانتظار المراجعة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>تحتاج إلى مراجعة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">11 أكتوبر 10:15 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الثلاثاء 02:30 م</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">د. سارة المنصور</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(24, 'هيفاء بنت منصور البابطين')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="25" data-mrn="MRN-10505" data-name="صالح بن حمد الجاسر" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="ريم التميمي"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-label-md">ص</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">صالح بن حمد الجاسر</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10505</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تأهيل باركنسون لتحسين التوازن وسرعة المشي</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">10 أكتوبر 04:10 م</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الأربعاء 11:00 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. ريم التميمي</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(25, 'صالح بن حمد الجاسر')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="26" data-mrn="MRN-10506" data-name="أمل بنت سعد السليمان" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="طارق الزهراني"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">أ</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">أمل بنت سعد السليمان</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10506</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">التهاب وتر الرضفة (ركبة القافز)</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">09 أكتوبر 09:40 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الخميس 08:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. طارق الزهراني</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(26, 'أمل بنت سعد السليمان')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="غير متوفر" data-id="27" data-mrn="MRN-10507" data-name="باسل بن سعود المطلق" data-plan="لا توجد خطة" data-status="inactive" data-urgency="روتيني" data-supervisor="فهد الدوسري"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-md">ب</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">باسل بن سعود المطلق</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10507</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">تيبس مفصل المرفق بعد جبيرة كسر عظم الكعبرة</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>غير متوفر</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span>لا توجد خطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">08 أكتوبر 02:50 م</td><td class="py-4 px-4"><span class="text-outline font-label-sm text-label-sm">غير محدد</span></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. فهد الدوسري</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(27, 'باسل بن سعود المطلق')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr><tr class="beneficiary-row hover:bg-surface-container-low/50 transition-colors" data-assessment="مكتمل" data-id="28" data-mrn="MRN-10508" data-name="دلال بنت فيصل المنصور" data-plan="نشطة" data-status="active" data-urgency="روتيني" data-supervisor="هند السالم"><td class="py-4 px-5"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">د</div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">دلال بنت فيصل المنصور</span><span class="font-label-sm text-label-sm text-primary font-mono">MRN-10508</span></div></div></td><td class="py-4 px-4 max-w-xs"><span class="text-on-surface leading-snug">ضعف عضلي وضمور خفيف بعد ملازمة الفراش</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>مكتمل</span></td><td class="py-4 px-4 text-center"><span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-medium"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>نشطة</span></td><td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">08 أكتوبر 11:20 ص</td><td class="py-4 px-4"><div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-base text-primary">event</span><span>الإثنين القادم 10:30 ص</span></div></td><td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">ك. هند السالم</td><td class="py-4 px-5 text-center"><div class="flex items-center justify-center gap-1.5"><button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري"><span class="material-symbols-outlined text-xl">visibility</span></button><button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" onclick="confirmDeleteBeneficiary(28, 'دلال بنت فيصل المنصور')" title="حذف السجل"><span class="material-symbols-outlined text-xl">delete</span></button></div></td></tr></tbody>
+</table>
+</div>
+<!-- Empty State Container (Hidden unless 0 search results) -->
+<div class="flex-col items-center justify-center py-16 px-4 text-center hidden" id="noResultsState">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">لم يتم العثور على أي نتائج</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">جرب البحث بكلمات أخرى أو قم بإعادة تعيين فلاتر التصفية الحالية.</p>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md" onclick="document.getElementById('resetFiltersBtn').click()">إعادة ضبط الفلاتر</button>
+</div>
+<!-- Single Continuous Scroll Footer Summary (strictly NO pagination) -->
+<div class="p-6 bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-secondary text-xl">checklist_rtl</span><span>تم استعراض كافة السجلات (<span id="footerCountText" class="font-bold text-primary">29 مستفيداً</span>) بنجاح • مزامنة سريرية نشطة ومحدثة</span></div>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md shadow-sm transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span>العودة للأعلى</span>
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+</button>
+</div>
+</div>
+<!-- Interactive Modal 1: Add Beneficiary Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-on-background/40 backdrop-blur-sm transition-opacity duration-200 p-4" id="addBeneficiaryModal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden transform transition-transform duration-200 scale-100">
+<!-- Modal Header -->
+
+<!-- Modal Form Body -->
+
+</div>
+</div>
+<!-- Interactive Modal 2: Delete Confirmation Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-on-background/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-200 p-4" id="deleteConfirmModal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-200">
+<div class="p-6 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-2xl bg-error-container text-error flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-3xl">warning</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">حذف المستفيد</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-1">
+          هل أنت متأكد من حذف السجل الحالي الخاص بـ:
+        </p>
+<p class="font-label-lg text-label-lg text-error font-bold mb-4" id="deleteTargetBeneficiaryName">اسم المستفيد</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low p-3 rounded-xl mb-6">
+          لن يتم حذف البيانات السريرية نهائياً من الأرشيف الطبي، بل سيتم إلغاء تنشيط الملف وإخراجه من القائمة النشطة.
+        </p>
+<div class="flex items-center gap-3 w-full">
+<button class="flex-1 h-12 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="cancelDeleteBtn">
+            إلغاء
+          </button>
+<button class="flex-1 h-12 rounded-xl bg-error hover:bg-error/90 text-on-error font-label-md text-label-md shadow-md transition-all" id="confirmDeleteActionBtn">
+            تأكيد الحذف
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic State Management
+  let totalBeneficiaries = 28;
+  let targetRowToDelete = null;
+
+  // DOM Elements
+  const heroBadge = document.getElementById('heroCounterBadge');
+  const statTotal = document.getElementById('statTotalCount');
+  const visibleCountEl = document.getElementById('visibleRecordsCount');
+  const totalAnchorEl = document.getElementById('totalRecordsAnchor');
+  const footerCountText = document.getElementById('footerCountText');
+  const tableBody = document.getElementById('beneficiariesTableBody');
+  const noResults = document.getElementById('noResultsState');
+
+  // Filter & Search Controls
+  const searchInput = document.getElementById('beneficiarySearch');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const filterFileStatus = document.getElementById('filterFileStatus');
+  const filterAssessment = document.getElementById('filterAssessment');
+  const filterPlan = document.getElementById('filterPlan');
+  const filterUrgency = document.getElementById('filterUrgency');
+  const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+
+  // Modals & Triggers
+  const addModal = document.getElementById('addBeneficiaryModal');
+  const openAddModalBtn = document.getElementById('openAddModalBtn');
+  const closeAddModalBtn = document.getElementById('closeAddModalBtn');
+  const cancelAddBtn = document.getElementById('cancelAddBtn');
+  const addForm = document.getElementById('addBeneficiaryForm');
+
+  const deleteModal = document.getElementById('deleteConfirmModal');
+  const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+  const confirmDeleteBtn = document.getElementById('confirmDeleteActionBtn');
+  const deleteTargetName = document.getElementById('deleteTargetBeneficiaryName');
+
+  // Toast Functionality
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastMsg.textContent = message;
+    if (isError) {
+      toastIcon.textContent = 'delete';
+      toastIcon.className = 'material-symbols-outlined text-error-container text-2xl';
+    } else {
+      toastIcon.textContent = 'check_circle';
+      toastIcon.className = 'material-symbols-outlined text-secondary-fixed text-2xl';
+    }
+
+    toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+    }, 3500);
+  }
+
+  // Update Dynamic Counts
+  function updateCounters(newTotal) {
+    totalBeneficiaries = newTotal;
+    heroBadge.textContent = totalBeneficiaries;
+    statTotal.textContent = totalBeneficiaries;
+    totalAnchorEl.textContent = totalBeneficiaries;
+    footerCountText.textContent = totalBeneficiaries + ' مستفيداً';
+    applyFilters();
+  }
+
+  // Filter Rows Logic
+  function applyFilters() {
+    const query = searchInput.value.trim().toLowerCase();
+    const statusVal = filterFileStatus.value;
+    const assessVal = filterAssessment.value;
+    const planVal = filterPlan.value;
+    const urgencyVal = filterUrgency.value;
+
+    const rows = tableBody.querySelectorAll('.beneficiary-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const name = (row.getAttribute('data-name') || '').toLowerCase();
+      const mrn = (row.getAttribute('data-mrn') || '').toLowerCase();
+      const rowStatus = row.getAttribute('data-status') || '';
+      const rowAssess = row.getAttribute('data-assessment') || '';
+      const rowPlan = row.getAttribute('data-plan') || '';
+      const rowUrgency = row.getAttribute('data-urgency') || '';
+
+      const matchSearch = query === '' || name.includes(query) || mrn.includes(query);
+      const matchStatus = statusVal === 'all' || rowStatus === statusVal;
+      const matchAssess = assessVal === 'all' || rowAssess === assessVal;
+      const matchPlan = planVal === 'all' || rowPlan === planVal;
+      const matchUrgency = urgencyVal === 'all' || rowUrgency === urgencyVal;
+
+      if (matchSearch && matchStatus && matchAssess && matchPlan && matchUrgency) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    visibleCountEl.textContent = visibleCount;
+
+    if (visibleCount === 0) {
+      noResults.classList.remove('hidden');
+      noResults.classList.add('flex');
+    } else {
+      noResults.classList.add('hidden');
+      noResults.classList.remove('flex');
+    }
+  }
+
+  // Event Listeners for Filters
+  searchInput.addEventListener('input', (e) => {
+    clearSearchBtn.classList.toggle('hidden', e.target.value.length === 0);
+    applyFilters();
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    applyFilters();
+  });
+
+  filterFileStatus.addEventListener('change', applyFilters);
+  filterAssessment.addEventListener('change', applyFilters);
+  filterPlan.addEventListener('change', applyFilters);
+  filterUrgency.addEventListener('change', applyFilters);
+
+  resetFiltersBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearSearchBtn.classList.add('hidden');
+    filterFileStatus.value = 'all';
+    filterAssessment.value = 'all';
+    filterPlan.value = 'all';
+    filterUrgency.value = 'all';
+    applyFilters();
+    showToast('تمت إعادة ضبط جميع الفلاتر بنجاح');
+  });
+
+  // Modal Handlers: Add Beneficiary
+  function openAddModal() {
+    addModal.classList.remove('opacity-0', 'pointer-events-none');
+    addModal.firstElementChild.classList.remove('scale-95');
+    addModal.firstElementChild.classList.add('scale-100');
+  }
+
+  function closeAddModal() {
+    addModal.classList.add('opacity-0', 'pointer-events-none');
+    addModal.firstElementChild.classList.remove('scale-100');
+    addModal.firstElementChild.classList.add('scale-95');
+  }
+
+  openAddModalBtn.addEventListener('click', openAddModal);
+  closeAddModalBtn.addEventListener('click', closeAddModal);
+  cancelAddBtn.addEventListener('click', closeAddModal);
+
+  // Form Submit: Add New Beneficiary
+  addForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('newFullName').value.trim();
+    const mrn = document.getElementById('newMrn').value.trim();
+    const diagnosis = document.getElementById('newDiagnosis').value.trim();
+    const assessment = document.getElementById('newAssessmentStatus').value;
+    const plan = document.getElementById('newPlanStatus').value;
+    const supervisor = document.getElementById('newSupervisor').value;
+
+    if (!name || !mrn) return;
+
+    // Build assessment badge styling
+    let assessBadgeClass = 'bg-secondary-container text-on-secondary-container';
+    let assessDot = 'bg-secondary';
+    if (assessment === 'بانتظار المراجعة') {
+      assessBadgeClass = 'bg-amber-100 text-amber-800';
+      assessDot = 'bg-amber-500';
+    } else if (assessment === 'غير متوفر') {
+      assessBadgeClass = 'bg-surface-container-highest text-on-surface-variant';
+      assessDot = 'bg-outline';
+    }
+
+    // Build plan badge styling
+    let planBadgeClass = 'bg-surface-container-high text-primary';
+    let planDot = 'bg-primary';
+    if (plan === 'تحتاج إلى مراجعة') {
+      planBadgeClass = 'bg-error-container text-on-error-container';
+      planDot = 'bg-error';
+    } else if (plan === 'لا توجد خطة') {
+      planBadgeClass = 'bg-surface-container-highest text-on-surface-variant';
+      planDot = 'bg-outline';
+    }
+
+    const firstChar = name.charAt(0);
+    const newId = Date.now();
+
+    const newRow = document.createElement('tr');
+    newRow.className = 'beneficiary-row hover:bg-surface-container-low/50 transition-colors bg-primary-fixed/20';
+    newRow.setAttribute('data-id', newId);
+    newRow.setAttribute('data-name', name);
+    newRow.setAttribute('data-mrn', mrn);
+    newRow.setAttribute('data-assessment', assessment);
+    newRow.setAttribute('data-plan', plan);
+    newRow.setAttribute('data-urgency', 'روتيني');
+    newRow.setAttribute('data-status', 'active');
+
+    newRow.innerHTML = `
+      <td class="py-4 px-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">${firstChar}</div>
+          <div class="flex flex-col">
+            <span class="font-label-md text-label-md text-on-surface">${name}</span>
+            <span class="font-label-sm text-label-sm text-primary font-mono">${mrn}</span>
+          </div>
+        </div>
+      </td>
+      <td class="py-4 px-4 max-w-xs">
+        <span class="text-on-surface leading-snug">${diagnosis}</span>
+      </td>
+      <td class="py-4 px-4 text-center">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${assessBadgeClass} font-label-sm text-label-sm font-medium">
+          <span class="w-1.5 h-1.5 rounded-full ${assessDot}"></span>${assessment}
+        </span>
+      </td>
+      <td class="py-4 px-4 text-center">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${planBadgeClass} font-label-sm text-label-sm font-medium">
+          <span class="w-1.5 h-1.5 rounded-full ${planDot}"></span>${plan}
+        </span>
+      </td>
+      <td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">الآن (تم الإنشاء)</td>
+      <td class="py-4 px-4">
+        <div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm">
+          <span class="material-symbols-outlined text-base text-primary">event</span>
+          <span>غداً 11:00 ص</span>
+        </div>
+      </td>
+      <td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">${supervisor}</td>
+      <td class="py-4 px-5 text-center">
+        <div class="flex items-center justify-center gap-1.5">
+          <button title="عرض الملف السريري" class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors">
+            <span class="material-symbols-outlined text-xl">visibility</span>
+          </button>
+          <button title="حذف السجل" onclick="confirmDeleteBeneficiary(${newId}, '${name}')" class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors">
+            <span class="material-symbols-outlined text-xl">delete</span>
+          </button>
+        </div>
+      </td>
+    `;
+
+    // Prepend to continuous table
+    tableBody.insertBefore(newRow, tableBody.firstChild);
+
+    // Update MRN for subsequent entry suggestion
+    const nextMrnNum = parseInt(mrn.replace(/\D/g, '')) + 1;
+    document.getElementById('newMrn').value = 'MRN-' + (isNaN(nextMrnNum) ? '10510' : nextMrnNum);
+    document.getElementById('newFullName').value = '';
+
+    closeAddModal();
+    updateCounters(totalBeneficiaries + 1);
+    showToast(`تمت إضافة المستفيد "${name}" واعتماد الملف بنجاح!`);
+  });
+
+  // Modal Handlers: Delete Confirmation
+  window.confirmDeleteBeneficiary = function(id, name) {
+    targetRowToDelete = tableBody.querySelector(`[data-id="${id}"]`);
+    deleteTargetName.textContent = name;
+    deleteModal.classList.remove('opacity-0', 'pointer-events-none');
+    deleteModal.firstElementChild.classList.remove('scale-95');
+    deleteModal.firstElementChild.classList.add('scale-100');
+  };
+
+  function closeDeleteModal() {
+    deleteModal.classList.add('opacity-0', 'pointer-events-none');
+    deleteModal.firstElementChild.classList.remove('scale-100');
+    deleteModal.firstElementChild.classList.add('scale-95');
+    targetRowToDelete = null;
+  }
+
+  cancelDeleteBtn.addEventListener('click', closeDeleteModal);
+
+  confirmDeleteBtn.addEventListener('click', () => {
+    if (targetRowToDelete) {
+      const name = targetRowToDelete.getAttribute('data-name');
+      targetRowToDelete.remove();
+      updateCounters(Math.max(0, totalBeneficiaries - 1));
+      showToast(`تم إلغاء تنشيط وأرشفة سجل "${name}" بنجاح`, true);
+    }
+    closeDeleteModal();
+  });
+</script></main></div>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const addModal = document.getElementById('addBeneficiaryModal');
+  const openBtn = document.getElementById('openAddModalBtn');
+  const closeBtn = document.getElementById('closeAddModalBtn');
+  const cancelBtn = document.getElementById('cancelAddBtn');
+  const addForm = document.getElementById('addBeneficiaryForm');
+  const saveBtn = document.getElementById('saveBeneficiaryBtn');
+  const tableBody = document.getElementById('beneficiariesTableBody');
+  const toast = document.getElementById('toastNotification');
+  const toastMessage = document.getElementById('toastMessage');
+
+  function showAddModal() {
+    if (!addModal) return;
+    addModal.classList.remove('opacity-0', 'pointer-events-none');
+    const inner = addModal.querySelector('div');
+    if (inner) {
+      inner.classList.remove('scale-95');
+      inner.classList.add('scale-100');
+    }
+  }
+
+  function hideAddModal() {
+    if (!addModal) return;
+    addModal.classList.add('opacity-0', 'pointer-events-none');
+    const inner = addModal.querySelector('div');
+    if (inner) {
+      inner.classList.remove('scale-100');
+      inner.classList.add('scale-95');
+    }
+  }
+
+  if (openBtn) openBtn.addEventListener('click', showAddModal);
+  if (closeBtn) closeBtn.addEventListener('click', hideAddModal);
+  if (cancelBtn) cancelBtn.addEventListener('click', hideAddModal);
+
+  if (addModal) {
+    addModal.addEventListener('click', (e) => {
+      if (e.target === addModal) hideAddModal();
+    });
+  }
+
+  function displayToast(msg) {
+    if (!toast) return;
+    if (toastMessage) toastMessage.textContent = msg;
+    toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+    }, 3500);
+  }
+
+  function handleBeneficiarySubmit(e) {
+    if (e) e.preventDefault();
+
+    const nameInput = document.getElementById('newFullName');
+    const mrnInput = document.getElementById('newMRN') || document.getElementById('newMrn');
+    const conditionInput = document.getElementById('newCondition') || document.getElementById('newDiagnosis');
+    const assessSelect = document.getElementById('newAssessmentStatus');
+    const planSelect = document.getElementById('newPlanStatus');
+    const supervisorSelect = document.getElementById('newSupervisor');
+    const urgencySelect = document.getElementById('newUrgencyStatus');
+
+    const name = nameInput ? nameInput.value.trim() : 'مستفيد جديد';
+    const mrn = mrnInput ? mrnInput.value.trim() : 'MRN-10510';
+    const condition = conditionInput ? conditionInput.value.trim() : 'جلسات متابعة تأهيلية';
+    const assessment = assessSelect ? assessSelect.value : 'بانتظار المراجعة';
+    const plan = planSelect ? planSelect.value : 'نشطة';
+    const supervisor = supervisorSelect ? supervisorSelect.value : 'ك. طارق الزهراني';
+    const urgency = urgencySelect ? urgencySelect.value : 'روتيني';
+
+    let assessBadgeClass = 'bg-secondary-container text-on-secondary-container';
+    let assessDot = 'bg-secondary';
+    if (assessment === 'بانتظار المراجعة') {
+      assessBadgeClass = 'bg-amber-100 text-amber-800';
+      assessDot = 'bg-amber-500';
+    } else if (assessment === 'غير متوفر') {
+      assessBadgeClass = 'bg-surface-container-highest text-on-surface-variant';
+      assessDot = 'bg-outline';
+    }
+
+    let planBadgeClass = 'bg-surface-container-high text-primary';
+    let planDot = 'bg-primary';
+    if (plan === 'تحتاج إلى مراجعة') {
+      planBadgeClass = 'bg-error-container text-on-error-container';
+      planDot = 'bg-error';
+    } else if (plan === 'لا توجد خطة') {
+      planBadgeClass = 'bg-surface-container-highest text-on-surface-variant';
+      planDot = 'bg-outline';
+    }
+
+    const initialChar = name.charAt(0) || 'م';
+    const newRow = document.createElement('tr');
+    newRow.className = 'beneficiary-row hover:bg-surface-container-low/50 transition-colors bg-primary-fixed/20';
+    newRow.setAttribute('data-id', Date.now());
+    newRow.setAttribute('data-name', name);
+    newRow.setAttribute('data-mrn', mrn);
+    newRow.setAttribute('data-assessment', assessment);
+    newRow.setAttribute('data-plan', plan);
+    newRow.setAttribute('data-urgency', urgency);
+    newRow.setAttribute('data-supervisor', supervisor);
+    newRow.setAttribute('data-status', 'active');
+
+    newRow.innerHTML = `
+      <td class="py-4 px-5">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">${initialChar}</div>
+          <div class="flex flex-col">
+            <span class="font-label-md text-label-md text-on-surface">${name}</span>
+            <span class="font-label-sm text-label-sm text-primary font-mono">${mrn}</span>
+          </div>
+        </div>
+      </td>
+      <td class="py-4 px-4 max-w-xs">
+        <span class="text-on-surface leading-snug">${condition}</span>
+      </td>
+      <td class="py-4 px-4 text-center">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${assessBadgeClass} font-label-sm text-label-sm font-medium">
+          <span class="w-1.5 h-1.5 rounded-full ${assessDot}"></span>${assessment}
+        </span>
+      </td>
+      <td class="py-4 px-4 text-center">
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full ${planBadgeClass} font-label-sm text-label-sm font-medium">
+          <span class="w-1.5 h-1.5 rounded-full ${planDot}"></span>${plan}
+        </span>
+      </td>
+      <td class="py-4 px-4 text-on-surface-variant font-label-sm text-label-sm">الآن (تم الاعتماد)</td>
+      <td class="py-4 px-4">
+        <div class="flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm">
+          <span class="material-symbols-outlined text-base text-primary">event</span>
+          <span>غداً 11:00 ص</span>
+        </div>
+      </td>
+      <td class="py-4 px-4 font-label-sm text-label-sm text-on-surface">${supervisor}</td>
+      <td class="py-4 px-5 text-center">
+        <div class="flex items-center justify-center gap-1.5">
+          <button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="عرض الملف السريري">
+            <span class="material-symbols-outlined text-xl">visibility</span>
+          </button>
+          <button class="w-9 h-9 rounded-lg hover:bg-error-container text-error flex items-center justify-center transition-colors" title="حذف السجل" onclick="this.closest('tr').remove()">
+            <span class="material-symbols-outlined text-xl">delete</span>
+          </button>
+        </div>
+      </td>
+    `;
+
+    if (tableBody) {
+      tableBody.insertBefore(newRow, tableBody.firstChild);
+    }
+
+    ['sidebarBeneficiariesBadge', 'heroCounterBadge', 'statTotalCount', 'statActivePlansTotal', 'visibleRecordsCount', 'totalRecordsAnchor'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        const current = parseInt(el.textContent.replace(/\D/g, '')) || 0;
+        el.textContent = current + 1;
+      }
+    });
+
+    const footerCount = document.getElementById('footerCountText');
+    if (footerCount) {
+      const current = parseInt(footerCount.textContent.replace(/\D/g, '')) || 0;
+      footerCount.textContent = (current + 1) + ' مستفيداً';
+    }
+
+    if (plan === 'نشطة') {
+      const activePlansEl = document.getElementById('statActivePlans');
+      if (activePlansEl) {
+        const val = parseInt(activePlansEl.textContent.replace(/\D/g, '')) || 0;
+        activePlansEl.textContent = val + 1;
+      }
+    }
+
+    if (assessment === 'مكتمل') {
+      const compEl = document.getElementById('statCompletedAssessments');
+      if (compEl) {
+        const val = parseInt(compEl.textContent.replace(/\D/g, '')) || 0;
+        compEl.textContent = val + 1;
+        const totalEl = document.getElementById('statTotalCount');
+        const totalVal = totalEl ? parseInt(totalEl.textContent.replace(/\D/g, '')) || 1 : 1;
+        const pctEl = document.getElementById('statAssessmentPercentage');
+        if (pctEl) {
+          pctEl.textContent = Math.round(((val + 1) / totalVal) * 100) + '%';
+        }
+      }
+    }
+
+    if (urgency === 'عاجل' || plan === 'تحتاج إلى مراجعة') {
+      const urgentEl = document.getElementById('statUrgentFollowups');
+      if (urgentEl) {
+        const val = parseInt(urgentEl.textContent.replace(/\D/g, '')) || 0;
+        urgentEl.textContent = val + 1;
+      }
+    }
+
+    if (mrnInput) {
+      const num = parseInt(mrn.replace(/\D/g, '')) || 10509;
+      mrnInput.value = 'MRN-' + (num + 1);
+    }
+    if (nameInput) nameInput.value = '';
+
+    hideAddModal();
+    displayToast('تمت إضافة المستفيد بنجاح • تحديث إجمالي السجلات والعدادات');
+  }
+
+  if (addForm) addForm.addEventListener('submit', handleBeneficiarySubmit);
+  if (saveBtn) saveBtn.addEventListener('click', () => {
+    if (addForm) {
+      if (addForm.checkValidity && !addForm.checkValidity()) {
+        addForm.reportValidity();
+        return;
+      }
+      handleBeneficiarySubmit();
+    }
+  });
+});
+</script>
+
+<div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('tbody tr').forEach(row => {
+    // Find visibility button
+    const visBtn = Array.from(row.querySelectorAll('button')).find(b => b.innerHTML.includes('visibility'));
+    if (visBtn) {
+      visBtn.title = 'عرض مؤشرات ومتابعة المستفيد';
+      visBtn.style.cursor = 'pointer';
+      visBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const text = row.innerText;
+        const mrnMatch = text.match(/MRN-\d+/);
+        const mrn = mrnMatch ? mrnMatch[0] : '';
+        const nameMatch = text.match(/[\u0600-\u06FF\s]+(?:الشمري|التميمي|الدوسري|العتيبي|الحربي|القحطاني|الغامدي|السبيعي|المطيري|الرويلي|الشهري|الزهراني)/);
+        const name = nameMatch ? nameMatch[0].trim() : '';
+        window.location.href = '../التقدم و التقارير/الرئيسية التقدم و الالتزام.html?mrn=' + encodeURIComponent(mrn) + '&name=' + encodeURIComponent(name);
+      });
+    }
+  });
+});
+</script>
+</body></html>

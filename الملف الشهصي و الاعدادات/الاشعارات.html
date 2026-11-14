@@ -1,0 +1,893 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" style="width: 1280px; height: 1666px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-background":"#0d1c2e","surface-container-highest":"#d5e3fc","error-container":"#ffdad6","on-error":"#ffffff","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#d2bbff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-primary-container":"#cbe4ff","on-surface-variant":"#40474f","on-secondary-container":"#006f66","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#25005a","inverse-surface":"#233144","on-primary-fixed-variant":"#004b74","primary":"#00507d","on-secondary":"#ffffff","on-tertiary-container":"#e9dbff","on-error-container":"#93000a","surface-variant":"#d5e3fc","secondary-container":"#86f2e4","background":"#f8f9ff","outline":"#707881","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","error":"#ba1a1a","on-surface":"#0d1c2e","primary-container":"#0369a1","tertiary-container":"#7936ea","primary-fixed":"#cde5ff","on-secondary-fixed":"#00201d","surface-container-high":"#dce9ff","surface-tint":"#006399","tertiary-fixed":"#eaddff","on-primary-fixed":"#001d32","outline-variant":"#c0c7d1","surface-container-low":"#eff4ff","tertiary":"#6003d1","primary-fixed-dim":"#94ccff","surface-container":"#e6eeff","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","inverse-primary":"#94ccff","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#5a00c6","surface-dim":"#ccdbf3"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"2.5rem","space-xl":"2.5rem","space-xs":"0.5rem","space-lg":"1.75rem","space-sm":"0.75rem","gutter-mobile":"1rem","space-md":"1.25rem",gutter:"1.5rem","margin-mobile":"1.25rem"},fontFamily:{"display":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"]},fontSize:{"display":["3rem",{lineHeight:"3.75rem",letterSpacing:"0",fontWeight:"700"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.375rem",letterSpacing:"0",fontWeight:"700"}],"body-md":["1rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"400"}],"headline-lg":["2.25rem",{lineHeight:"3rem",letterSpacing:"0",fontWeight:"700"}],"headline-md":["1.5rem",{lineHeight:"2.125rem",letterSpacing:"0",fontWeight:"600"}],"body-sm":["0.875rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"label-sm":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0",fontWeight:"600"}],"label-md":["0.9375rem",{lineHeight:"1.375rem",letterSpacing:"0",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"600"}],"label-lg":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"600"}],"body-lg":["1.125rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6"><div class="flex flex-col gap-6 px-4"><div class="flex items-center gap-3 px-3 py-2"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">جسر</span><span class="font-label-sm text-label-sm text-secondary font-medium">للرعاية والتأهيل</span></div></div><div class="px-3"><div class="bg-surface-container-low px-3 py-2 rounded-xl flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">بوابة الأخصائي المعالج</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div></div><nav class="flex flex-col gap-1.5 px-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="">لوحة التحكم</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span class="">المستفيدون</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span class="">خطط التأهيل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="">التقارير السريرية</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="">المواعيد والجدول</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="messages-communication" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">chat</span><span class="">الرسائل والتواصل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="communities-groups" href="../الرسائل و التواصل/المجموعات.html"><span class="material-symbols-outlined text-[22px]">forum</span><span class="">المجتمعات والمجموعات</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="exercises-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="">مكتبة التمارين</span></a></nav></div><div class="px-4 flex flex-col gap-2"><nav class="flex flex-col px-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-xl"><a class="flex items-center gap-3 px-3.5 py-3 transition-all text-on-surface-variant" data-path="profile-settings" href="./الملف الشخصي.html" aria-current="page"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="">الملف الشخصي والإعدادات</span></a></nav><div class="bg-surface-container-low p-3 rounded-xl flex items-center gap-3 mt-1"><div class="w-9 h-9 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">support_agent</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">دعم الرعاية الشامل</span><span class="font-body-sm text-body-sm text-on-surface-variant">خط الأخصائي المباشر</span></div></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-4 flex-1 max-w-lg cursor-pointer" title="الملف الشخصي" onclick="window.location.href='./الملف الشخصي.html'"<div class="w-full flex items-center gap-2.5 bg-surface-container-lowest px-4 py-2 rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant" placeholder="البحث عن مستفيد، تقرير سريري، أو جلسة تأهيل..." type="text"></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">بث مرئي ومسموع نشط</span></div><button class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative shadow-[0_1px_4px_rgba(0,0,0,0.02)] cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='./الاشعارات.html'" onclick="window.location.href='../الجداول و المواعيد/تفاصيل الموعد.html'" onclick="window.location.href='../الجداول و المواعيد/تفاصيل الموعد.html'" onclick="window.location.href='../الجداول و المواعيد/ادارة حالة الموعد و قائمة الانتظار.html'" onclick="window.location.href='../المستفيدون/code.html'" onclick="window.location.href='../المستفيدون/code.html'" onclick="window.location.href='../الرسائل و التواصل/الرسائل و التواصل.html'" onclick="window.location.href='../الرسائل و التواصل/الرسائل و التواصل.html'" onclick="window.location.href='../التقدم و التقارير/التقارير.html'" onclick="window.location.href='../خطط التأهيل/الخطط  الرئيسية.html'" onclick="window.location.href='../التقدم و التقارير/التقارير.html'" onclick="window.location.href='../الرسائل و التواصل/المجموعات.html'" onclick="window.location.href='../الجداول و المواعيد/المواعيد و الجداول 1.html'" onclick="window.location.href='../التمارين/code.html'"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-8 w-[1px] bg-outline-variant/40 mx-1"></div><div class="flex items-center gap-3 bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAtfqhe_C9KSGkymgm1R88MTA1DqrXaIEOdPy2z7zS3l3JeXdMQ8NmsGcbP0oGaqfgwq7qIsa-L-353nME8DGAujsh0fz1AB11egy1JV0cArGtRi85uxmwFw1C5VB_1VHjQmpwIc_B13UgGcdXOzbHTMK4t4hlw9Ldcdx8FVXMqjO7YHLURgbPrO-WhgCXMVxsEaqLZ3Ju5GAj6chfP2rZs2Cj8rAcowKcHtGqwm4xvTGA7sHp6W3pHgwTW_5L45NpP-Myl_4I"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-on-surface-variant">أخصائي تأهيل أول</span></div></div></div></header><main class="relative pt-16 w-full px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Toast Notification Container -->
+<div class="fixed bottom-8 left-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-xl font-label-md text-label-md" id="toast-message">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">info</span>
+<span id="toast-text" class="">تم تحديث الإشعارات بنجاح</span>
+</div>
+<!-- Main Grid Area -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- Left/Center Column (8 cols): Main Notifications Feed & Tools -->
+<div class="xl:col-span-8 flex flex-col gap-6">
+<!-- Header Banner & Stats -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col gap-6 relative overflow-hidden">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-1/4 w-32 h-32 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-2xl bg-primary-container/10 text-primary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 flex-wrap">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold">مركز الإشعارات والتنبيهات السريرية</h1>
+<span class="px-3 py-1 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold tracking-wide shadow-sm flex items-center gap-1.5" id="unread-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+<span id="unread-count-text" class="">7 غير مقروءة</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+                تابع الرسائل الفورية، التحديثات العلاجية، وتنبيهات المستفيدين والفريق الطبي الميداني في بيئة موحدة.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 shrink-0 self-end md:self-auto">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-all active:scale-[0.98]" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-[20px]">done_all</span>
+<span class="">تحديد الكل كمقروء</span>
+</button>
+<a class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="./الاعدادات.html" title="إعدادات تفضيلات الإشعارات">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="">الإعدادات</span>
+</a>
+</div>
+</div>
+<!-- Live Search Bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[22px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/80 pr-12 pl-12 py-3.5 rounded-xl text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all" id="notification-search" placeholder="ابحث في الإشعارات باسم المستفيد، المرسل، أو نوع الإجراء السريري..." type="text">
+<button class="hidden absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="clear-search">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Filter Chips Carousel / Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none border-b border-surface-container-low"><button class="filter-chip active-filter px-4 py-2 rounded-xl text-label-sm font-label-sm font-bold transition-all whitespace-nowrap bg-primary text-white shadow-sm flex items-center gap-1.5 cursor-pointer" data-filter="all"><span class="">الكل</span><span class="text-xs bg-white/20 px-1.5 py-0.5 rounded-full filter-count-badge" id="count-all">13</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="unread"><span class="">غير المقروءة</span><span class="text-xs bg-error text-white px-1.5 py-0.5 rounded-full filter-count-badge" id="filter-unread-count">7</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="messages"><span class="">الرسائل والتواصل</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">2</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="beneficiaries"><span class="">المستفيدون والتقييمات</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">2</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="plans"><span class="">خطط التأهيل</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">2</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="appointments"><span class="">المواعيد والجدول</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">3</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="exercises"><span class="">مكتبة التمارين</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">1</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="reports"><span class="">التقدم والتقارير</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">1</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="communities"><span class="">المجتمعات والمجموعات</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">1</span></button><button class="filter-chip px-4 py-2 rounded-xl text-label-sm font-label-sm font-medium transition-all whitespace-nowrap bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 cursor-pointer" data-filter="system"><span class="">إشعارات النظام</span><span class="text-xs bg-surface-container-highest text-primary px-1.5 py-0.5 rounded-full filter-count-badge">1</span></button></div>
+</div>
+<!-- Priority Urgent Reminders (Top Deck) -->
+<div class="flex flex-col gap-3.5">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[20px] text-error">notification_important</span>
+<span class="">تذكيرات المواعيد السريرية العاجلة</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">محدثة لحظياً</span>
+</div>
+<!-- Telehealth Urgent Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-[0_4px_16px_rgba(15,23,42,0.04)] flex flex-col md:flex-row md:items-center justify-between gap-4 relative overflow-hidden bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest to-secondary-container/10">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">video_camera_front</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-semibold">استشارة مرئية مباشرة بعد 15 دقيقة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">اليوم، 04:30 م</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">جلسة استشارة ومتابعة ثني الركبة مع المستفيد: أحمد الهاشمي</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">غرفة الكشف الافتراضية مجهزة بالأدوات ومقياس الزوايا الرقمي.</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 shrink-0 self-end md:self-auto">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors">
+              تفاصيل الموعد
+            </button>
+<button class="px-5 py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-secondary/90 font-label-md text-label-md font-semibold transition-transform active:scale-95 shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span class="">الانضمام للجلسة الآن</span>
+</button>
+</div>
+</div>
+<!-- Physical Clinic Arrival Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-[0_4px_16px_rgba(15,23,42,0.04)] flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest to-primary-fixed/20">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">how_to_reg</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed-dim text-on-primary-fixed font-semibold">تسجيل وصول حضوري</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">قبل 8 دقائق</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">المستفيد فيصل متعب وصل إلى فرع جسر الرئيسي (رقم الدور #12)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">قاعة الانتظار الطبية B - جاهز لجلسة قياس المدى الحركي بعد عملية الرباط.</p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 shrink-0 self-end md:self-auto">
+<button class="px-4 py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-primary-container/90 font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" onclick="window.location.href='../الجداول و المواعيد/تفاصيل الموعد.html'">
+<span class="material-symbols-outlined text-[18px]">meeting_room</span>
+<span class="">تأكيد الاستدعاء للعيادة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Feed Container: Notifications Partitioned by Time -->
+<div class="flex flex-col gap-6" id="notifications-feed">
+<!-- GROUP: TODAY -->
+<div class="notification-group flex flex-col gap-3" data-group-name="today">
+<div class="flex items-center gap-3 px-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">اليوم</span>
+<span class="h-px flex-1 bg-surface-container-highest"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 إشعارات</span>
+</div>
+<!-- Item 1: Telehealth upcoming (Today) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="appointments" data-id="1" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">calendar_clock</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-primary">المواعيد والجدول</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 15 دقيقة</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">اقتراب موعد استشارة عن بُعد: أحمد الهاشمي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تذكير بموعد الجلسة المجدولة في تمام الساعة 04:30 م لمراجعة بروتوكول مد الركبة المنزلي.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary/90 transition-transform active:scale-95">الانضمام للجلسة</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">عرض ملف الحالة</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Parent Message (Today) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="messages" data-id="2" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">الرسائل والتواصل</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 35 دقيقة</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">رسالة جديدة من ولي الأمر: أ. عبد العزيز الهاشمي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  والد المستفيد أحمد أرسل استفساراً: «السلام عليكم دكتورة سارة، لاحظنا احمراراً طفيفاً بعد التمرين الميكانيكي، أرفقت لكم صورة للركبة».
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-secondary/90 transition-transform active:scale-95 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+<span class="">فتح المحادثة والمرفق</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Beneficiary Assessment Completed (Today) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="beneficiaries" data-id="3" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-primary">المستفيدون والتقييمات</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ ساعتين</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">إرسال تقييم مكتمل للمراجعة السريرية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  أكملت المستفيدة «سارة بنت خالد الشمري» استبانة تيبّس المفاصل الصباحي، والملف جاهز الآن للاعتماد السريري لتحديث الشدة العلاجية.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-all">
+                    مراجعة التقييم واعتماده
+                  </button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Supervisor Note on Rehabilitation Plan (Today) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden" data-category="plans" data-id="4" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">clinical_notes</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-primary">خطط التأهيل</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 3 ساعات</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">ملاحظات المشرف الميداني حول الخطة الحركية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  الكابتن طارق الزهراني دوّن ملاحظة: «أحمد أظهر تحسناً ملحوظاً في زاوية ثني الركبة لتصل إلى 95 درجة دون إجهاد عضلي حاد».
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-medium">عرض الخطة وتعديل الأهداف</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة" onclick="window.location.href='../خطط التأهيل/الخطط  الرئيسية.html'">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Home Session Report (Today) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="reports" data-id="5" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">التقدم والتقارير</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 4 ساعات</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">تقرير جلسة منزلية بانتظار التدقيق والاعتماد</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تم استلام تقرير الالتزام الأسبوعي للمستفيد «محمد بن إبراهيم السبيعي» بنسبة إنجاز بلغت 92% مع تسجيل 0 حالات ألم مفاجئ.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">الاطلاع على التقرير المفصل</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Communities Comment (Today - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90 hidden" data-category="communities" data-id="6" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">المجتمعات والمجموعات</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 5 ساعات</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">تفاعل جديد على توجيهك السريري في المجتمع</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  في «مجموعة تأهيل الركبة والمشي» تم التعليق على دليل الكمادات الباردة والساخنة بواسطة 3 مستفيدين مستفسرين عن التوقيت الأمثل.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">الانتقال للمنشور</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- GROUP: YESTERDAY -->
+<div class="notification-group flex flex-col gap-3 hidden" data-group-name="yesterday">
+<div class="flex items-center gap-3 px-1 mt-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">أمس</span>
+<span class="h-px flex-1 bg-surface-container-highest"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 إشعارات</span>
+</div>
+<!-- Item 7: Schedule Slot Approval (Yesterday - Unread) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="appointments" data-id="7" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_available</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-primary">المواعيد والجدول</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أمس، 08:30 م</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">اعتماد فترة توفر سريرية إضافية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  اعتمدت إدارة مركز جسر أوقات التوفر الإضافية المقترحة ليومي الأحد والثلاثاء وأصبحت متاحة لحجوزات المستفيدين.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">استعراض جدول الأسبوع</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 8: Exercise Library Update (Yesterday - Unread) -->
+<div class="notification-item bg-surface-container-lowest rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.03)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden hidden" data-category="exercises" data-id="8" data-read="false">
+<div class="absolute top-0 right-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">fitness_center</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">مكتبة التمارين</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أمس، 04:15 م</span>
+<span class="unread-dot w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">تحديث تمرين جديد في مكتبة التأهيل الحركي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  أضاف المشرف طارق الزهراني تمريناً تفاعلياً مدعوماً بالفيديو بعنوان «بسط الركبة الحركي بالرباط المطاطي المتدرج».
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">معاينة التمرين</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 9: New Beneficiary Assigned (Yesterday - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90 hidden" data-category="beneficiaries" data-id="9" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">المستفيدون والتقييمات</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أمس، 11:00 ص</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">مستفيد جديد مسند لجدولك السريري</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تم إسناد المستفيد «فيصل بن متعب العتيبي» (حالة تأهيل الرباط الصليبي الأمامي بعد الجراحة) لبرنامج الرعاية الخاص بك.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">فتح ملف المستفيد</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 10: Message from Motor Supervisor (Yesterday - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90 hidden" data-category="messages" data-id="10" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">question_answer</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">الرسائل والتواصل</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أمس، 09:20 ص</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">استفسار من أخصائية العلاج الوظيفي هند السالم</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  «أهلاً د. سارة، نود مناقشة بروتوكول تدرج الأوزان لمريضة السكتة الدماغية قبل إضافتها للجدول المشترك للأسبوع المقبل».
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">الرد على الاستفسار</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- GROUP: OLDER -->
+<div class="notification-group flex flex-col gap-3" data-group-name="older">
+<div class="flex items-center gap-3 px-1 mt-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">الأقدم</span>
+<span class="h-px flex-1 bg-surface-container-highest"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 إشعارات</span>
+</div>
+<!-- Item 11: System Sync (Older - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90 hidden" data-category="system" data-id="11" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">إشعارات النظام</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">قبل 3 أيام</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">اكتمال مزامنة السجلات الطبية الوطنية بنجاح</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تم توثيق 28 ملفاً سريرياً مع منصة صحتي والربط الموحد بنجاح دون أي تعارض في البيانات الطبية.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">سجل المزامنة</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 12: Plan Activated (Older - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90" data-category="plans" data-id="12" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">خطط التأهيل</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">قبل 4 أيام</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">اعتماد خطة تأهيلية جديدة للمستفيد</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تم تفعيل خطة «استعادة المدى الحركي وتقوية مفصل الركبة - المرحلة الثانية» وإرسال التنبيهات لولي الأمر.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">عرض الخطة</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 13: 24h Reminder (Older - Read) -->
+<div class="notification-item bg-surface-container-lowest/80 rounded-2xl p-5 shadow-[0_2px_8px_rgba(15,23,42,0.02)] flex flex-col sm:flex-row items-start justify-between gap-4 transition-all hover:shadow-md relative overflow-hidden opacity-90 hidden" data-category="appointments" data-id="13" data-read="true">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_repeat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">المواعيد والجدول</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">قبل 5 أيام</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">تذكير تلقائي: موعد استشارة حضورية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                  تم تأكيد موعد الاستشارة الحضورية مع المستفيد «سلطان بن صالح الزهراني» بعد إرسال التذكير الآلي بـ 24 ساعة.
+                </p>
+<div class="flex items-center gap-3 mt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm">تفاصيل الزيارة</button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 self-end sm:self-start shrink-0">
+<button class="toggle-read-btn p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="تبديل حالة القراءة">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</button>
+<button class="delete-notif-btn p-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors" title="حذف الإشعار">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Empty State (hidden by default) -->
+<div class="hidden bg-surface-container-lowest rounded-2xl p-12 text-center flex-col items-center justify-center shadow-sm" id="empty-state">
+<div class="w-20 h-20 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[40px]">notifications_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">لا توجد إشعارات ضمن هذا التصنيف</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-1">
+            يمكنك محاولة تغيير معايير التصفية أو مسح عبارة البحث للعثور على التنبيهات الأخرى.
+          </p>
+<button class="mt-5 px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold" id="reset-filters-btn">
+            عرض كل الإشعارات
+          </button>
+</div>
+</div>
+</div>
+<!-- Right Column (4 cols): Quick Health Insights, Accessibility & Preferences Side-Panel -->
+<div class="xl:col-span-4 flex flex-col gap-6">
+<!-- Beneficiary Quick Live Status Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-primary">sensors</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">نشاط الحالات المتصلة</h3>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<!-- Inline SVG Mini Donut Metric: Weekly Session Adherence -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center gap-4">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-md text-label-md font-bold text-on-surface">88%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">معدل التزام التمارين المنزلية</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ارتفاع بنسبة +6% مقارنة بالأسبوع الماضي</span>
+</div>
+</div>
+<!-- Case Highlight with photo placeholder -->
+<div class="border-t border-surface-container-low pt-4 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">المستفيد الأكثر تفاعلاً اليوم:</span>
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Close up warm portrait of an 11 year old Saudi boy smiling gently in a rehabilitation clinic, wearing a casual shirt, modern warm soft lighting, accessible telehealth environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYcqNENdN6C1VAtdGyykbdCQHeU1zlXCjtyXV6v5KXEd4XF8jpt74PsI2ZZ47so46wU9v6m7hweBol1QbEqpBWAy3TU33Sv96Cgo3h0H83SF8nHfwhty1Kz7aq5vQKczii3K0IJtaiMbE-oVyc6XI9aESukiPZHKRgGgIozGsZU80EN6IHfypBBWg8rLsyAnH2k2LpyqjiVcJb1FbGepcn7A6QLjKSuTpzSxViag">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">أحمد عبد العزيز الهاشمي</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">جلسة مباشرة قادمة بعد قليل (04:30 م)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Audio & Sensory Preferences Widget -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col gap-4">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[22px] text-primary">hearing</span>
+<h3 class="font-headline-sm text-headline-sm font-bold">التنبيهات الميسرة وسهولة الوصول</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          خيارات مخصصة لدعم الأخصائيين ذوي الاحتياجات الحسية والحركية لتسهيل متابعة التنبيهات دون تشتيت.
+        </p>
+<div class="flex flex-col gap-3 pt-2">
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">volume_up</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">رنين نغمة هادئة للتنبيهات العاجلة</span>
+</div>
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" type="checkbox">
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">screen_search_desktop</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">وميض بصري ناعم عند تلقي رسالة عاجلة</span>
+</div>
+<input checked="" class="w-5 h-5 rounded text-secondary focus:ring-secondary accent-secondary" type="checkbox">
+</label>
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">record_voice_over</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">القراءة الصوتية التلقائية للنصوص</span>
+</div>
+<input class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" type="checkbox">
+</label>
+</div>
+</div>
+<!-- Clinical Team Coordination Snapshot -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_2px_12px_rgba(15,23,42,0.03)] flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">فريق الرعاية المناوب</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">3 متاحون الآن</span>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Headshot of a friendly Saudi male physiotherapist in clinical attire, cheerful demeanor, high resolution portrait with teal ambient tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk-P1zpwU14EdjTBuDpQWAjSRAH2eU9Sf41foR5Z6tzHSSyEoJRiiWOQw8Yej4MHbUoWjqPckh0-MVHSXCjjYd22fY1nWcPeIsb8AEiDxdVag_HhTRVilDcBmumN2Vs-o8ypDbqSErIt9azKsu3enEYYhwnKUdbXH9NivtSUAgNhqndrxYegKEM9PDfUfq6vO_kA9R7BGUln3RWPo0viGCK0Rp82sjWNJ5vWZGew">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">كابتن طارق الزهراني</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مشرف التأهيل الحركي الميداني</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Professional headshot of a Saudi female occupational therapist with hijab, smiling warm expression, modern clinic background, daylighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJxdQQIgquzRhpo-1vDeiSax1kGei0S9FNNqpcmByEYr3cBfdfEBWBH9kLX1nEWBS0c8QFCxkYBQsUiykvY4NUYdIPA7MNLIjKodxqiwz6LFf1moxb4ZH3YkZY7M-kQh20DbpswhJnkkLnS2KIgMQrCDiPb_U9rEDkpSIY52RURjsiW1NMxTPeg3rLZMPzXYVuJYiVvjEleL-kWT7-i57sVofWevmtNdt7kS8nMA">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">أ. هند السالم</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أخصائية علاج وظيفي وتأهيل يومي</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span class="">إرسال تعميم للفريق السريري</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+  (function initNotificationCenter() {
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const searchInput = document.getElementById('notification-search');
+    const clearSearchBtn = document.getElementById('clear-search');
+    const markAllReadBtn = document.getElementById('mark-all-read-btn');
+    const unreadCountBadge = document.getElementById('unread-badge');
+    const unreadCountText = document.getElementById('unread-count-text');
+    const filterUnreadBadge = document.getElementById('filter-unread-count');
+    const emptyState = document.getElementById('empty-state');
+    const resetFiltersBtn = document.getElementById('reset-filters-btn');
+    const toastMessage = document.getElementById('toast-message');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(message) {
+      if (!toastMessage) return;
+      toastText.textContent = message;
+      toastMessage.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+      toastMessage.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toastMessage.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+        toastMessage.classList.remove('opacity-100', 'translate-y-0');
+      }, 3500);
+    }
+
+    function recalculateUnread() {
+      const unreadItems = document.querySelectorAll('.notification-item[data-read="false"]');
+      const count = unreadItems.length;
+
+      if (unreadCountText) {
+        unreadCountText.textContent = `${count} غير مقروءة`;
+      }
+      if (filterUnreadBadge) {
+        filterUnreadBadge.textContent = count;
+      }
+      if (unreadCountBadge) {
+        if (count === 0) {
+          unreadCountBadge.classList.remove('bg-error', 'text-on-error');
+          unreadCountBadge.classList.add('bg-secondary', 'text-on-secondary');
+          unreadCountText.textContent = 'تم الاطلاع على الكل';
+        } else {
+          unreadCountBadge.classList.add('bg-error', 'text-on-error');
+          unreadCountBadge.classList.remove('bg-secondary', 'text-on-secondary');
+        }
+      }
+    }
+
+    function renderFeed() {
+      const items = document.querySelectorAll('.notification-item');
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        const itemRead = item.getAttribute('data-read');
+        const textContent = item.innerText.toLowerCase();
+
+        let matchesFilter = true;
+        if (currentFilter === 'unread') {
+          matchesFilter = itemRead === 'false';
+        } else if (currentFilter !== 'all') {
+          matchesFilter = itemCat === currentFilter;
+        }
+
+        const matchesSearch = !searchQuery || textContent.includes(searchQuery.toLowerCase());
+
+        if (matchesFilter && matchesSearch) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      // Update groups visibility
+      const groups = document.querySelectorAll('.notification-group');
+      groups.forEach(group => {
+        const groupItems = group.querySelectorAll('.notification-item:not(.hidden)');
+        if (groupItems.length === 0) {
+          group.classList.add('hidden');
+        } else {
+          group.classList.remove('hidden');
+        }
+      });
+
+      // Toggle Empty State
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+    }
+
+    // Filter Chips Click
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        currentFilter = chip.getAttribute('data-filter') || 'all';
+        renderFeed();
+      });
+    });
+
+    // Search Input
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim();
+        if (clearSearchBtn) {
+          if (searchQuery.length > 0) {
+            clearSearchBtn.classList.remove('hidden');
+          } else {
+            clearSearchBtn.classList.add('hidden');
+          }
+        }
+        renderFeed();
+      });
+    }
+
+    if (clearSearchBtn) {
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearSearchBtn.classList.add('hidden');
+        renderFeed();
+      });
+    }
+
+    // Mark All As Read
+    if (markAllReadBtn) {
+      markAllReadBtn.addEventListener('click', () => {
+        const unreadItems = document.querySelectorAll('.notification-item[data-read="false"]');
+        unreadItems.forEach(item => {
+          item.setAttribute('data-read', 'true');
+          item.classList.add('opacity-90');
+          const borderIndicator = item.querySelector('.w-1\\.5');
+          if (borderIndicator) borderIndicator.remove();
+          const dot = item.querySelector('.unread-dot');
+          if (dot) dot.remove();
+
+          const toggleBtn = item.querySelector('.toggle-read-btn span');
+          if (toggleBtn) toggleBtn.textContent = 'mark_email_unread';
+        });
+
+        recalculateUnread();
+        renderFeed();
+        showToast('تم تحديد جميع الإشعارات والتنبيهات السريرية كمقروءة.');
+      });
+    }
+
+    // Individual Item Actions (Toggle Read & Delete)
+    document.addEventListener('click', (e) => {
+      const toggleBtn = e.target.closest('.toggle-read-btn');
+      if (toggleBtn) {
+        const item = toggleBtn.closest('.notification-item');
+        if (item) {
+          const isCurrentlyRead = item.getAttribute('data-read') === 'true';
+          if (isCurrentlyRead) {
+            item.setAttribute('data-read', 'false');
+            item.classList.remove('opacity-90');
+            toggleBtn.querySelector('span').textContent = 'mark_email_read';
+            showToast('تم تمييز الإشعار كـ "غير مقروء"');
+          } else {
+            item.setAttribute('data-read', 'true');
+            item.classList.add('opacity-90');
+            const dot = item.querySelector('.unread-dot');
+            if (dot) dot.remove();
+            toggleBtn.querySelector('span').textContent = 'mark_email_unread';
+            showToast('تم تمييز الإشعار كـ "مقروء"');
+          }
+          recalculateUnread();
+          renderFeed();
+        }
+      }
+
+      const deleteBtn = e.target.closest('.delete-notif-btn');
+      if (deleteBtn) {
+        const item = deleteBtn.closest('.notification-item');
+        if (item) {
+          item.style.transition = 'all 0.25s ease-out';
+          item.style.transform = 'scale(0.95)';
+          item.style.opacity = '0';
+          setTimeout(() => {
+            item.remove();
+            recalculateUnread();
+            renderFeed();
+            showToast('تم حذف التنبيه من القائمة. (السجلات السريرية الأصلية محفوظة)');
+          }, 250);
+        }
+      }
+    });
+
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', () => {
+        const allChip = document.querySelector('[data-filter="all"]');
+        if (allChip) allChip.click();
+        if (searchInput) {
+          searchInput.value = '';
+          searchQuery = '';
+        }
+        renderFeed();
+      });
+    }
+
+    recalculateUnread();
+  })();
+</script></main></div>
+<div aria-hidden="true" data-snapdom-sandbox="true" id="snapdom-sandbox" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+
+</body></html>

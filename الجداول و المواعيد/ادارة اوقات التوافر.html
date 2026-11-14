@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'IBM Plex Sans Arabic','IBM Plex Sans',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-secondary-fixed-variant": "#005049",
+        "on-error-container": "#93000a",
+        "secondary": "#006a61",
+        "surface-container-lowest": "#ffffff",
+        "primary-fixed-dim": "#94ccff",
+        "inverse-primary": "#94ccff",
+        "surface-variant": "#d5e3fc",
+        "on-surface-variant": "#40474f",
+        "on-background": "#0d1c2e",
+        "outline-variant": "#c0c7d1",
+        "background": "#f8f9ff",
+        "inverse-on-surface": "#eaf1ff",
+        "surface-dim": "#ccdbf3",
+        "secondary-fixed-dim": "#6bd8cb",
+        "surface-container-low": "#eff4ff",
+        "secondary-fixed": "#89f5e7",
+        "on-tertiary-fixed-variant": "#5a00c6",
+        "tertiary-fixed-dim": "#d2bbff",
+        "on-secondary-fixed": "#00201d",
+        "on-primary-fixed-variant": "#004b74",
+        "surface-container": "#e6eeff",
+        "primary": "#00507d",
+        "surface-bright": "#f8f9ff",
+        "on-primary-fixed": "#001d32",
+        "on-secondary": "#ffffff",
+        "inverse-surface": "#233144",
+        "tertiary-fixed": "#eaddff",
+        "error": "#ba1a1a",
+        "surface-tint": "#006399",
+        "on-surface": "#0d1c2e",
+        "on-secondary-container": "#006f66",
+        "on-tertiary-container": "#e9dbff",
+        "primary-fixed": "#cde5ff",
+        "secondary-container": "#86f2e4",
+        "on-primary-container": "#cbe4ff",
+        "surface-container-highest": "#d5e3fc",
+        "outline": "#707881",
+        "on-tertiary": "#ffffff",
+        "surface": "#f8f9ff",
+        "tertiary": "#6003d1",
+        "surface-container-high": "#dce9ff",
+        "on-primary": "#ffffff",
+        "tertiary-container": "#7936ea",
+        "on-error": "#ffffff",
+        "primary-container": "#0369a1",
+        "on-tertiary-fixed": "#25005a",
+        "error-container": "#ffdad6"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter": "1.5rem",
+        "space-lg": "1.75rem",
+        "space-xs": "0.5rem",
+        "margin-mobile": "1.25rem",
+        "gutter-mobile": "1rem",
+        "space-md": "1.25rem",
+        "space-sm": "0.75rem",
+        "space-xl": "2.5rem",
+        "margin": "2.5rem"
+      },
+      "fontFamily": {
+        "label-lg": ["IBM Plex Sans"],
+        "headline-lg-mobile": ["IBM Plex Sans"],
+        "label-sm": ["IBM Plex Sans"],
+        "headline-sm": ["IBM Plex Sans"],
+        "body-md": ["IBM Plex Sans"],
+        "display": ["IBM Plex Sans"],
+        "body-sm": ["IBM Plex Sans"],
+        "label-md": ["IBM Plex Sans"],
+        "headline-md": ["IBM Plex Sans"],
+        "body-lg": ["IBM Plex Sans"],
+        "headline-lg": ["IBM Plex Sans"]
+      },
+      "fontSize": {
+        "label-lg": ["1.125rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "headline-lg-mobile": ["1.75rem", {"lineHeight": "2.375rem", "letterSpacing": "0", "fontWeight": "700"}],
+        "label-sm": ["0.8125rem", {"lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "headline-sm": ["1.25rem", {"lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "body-md": ["1rem", {"lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400"}],
+        "display": ["3rem", {"lineHeight": "3.75rem", "letterSpacing": "0", "fontWeight": "700"}],
+        "body-sm": ["0.875rem", {"lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400"}],
+        "label-md": ["0.9375rem", {"lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "headline-md": ["1.5rem", {"lineHeight": "2.125rem", "letterSpacing": "0", "fontWeight": "600"}],
+        "body-lg": ["1.125rem", {"lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400"}],
+        "headline-lg": ["2.25rem", {"lineHeight": "3rem", "letterSpacing": "0", "fontWeight": "700"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6"><div class="flex flex-col gap-y-6"><div class="px-6 flex items-center justify-between"><div class="flex items-center gap-x-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></div><div><span class="font-headline-sm text-headline-sm font-bold text-primary block leading-none">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">Jisr Care Telehealth</span></div></div></div><div class="mx-6 px-4 py-3 rounded-xl bg-surface-container-low flex items-center gap-x-3"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div><span class="font-label-sm text-label-sm text-secondary block font-bold">مركز جسر للتأهيل الطبي</span><span class="font-body-sm text-body-sm text-on-surface-variant block">معتمد من وزارة الصحة</span></div></div><nav class="flex flex-col gap-y-1.5 px-4" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(3,105,161,0.12)]"><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-md text-label-md">لوحة التحكم</span></a><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span class="font-label-md text-label-md">المستفيدون</span></a><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="care-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment</span><span class="font-label-md text-label-md">خطط التأهيل</span></a><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="font-label-md text-label-md">التقارير السريرية</span></a><a aria-current="page" class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl transition-all bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(3,105,161,0.12)]" data-path="appointments-and-schedule" href="./المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_clock</span><span class="font-label-md text-label-md">المواعيد والجدول</span></a><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-md text-label-md">الرسائل والتواصل</span></a><a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="font-label-md text-label-md">مكتبة التمارين</span></a></nav></div><div class="px-4 flex flex-col gap-y-2"><a class="flex items-center gap-x-3.5 px-4 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="support-and-help" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-md text-label-md">الدعم الفني والمساندة</span></a><div class="mx-2 pt-3 flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">الإصدار 2.4.0</span><span class="material-symbols-outlined text-[18px]">info</span></div></div></aside><div class="pr-72"><header class="fixed top-0 left-0 right-72 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between"><div class="flex items-center gap-x-4 w-96 cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="relative w-full"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pr-10 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm outline-none focus:bg-surface-container-lowest transition-colors" placeholder="بحث عن ملف مستفيد، جلسة، أو رمز طبي..." type="text"/></div></div><div class="flex items-center gap-x-5"><button aria-label="التنبيهات" class="relative w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="الجدول اليومي السريع" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">event_available</span></button><div class="h-8 w-px bg-surface-variant"></div><div class="flex items-center gap-x-3"><div class="text-left"><span class="font-label-md text-label-md text-on-surface block leading-tight text-right">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-on-surface-variant block text-right">أخصائية تأهيل حركي وعظام</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-background w-full min-h-screen"><div class="flex flex-col w-full">
+<div class="px-8 py-6 flex flex-col gap-y-8">
+<!-- 1. Header & Navigation Context -->
+<header class="flex flex-col gap-y-4">
+<!-- Breadcrumb -->
+<nav aria-label="مسار التنقل" class="flex items-center gap-x-2 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="../الرئيسية/code.html">الرئيسية</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="./المواعيد و الجداول 1.html">المواعيد والجدول</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="text-primary font-bold">إدارة أوقات التوفر</span>
+</nav>
+<!-- Main Title, Scope Clarification & Actions -->
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-6">
+<div class="flex flex-col gap-y-2 max-w-3xl">
+<div class="flex items-center gap-x-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">إدارة أوقات التوفر</h1>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-x-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              بوابة الأخصائي المعالج
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            تخصيص وإدارة الفترات الزمنية المقترحة لاستقبال الحجوزات السريرية والاستشارات عن بُعد لرفعها للاعتماد المؤسسي.
+          </p>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm leading-normal">
+<span class="font-bold text-on-surface">ملاحظة تنظيمية:</span> هذه الواجهة مخصصة لإدارة إتاحة وتوافر الأوقات السريرية ولا تعرض المواعيد المحجوزة مسبقاً من قِبل المستفيدين. لمتابعة الحجوزات القائمة وجلسات المرضى، يرجى الانتقال إلى صفحة المواعيد والجدول.
+            </p>
+</div>
+</div>
+<!-- Top Action Group -->
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<a class="inline-flex items-center gap-x-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" href="./المواعيد و الجداول 1.html">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_month</span>
+<span>العودة إلى المواعيد والجدول</span>
+</a>
+<a class="inline-flex items-center gap-x-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm hover:text-on-surface hover:bg-surface-container transition-all" href="./اوقات العمل و الاجازات.html">
+<span class="material-symbols-outlined text-[20px] text-secondary">tune</span>
+<span>تعديل أوقات العمل والإجازات</span>
+</a>
+<button class="inline-flex items-center gap-x-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-all active:scale-[0.98]" id="openNewSlotModalBtn" type="button">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>اقتراح فترة توفر جديدة</span>
+</button>
+</div>
+</div>
+</header>
+<!-- 2. Availability Status Summary KPI Row -->
+<section aria-label="ملخص حالة التوفر الأسبوعي" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1: Approved -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">الفترات المعتمدة والنشطة</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-x-2">
+<span class="font-display text-display text-on-surface leading-none font-bold">18</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترة أسبوعية</span>
+</div>
+<div class="mt-3 flex items-center gap-x-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>متاحة لحجز المستفيدين فورياً</span>
+</div>
+</div>
+<!-- Card 2: Pending Approval -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">بانتظار اعتماد المؤسسة</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-x-2">
+<span class="font-display text-display text-on-surface leading-none font-bold">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترات مقترحة</span>
+</div>
+<div class="mt-3 flex items-center gap-x-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">clinical_notes</span>
+<span>قيد مراجعة إدارة مركز جسر</span>
+</div>
+</div>
+<!-- Card 3: Rejected / Blocked -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-bold">غير معتمدة أو محجوبة</span>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[22px]">block</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-x-2">
+<span class="font-display text-display text-on-surface leading-none font-bold">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترتان مستبعدتان</span>
+</div>
+<div class="mt-3 flex items-center gap-x-1.5 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>تعارض تشغيلي أو خارج ساعات العمل</span>
+</div>
+</div>
+<!-- Card 4: Total Care Hours -->
+<div class="p-5 rounded-2xl bg-primary text-on-primary shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container font-bold">الساعات الأسبوعية المتاحة</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest/15 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-x-2">
+<span class="font-display text-display text-on-primary leading-none font-bold">24.5</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">ساعة معتمدة</span>
+</div>
+<div class="mt-3 flex items-center gap-x-1.5 text-on-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span>
+<span>ضمن السقف السريري المرخص (30 س/أسبوع)</span>
+</div>
+</div>
+</section>
+<!-- Main Content Area: Weekly Availability Board + Rules Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- Left/Main Column: Weekly Availability Grid (8 Cols) -->
+<section class="lg:col-span-8 flex flex-col gap-y-4">
+<!-- Week Navigation Toolbar -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-x-3">
+<div class="flex items-center bg-surface-container-low rounded-xl p-1">
+<button aria-label="الأسبوع السابق" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button aria-label="الأسبوع القادم" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">الأسبوع الحالي: 27 أكتوبر - 2 نوفمبر 2024</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">الفصل التشغيلي الرابع • مركز جسر الطبي</span>
+</div>
+</div>
+<div class="flex items-center gap-x-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+              الأسبوع الحالي
+            </button>
+<div class="h-6 w-px bg-surface-variant"></div>
+<!-- Quick status filter indicator -->
+<div class="flex items-center gap-x-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-x-1"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> معتمدة</span>
+<span class="inline-flex items-center gap-x-1"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> بالانتظار</span>
+<span class="inline-flex items-center gap-x-1"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> غير معتمدة</span>
+</div>
+</div>
+</div>
+<!-- Days Stack (Sunday through Saturday) -->
+<div class="flex flex-col gap-y-4">
+<!-- 1. الأحد (Sunday) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-primary font-bold">
+<span class="font-label-sm text-label-sm leading-none">27</span>
+<span class="font-label-sm text-[10px] leading-none text-on-surface-variant">أكتوبر</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الأحد</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترتان مجدولتان • إجمالي 6.0 ساعات</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('الأحد')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للأحد</span>
+</button>
+</div>
+<!-- Slots List for Sunday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Slot 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">videocam_off</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">08:30 ص - 12:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(3.5 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات عن بُعد وحضوري (مزدوج)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8841</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+<!-- Slot 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">videocam</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">04:00 م - 06:30 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2.5 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات عن بُعد (مرئي WebRTC)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8842</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. الاثنين (Monday) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-primary font-bold">
+<span class="font-label-sm text-label-sm leading-none">28</span>
+<span class="font-label-sm text-[10px] leading-none text-on-surface-variant">أكتوبر</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الاثنين</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترة معتمدة (4.0 س) + فترة قيد الاعتماد (2.5 س)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('الاثنين')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للاثنين</span>
+</button>
+</div>
+<!-- Slots List for Monday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Slot 1 (Approved) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">apartment</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">09:00 ص - 01:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(4.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: عيادة حضورية (جناح التأهيل الحركي B)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8850</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+<!-- Slot 2 (Pending) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">04:30 م - 07:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2.5 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shrink-0">
+                    بانتظار اعتماد المؤسسة ⏳
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات عن بُعد • رُفعت أمس 02:15 م
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">طلب رقم: #REQ-1192</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">تعديل المقترح</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">سحب الطلب</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. الثلاثاء (Tuesday) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-primary font-bold">
+<span class="font-label-sm text-label-sm leading-none">29</span>
+<span class="font-label-sm text-[10px] leading-none text-on-surface-variant">أكتوبر</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الثلاثاء</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترة معتمدة (3.5 س) + فترة مرفوضة غير معتمدة (2.0 س)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('الثلاثاء')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للثلاثاء</span>
+</button>
+</div>
+<!-- Slots List for Tuesday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Slot 1 (Approved) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">apartment</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">08:30 ص - 12:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(3.5 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: عيادة حضورية وتأهيل طبيعي
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8854</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+<!-- Slot 2 (Rejected from Center) -->
+<div class="p-4 rounded-xl bg-error-container/30 flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-error text-[20px]">cancel</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">02:00 م - 04:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm shrink-0">
+                    مرفوضة من المركز ✕
+                  </span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-x-1.5 text-error font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>سبب عدم الاعتماد السريري:</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-[13px]">تعارض مع اجتماع القسم السريري الأسبوعي وتدريب فريق التأهيل الحركي.</p>
+</div>
+<div class="pt-1 flex items-center justify-between text-on-surface-variant">
+<button class="text-primary hover:underline font-label-sm text-label-sm" onclick="reconfigureSlot('02:00 م - 04:00 م', 'الثلاثاء')" type="button">إعادة صياغة التوقيت</button>
+<button class="text-outline hover:text-on-surface font-label-sm text-label-sm" type="button">حذف المسودة</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. الأربعاء (Wednesday - Today) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4 ring-2 ring-primary/20">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex flex-col items-center justify-center font-bold shadow-sm">
+<span class="font-label-sm text-label-sm leading-none">30</span>
+<span class="font-label-sm text-[10px] leading-none opacity-90">أكتوبر</span>
+</div>
+<div>
+<div class="flex items-center gap-x-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الأربعاء</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-bold">اليوم الحالي</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترتان معتمدتان ومفعلتان بالكامل • إجمالي 7.0 ساعات</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('الأربعاء')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للأربعاء</span>
+</button>
+</div>
+<!-- Slots List for Wednesday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Slot 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">domain_verification</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">08:30 ص - 12:30 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(4.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: حضوري وعن بُعد (جلسات تقييم سريري)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8861</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+<!-- Slot 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">sensors</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">02:30 م - 05:30 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(3.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات عن بُعد WebRTC (استشارات منزلية مدعومة)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8862</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. الخميس (Thursday) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-primary font-bold">
+<span class="font-label-sm text-label-sm leading-none">31</span>
+<span class="font-label-sm text-[10px] leading-none text-on-surface-variant">أكتوبر</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الخميس</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترة معتمدة (4.0 س) + فترة قيد الاعتماد (2.0 س)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('الخميس')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للخميس</span>
+</button>
+</div>
+<!-- Slots List for Thursday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Slot 1 (Approved) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">apartment</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">09:00 ص - 01:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(4.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0">
+                    معتمدة من المركز ✓
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: عيادة حضورية (مركز جسر للرعاية)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">رقم الاعتماد: #APP-8870</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">طلب تعديل</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">طلب إلغاء إتاحة</button>
+</div>
+</div>
+</div>
+<!-- Slot 2 (Pending) -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">04:00 م - 06:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shrink-0">
+                    بانتظار اعتماد المؤسسة ⏳
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات عن بُعد
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">طلب رقم: #REQ-1198</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">تعديل المقترح</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">سحب الطلب</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 6. الجمعة (Friday - Weekend Official Rest) -->
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4 opacity-80">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-variant flex flex-col items-center justify-center text-outline font-bold">
+<span class="font-label-sm text-label-sm leading-none">01</span>
+<span class="font-label-sm text-[10px] leading-none">نوفمبر</span>
+</div>
+<div>
+<div class="flex items-center gap-x-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">الجمعة</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-[11px]">عطلة رسمية</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">عطلة أسبوعية رسمية للمركز الطبي • غير متاح لإضافة فترات عيادية عامة</span>
+</div>
+</div>
+<div class="flex items-center gap-x-2 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>الجدولة مقفلة تلقائياً</span>
+</div>
+</div>
+<!-- 7. السبت (Saturday) -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-primary font-bold">
+<span class="font-label-sm text-label-sm leading-none">02</span>
+<span class="font-label-sm text-[10px] leading-none text-on-surface-variant">نوفمبر</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">السبت</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فترة مقترحة إضافية لعطلة نهاية الأسبوع (4.0 س)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-x-1 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="openNewSlotModalWithDay('السبت')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>إضافة فترة للسبت</span>
+</button>
+</div>
+<!-- Slots List for Saturday -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-y-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-x-2">
+<span class="material-symbols-outlined text-primary text-[20px]">emergency</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">10:00 ص - 02:00 م</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(4.0 س)</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shrink-0">
+                    بانتظار اعتماد المؤسسة ⏳
+                  </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  نوع الخدمة: استشارات طارئة وعن بُعد (اقتراح عطلة نهاية الأسبوع)
+                </div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-[11px] text-outline">طلب رقم: #REQ-1205</span>
+<div class="flex items-center gap-x-2">
+<button class="text-primary hover:underline font-label-sm text-label-sm" type="button">تعديل المقترح</button>
+<span class="text-outline">·</span>
+<button class="text-error hover:underline font-label-sm text-label-sm" type="button">سحب الطلب</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Institutional Governance Rules & Clinical Policy Panel (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-y-6">
+<!-- Clinical Policy Governance Box -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-y-5">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">قواعد وسياسات الاعتماد المؤسسي</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">نظام حوكمة الأوقات السريرية</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            لضمان جودة الرعاية والتوافق مع الطاقة الاستيعابية لمرافق جسر الطبية، تخضع جميع فترات التوفر للضوابط التالية:
+          </p>
+<!-- Rules List with Visual Accents -->
+<div class="flex flex-col gap-y-3.5">
+<!-- Rule 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm text-[12px] shrink-0 mt-0.5">1</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-1">اقتراح الأخصائي</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  يقترح الأخصائي المعالج فترات التوفر وفق تفضيلاته الشخصية وجدول التزاماته السريرية.
+                </p>
+</div>
+</div>
+<!-- Rule 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm text-[12px] shrink-0 mt-0.5">2</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-1">مراجعة إدارة المركز</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  تراجع إدارة مركز جسر للتأهيل الطبي كافة الطلبات وتعتمدها وفق ساعات تشغيل المركز وتوافر العيادات.
+                </p>
+</div>
+</div>
+<!-- Rule 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm text-[12px] shrink-0 mt-0.5">3</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-1">شرط الاعتماد للإتاحة</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  لا يصبح أي وقت متاحاً لحجز المستفيدين وذوي الإعاقة إلا بعد صدور الاعتماد الإداري والسريري الرسمي.
+                </p>
+</div>
+</div>
+<!-- Rule 4 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm text-[12px] shrink-0 mt-0.5">4</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-1">منع التعارض الصارم</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  يرفض النظام آلياً أي فترة تتعارض مع ساعات عمل المنشأة، الإجازات المعتمدة، أو مواعيد المرضى القائمة مسبقاً.
+                </p>
+</div>
+</div>
+<!-- Rule 5 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-x-3">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm text-[12px] shrink-0 mt-0.5">5</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block mb-1">انعكاس فوري ومباشر</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  بمجرد اعتماد الفترة، تتاح تلقائياً في شاشات حجز الاستشارات وتطبيقات المستفيدين وأولياء الأمور دون تأخير.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Facility Contact & Support Note Card -->
+<div class="p-5 rounded-2xl bg-surface-container-high flex flex-col gap-y-3">
+<div class="flex items-center gap-x-2 text-primary font-bold">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+<span class="font-label-md text-label-md">التنسيق مع إدارة الجدولة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            هل تحتاج إلى تخصيص استثنائي لمناوبة طارئة خارج أوقات العمل الاعتيادية؟ يرجى التواصل مع مشرف التنسيق الطبي بالمركز عبر الرسائل الداخلية.
+          </p>
+<a class="inline-flex items-center gap-x-2 text-primary font-label-sm text-label-sm font-bold hover:underline mt-1" href="#">
+<span>إرسال طلب استثناء عاجل</span>
+<span class="material-symbols-outlined text-[16px]">arrow_left</span>
+</a>
+</div>
+</aside>
+</div>
+</div>
+<!-- 4. Interactive Modal for Suggesting New Availability Slot -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 hidden" id="newSlotModal">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-2xl shadow-xl flex flex-col overflow-hidden max-h-[921px]">
+<!-- Modal Header -->
+<div class="p-6 pb-4 flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">more_time</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">اقتراح فترة توفر جديدة</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رفع مقترح زمني لاعتماد إدارة مركز جسر</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<form class="p-6 pt-2 flex flex-col gap-y-4 overflow-y-auto" id="slotForm">
+<!-- Day Select -->
+<div class="flex flex-col gap-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="slotDay">اليوم المحدد <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md outline-none appearance-none focus:bg-surface-container-lowest transition-colors" id="slotDay" required="">
+<option value="الأحد">الأحد</option>
+<option value="الاثنين">الاثنين</option>
+<option value="الثلاثاء">الثلاثاء</option>
+<option value="الأربعاء">الأربعاء</option>
+<option value="الخميس">الخميس</option>
+<option value="السبت">السبت (عطلة نهاية الأسبوع)</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Service Type -->
+<div class="flex flex-col gap-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="serviceType">نوع الخدمة السريرية <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md outline-none appearance-none focus:bg-surface-container-lowest transition-colors" id="serviceType" required="">
+<option value="telehealth">استشارات عن بُعد فقط (مرئي WebRTC)</option>
+<option value="clinic">كشف حضوري بالعيادة (مركز جسر)</option>
+<option value="hybrid">كلاهما (استشارات هجينة: حضوري وعن بُعد)</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Time Range (Start and End) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="startTime">وقت البدء <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors" id="startTime" required="" type="time" value="09:00"/>
+</div>
+<div class="flex flex-col gap-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="endTime">وقت الانتهاء <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:bg-surface-container-lowest transition-colors" id="endTime" required="" type="time" value="13:00"/>
+</div>
+</div>
+<!-- Duration & Calculated Slot Capacity Estimate -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-x-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span>المدة الإجمالية المقدرة:</span>
+</div>
+<div class="font-label-md text-label-md text-primary font-bold">
+            4.0 ساعات • تكافئ حجز 8 جلسات (30 دقيقة/جلسة)
+          </div>
+</div>
+<!-- Institutional Submission Note -->
+<div class="p-4 rounded-xl bg-secondary-fixed/30 flex items-start gap-x-3 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+            سيتم رفع الفترة إلى إدارة مركز جسر للتأهيل الطبي للمطابقة مع ساعات عمل المنشأة والتأكد من عدم التعارض قبل إتاحتها للمستفيدين.
+          </p>
+</div>
+<!-- Modal Actions -->
+<div class="pt-4 flex items-center justify-end gap-x-3">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" id="cancelModalBtn" type="button">
+            إلغاء
+          </button>
+<button class="inline-flex items-center gap-x-2 px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>إرسال للاعتماد المؤسسي</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Template for Interactive Feedback -->
+<div class="fixed bottom-6 left-6 z-50 flex items-center gap-x-3 px-5 py-3.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl opacity-0 pointer-events-none transition-all duration-300" id="statusToast">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMsg">تم تنفيذ الإجراء بنجاح</span>
+</div>
+<script>
+    // Modal management logic
+    const modal = document.getElementById('newSlotModal');
+    const openBtn = document.getElementById('openNewSlotModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const cancelBtn = document.getElementById('cancelModalBtn');
+    const slotForm = document.getElementById('slotForm');
+    const slotDaySelect = document.getElementById('slotDay');
+    const toast = document.getElementById('statusToast');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastIcon = document.getElementById('toastIcon');
+
+    function showModal() {
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function hideModal() {
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function showToast(message, iconName = 'check_circle') {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toastIcon.textContent = iconName;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 4000);
+    }
+
+    if (openBtn) openBtn.addEventListener('click', showModal);
+    if (closeBtn) closeBtn.addEventListener('click', hideModal);
+    if (cancelBtn) cancelBtn.addEventListener('click', hideModal);
+
+    window.openNewSlotModalWithDay = function(dayName) {
+      if (slotDaySelect) {
+        slotDaySelect.value = dayName;
+      }
+      showModal();
+    };
+
+    window.reconfigureSlot = function(timeRange, dayName) {
+      if (slotDaySelect) slotDaySelect.value = dayName;
+      showToast(`تم فتح نافذة إعادة صياغة الفترة (${timeRange}) ليوم ${dayName}`, 'edit');
+      showModal();
+    };
+
+    if (slotForm) {
+      slotForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        hideModal();
+        showToast('تم رفع الفترة المقترحة بنجاح إلى إدارة المركز للمراجعة والاعتماد المؤسسي.', 'hourglass_top');
+      });
+    }
+
+    // Close on backdrop click
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) hideModal();
+      });
+    }
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#005049",
+          "outline": "#707881",
+          "surface": "#f8f9ff",
+          "surface-dim": "#ccdbf3",
+          "on-secondary": "#ffffff",
+          "on-secondary-container": "#006f66",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#cbe4ff",
+          "outline-variant": "#c0c7d1",
+          "on-primary-fixed": "#001d32",
+          "on-error-container": "#93000a",
+          "on-surface-variant": "#40474f",
+          "surface-tint": "#006399",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed-variant": "#5a00c6",
+          "inverse-surface": "#233144",
+          "secondary-container": "#86f2e4",
+          "surface-bright": "#f8f9ff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#dce9ff",
+          "on-surface": "#0d1c2e",
+          "secondary": "#006a61",
+          "on-tertiary-fixed": "#25005a",
+          "primary": "#00507d",
+          "surface-container-low": "#eff4ff",
+          "tertiary-fixed-dim": "#d2bbff",
+          "tertiary": "#6003d1",
+          "on-background": "#0d1c2e",
+          "primary-fixed-dim": "#94ccff",
+          "error-container": "#ffdad6",
+          "tertiary-container": "#7936ea",
+          "inverse-primary": "#94ccff",
+          "secondary-fixed": "#89f5e7",
+          "surface-container-highest": "#d5e3fc",
+          "inverse-on-surface": "#eaf1ff",
+          "on-tertiary-container": "#e9dbff",
+          "tertiary-fixed": "#eaddff",
+          "primary-container": "#0369a1",
+          "primary-fixed": "#cde5ff",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed-dim": "#6bd8cb",
+          "on-primary-fixed-variant": "#004b74",
+          "surface-container": "#e6eeff",
+          "background": "#f8f9ff",
+          "surface-variant": "#d5e3fc",
+          "on-secondary-fixed": "#00201d"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "2.5rem",
+          "space-xs": "0.5rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1.25rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.75rem",
+          "space-lg": "1.75rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "IBM Plex Sans"
+          ],
+          "body-sm": [
+            "IBM Plex Sans"
+          ],
+          "headline-lg-mobile": [
+            "IBM Plex Sans"
+          ],
+          "headline-md": [
+            "IBM Plex Sans"
+          ],
+          "label-md": [
+            "IBM Plex Sans"
+          ],
+          "label-sm": [
+            "IBM Plex Sans"
+          ],
+          "display": [
+            "IBM Plex Sans"
+          ],
+          "body-md": [
+            "IBM Plex Sans"
+          ],
+          "label-lg": [
+            "IBM Plex Sans"
+          ],
+          "body-lg": [
+            "IBM Plex Sans"
+          ],
+          "headline-sm": [
+            "IBM Plex Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "2.25rem",
+            {
+              "lineHeight": "3rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.375rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2.125rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "3rem",
+            {
+              "lineHeight": "3.75rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">جِسْر</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">بوابة الأخصائي المعالج</span></div></div><div class="w-2 h-2 rounded-full bg-secondary" title="النظام متصل"></div></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_2px_8px_-2px_rgba(3,105,161,0.25)]"><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">dashboard</span><span>لوحة التحكم</span></a><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span>المستفيدون</span></a><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="clinical-assessments" href="./التقارير.html" aria-current="page"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span>التقييمات السريرية</span></a><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">playlist_add_check_circle</span><span>خطط التأهيل</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-3 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_2px_8px_-2px_rgba(3,105,161,0.25)]" data-path="clinical-reports" href="./التقارير.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span>التقارير السريرية</span></div><span class="px-2 py-0.5 rounded-full text-xs font-label-sm bg-secondary-container text-on-secondary-container">جديد</span></a><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_clock</span><span>المواعيد والجدول</span></a><a class="flex items-center justify-between px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[22px]">forum</span><span>الرسائل والتواصل</span></div><span class="w-5 h-5 rounded-full bg-error-container text-on-error-container font-label-sm text-xs flex items-center justify-center">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span>مكتبة التمارين</span></a></nav></div><div class="px-space-sm flex flex-col gap-1"><div class="p-3 mx-space-xs rounded-xl bg-surface-container-low flex flex-col gap-2 mb-2"><div class="flex items-center gap-2 text-secondary"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-sm text-label-sm">الدعم الإكلينيكي</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">مساعدة فورية لجلسات التأهيل</span></div><a class="flex items-center gap-space-sm px-space-sm py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="../الملف الشهصي و الاعدادات/الملف الشخصي.html"><span class="material-symbols-outlined text-[22px]">settings</span><span>الملف المهني والإعدادات</span></a></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[20px] text-primary">medical_services</span><span>بوابة التأهيل</span><span class="material-symbols-outlined text-[16px] rtl:rotate-180 text-outline">chevron_left</span><span class="text-primary font-bold">التقارير السريرية</span><span class="material-symbols-outlined text-[16px] rtl:rotate-180 text-outline">chevron_left</span><span class="text-on-surface-variant">إعداد تقرير جديد</span></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute right-3 text-outline text-[20px]">search</span><input class="w-80 h-11 pr-10 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="بحث عن مستفيد، رقم الهوية، أو التقرير..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1"><button aria-label="تكبير الخط والقراءة المساعدة" class="w-11 h-11 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center transition-all cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'" onclick="window.location.href='./التقارير.html'"><span class="material-symbols-outlined text-[22px]">accessibility</span></button><button aria-label="التنبيهات السريرية" class="relative w-11 h-11 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center justify-center transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 left-2.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button></div><div class="h-8 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold text-right">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-secondary text-right">أخصائية علاج طبيعي وتأهيل</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XjM6SkDbRI4eU5QMBGEfNnlzAZ9RYWgGwy6KC3k5g4IRfANUQ2r7S66a1gg3FbHZ7I14-viQ-qHebC7mTEza4wD68Xwy1oByQg5jQ-Vxjv5r5Ple0lFUVJ5dmngAqjFzyoasYdlvb-JFVm051MLDsJz_q4-d_E9jc3hWe8o6vpSdFrBE5G7SmBScUtUSfV8kmwM1Y97CD9YMQvjxpp_G62mmJCmgeCi3lYK-JfsJhD_p7lqLwDuXYXNJabCw0VL_X6OZYuH9E"/><span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div></div></div></header><main class="w-full pt-20 px-space-xl pb-space-xl bg-surface min-h-screen"><div class="flex flex-col w-full font-body-md text-body-md text-on-surface">
+<!-- TOP CONTEXT BAR: Breadcrumbs, Action Badges & Step Overview -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="../الرئيسية/code.html">
+<span class="material-symbols-outlined text-[18px]">home</span>
+<span>الرئيسية</span>
+</a>
+<span class="material-symbols-outlined text-[14px] rtl:rotate-180 text-outline">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="./التقارير.html">التقارير السريرية</a>
+<span class="material-symbols-outlined text-[14px] rtl:rotate-180 text-outline">chevron_left</span>
+<span class="text-primary font-bold">إنشاء تقرير سريري جديد</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+<span>إرشادات التوثيق المعتمدة</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container-high font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px] rtl:rotate-180">arrow_forward</span>
+<span>الرجوع للتقارير السريرية</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mt-2">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">إنشاء تقرير سريري جديد</h1>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+            الخطوة 1 من 3: تحديد المستفيد ونوع التقرير
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          حدد المستفيد المستهدف ونوع التقرير المطلوب والفترة الزمنية أو الجلسة السريرية للبدء في سحب البيانات وصياغة واعتماد الوثيقة الطبية.
+        </p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-2 rounded-xl shadow-sm text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>توثيق مشفر وفق معايير وزارة الصحة وHIPAA</span>
+</div>
+</div>
+<!-- Multi-Step Progress Tracker Bar -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
+<div class="flex items-center gap-3 p-4 rounded-xl bg-primary text-on-primary shadow-sm relative overflow-hidden">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold text-lg flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary-fixed opacity-90">الخطوة الأولى • نشطة حالياً</span>
+<span class="font-label-lg text-label-lg font-bold truncate">تحديد المستفيد ونوع التقرير</span>
+</div>
+<div class="absolute -left-3 -bottom-3 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">clinical_notes</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest text-on-surface-variant shadow-sm relative overflow-hidden opacity-85">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">الخطوة التالية</span>
+<span class="font-label-lg text-label-lg font-semibold truncate text-on-surface">تجميع البيانات والملاحظات</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-xl bg-surface-container-lowest text-on-surface-variant shadow-sm relative overflow-hidden opacity-85">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">الخطوة الأخيرة</span>
+<span class="font-label-lg text-label-lg font-semibold truncate text-on-surface">المراجعة والاعتماد والمشاركة</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN 2-COLUMN WORKSPACE: Configuration Area (8 cols) + Realtime Preview Sidebar (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start pb-28">
+<!-- LEFT / MAIN FORM STACK (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- SECTION 1: BENEFICIARY SELECTION -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center text-sm shadow-sm">1</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">اختيار المستفيد</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">اختر مستفيداً من ملفات العيادة النشطة (إجمالي 28 مستفيداً مسجلاً)</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+            سجل إلكتروني حي
+          </span>
+</div>
+<!-- Search Bar and Dropdown Menu -->
+<div class="relative">
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2" for="beneficiarySearchInput">
+            البحث عن مستفيد بالاسم، رقم الملف الطبي (MRN)، أو رقم الهوية:
+          </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute right-4 text-outline text-[22px] pointer-events-none">search</span>
+<input autocomplete="off" class="w-full h-14 pr-12 pl-12 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="beneficiarySearchInput" placeholder="اكتب اسم المستفيد (مثال: أحمد الهاشمي، نورة الدوسري) أو رمز الملف..." type="text"/>
+<button aria-label="مسح البحث" class="absolute left-3 w-8 h-8 rounded-lg text-outline hover:text-on-surface flex items-center justify-center transition-colors hidden" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Dynamic Auto-Suggest Beneficiaries Dropdown List -->
+<div class="hidden absolute top-full right-0 left-0 mt-2 max-h-72 overflow-y-auto bg-surface-container-lowest rounded-xl shadow-xl z-30 p-2 flex flex-col gap-1 transition-all" id="beneficiariesListDropdown">
+<!-- Populated dynamically with JavaScript for all 28 beneficiaries -->
+</div>
+</div>
+<!-- Selected Beneficiary Snapshot Showcase Card -->
+<div class="bg-surface-container-low rounded-xl p-5 transition-all" id="selectedBeneficiaryCard">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-2xl bg-primary text-on-primary flex items-center justify-center text-xl font-bold shadow-md" id="beneAvatarWrapper">
+                أهـ
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="beneName">أحمد عبدالعزيز الهاشمي</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold" id="beneBadge">خطة نشطة</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="flex items-center gap-1 font-mono font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">badge</span>
+<span id="beneMrn">MRN-10294</span>
+</span>
+<span>•</span>
+<span id="beneAge">العمر: 54 سنة</span>
+<span>•</span>
+<span id="beneNationalId">الهوية: 108394****</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-stretch md:self-auto justify-end">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="changeBeneficiaryBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>تغيير المستفيد</span>
+</button>
+</div>
+</div>
+<!-- Plan detail & clinical meta info -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 pt-4 bg-surface-container-lowest/60 p-3 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">الخطة التأهيلية الحالية:</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface mt-0.5" id="benePlanName">
+                استعادة المدى الحركي وتقوية مفصل الركبة (المرحلة 3)
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">الأخصائي المشرف:</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-0.5" id="beneSupervisor">
+                د. سارة المنصور (أخصائية أولى)
+              </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">آخر جلسة موثقة:</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold mt-0.5" id="beneLastVisit">
+                22 أكتوبر 2024 (قبل 2 يوم)
+              </span>
+</div>
+</div>
+<!-- Alert for beneficiaries with no active rehabilitation plan -->
+<div class="hidden mt-3 p-3 rounded-lg bg-error-container text-on-error-container flex items-center gap-2 font-body-sm text-body-sm" id="noPlanAlertBox">
+<span class="material-symbols-outlined text-[20px] text-error">info</span>
+<span>تنبيه سريري: لا توجد خطة تأهيل نشطة معتمدة لهذا المستفيد حالياً — سيتم توجيه التقرير كتقييم سريري تأسيسي أو استشاري.</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SELECT REPORT TYPE -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center text-sm shadow-sm">2</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">نوع التقرير السريري</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">اختر نموذج التقرير المناسب وفقاً للغرض السريري والمستند المطلوب</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>نماذج معتمدة حسب ISO 13485</span>
+</span>
+</div>
+<!-- 3 Interactive Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="reportTypesGrid">
+<!-- CARD A: WEEKLY (Default Selected) -->
+<div aria-checked="true" class="report-type-card cursor-pointer rounded-2xl p-5 bg-surface-container-low transition-all relative flex flex-col justify-between group shadow-sm ring-2 ring-primary bg-primary-fixed/20" data-type="weekly" role="radio" tabindex="0">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">calendar_view_week</span>
+</div>
+<div class="type-check-icon w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm text-xs mb-1">دوري ومتابعة التزام</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">تقرير أسبوعي</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                ملخص تنفيذ التمارين والالتزام بنسب الإنجاز والتطور الحركي المسجل للمستفيد خلال أسبوع علاجي محدد.
+              </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/60 p-2.5 rounded-lg text-xs font-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>موصى به للمستفيدين أصحاب الخطط النشطة</span>
+</div>
+</div>
+<!-- CARD B: COMPREHENSIVE MONTHLY -->
+<div aria-checked="false" class="report-type-card cursor-pointer rounded-2xl p-5 bg-surface-container-low hover:bg-surface-container transition-all relative flex flex-col justify-between group shadow-sm" data-type="monthly" role="radio" tabindex="0">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">calendar_month</span>
+</div>
+<div class="type-check-icon w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm text-xs mb-1">تقييم سريري معتمد</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">تقرير شهري شامل</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                مراجعة شهرية شاملة لمعدلات الالتزام، تقدم المدى الحركي (ROM)، والأهداف المحققة والتوصيات السريرية الجديدة.
+              </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/60 p-2.5 rounded-lg text-xs font-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">approval_delegation</span>
+<span>صالح للرفع لجهات التأمين واللجان الطبية</span>
+</div>
+</div>
+<!-- CARD C: CLINICAL SESSION -->
+<div aria-checked="false" class="report-type-card cursor-pointer rounded-2xl p-5 bg-surface-container-low hover:bg-surface-container transition-all relative flex flex-col justify-between group shadow-sm" data-type="session" role="radio" tabindex="0">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">video_camera_front</span>
+</div>
+<div class="type-check-icon w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<div>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-xs mb-1">توثيق فوري للجلسات</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">تقرير جلسة فردية</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                توثيق جلسة حضورية بالمركز أو افتراضية عن بُعد، متضمناً ملاحظات الأخصائي المباشرة ونتائج القياس الفورية.
+              </p>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-lowest/60 p-2.5 rounded-lg text-xs font-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_repeat</span>
+<span>يتطلب اختيار جلسة مسجلة في النظام</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DYNAMIC PERIOD / SESSION SELECTOR -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center text-sm shadow-sm">3</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="section3Title">تحديد الفترة الزمنية المشمولة</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="section3Subtitle">حدد النطاق الزمني الدقيق للتقرير لسحب قراءات المستشعرات وسجلات التدريب</span>
+</div>
+</div>
+<span class="flex items-center gap-1 text-xs font-label-sm bg-surface-container text-on-surface-variant px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-secondary">update</span>
+<span>تحديث فوري للبيانات</span>
+</span>
+</div>
+<!-- DYNAMIC CONTAINER 1: WEEKLY SELECTOR -->
+<div class="flex flex-col gap-4" id="weeklyPeriodContainer">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2" for="weekSelect">
+                اختر الأسبوع السريري:
+              </label>
+<div class="relative">
+<select class="w-full h-13 py-3 pr-4 pl-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary focus:outline-none appearance-none transition-all" id="weekSelect">
+<option value="current">الأسبوع الحالي: 20 أكتوبر – 26 أكتوبر 2024</option>
+<option selected="" value="last_week">الأسبوع الماضي (الأسبوع 3): 13 أكتوبر – 19 أكتوبر 2024</option>
+<option value="week_2">الأسبوع 2: 06 أكتوبر – 12 أكتوبر 2024</option>
+<option value="week_1">الأسبوع 1 (التأسيسي): 29 سبتمبر – 05 أكتوبر 2024</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+                نوع إحصائيات الأداء المتضمنة:
+              </label>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_box</span>
+<span>الالتزام المنزلي</span>
+</div>
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_box</span>
+<span>مقياس الألم (VAS)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Date preview chip -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-primary font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">date_range</span>
+<span id="weeklyRangeLabel">تاريخ البدء: الأحد 13 أكتوبر 2024 ⟵ تاريخ الانتهاء: السبت 19 أكتوبر 2024</span>
+</div>
+<span class="text-xs px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm">
+              7 أيام سريرية (مع احتساب يوم الجمعة كراحة تعافي)
+            </span>
+</div>
+</div>
+<!-- DYNAMIC CONTAINER 2: MONTHLY SELECTOR -->
+<div class="hidden flex-col gap-4" id="monthlyPeriodContainer">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2" for="monthSelect">
+                الشهر المستهدف:
+              </label>
+<div class="relative">
+<select class="w-full h-13 py-3 pr-4 pl-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary focus:outline-none appearance-none transition-all" id="monthSelect">
+<option selected="" value="10-2024">أكتوبر 2024 (التقرير الشهري الحالي)</option>
+<option value="09-2024">سبتمبر 2024</option>
+<option value="08-2024">أغسطس 2024</option>
+<option value="07-2024">يوليو 2024</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2" for="yearSelect">
+                السنة التأهيلية:
+              </label>
+<div class="relative">
+<select class="w-full h-13 py-3 pr-4 pl-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary focus:outline-none appearance-none transition-all" id="yearSelect">
+<option selected="" value="2024">2024 م</option>
+<option value="2023">2023 م</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-primary font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span id="monthlyRangeLabel">من 01 أكتوبر 2024 إلى 31 أكتوبر 2024 (31 يوماً تقويمياً)</span>
+</div>
+<span class="text-xs px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm">
+              يشمل قراءات مقياس جودة الحياة ونتائج اختبار التوازن
+            </span>
+</div>
+</div>
+<!-- DYNAMIC CONTAINER 3: INDIVIDUAL CLINICAL SESSION SELECTOR -->
+<div class="hidden flex-col gap-4" id="sessionPeriodContainer">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">
+              اختر الجلسة السريرية المراد توثيقها:
+            </label>
+<span class="text-xs text-outline">يتم جلب الجلسات المكتملة المسجلة إلكترونياً</span>
+</div>
+<!-- Session List Container -->
+<div class="flex flex-col gap-2.5" id="sessionsListWrapper">
+<!-- Item 1 (Selected) -->
+<div class="session-row cursor-pointer p-4 rounded-xl bg-primary-fixed/20 ring-2 ring-primary flex flex-col md:flex-row items-start md:items-center justify-between gap-3 transition-all" data-session-id="SES-901">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">جلسة حضورية بالعيادة: قياس المدى الحركي للركبة</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold">مكتملة</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">22 أكتوبر 2024 — 10:30 صباحاً | المعالج: د. سارة المنصور</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-mono px-2 py-1 rounded bg-surface-container-high text-primary font-bold">SES-901</span>
+<span class="session-check material-symbols-outlined text-primary text-[22px]">check_circle</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="session-row cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-3 transition-all" data-session-id="SES-842">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">videocam</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">استشارة مرئية عن بُعد: مراجعة تمارين الأربطة</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold">مكتملة</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15 أكتوبر 2024 — 04:00 مساءً | المعالج: د. سارة المنصور</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-mono px-2 py-1 rounded bg-surface-container-high text-on-surface-variant">SES-842</span>
+<span class="session-check material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="session-row cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-3 transition-all" data-session-id="SES-790">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">جلسة حضورية تأسيسية: التقييم الأولي ومعايرة المستشعرات</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface text-xs font-bold">مؤرشفة</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">08 أكتوبر 2024 — 11:00 صباحاً | المعالج: د. طارق الزهراني</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-mono px-2 py-1 rounded bg-surface-container-high text-on-surface-variant">SES-790</span>
+<span class="session-check material-symbols-outlined text-outline text-[22px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+<!-- Empty session placeholder for patients with 0 sessions -->
+<div class="hidden p-6 rounded-xl bg-surface-container-low text-center flex flex-col items-center justify-center gap-2" id="noSessionsBox">
+<span class="material-symbols-outlined text-[36px] text-outline">event_busy</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">لا توجد جلسات موثقة مسجلة لهذا المستفيد حتى الآن</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant max-w-md">يرجى تسجيل جلسة سريرية أولاً، أو اختيار "تقرير أسبوعي" أو "تقرير شهري" لمتابعة التقدم.</span>
+</div>
+</div>
+</section>
+<!-- CLINICAL COMPLIANCE CALLOUT -->
+<div class="p-4 rounded-xl bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">verified</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm text-on-surface">
+<span class="font-bold">المعايير الإكلينيكية المدمجة في التقرير</span>
+<span class="text-on-surface-variant">
+            سيقوم النظام آلياً في الخطوة التالية بمطابقة قراءات زوايا المفاصل ودرجات الألم وأرقام التحسن مع البروتوكول العلاجي المعتمد لبرنامج التأهيل.
+          </span>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDEBAR (4 Cols): REALTIME SUMMARY PREVIEW CARD -->
+<div class="lg:col-span-4 sticky top-24 flex flex-col gap-4">
+<!-- Summary Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-3 bg-surface-container-lowest">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm font-bold">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+<span>ملخص التقرير</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-secondary animate-pulse" title="جاهز للإنشاء"></span>
+</div>
+<div class="space-y-4">
+<!-- Beneficiary Row -->
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline">المستفيد المختار:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface" id="summaryBeneficiary">
+              أحمد عبدالعزيز الهاشمي
+            </span>
+<span class="font-mono text-xs text-primary font-semibold" id="summaryMrn">MRN-10294</span>
+</div>
+<!-- Report Type Row -->
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline">نوع التقرير:</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" id="summaryReportIcon">calendar_view_week</span>
+<span class="font-label-md text-label-md font-bold text-on-surface" id="summaryReportType">
+                تقرير أسبوعي (متابعة دورية)
+              </span>
+</div>
+</div>
+<!-- Period / Session Row -->
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline">النطاق / الجلسة:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface leading-snug" id="summaryPeriod">
+              الأسبوع الماضي: 13 أكتوبر – 19 أكتوبر 2024
+            </span>
+</div>
+<!-- Specialist Row -->
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline">الأخصائي المحرر:</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">
+              د. سارة المنصور
+            </span>
+<span class="text-xs text-secondary font-label-sm">قسم العلاج الطبيعي والتأهيل الحركي</span>
+</div>
+</div>
+<!-- Readiness Indicator Gauge -->
+<div class="pt-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1.5">
+<span class="text-on-surface font-semibold">اكتمال متطلبات الخطوة 1:</span>
+<span class="text-secondary font-bold" id="readinessScore">100%</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-300 w-full" id="readinessBar"></div>
+</div>
+<p class="text-xs text-on-surface-variant mt-2 flex items-center gap-1" id="readinessNote">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>جميع الاختيارات متوافقة مع البروتوكول العلاجي.</span>
+</p>
+</div>
+</div>
+<!-- Quick Helpful Clinical Tip -->
+<div class="bg-surface-container-low rounded-2xl p-5 shadow-sm flex items-start gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[24px] flex-shrink-0">lightbulb</span>
+<div>
+<span class="font-bold text-on-surface block mb-1">تلميح إكلينيكي</span>
+<span>
+            تقارير الأداء الأسبوعية تتيح للمستفيد وعائلته رؤية نسبة الالتزام في تطبيق جسر الذكي بشكل فوري وتفاعلي.
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM STICKY ACTION BAR -->
+<div class="fixed bottom-0 right-72 left-0 h-22 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.06)] z-40 px-space-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="h-12 px-6 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-all" type="button">
+        إلغاء والعودة
+      </button>
+<button class="h-12 px-6 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-md text-label-md font-semibold flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>حفظ كمسودة أولية</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold text-right">الخطوة القادمة:</span>
+<span class="font-body-sm text-body-sm text-outline text-right">تجميع البيانات وملاحظات الأخصائي</span>
+</div>
+<button class="h-13 px-8 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-3 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" id="nextStepBtn" onclick="window.location.href='./انشاء تقرير جديد 2.html'" type="button">
+<span>التالي: إعداد محتوى التقرير</span>
+<span class="material-symbols-outlined text-[20px] rtl:rotate-180">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Engine (Vanilla JavaScript) -->
+<script>
+  (function initClinicalReportStepOne() {
+    // 28 Full Beneficiaries Dataset
+    const beneficiaries = [
+      { id: "10294", name: "أحمد عبدالعزيز الهاشمي", mrn: "MRN-10294", nid: "108394****", age: "54 سنة", plan: "استبدال مفصل الركبة الكلي (TKR) - المرحلة 3", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "22 أكتوبر 2024", hasSessions: true },
+      { id: "10482", name: "نورة بنت سعد الدوسري", mrn: "MRN-10482", nid: "107481****", age: "42 سنة", plan: "متلازمة النفق الرسغي (CTS)", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "20 أكتوبر 2024", hasSessions: true },
+      { id: "10483", name: "فيصل بن متعب العتيبي", mrn: "MRN-10483", nid: "109822****", age: "37 سنة", plan: "انزلاق غضروفي قطني L4-L5", status: "قيد المراجعة", supervisor: "د. طارق الزهراني", lastVisit: "18 أكتوبر 2024", hasSessions: true },
+      { id: "10484", name: "سارة بنت خالد الشمري", mrn: "MRN-10484", nid: "102394****", age: "29 سنة", plan: "التواء شديد في الكاحل الأيسر", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "21 أكتوبر 2024", hasSessions: true },
+      { id: "10485", name: "محمد بن إبراهيم السبيعي", mrn: "MRN-10485", nid: "105543****", age: "61 سنة", plan: "تبديل مفصل الركبة ما بعد الجراحة", status: "نشطة", supervisor: "د. عمر البواردي", lastVisit: "19 أكتوبر 2024", hasSessions: true },
+      { id: "10486", name: "هند بنت ناصر المطيري", mrn: "MRN-10486", nid: "103328****", age: "34 سنة", plan: "لا توجد خطة نشطة (بانتظار التقييم الأولي)", status: "بدون خطة", supervisor: "د. سارة المنصور", lastVisit: "12 أكتوبر 2024", hasSessions: false },
+      { id: "10487", name: "تركي بن عبدالعزيز المقرن", mrn: "MRN-10487", nid: "101992****", age: "48 سنة", plan: "إعادة تأهيل عصبي وظيفي", status: "نشطة", supervisor: "د. طارق الزهراني", lastVisit: "21 أكتوبر 2024", hasSessions: true },
+      { id: "10488", name: "ريم بنت سليمان الخاطر", mrn: "MRN-10488", nid: "106493****", age: "23 سنة", plan: "تقوس العمود الفقري والتوازن", status: "قيد المراجعة", supervisor: "د. سارة المنصور", lastVisit: "17 أكتوبر 2024", hasSessions: true },
+      { id: "10489", name: "سلطان بن صالح الزهراني", mrn: "MRN-10489", nid: "104881****", age: "31 سنة", plan: "تمزق وتر أخيل الأيمن", status: "نشطة", supervisor: "د. عمر البواردي", lastVisit: "22 أكتوبر 2024", hasSessions: true },
+      { id: "10490", name: "منيرة بنت عبدالله القحطاني", mrn: "MRN-10490", nid: "102874****", age: "67 سنة", plan: "هشاشة عظام وتأهيل التوازن الحركي", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "16 أكتوبر 2024", hasSessions: true },
+      { id: "10491", name: "خالد بن بدر الحازمي", mrn: "MRN-10491", nid: "108772****", age: "39 سنة", plan: "لا توجد خطة نشطة (خلع متكرر في الكتف)", status: "بدون خطة", supervisor: "د. طارق الزهراني", lastVisit: "10 أكتوبر 2024", hasSessions: false },
+      { id: "10492", name: "لطيفة بنت حمد البواردي", mrn: "MRN-10492", nid: "107123****", age: "50 سنة", plan: "علاج وذمة لمفية وتمارين استئصال", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "21 أكتوبر 2024", hasSessions: true },
+      { id: "10493", name: "فهد بن راشد الغامدي", mrn: "MRN-10493", nid: "109341****", age: "27 سنة", plan: "برنامج تعافي غضروف الهلالي", status: "نشطة", supervisor: "د. عمر البواردي", lastVisit: "19 أكتوبر 2024", hasSessions: true },
+      { id: "10494", name: "العنود بنت ناصر الشهري", mrn: "MRN-10494", nid: "106294****", age: "33 سنة", plan: "تأهيل المفصل العجزي الحرقفي", status: "قيد المراجعة", supervisor: "د. سارة المنصور", lastVisit: "15 أكتوبر 2024", hasSessions: true },
+      { id: "10495", name: "مشعل بن عبدالعزيز الدخيل", mrn: "MRN-10495", nid: "104332****", age: "36 سنة", plan: "تأهيل ما بعد جراحة وتر أخيل", status: "نشطة", supervisor: "د. طارق الزهراني", lastVisit: "22 أكتوبر 2024", hasSessions: true },
+      { id: "10496", name: "جواهر بنت مساعد الرشيد", mrn: "MRN-10496", nid: "105991****", age: "45 سنة", plan: "تأهيل متلازمة النفق الرسغي", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "20 أكتوبر 2024", hasSessions: true },
+      { id: "10497", name: "عمر بن خالد المطيري", mrn: "MRN-10497", nid: "101223****", age: "28 سنة", plan: "لا توجد خطة نشطة (بانتظار المراجعة)", status: "بدون خطة", supervisor: "د. عمر البواردي", lastVisit: "09 أكتوبر 2024", hasSessions: false },
+      { id: "10498", name: "شهد بنت منصور السليم", mrn: "MRN-10498", nid: "108442****", age: "22 سنة", plan: "تأهيل انحناء العمود الفقري", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "21 أكتوبر 2024", hasSessions: true },
+      { id: "10499", name: "زياد بن إبراهيم الشريف", mrn: "MRN-10499", nid: "107882****", age: "35 سنة", plan: "تأهيل الكوع ومرفق لاعب التنس", status: "نشطة", supervisor: "د. طارق الزهراني", lastVisit: "18 أكتوبر 2024", hasSessions: true },
+      { id: "10500", name: "أسماء بنت فهد الخالدي", mrn: "MRN-10500", nid: "109012****", age: "26 سنة", plan: "تأهيل إصابة الرباط الصليبي (ACL)", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "22 أكتوبر 2024", hasSessions: true },
+      { id: "10501", name: "ريان بن عبدالكريم الحربي", mrn: "MRN-10501", nid: "106771****", age: "41 سنة", plan: "تأهيل عضلات القطن الشاملة", status: "نشطة", supervisor: "د. عمر البواردي", lastVisit: "17 أكتوبر 2024", hasSessions: true },
+      { id: "10502", name: "غادة بنت صالح النعيمي", mrn: "MRN-10502", nid: "103445****", age: "38 سنة", plan: "تأهيل تعويض وضعية العمود الفقري", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "19 أكتوبر 2024", hasSessions: true },
+      { id: "10503", name: "يزن بن عبدالله الحارثي", mrn: "MRN-10503", nid: "102889****", age: "19 سنة", plan: "تأهيل تمزق ألياف العضلة الخلفية", status: "نشطة", supervisor: "د. طارق الزهراني", lastVisit: "21 أكتوبر 2024", hasSessions: true },
+      { id: "10504", name: "هيفاء بنت عبدالرحمن البابطين", mrn: "MRN-10504", nid: "105221****", age: "59 سنة", plan: "تأهيل خشونة المفاصل الروماتويدي", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "16 أكتوبر 2024", hasSessions: true },
+      { id: "10505", name: "صالح بن محمد الجاسر", mrn: "MRN-10505", nid: "108119****", age: "63 سنة", plan: "تأهيل ما بعد الجلطة الدماغية (النصفي)", status: "نشطة", supervisor: "د. طارق الزهراني", lastVisit: "20 أكتوبر 2024", hasSessions: true },
+      { id: "10506", name: "أمل بنت بدر السليمان", mrn: "MRN-10506", nid: "107334****", age: "52 سنة", plan: "استقصاء ما بعد استبدال الورك", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "22 أكتوبر 2024", hasSessions: true },
+      { id: "10507", name: "باسل بن عثمان المطلق", mrn: "MRN-10507", nid: "104992****", age: "31 سنة", plan: "لا توجد خطة نشطة (بانتظار التقييم السريري)", status: "بدون خطة", supervisor: "د. عمر البواردي", lastVisit: "08 أكتوبر 2024", hasSessions: false },
+      { id: "10508", name: "دلال بنت فيصل المنصور", mrn: "MRN-10508", nid: "102551****", age: "47 سنة", plan: "تأهيل مفصل الكتف وتصلب العضلة", status: "نشطة", supervisor: "د. سارة المنصور", lastVisit: "18 أكتوبر 2024", hasSessions: true }
+    ];
+
+    // State
+    let currentBeneficiary = beneficiaries[0];
+    let selectedReportType = "weekly"; // 'weekly' | 'monthly' | 'session'
+    let selectedSessionId = "SES-901";
+
+    // DOM Elements
+    const searchInput = document.getElementById("beneficiarySearchInput");
+    const clearBtn = document.getElementById("clearSearchBtn");
+    const dropdown = document.getElementById("beneficiariesListDropdown");
+    const changeBeneBtn = document.getElementById("changeBeneficiaryBtn");
+
+    // Profile Display Elements
+    const beneName = document.getElementById("beneName");
+    const beneBadge = document.getElementById("beneBadge");
+    const beneMrn = document.getElementById("beneMrn");
+    const beneAge = document.getElementById("beneAge");
+    const beneNationalId = document.getElementById("beneNationalId");
+    const benePlanName = document.getElementById("benePlanName");
+    const beneSupervisor = document.getElementById("beneSupervisor");
+    const beneLastVisit = document.getElementById("beneLastVisit");
+    const beneAvatarWrapper = document.getElementById("beneAvatarWrapper");
+    const noPlanAlertBox = document.getElementById("noPlanAlertBox");
+
+    // Report Type Cards
+    const typeCards = document.querySelectorAll(".report-type-card");
+    const weeklyPeriodContainer = document.getElementById("weeklyPeriodContainer");
+    const monthlyPeriodContainer = document.getElementById("monthlyPeriodContainer");
+    const sessionPeriodContainer = document.getElementById("sessionPeriodContainer");
+    const section3Title = document.getElementById("section3Title");
+    const section3Subtitle = document.getElementById("section3Subtitle");
+    const sessionsListWrapper = document.getElementById("sessionsListWrapper");
+    const noSessionsBox = document.getElementById("noSessionsBox");
+
+    // Summary Elements
+    const summaryBeneficiary = document.getElementById("summaryBeneficiary");
+    const summaryMrn = document.getElementById("summaryMrn");
+    const summaryReportType = document.getElementById("summaryReportType");
+    const summaryReportIcon = document.getElementById("summaryReportIcon");
+    const summaryPeriod = document.getElementById("summaryPeriod");
+    const readinessScore = document.getElementById("readinessScore");
+    const readinessBar = document.getElementById("readinessBar");
+    const readinessNote = document.getElementById("readinessNote");
+    const nextStepBtn = document.getElementById("nextStepBtn");
+
+    // Inputs
+    const weekSelect = document.getElementById("weekSelect");
+    const monthSelect = document.getElementById("monthSelect");
+
+    // Helper: Build Dropdown Items
+    function populateBeneficiariesList(query = "") {
+      dropdown.innerHTML = "";
+      const filtered = beneficiaries.filter(b => {
+        return (
+          b.name.includes(query) ||
+          b.mrn.toLowerCase().includes(query.toLowerCase()) ||
+          b.nid.includes(query)
+        );
+      });
+
+      if (filtered.length === 0) {
+        dropdown.innerHTML = `
+          <div class="p-4 text-center text-outline font-body-sm text-body-sm">
+            لا يوجد مستفيد يطابق "${query}"
+          </div>
+        `;
+        dropdown.classList.remove("hidden");
+        return;
+      }
+
+      filtered.forEach(item => {
+        const row = document.createElement("button");
+        row.type = "button";
+        row.className = "w-full text-right p-3 rounded-lg hover:bg-surface-container flex items-center justify-between transition-colors";
+        
+        const isCurrent = item.id === currentBeneficiary.id;
+        const initial = item.name.split(" ")[0].charAt(0) + " " + (item.name.split(" ")[1]?.charAt(0) || "");
+
+        row.innerHTML = `
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg ${isCurrent ? 'bg-primary text-on-primary' : 'bg-surface-container-high text-on-surface'} flex items-center justify-center font-bold text-xs">
+              ${initial}
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-md text-label-md font-bold text-on-surface ${isCurrent ? 'text-primary' : ''}">${item.name}</span>
+              <span class="font-body-sm text-xs text-on-surface-variant">${item.plan}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono text-outline">${item.mrn}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full ${item.status === 'نشطة' ? 'bg-secondary-container text-on-secondary-container' : 'bg-surface-container-highest text-on-surface'}">
+              ${item.status}
+            </span>
+          </div>
+        `;
+
+        row.addEventListener("click", () => {
+          selectBeneficiary(item);
+          dropdown.classList.add("hidden");
+          searchInput.value = "";
+          clearBtn.classList.add("hidden");
+        });
+
+        dropdown.appendChild(row);
+      });
+
+      dropdown.classList.remove("hidden");
+    }
+
+    // Select Beneficiary Handler
+    function selectBeneficiary(b) {
+      currentBeneficiary = b;
+      
+      beneName.textContent = b.name;
+      beneMrn.textContent = b.mrn;
+      beneAge.textContent = `العمر: ${b.age}`;
+      beneNationalId.textContent = `الهوية: ${b.nid}`;
+      benePlanName.textContent = b.plan;
+      beneSupervisor.textContent = `${b.supervisor} (أخصائية أولى)`;
+      beneLastVisit.textContent = `${b.lastVisit} (موثقة)`;
+
+      const initials = b.name.split(" ")[0].charAt(0) + (b.name.split(" ")[1] ? b.name.split(" ")[1].charAt(0) : "");
+      beneAvatarWrapper.textContent = initials;
+
+      if (b.status === "بدون خطة") {
+        beneBadge.textContent = "بانتظار التقييم";
+        beneBadge.className = "px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-bold";
+        noPlanAlertBox.classList.remove("hidden");
+      } else {
+        beneBadge.textContent = "خطة نشطة";
+        beneBadge.className = "px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold";
+        noPlanAlertBox.classList.add("hidden");
+      }
+
+      // Check session compatibility
+      if (selectedReportType === "session") {
+        if (!b.hasSessions) {
+          sessionsListWrapper.classList.add("hidden");
+          noSessionsBox.classList.remove("hidden");
+        } else {
+          sessionsListWrapper.classList.remove("hidden");
+          noSessionsBox.classList.add("hidden");
+        }
+      }
+
+      updateSummary();
+    }
+
+    // Report Type Switch
+    typeCards.forEach(card => {
+      card.addEventListener("click", () => {
+        const type = card.getAttribute("data-type");
+        selectedReportType = type;
+
+        // Reset visual cards
+        typeCards.forEach(c => {
+          c.classList.remove("ring-2", "ring-primary", "bg-primary-fixed/20");
+          c.classList.add("bg-surface-container-low");
+          c.setAttribute("aria-checked", "false");
+          
+          const icon = c.querySelector(".type-check-icon");
+          icon.className = "type-check-icon w-6 h-6 rounded-full bg-surface-container text-transparent flex items-center justify-center";
+        });
+
+        // Activate clicked card
+        card.classList.add("ring-2", "ring-primary", "bg-primary-fixed/20");
+        card.classList.remove("bg-surface-container-low");
+        card.setAttribute("aria-checked", "true");
+        
+        const activeIcon = card.querySelector(".type-check-icon");
+        activeIcon.className = "type-check-icon w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center";
+
+        // Display correct container in Section 3
+        if (type === "weekly") {
+          weeklyPeriodContainer.classList.remove("hidden");
+          monthlyPeriodContainer.classList.add("hidden");
+          sessionPeriodContainer.classList.add("hidden");
+          section3Title.textContent = "تحديد الفترة الأسبوعية المشمولة";
+          section3Subtitle.textContent = "حدد الأسبوع العلاجي لسحب متوسطات التمارين ونسب الالتزام الرقمي";
+        } else if (type === "monthly") {
+          weeklyPeriodContainer.classList.add("hidden");
+          monthlyPeriodContainer.classList.remove("hidden");
+          sessionPeriodContainer.classList.add("hidden");
+          section3Title.textContent = "تحديد الشهر السريري المشمول";
+          section3Subtitle.textContent = "حدد الشهر الكامل لحساب المقاييس التراكمية وأهداف المدى الحركي (ROM)";
+        } else if (type === "session") {
+          weeklyPeriodContainer.classList.add("hidden");
+          monthlyPeriodContainer.classList.add("hidden");
+          sessionPeriodContainer.classList.remove("hidden");
+          section3Title.textContent = "اختيار الجلسة السريرية المكتملة";
+          section3Subtitle.textContent = "اختر الجلسة المنفذة لسحب القياسات الحيوية وملاحظات المعالج الميدانية";
+
+          if (!currentBeneficiary.hasSessions) {
+            sessionsListWrapper.classList.add("hidden");
+            noSessionsBox.classList.remove("hidden");
+          } else {
+            sessionsListWrapper.classList.remove("hidden");
+            noSessionsBox.classList.add("hidden");
+          }
+        }
+
+        updateSummary();
+      });
+    });
+
+    // Session Row Selection
+    const sessionRows = document.querySelectorAll(".session-row");
+    sessionRows.forEach(row => {
+      row.addEventListener("click", () => {
+        sessionRows.forEach(r => {
+          r.classList.remove("bg-primary-fixed/20", "ring-2", "ring-primary");
+          r.classList.add("bg-surface-container-low");
+          const icon = r.querySelector(".session-check");
+          icon.textContent = "radio_button_unchecked";
+          icon.className = "session-check material-symbols-outlined text-outline text-[22px]";
+        });
+
+        row.classList.add("bg-primary-fixed/20", "ring-2", "ring-primary");
+        row.classList.remove("bg-surface-container-low");
+        const activeIcon = row.querySelector(".session-check");
+        activeIcon.textContent = "check_circle";
+        activeIcon.className = "session-check material-symbols-outlined text-primary text-[22px]";
+
+        selectedSessionId = row.getAttribute("data-session-id");
+        updateSummary();
+      });
+    });
+
+    // Period Changes Handlers
+    weekSelect.addEventListener("change", updateSummary);
+    monthSelect.addEventListener("change", updateSummary);
+
+    // Update Summary Sidebar & Validation
+    function updateSummary() {
+      summaryBeneficiary.textContent = currentBeneficiary.name;
+      summaryMrn.textContent = currentBeneficiary.mrn;
+
+      let isReady = true;
+      let note = "جميع الاختيارات متوافقة مع البروتوكول العلاجي.";
+
+      if (selectedReportType === "weekly") {
+        summaryReportType.textContent = "تقرير أسبوعي (متابعة دورية)";
+        summaryReportIcon.textContent = "calendar_view_week";
+        const selectedWeekText = weekSelect.options[weekSelect.selectedIndex].text;
+        summaryPeriod.textContent = selectedWeekText;
+      } else if (selectedReportType === "monthly") {
+        summaryReportType.textContent = "تقرير شهري شامل (معتمد)";
+        summaryReportIcon.textContent = "calendar_month";
+        const selectedMonthText = monthSelect.options[monthSelect.selectedIndex].text;
+        summaryPeriod.textContent = selectedMonthText;
+      } else if (selectedReportType === "session") {
+        summaryReportType.textContent = "تقرير جلسة علاجية فردية";
+        summaryReportIcon.textContent = "video_camera_front";
+        
+        if (!currentBeneficiary.hasSessions) {
+          summaryPeriod.textContent = "لا توجد جلسات مسجلة (غير مكتمل)";
+          isReady = false;
+          note = "لا يمكن إصدار تقرير جلسة لمستفيد ليس لديه جلسات معتمدة.";
+        } else {
+          summaryPeriod.textContent = `جلسة مسجلة (${selectedSessionId}) — 22 أكتوبر 2024`;
+        }
+      }
+
+      // Update Gauge Bar
+      if (isReady) {
+        readinessScore.textContent = "100%";
+        readinessScore.className = "text-secondary font-bold";
+        readinessBar.style.width = "100%";
+        readinessBar.className = "h-full bg-secondary rounded-full transition-all duration-300";
+        readinessNote.innerHTML = `
+          <span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+          <span>${note}</span>
+        `;
+        nextStepBtn.disabled = false;
+        nextStepBtn.classList.remove("opacity-50", "cursor-not-allowed");
+      } else {
+        readinessScore.textContent = "65%";
+        readinessScore.className = "text-error font-bold";
+        readinessBar.style.width = "65%";
+        readinessBar.className = "h-full bg-error rounded-full transition-all duration-300";
+        readinessNote.innerHTML = `
+          <span class="material-symbols-outlined text-[16px] text-error">warning</span>
+          <span class="text-error">${note}</span>
+        `;
+        nextStepBtn.disabled = true;
+        nextStepBtn.classList.add("opacity-50", "cursor-not-allowed");
+      }
+    }
+
+    // Search Input Listeners
+    searchInput.addEventListener("focus", () => {
+      populateBeneficiariesList(searchInput.value.trim());
+    });
+
+    searchInput.addEventListener("input", (e) => {
+      const val = e.target.value.trim();
+      if (val.length > 0) {
+        clearBtn.classList.remove("hidden");
+      } else {
+        clearBtn.classList.add("hidden");
+      }
+      populateBeneficiariesList(val);
+    });
+
+    clearBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      clearBtn.classList.add("hidden");
+      populateBeneficiariesList("");
+      searchInput.focus();
+    });
+
+    changeBeneBtn.addEventListener("click", () => {
+      searchInput.focus();
+      populateBeneficiariesList("");
+    });
+
+    // Close Dropdown on Click Outside
+    document.addEventListener("click", (e) => {
+      if (!dropdown.contains(e.target) && e.target !== searchInput && e.target !== changeBeneBtn) {
+        dropdown.classList.add("hidden");
+      }
+    });
+
+    // CTA Next Button Micro-interaction
+    nextStepBtn.addEventListener("click", () => {
+      if (nextStepBtn.disabled) return;
+      const originalText = nextStepBtn.innerHTML;
+      nextStepBtn.innerHTML = `
+        <span class="inline-block animate-spin material-symbols-outlined text-[20px]">progress_activity</span>
+        <span>جاري جلب القراءات وتجهيز المحرر...</span>
+      `;
+      setTimeout(() => {
+        nextStepBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">check</span>
+          <span>تم تجهيز البيانات — انتقال للخطوة 2</span>
+        `;
+        setTimeout(() => {
+          nextStepBtn.innerHTML = originalText;
+        }, 1500);
+      }, 900);
+    });
+
+    // Initial render call
+    selectBeneficiary(beneficiaries[0]);
+  })();
+</script></main></div></body></html>

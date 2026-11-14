@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f8f9ff", "on-surface": "#0d1c2e", "tertiary": "#6003d1", "surface-container-low": "#eff4ff", "on-error": "#ffffff", "secondary-container": "#86f2e4", "surface-container-high": "#dce9ff", "on-tertiary-fixed": "#25005a", "secondary-fixed-dim": "#6bd8cb", "on-secondary-container": "#006f66", "error-container": "#ffdad6", "primary": "#00507d", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#005049", "secondary-fixed": "#89f5e7", "primary-container": "#0369a1", "on-tertiary-container": "#e9dbff", "on-primary-fixed": "#001d32", "surface": "#f8f9ff", "surface-variant": "#d5e3fc", "outline": "#707881", "secondary": "#006a61", "tertiary-fixed-dim": "#d2bbff", "inverse-surface": "#233144", "surface-dim": "#ccdbf3", "primary-fixed": "#cde5ff", "primary-fixed-dim": "#94ccff", "surface-container-lowest": "#ffffff", "surface-tint": "#006399", "on-background": "#0d1c2e", "on-secondary": "#ffffff", "on-secondary-fixed": "#00201d", "surface-container-highest": "#d5e3fc", "on-tertiary-fixed-variant": "#5a00c6", "surface-container": "#e6eeff", "inverse-primary": "#94ccff", "error": "#ba1a1a", "background": "#f8f9ff", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-primary-fixed-variant": "#004b74", "on-primary-container": "#cbe4ff", "tertiary-container": "#7936ea", "on-surface-variant": "#40474f", "outline-variant": "#c0c7d1", "tertiary-fixed": "#eaddff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2.5rem", "space-sm": "0.75rem", "gutter-mobile": "1rem", "space-lg": "1.75rem", "space-md": "1.25rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-xs": "0.5rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-sm": [ "IBM Plex Sans" ], "display": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "body-sm": [ "IBM Plex Sans" ], "headline-lg": [ "IBM Plex Sans" ], "headline-lg-mobile": [ "IBM Plex Sans" ], "body-md": [ "IBM Plex Sans" ], "headline-md": [ "IBM Plex Sans" ] }, "fontSize": { "headline-sm": [ "1.25rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "600" } ], "display": [ "3rem", { "lineHeight": "3.75rem", "letterSpacing": "0", "fontWeight": "700" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0", "fontWeight": "400" } ], "label-lg": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "600" } ], "label-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "600" } ], "label-md": [ "0.9375rem", { "lineHeight": "1.375rem", "letterSpacing": "0", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "3rem", "letterSpacing": "0", "fontWeight": "700" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.375rem", "letterSpacing": "0", "fontWeight": "700" } ], "body-md": [ "1rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" } ], "headline-md": [ "1.5rem", { "lineHeight": "2.125rem", "letterSpacing": "0", "fontWeight": "600" } ] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3 py-2"><div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)]"><span class="material-symbols-outlined text-on-primary text-[26px]">accessible_forward</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">جِسْر</span><span class="font-label-sm text-label-sm text-on-surface-variant">منصة الرعاية والتأهيل</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_12px_-2px_rgba(3,105,161,0.15)]"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">dashboard</span><span>لوحة التحكم</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">group</span><span>المستفيدون</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment</span><span>خطط التأهيل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span>التقارير السريرية</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span>المواعيد والجدول</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="messages" href="./الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">chat</span><span>الرسائل والتواصل</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-3 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-[0_4px_12px_-2px_rgba(3,105,161,0.15)]" data-path="communities-and-groups" href="./المجموعات.html"><span class="material-symbols-outlined text-[22px]">forum</span><span>المجتمعات والمجموعات</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span>مكتبة التمارين</span></a></nav></div><div class="flex flex-col gap-2 pt-4"><div class="p-3.5 bg-surface-container-low rounded-xl flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">غرفة الجلسات المباشرة</span></div><span class="font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-full">متاح</span></div><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="technical-support" href="./الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">support_agent</span><span>الدعم الفني والمساندة</span></a></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-xl cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="relative w-full"><span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span><input class="w-full h-12 pr-12 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="البحث عن مستفيد، ملف علاجي، أو تمرين..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden md:flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">الجلسات المباشرة: <span class="text-on-surface font-semibold">نشطة</span></span></div><button class="relative p-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pr-2"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface text-right">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-on-surface-variant text-right">أخصائي علاج طبيعي وتأهيلي</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-8 py-8 w-full"><div class="flex flex-col w-full">
+<!-- Back Navigation & Top Breadcrumb -->
+<div class="flex items-center justify-between pb-6">
+<a class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all group shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)]" href="./المجموعات.html">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:-translate-x-0.5 transition-transform">arrow_forward</span>
+<span class="font-label-md text-label-md font-medium">العودة لكافة المجموعات والمجتمعات</span>
+</a>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>نشاط مستقر وموثق سريراً</span>
+</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">كود المجتمع: #GERI-JOINT-410</span>
+</div>
+</div>
+<!-- Hero Identity Banner Card -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<!-- Gentle Ambient Emerald-Teal Scrim Gradient -->
+<div class="h-44 w-full bg-gradient-to-l from-secondary via-secondary/85 to-primary-container relative p-8 flex items-start justify-between">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_60%)]"></div>
+<!-- Ambient Visual Motif: Joint/Mobility subtle geometric circles -->
+<div class="absolute left-10 top-6 opacity-10 pointer-events-none">
+<svg fill="none" height="140" viewbox="0 0 220 140" width="220">
+<circle class="text-on-primary" cx="50" cy="50" r="40" stroke="currentColor" stroke-dasharray="6 6" stroke-width="4"></circle>
+<circle class="text-on-primary" cx="140" cy="80" r="50" stroke="currentColor" stroke-width="4"></circle>
+<path class="text-on-primary" d="M50 50L140 80" stroke="currentColor" stroke-width="3"></path>
+</svg>
+</div>
+<div class="relative z-10 flex items-center gap-3">
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>مجتمع معتمد من برنامج الرعاية الممتدة</span>
+</span>
+</div>
+<div class="relative z-10 flex items-center gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary font-label-sm text-label-sm backdrop-blur-md flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>التنبيهات المباشرة</span>
+</button>
+<button aria-label="خيارات إضافية" class="p-2 rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary backdrop-blur-md transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Identity Body with Overlapping Profile Icon -->
+<div class="px-8 pb-8 pt-0 relative">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 -mt-16 relative z-20">
+<!-- Avatar & Group Identity Details -->
+<div class="flex items-end gap-5">
+<div class="w-28 h-28 rounded-2xl bg-surface-container-lowest p-2 shadow-[0_12px_28px_-6px_rgba(0,106,97,0.25)] flex-shrink-0">
+<div class="w-full h-full rounded-xl bg-gradient-to-br from-secondary/15 via-secondary/25 to-primary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[54px]" style="font-variation-settings: 'FILL' 1;">assist_walker</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pb-1">
+<div class="flex flex-wrap items-center gap-2.5">
+<h1 class="font-headline-md text-headline-md text-on-surface">مجتمع دعم أسر كبار السن والمفاصل</h1>
+<span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">elderly</span>
+<span>رعاية كبار السن وخشونة المفاصل</span>
+</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>مكتمل المراجعة السريرية</span>
+</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<span class="text-on-surface font-semibold">410</span> أعضاء
+              </div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">forum</span>
+<span class="text-on-surface font-semibold">5</span> منشورات وتحديثات اليوم
+              </div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">badge</span>
+<span>أخصائي مشرف: د. سارة المنصور</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-3 self-end lg:self-auto pb-1">
+<button class="h-12 px-5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-[0_4px_12px_-2px_rgba(0,80,125,0.25)] transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+<span>إدارة المجموعة</span>
+</button>
+<button class="h-12 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>الإعدادات والخصوصية</span>
+</button>
+<button class="h-12 px-4 rounded-xl bg-error-container/40 hover:bg-error-container text-error font-label-md text-label-md flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>مغادرة المجموعة</span>
+</button>
+</div>
+</div>
+<!-- Description Block -->
+<div class="mt-6 pt-5 bg-surface-container-low/60 rounded-xl p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          تمارين الاتزان المنزلي للوقاية من السقوط، وتوجيهات الحفاظ على المرونة الحركية والاستقلالية اليومية لكبار السن. نوفر إرشادات مبسطة لأولياء الأمور والمرافقين ومقدمي الرعاية الأسرية حول تكييف دورات المياه وتخفيف إجهاد مفاصل الركبة والحوض.
+        </p>
+</div>
+</div>
+<!-- Navigation Tabs Internal -->
+<div class="px-8 bg-surface-container-lowest flex items-center gap-2 overflow-x-auto">
+<button class="py-4 px-5 font-label-md text-label-md text-primary font-bold relative transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">dynamic_feed</span>
+<span>المنشورات والاستفسارات</span>
+<span class="absolute bottom-0 inset-x-0 h-1 bg-primary rounded-t-full"></span>
+</button>
+<button class="py-4 px-5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">diversity_3</span>
+<span>أعضاء المجموعة</span>
+<span class="px-2 py-0.5 text-xs rounded-full bg-surface-container font-medium text-on-surface-variant">410</span>
+</button>
+<button class="py-4 px-5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">roofing</span>
+<span>دليل تهيئة المنزل الآمن لكبار السن</span>
+</button>
+<button class="py-4 px-5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">accessibility_new</span>
+<span>برامج التمارين الخفيفة اليومية</span>
+</button>
+</div>
+</div>
+<!-- Main Grid Content: 12 Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8">
+<!-- Feed & Interactive Stream (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Create Post Widget (Clinical Publisher) -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<div class="flex items-center gap-3.5 mb-4">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[24px]">stethoscope</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">د. سارة المنصور</span>
+<span class="px-2 py-0.5 rounded text-xs bg-primary-fixed text-on-primary-fixed font-medium">أخصائي مشرف</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">نشر توجيه وقائي أو برنامج تأهيلي لأسر كبار السن</span>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all resize-none" placeholder="أضف نصيحة أو إرشاداً سريرياً حول اتزان ومرونة كبار السن ومفاصل الركبة..." rows="3"></textarea>
+</div>
+<!-- Post Action Controls Bar -->
+<div class="flex items-center justify-between mt-4 pt-3">
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">attach_file</span>
+<span>إرفاق خطة / ملف PDF</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">image</span>
+<span>نصيحة مصورة</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">videocam</span>
+<span>تمرين فيديو خفيف</span>
+</button>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-6 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-[0_2px_8px_rgba(0,80,125,0.2)] flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>نشر التوجيه</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Feed Filter Pills -->
+<div class="flex items-center justify-between px-2">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">تصفية العرض:</span>
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>الكل (مباشر)</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+<span>استفسارات الأسر</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+<span>إرشادات الوقاية من السقوط</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+<span>الملفات المرفقة</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+<span>الأحدث أولاً</span>
+</button>
+</div>
+<!-- POST 1: Pinned Clinical Directive (Fall Prevention Checklist) -->
+<article class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] relative overflow-hidden">
+<!-- Top Pinned Ribbon -->
+<div class="flex items-center justify-between pb-4 mb-4 border-b border-surface-container-high/60">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+<span class="font-semibold">توجيه وقائي سريري مثبت وموصى به لجميع المرافقين</span>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">منذ 3 ساعات</span>
+</div>
+<!-- Author Meta -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">د. سارة المنصور</span>
+<span class="px-2 py-0.5 rounded text-xs bg-primary-fixed text-on-primary-fixed font-semibold">أخصائي مشرف</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">استشاري علاج طبيعي وتأهيل كبار السن</span>
+</div>
+</div>
+<button aria-label="خيارات المنشور" class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Post Content -->
+<div class="mt-4 flex flex-col gap-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+            قائمة التدقيق السريعة: منع الانزلاق والسقوط في ممرات ودورات مياه كبار السن
+          </h2>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            تشير الدراسات السريرية إلى أن أكثر من 70% من حالات السقوط المفاجئ تحدث أثناء الانتقال الليلي من غرفة النوم إلى دورة المياه. نوصي جميع الأسر باتباع التدابير الثلاثة الفورية:
+          </p>
+<!-- Key Bullet Highlights -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 my-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">light_mode</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">إضاءة استشعار ليلية</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تركيب حساسات ضوئية خافتة بمحاذاة الأرضية على ارتفاع 30 سم.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-primary/15 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">pan_tool</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">مقابض ارتكاز متينة</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تثبيت دعامات غير قابلة للانزلاق جوار السرير ومقعد المرحاض.</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="w-8 h-8 rounded-lg bg-tertiary/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">do_not_step</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">إزالة المفارش الخفيفة</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">التخلص التام من السجاد الصغير المتحرك في الممرات والبلاط الرطب.</p>
+</div>
+</div>
+<!-- Document Attachment Box -->
+<div class="mt-2 p-4 rounded-xl bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-error/10 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">دليل_البيئة_المنزلية_الآمنة_لكبار_السن.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ملف إرشادي معتمد (14 صفحة) • 3.2 ميجابايت</span>
+</div>
+</div>
+<a class="px-4 py-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>تحميل الدليل</span>
+</a>
+</div>
+</div>
+<!-- Post Stats & Interaction Footer -->
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+<span class="font-label-sm text-label-sm font-semibold">72 تأييداً سريرياً</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chat_bubble_outline</span>
+<span class="font-label-sm text-label-sm font-semibold">9 تعليقات مفيدة</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span class="font-label-sm text-label-sm">مشاركة للأسر</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-2.5 py-1 rounded-full">
+            معتمد من الهيئة التأهيلية
+          </span>
+</div>
+</article>
+<!-- POST 2: Family Inquiry about Knee Osteoarthritis & Stair Climbing -->
+<article class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<!-- Author Meta -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[26px] text-on-surface-variant">person</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">مريم الشريف</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container text-on-surface-variant font-medium">ابنة مريضة خشونة مفاصل</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">منذ 5 ساعات • استشارة علاج طبيعي منزلي</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>تمت إجابة الأخصائي</span>
+</span>
+</div>
+<!-- Question Body -->
+<div class="mt-4">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            «السلام عليكم دكتورة سارة. الوالدة عمرها 72 سنة وتعاني من خشونة متقدمة بالركبتين من الدرجة الثالثة. هل صعود 5 درجات في مدخل البيت يومياً مفيد لتقوية العضلات الرباعية أم أن ذلك يزيد من احتكاك المفصل وتآكل الغضروف؟ وما هو البديل الآمن لتقوية الفخذ؟»
+          </p>
+</div>
+<!-- Doctor Sarah's Official Response Card -->
+<div class="mt-5 p-4 rounded-xl bg-surface-container-low border-r-4 border-primary flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold">رد د. سارة المنصور (أخصائي المشرف)</span>
+<span class="text-xs text-on-surface-variant block">قبل 3 ساعات</span>
+</div>
+</div>
+<span class="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded font-medium">توجيه معتمد</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            أهلاً أخت مريم، حفظ الله الوالدة. في درجات الخشونة المتقدمة، يسبب صعود الدرج ضغطاً يعادل 3 إلى 4 أضعاف وزن الجسم على مفصل الركبة، مما قد يزيد الالتهاب بدلاً من الفائدة. 
+            <br/><br/>
+<strong>التوجيه البديل الآمن:</strong>
+<br/>
+            1. تجنب استخدام الدرج كوسيلة للتقوية، واستخدامه فقط عند الضرورة مع الاعتماد الكامل على درابزين مزدوج ورفع الساق السليمة أولاً عند الصعود.
+            <br/>
+            2. استبدال الدرج بـ <strong>تمارين الجلوس والوقوف من كرسي مرتفع (Sit-to-Stand)</strong> مع مساند ذراعين، بمعدل 5 إلى 8 تكرارات، مرتين يومياً، مع كمدات دافئة قبل التمرين.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container-high/70">
+<span class="font-body-sm text-body-sm text-secondary font-medium">أوصت د. سارة بإضافة تمرين: «التقوية متساوية القياس للفخذ» في ملف الوالدة.</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold flex items-center gap-1" type="button">
+<span>عرض بطاقة التمرين</span>
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+</div>
+</div>
+<!-- Interactions -->
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-4">
+<button class="hover:text-primary transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+<span>18 إعجاب بالرد السريري</span>
+</button>
+<button class="hover:text-primary transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">reply</span>
+<span>إضافة تعقيب استيضاحي</span>
+</button>
+</div>
+<span>مفيد لـ 34 عائلة مسجلة في المجتمع</span>
+</div>
+</article>
+<!-- POST 3: Community Practical Tip (Medical Footwear & Walking) -->
+<article class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[26px] text-on-surface-variant">person_outline</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">طارق القحطاني</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container-high text-on-surface font-medium">مستفيد مسجل</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أمس في 04:30 مساءً • تجهيزات الحركة</span>
+</div>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">مناقشة مفتوحة</span>
+</div>
+<div class="mt-4">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">
+            ما هي المواصفات الموصى بها للأحذية المنزلية لمنع آلام الكاحل والانزلاق لكبار السن؟
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-1">
+            كثير من كبار السن يفضلون المشي حفاة أو بخفاف منزلية مفتوحة من الخلف (شبشب) داخل المنزل مما يعرضهم للتعثر. هل هناك معايير محددة لسماكة النعل وقفل الكاحل لتثبيت المفصل؟
+          </p>
+</div>
+<!-- Mini Tips Grid within Post -->
+<div class="mt-4 p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">tips_and_updates</span>
+<span>أبرز مواصفات الحذاء الآمن طبقاً للأخصائيين:</span>
+</span>
+<ul class="font-body-sm text-body-sm text-on-surface-variant space-y-1 list-disc list-inside pr-2">
+<li>نعل مطاطي غير قابل للانزلاق (Anti-slip) مع تجاويف واضحة.</li>
+<li>مغلق تماماً من جهة الكعب (تجنب الأحذية المفتوحة من الخلف نهائياً).</li>
+<li>إغلاق بشريط لاصق عريض (فيلكرو) لتسهيل الارتداء دون الحاجة للانحناء لربط الحذاء.</li>
+</ul>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-4">
+<button class="hover:text-primary transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span>15 تفاعلاً</span>
+</button>
+<button class="hover:text-primary transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">mode_comment</span>
+<span>4 تعليقات</span>
+</button>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold" type="button">
+            كتابة رد استشاري بصفتك أخصائياً
+          </button>
+</div>
+</article>
+</div>
+<!-- Group Sidebar: Insights, Moderators & Assistive Tech (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Moderation Team Widget -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">medical_information</span>
+<span>فريق الإشراف السريري</span>
+</h2>
+<span class="text-xs bg-surface-container px-2 py-0.5 rounded-full font-medium text-on-surface-variant">3 معتمدين</span>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Mod 1 (Current Doctor) -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold">
+                س
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">د. سارة المنصور (أنتِ)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أخصائي علاج طبيعي وتأهيل</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">مشرف أول</span>
+</div>
+<!-- Mod 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center font-bold">
+                ع
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">أ. عبدالمحسن العتيبي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">أخصائي علاج وظيفي (تهيئة بيئة)</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">مشرف مساند</span>
+</div>
+<!-- Mod 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center font-bold">
+                ن
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">د. نورة السليمان</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">استشاري طب وجراحة المفاصل</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">مستشار طبي</span>
+</div>
+</div>
+</div>
+<!-- Fall Risk Prevention Clinical Analytics Tool -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
+<span>مؤشرات السلامة والوقاية</span>
+</h2>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">تحديث أسبوعي</span>
+</div>
+<!-- Inline SVG Ring Progress: Fall Prevention Compliance -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center gap-4">
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="84, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">84%</span>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold">امتثال التدابير المنزلية</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              344 عائلة أكملت تهيئة بيئة الحمام والممرات للوقاية من السقوط هذا الشهر.
+            </p>
+</div>
+</div>
+<!-- Mini Stats Grid -->
+<div class="grid grid-cols-2 gap-3 mt-4">
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">انخفاض حوادث التعثر</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">-48%</span>
+<span class="text-xs text-on-surface-variant block mt-0.5">مقارنة بقبل الانضمام</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">الالتزام بالتمارين</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">78%</span>
+<span class="text-xs text-on-surface-variant block mt-0.5">تمارين الاتزان الخفيفة</span>
+</div>
+</div>
+</div>
+<!-- Assistive Device Bank (بنك الأجهزة المساعدة) -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)]">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">accessible</span>
+<span>بنك الأجهزة المساعدة</span>
+</h2>
+<a class="text-primary hover:underline font-label-sm text-label-sm font-semibold" href="#">عرض الكل</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+          أجهزة مؤهلة ومعتمدة متوفرة للصرف أو الإعارة الفورية للمستفيدين:
+        </p>
+<div class="flex flex-col gap-3">
+<!-- Item 1: Medical Walker -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">assist_walker</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">مشاية رباعية بعجلات ومكابح</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">متوفر 12 جهازاً للمعاينة</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors" type="button">
+              طلب وصفة
+            </button>
+</div>
+<!-- Item 2: Shower Chair -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">chair</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">كرسي استحمام هيدروليكي غير منزلق</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">متوفر 8 كراسي مجهزة</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+              طلب وصفة
+            </button>
+</div>
+<!-- Item 3: Bed Rail Assist -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">bed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">حاجز استناد السرير الطبي المتنقل</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">جاهز للتسليم المنزلي</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-tertiary text-on-tertiary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+              طلب وصفة
+            </button>
+</div>
+</div>
+</div>
+<!-- Quick Guidance & Protocol Cards -->
+<div class="rounded-2xl bg-gradient-to-br from-primary via-primary-container to-secondary p-6 text-on-primary shadow-[0_8px_24px_-4px_rgba(0,80,125,0.25)]">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[22px]">contact_emergency</span>
+<h3 class="font-label-lg text-label-lg font-bold">بروتوكول الطوارئ في حال السقوط</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed mb-4">
+          في حال سقوط كبير السن: لا تحاول رفعه فوراً. افحص علامات الوعي، تأكد من عدم وجود كسر في عظم الفخذ أو المفصل، واطلب الدعم الإسعافي إذا اشتكى من عجز حركة الساق.
+        </p>
+<button class="w-full py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md font-bold hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+          عرض بطاقة الإسعاف الأولي السريع
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

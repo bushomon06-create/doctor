@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface":"#f8f9ff","inverse-primary":"#94ccff","primary-fixed-dim":"#94ccff","on-surface":"#0d1c2e","on-secondary":"#ffffff","inverse-surface":"#233144","primary":"#00507d","on-tertiary-fixed-variant":"#5a00c6","tertiary-fixed":"#eaddff","secondary-container":"#86f2e4","primary-container":"#0369a1","outline-variant":"#c0c7d1","on-primary":"#ffffff","on-surface-variant":"#40474f","on-tertiary":"#ffffff","on-secondary-container":"#006f66","surface-dim":"#ccdbf3","secondary-fixed":"#89f5e7","tertiary-container":"#7936ea","on-secondary-fixed-variant":"#005049","background":"#f8f9ff","surface-container-high":"#dce9ff","tertiary":"#6003d1","secondary":"#006a61","outline":"#707881","on-primary-container":"#cbe4ff","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#004b74","surface-container":"#e6eeff","error":"#ba1a1a","primary-fixed":"#cde5ff","on-error-container":"#93000a","surface-variant":"#d5e3fc","secondary-fixed-dim":"#6bd8cb","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#eff4ff","on-secondary-fixed":"#00201d","surface-container-highest":"#d5e3fc","on-tertiary-container":"#e9dbff","on-background":"#0d1c2e","surface-bright":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-primary-fixed":"#001d32","on-tertiary-fixed":"#25005a","surface-tint":"#006399","tertiary-fixed-dim":"#d2bbff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.75rem","gutter-mobile":"1rem","space-lg":"1.75rem","margin":"2.5rem","gutter":"1.5rem","margin-mobile":"1.25rem","space-md":"1.25rem","space-xl":"2.5rem","space-xs":"0.5rem"},"fontFamily":{"label-sm":["IBM Plex Sans"],"display":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"]},"fontSize":{"label-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.75rem","letterSpacing":"0","fontWeight":"700"}],"headline-sm":["1.25rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1.125rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"400"}],"body-md":["1rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"400"}],"label-lg":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.375rem","letterSpacing":"0","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2.125rem","letterSpacing":"0","fontWeight":"600"}],"label-md":["0.9375rem",{"lineHeight":"1.375rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["2.25rem",{"lineHeight":"3rem","letterSpacing":"0","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)] select-none"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3 py-2"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-primary leading-tight">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant">بوابة الأخصائي المعالج</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span>لوحة التحكم</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span>المستفيدون</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clinical-assessments" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span>التقييمات السريرية</span></a><a aria-current="page" class="flex items-center justify-between px-3.5 py-3 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="rehabilitation-plans" href="./الخطط  الرئيسية.html"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span>خطط التأهيل</span></div><span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">14 نشطة</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="progress-and-reports" href="../التقدم و التقارير/الرئيسية التقدم و الالتزام.html"><span class="material-symbols-outlined text-[22px]">insights</span><span>التقدم والتقارير</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="schedule-and-appointments" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span>المواعيد والجدول</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">chat</span><span>الرسائل والتواصل</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span>مكتبة التمارين</span></a><a class="flex items-center gap-3 px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile-settings" href="../الملف الشهصي و الاعدادات/الملف الشخصي.html"><span class="material-symbols-outlined text-[22px]">settings</span><span>الملف المهني والإعدادات</span></a></nav></div><div class="flex flex-col gap-2 pt-4"><div class="bg-surface-container rounded-xl p-3.5 flex flex-col gap-2.5"><div class="flex items-center gap-2 text-secondary"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-md text-label-md">الدعم السريري الفوري</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">خط ساخن مباشر 24/7 لحالات الطوارئ والتوجيه السريري للمستفيدين.</p><a class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md transition-all hover:bg-on-secondary-container" data-path="emergency-support" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span>طلب اتصال فوري</span><span class="material-symbols-outlined text-[18px]">call</span></a></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="relative flex-1 max-w-xl cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-[22px] pointer-events-none">search</span><input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm transition-all" placeholder="بحث سريع بالاسم، رقم الملف الطبي، أو الخطة التأهيلية..." type="text"/></div><div class="flex items-center gap-6"><div class="flex items-center gap-2"><button class="w-11 h-11 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-all cursor-pointer" title="تسهيلات الوصول البصري والصوتي" type="button" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[22px]">record_voice_over</span></button><button class="relative w-11 h-11 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-all" title="الإشعارات السريرية" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 left-2 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></button></div><div class="h-8 w-px bg-surface-variant"></div><div class="flex items-center gap-3.5"><div class="flex flex-col text-left"><div class="flex items-center justify-end gap-2"><span class="font-label-md text-label-md text-on-surface">د. سارة المنصور</span><span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary" title="متاح للاستشارة"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant">أخصائية علاج طبيعي وتأهيل</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Interactive Feedback Banner (Success Toast) -->
+<div class="hidden fixed top-24 left-1/2 -translate-x-1/2 z-50 bg-secondary text-on-secondary px-6 py-3.5 rounded-xl shadow-xl flex items-center gap-3 transition-all duration-300" id="successToast">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+<span class="font-label-md text-label-md">تم حفظ وتخصيص الخطة التأهيلية السريرية بنجاح</span>
+<button class="text-on-secondary/80 hover:text-on-secondary p-1 mr-2" onclick="toggleToast(false)">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Breadcrumb & Header Section -->
+<div class="flex flex-col gap-6 mb-8">
+<div class="flex items-center justify-between flex-wrap gap-4">
+<div class="flex flex-col gap-1.5">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>لوحة التحكم</span>
+<span class="material-symbols-outlined text-[16px] rtl:rotate-180">chevron_left</span>
+<span class="text-primary font-semibold">خطط التأهيل</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">خطط التأهيل السريرية</h1>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-0.5 rounded-full font-label-sm text-label-sm font-semibold">22 خطة سارية</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">إدارة قوالب التدخل العلاجي والبروتوكولات التأهيلية المخصصة للمستفيدين تحت إشراف الفريق الطبي.</p>
+</div>
+<!-- Header Action Buttons -->
+<div class="flex items-center gap-3">
+<button class="h-12 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2 font-label-md text-label-md" onclick="openHistoryLog()">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span>سجل التعديلات</span>
+</button>
+<button class="h-12 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2 font-label-md text-label-md" onclick="exportPlansReport()">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>تصدير التقرير</span>
+</button>
+<button class="h-12 px-6 rounded-xl bg-primary text-on-primary hover:bg-primary-container active:scale-[0.98] transition-all shadow-md flex items-center gap-2 font-label-md text-label-md" onclick="openCreatePlanModal()">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>إنشاء خطة جديدة</span>
+</button>
+</div>
+</div>
+<!-- Interactive Development / QA State Switcher -->
+<div class="bg-surface-container-low p-3 rounded-2xl flex items-center justify-between gap-3 overflow-x-auto text-on-surface-variant">
+<div class="flex items-center gap-2 shrink-0 px-2 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<span>محاكي الحالات التشغيلية:</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm transition-all" id="btn-state-normal" onclick="switchViewMode('normal')">البيانات الحية</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="btn-state-loading" onclick="switchViewMode('loading')">جاري التحميل</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="btn-state-empty-templates" onclick="switchViewMode('empty-templates')">قوالب فارغة</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="btn-state-empty-beneficiaries" onclick="switchViewMode('empty-beneficiaries')">خطط فارغة</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all" id="btn-state-no-search" onclick="switchViewMode('no-search')">لا توجد نتائج</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container text-error font-label-sm text-label-sm transition-all" id="btn-state-error" onclick="switchViewMode('error')">خطأ سريري</button>
+</div>
+</div>
+</div>
+<!-- Live Clinical Statistical Metrics (5 Metric Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">إجمالي الخطط الفردية</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">26</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">خطة مسجلة</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+4 خطط هذا الشهر</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">الخطط النشطة</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">directions_run</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-secondary">22</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">سارية ومتابعة</span>
+</div>
+<div class="mt-2 w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">قيد الإعداد والمسودات</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">edit_note</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تخصيص سريري</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>تحتاج اعتماد الطبيب</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">الخطط المكتملة</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">حققت كامل الأهداف</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span>معدل تعافي 94%</span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">المستفيدون المرتبطون</span>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-tertiary">22</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">من أصل 28 مسجلاً</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>6 بانتظار تقييم أولي</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Navigation Tabs -->
+<div class="flex items-center justify-between border-b-0 mb-6 bg-surface-container-low p-1.5 rounded-2xl">
+<div class="flex items-center gap-2">
+<button class="h-12 px-6 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2.5 bg-surface-container-lowest text-primary shadow-sm" id="tab-templates" onclick="switchMainTab('templates')">
+<span class="material-symbols-outlined text-[22px]">menu_book</span>
+<span>مكتبة قوالب الخطط المعتمدة</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-primary">6 قوالب</span>
+</button>
+<button class="h-12 px-6 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2.5" id="tab-beneficiaries" onclick="switchMainTab('beneficiaries')">
+<span class="material-symbols-outlined text-[22px]">clinical_notes</span>
+<span>خطط المستفيدين الفردية</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">26 خطة</span>
+</button>
+</div>
+<!-- Quick Assistive Voice Trigger for Accessibility -->
+<div class="hidden sm:flex items-center gap-2 px-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">record_voice_over</span>
+<span class="font-label-sm text-label-sm">قارئ الإرشادات متاح</span>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 1 CONTENT: TEMPLATES LIBRARY           -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-6" id="tab-templates-content">
+<!-- Filter and Search Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-4">
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="template-search-input" onkeyup="filterTemplates()" placeholder="ابحث في قوالب التأهيل السريرية..." type="text"/>
+</div>
+<div class="flex items-center gap-3 w-full lg:w-auto flex-wrap sm:flex-nowrap">
+<!-- Rehabilitation Domain Filter -->
+<div class="relative flex-1 sm:w-60">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="template-domain-select" onchange="filterTemplates()">
+<option value="all">مجال التأهيل: الكل</option>
+<option value="bones">تأهيل العظام والمفاصل</option>
+<option value="stroke">تأهيل عصبي وسكتات دماغية</option>
+<option value="elderly">تأهيل كبار السن والتوازن</option>
+<option value="spine">العمود الفقري والانزلاقات</option>
+<option value="functional">قدرة وظيفية وتأهيل عام</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative flex-1 sm:w-48">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="template-status-select" onchange="filterTemplates()">
+<option value="all">حالة القالب: الكل</option>
+<option value="approved">معتمد ومفعل</option>
+<option value="draft">قيد المراجعة</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<!-- Reset Filter Button -->
+<button class="h-12 w-12 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-all shrink-0" onclick="resetTemplateFilters()" title="إعادة تعيين المرشحات">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Templates Grid (6 Comprehensive Clinical Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="templates-grid">
+<!-- Template 1 -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="bones" data-status="approved" data-title="بروتوكول استعادة المدى الحركي وتقوية الركبة ما بعد جراحة">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              معتمد ومفعل
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t1')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t1">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>تعديل القالب</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">content_copy</span>استنساخ القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول استعادة المدى الحركي للركبة')"><span class="material-symbols-outlined text-[18px]">archive</span>أرشفة القالب</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول استعادة المدى الحركي وتقوية الركبة ما بعد جراحة (ACL/TKR)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">بروتوكول متخصص لتعافي مفاصل الركبة وإعادة تأهيل عضلات الفخذ بعد الرباط الصليبي أو استبدال المفصل الكامل.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: عظام ومفاصل</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">14 تمريناً مبرمجاً</span>
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed font-label-sm text-label-sm text-primary font-medium">8 مستفيدين نشطين</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">update</span>
+            20 أكتوبر 2024
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(1)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              عرض
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="useTemplateInNewPlan('بروتوكول استعادة الركبة ACL/TKR')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              تخصيص لمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Template 2 -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="stroke" data-status="approved" data-title="بروتوكول التأهيل الوظيفي وإعادة التدريب الحركي بعد السكتة الدماغية">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              معتمد ومفعل
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t2')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t2">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>تعديل القالب</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">content_copy</span>استنساخ القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول السكتة الدماغية')"><span class="material-symbols-outlined text-[18px]">archive</span>أرشفة القالب</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول التأهيل الوظيفي وإعادة التدريب الحركي بعد السكتة الدماغية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">تمارين التعافي العصبي وتنسيق حركة الأطراف العلوية والسفلية لحالات الشلل النصفي وتحفيز السيالات الحركية.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: عصبي وسكتات</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">18 تمريناً وظيفياً</span>
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed font-label-sm text-label-sm text-primary font-medium">5 مستفيدين نشطين</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">update</span>
+            15 أكتوبر 2024
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(2)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              عرض
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="useTemplateInNewPlan('بروتوكول التأهيل الوظيفي بعد السكتة')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              تخصيص لمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Template 3 -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="elderly" data-status="approved" data-title="بروتوكول تحسين التوازن والثبات الحركي والوقاية من السقوط لكبار السن">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              معتمد ومفعل
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t3')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t3">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>تعديل القالب</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">content_copy</span>استنساخ القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول كبار السن')"><span class="material-symbols-outlined text-[18px]">archive</span>أرشفة القالب</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول تحسين التوازن والثبات الحركي والوقاية من السقوط لكبار السن</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">خطة وقائية تركز على استقرار الجذع وتقوية عضلات الكاحل والركبة لمساعدة كبار السن على التنقل الآمن داخل المنزل.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: توازن وكبار سن</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">10 تمارين</span>
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed font-label-sm text-label-sm text-primary font-medium">6 مستفيدين نشطين</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">update</span>
+            18 أكتوبر 2024
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(3)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              عرض
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="useTemplateInNewPlan('بروتوكول تحسين التوازن والوقاية من السقوط')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              تخصيص لمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Template 4 -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="bones" data-status="approved" data-title="بروتوكول تخفيف تيبّس مفاصل الطرف العلوي والكتف المتجمد">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              معتمد ومفعل
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t4')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t4">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>تعديل القالب</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">content_copy</span>استنساخ القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول الكتف المتجمد')"><span class="material-symbols-outlined text-[18px]">archive</span>أرشفة القالب</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول تخفيف تيبّس مفاصل الطرف العلوي والكتف المتجمد</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">برنامج تدرجي لتحسين حركة مفصل الكتف والأوتار الدوارة مع تسكين الألم العضلي المرافق.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: عظام وأطراف</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">12 تمريناً</span>
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed font-label-sm text-label-sm text-primary font-medium">4 مستفيدين نشطين</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">update</span>
+            12 أكتوبر 2024
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(4)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              عرض
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="useTemplateInNewPlan('بروتوكول الكتف المتجمد والطرف العلوي')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              تخصيص لمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Template 5 -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="spine" data-status="approved" data-title="بروتوكول تأهيل العمود الفقري والانزلاق الغضروفي القطني">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              معتمد ومفعل
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t5')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t5">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>تعديل القالب</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">content_copy</span>استنساخ القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول العمود الفقري L4-L5')"><span class="material-symbols-outlined text-[18px]">archive</span>أرشفة القالب</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول تأهيل العمود الفقري والانزلاق الغضروفي القطني L4-L5</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">تقوية عضلات الظهر العميقة وعضلات البطن لتقليل الضغط على الجذور العصبية وتصحيح انحناء الحوض.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: العمود الفقري</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">11 تمريناً</span>
+<span class="px-2.5 py-1 rounded-lg bg-primary-fixed font-label-sm text-label-sm text-primary font-medium">3 مستفيدين نشطين</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">update</span>
+            08 أكتوبر 2024
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(5)">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+              عرض
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="useTemplateInNewPlan('بروتوكول العمود الفقري القطني L4-L5')">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+              تخصيص لمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Template 6 (Draft / Under Review) -->
+<div class="template-card bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group" data-domain="functional" data-status="draft" data-title="بروتوكول تقوية الحوض والنهوض من الجلوس لضعف العضلات العام">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span>
+              قيد المراجعة والاعتماد
+            </span>
+<div class="dropdown relative">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="toggleCardMenu('menu-t6')">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden absolute left-0 top-9 w-44 bg-surface-container-lowest rounded-xl shadow-xl z-20 py-1.5" id="menu-t6">
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">edit</span>استكمال الإعداد</a>
+<a class="flex items-center gap-2 px-4 py-2 hover:bg-surface-container font-label-sm text-label-sm text-on-surface" href="#"><span class="material-symbols-outlined text-[18px]">check_circle</span>اعتماد القالب</a>
+<button class="w-full flex items-center gap-2 px-4 py-2 hover:bg-error-container/40 font-label-sm text-label-sm text-error" onclick="openArchiveModal('بروتوكول تقوية الحوض')"><span class="material-symbols-outlined text-[18px]">delete</span>حذف المسودة</button>
+</div>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors leading-snug mb-2">بروتوكول تقوية الحوض والنهوض من الجلوس لضعف العضلات العام</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4">تمارين حركية لتعزيز قوة المقعدة وأوتار الركبة لتسهيل الانتقال من السرير والكرسي باستقلالية تامة.</p>
+<div class="flex items-center gap-2 flex-wrap mb-6">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">المجال: قدرة وظيفية</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">8 تمارين أساسية</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-outline">0 (قالب جديد)</span>
+</div>
+</div>
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-4 rounded-b-2xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+            اليوم (مسودة)
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface transition-all flex items-center gap-1.5" onclick="previewTemplate(6)">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+              مراجعة
+            </button>
+<button class="h-10 px-3.5 rounded-lg bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-sm text-label-sm transition-all flex items-center gap-1.5 shadow-sm" onclick="approveTemplate(6)">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              اعتماد رسمي
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TAB 2 CONTENT: BENEFICIARY INDIVIDUAL PLANS-->
+<!-- ========================================== -->
+<section class="hidden flex-col gap-6" id="tab-beneficiaries-content">
+<!-- Table Search & Filter Toolbar -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-4">
+<div class="relative w-full lg:w-96">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="ben-search-input" onkeyup="filterBeneficiaries()" placeholder="ابحث باسم المستفيد، رقم الملف، أو اسم الخطة..." type="text"/>
+</div>
+<div class="flex items-center gap-3 w-full lg:w-auto flex-wrap sm:flex-nowrap">
+<!-- Status Filter -->
+<div class="relative flex-1 sm:w-48">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="ben-status-select" onchange="filterBeneficiaries()">
+<option value="all">حالة الخطة: الكل</option>
+<option value="active">نشطة ومتابعة</option>
+<option value="draft">مسودة إعداد</option>
+<option value="completed">مكتملة</option>
+<option value="archived">مؤرشفة</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<!-- Sort Select -->
+<div class="relative flex-1 sm:w-48">
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="ben-sort-select" onchange="sortBeneficiaries()">
+<option value="recent">الترتيب: الأحدث تاريخاً</option>
+<option value="compliance">الأكثر التزاماً</option>
+<option value="name">اسم المستفيد أبجدياً</option>
+</select>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">swap_vert</span>
+</div>
+<!-- Quick Filter Active Only Button -->
+<button class="h-12 px-4 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-all font-label-sm text-label-sm shrink-0 flex items-center gap-2" onclick="quickFilterActivePlans()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>النشطة فقط (22)</span>
+</button>
+</div>
+</div>
+<!-- Beneficiary Individual Plans Data Table -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-4 px-6 font-semibold">المستفيد والملف الطبي</th>
+<th class="py-4 px-6 font-semibold">الخطة التأهيلية والبروتوكول</th>
+<th class="py-4 px-6 font-semibold">تواريخ الخطة</th>
+<th class="py-4 px-6 font-semibold">مستوى الالتزام</th>
+<th class="py-4 px-6 font-semibold">الحالة السريرية</th>
+<th class="py-4 px-6 font-semibold text-center">الإجراءات</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="beneficiary-table-body">
+<!-- Row 1: أحمد عبدالعزيز الهاشمي -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="أحمد عبدالعزيز الهاشمي" data-plan="خطة استعادة المدى الحركي وتقوية الركبة" data-status="active">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">أهـ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">أحمد عبدالعزيز الهاشمي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #JSR-10294</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">خطة استعادة المدى الحركي وتقوية الركبة</span>
+<span class="font-body-sm text-body-sm text-outline">مشتق من: قالب استعادة الركبة (ACL/TKR)</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>البدء: 15 أكتوبر 2024</span>
+<span class="text-secondary font-medium">آخر نشاط: اليوم 11:30 ص</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">88%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  نشطة وسارية
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-primary transition-colors" onclick="viewPlanDetails('أحمد الهاشمي', 'خطة استعادة المدى الحركي للركبة')" title="عرض تفاصيل الخطة">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="editPlanDetails('أحمد الهاشمي')" title="تعديل التمارين والأهداف">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-error-container/40 text-error transition-colors" onclick="openArchiveModal('خطة أحمد الهاشمي')" title="أرشفة الخطة">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: فيصل بن متعب العتيبي -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="فيصل بن متعب العتيبي" data-plan="برنامج تقوية عضلات الظهر واستقرار الفقرات" data-status="active">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">فع</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">فيصل بن متعب العتيبي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10483</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">برنامج تقوية عضلات الظهر واستقرار الفقرات</span>
+<span class="font-body-sm text-body-sm text-outline">مشتق من: قالب العمود الفقري القطني L4-L5</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>البدء: 08 أكتوبر 2024</span>
+<span class="text-on-surface font-medium">آخر نشاط: 24 أكتوبر</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 75%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">75%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  نشطة وسارية
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-primary transition-colors" onclick="viewPlanDetails('فيصل العتيبي', 'تقوية عضلات الظهر')" title="عرض تفاصيل الخطة">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="editPlanDetails('فيصل العتيبي')" title="تعديل التمارين">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-error-container/40 text-error transition-colors" onclick="openArchiveModal('خطة فيصل العتيبي')" title="أرشفة الخطة">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: فهد بن راشد الغامدي -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="فهد بن راشد الغامدي" data-plan="خطة إعادة التدريب العصبي الحركي للطرف الأيمن" data-status="active">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-tertiary font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">فغ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">فهد بن راشد الغامدي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10493</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">خطة إعادة التدريب العصبي الحركي للطرف الأيمن</span>
+<span class="font-body-sm text-body-sm text-outline">مشتق من: قالب تأهيل السكتات الدماغية</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>البدء: 03 أكتوبر 2024</span>
+<span class="text-on-surface font-medium">آخر نشاط: 18 أكتوبر</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 92%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">92%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  نشطة وسارية
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-primary transition-colors" onclick="viewPlanDetails('فهد الغامدي', 'إعادة التدريب العصبي')" title="عرض تفاصيل الخطة">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="editPlanDetails('فهد الغامدي')" title="تعديل">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-error-container/40 text-error transition-colors" onclick="openArchiveModal('خطة فهد الغامدي')" title="أرشفة">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: منيرة بنت عبدالله القحطاني -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="منيرة بنت عبدالله القحطاني" data-plan="برنامج التوازن الحركي والثبات الذاتي" data-status="active">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-on-surface font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">مق</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">منيرة بنت عبدالله القحطاني</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10490</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">برنامج التوازن الحركي والثبات الذاتي</span>
+<span class="font-body-sm text-body-sm text-outline">مشتق من: قالب التوازن والوقاية من السقوط</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>البدء: 01 أكتوبر 2024</span>
+<span class="text-on-surface font-medium">آخر نشاط: 20 أكتوبر</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 64%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">64%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  نشطة وسارية
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-primary transition-colors" onclick="viewPlanDetails('منيرة القحطاني', 'التوازن الحركي')" title="عرض الخطة">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="editPlanDetails('منيرة القحطاني')" title="تعديل">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-error-container/40 text-error transition-colors" onclick="openArchiveModal('خطة منيرة القحطاني')" title="أرشفة">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: باسل بن سعود المطلق (Draft) -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="باسل بن سعود المطلق" data-plan="خطة تأهيل تيبس الكوع بعد الجبيرة" data-status="draft">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface-variant font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">بم</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">باسل بن سعود المطلق</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10507</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">خطة تأهيل تيبس الكوع بعد الجبيرة</span>
+<span class="font-body-sm text-body-sm text-tertiary">خطة مخصصة مستقلة (من الصفر)</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>تاريخ الإنشاء: 20 أكتوبر 2024</span>
+<span class="text-outline">قيد الاعتماد الطبي</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 10%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold">--</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant font-medium inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  مسودة (تتطلب اعتماد)
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg bg-secondary-container hover:bg-secondary hover:text-on-secondary text-on-secondary-container transition-colors" onclick="approveDraftPlan('باسل المطلق')" title="اعتماد وتفعيل الخطة">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="editPlanDetails('باسل المطلق')" title="متابعة التعديل">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-error-container/40 text-error transition-colors" onclick="openArchiveModal('مسودة باسل المطلق')" title="حذف المسودة">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: سارة بنت خالد الشمري (Completed) -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors" data-name="سارة بنت خالد الشمري" data-plan="خطة تأهيل التواء الكاحل الحاد" data-status="completed">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">سش</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">سارة بنت خالد الشمري</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10484</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">خطة تأهيل التواء الكاحل الحاد</span>
+<span class="font-body-sm text-body-sm text-outline">برنامج إصابات رياضية مكثف</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-on-surface-variant">
+<span>البدء: 18 سبتمبر 2024</span>
+<span class="text-primary font-medium">أُتمت: 22 أكتوبر 2024</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">100%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-primary font-medium inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                  مكتملة بنجاح
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-primary transition-colors" onclick="viewPlanDetails('سارة الشمري', 'تقرير إتمام التأهيل')" title="عرض تقرير الإتمام النهائي">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="downloadReportPdf('سارة الشمري')" title="تحميل التقرير">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: ريم بنت سليمان الخاطر (Archived) -->
+<tr class="beneficiary-row hover:bg-surface-container-low/60 transition-colors opacity-75" data-name="ريم بنت سليمان الخاطر" data-plan="برنامج تصحيح القوام وتقوس الظهر" data-status="archived">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-outline font-semibold flex items-center justify-center font-label-md text-label-md shrink-0">رخ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ريم بنت سليمان الخاطر</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">رقم الملف: #MRN-10488</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">برنامج تصحيح القوام وتقوس الظهر</span>
+<span class="font-body-sm text-body-sm text-outline">تأهيل العمود الفقري</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex flex-col font-body-sm text-body-sm text-outline">
+<span>تاريخ الإنشاء: 12 أغسطس 2024</span>
+<span>تمت الأرشفة السريرية</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 40%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold">40%</span>
+</div>
+</td>
+<td class="py-4 px-6">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-outline font-medium inline-flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+                  مؤرشفة
+                </span>
+</td>
+<td class="py-4 px-6 text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container text-secondary transition-colors" onclick="restorePlan('ريم الخاطر')" title="استعادة الخطة للنشاط">
+<span class="material-symbols-outlined text-[20px]">unarchive</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="viewPlanDetails('ريم الخاطر', 'الأرشيف الطبي')" title="عرض السجل التاريخي">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination and Record Counter Footer -->
+<div class="p-4 bg-surface-container-low flex items-center justify-between flex-wrap gap-4">
+<span class="font-body-sm text-body-sm text-on-surface-variant">عرض 7 خطط ظاهرة من أصل 26 خطة مسجلة في المنظومة</span>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-lg bg-surface-container-highest text-primary font-label-md text-label-md flex items-center justify-center">1</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center">2</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center">3</button>
+<button class="h-9 px-3 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span>التالي</span>
+<span class="material-symbols-outlined text-[18px] rtl:rotate-180">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SIMULATION / TESTING STATES (SKELETON / EMPTY / ERROR) -->
+<!-- ========================================== -->
+<div class="hidden flex-col gap-6 my-4" id="simulation-container">
+<!-- Skeleton Loading State -->
+<div class="hidden grid grid-cols-1 md:grid-cols-3 gap-6 animate-pulse" id="state-loading-view">
+<div class="h-64 bg-surface-container-high rounded-2xl"></div>
+<div class="h-64 bg-surface-container-high rounded-2xl"></div>
+<div class="h-64 bg-surface-container-high rounded-2xl"></div>
+</div>
+<!-- Empty State: No Templates -->
+<div class="hidden bg-surface-container-lowest p-12 rounded-2xl shadow-sm text-center flex flex-col items-center justify-center gap-4" id="state-empty-templates-view">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[44px]">layers_clear</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">لا توجد قوالب تأهيلية معتمدة حالياً</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">يمكنك البدء بصياغة أول بروتوكول علاجي قياسي ليكون مرجعاً لأعضاء الفريق السريري عند إنشاء خطط المستفيدين.</p>
+<button class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md mt-2" onclick="openCreatePlanModal()">
+        + إضافة قالب سريري جديد
+      </button>
+</div>
+<!-- Empty State: No Beneficiary Plans -->
+<div class="hidden bg-surface-container-lowest p-12 rounded-2xl shadow-sm text-center flex flex-col items-center justify-center gap-4" id="state-empty-beneficiaries-view">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[44px]">person_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">لا توجد خطط فردية منشأة بعد</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">لم يتم تخصيص أي خطة تأهيلية لمستفيدي المركز حتى الآن. اختر قالباً أو ابدأ خطة جديدة بالكامل.</p>
+<button class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md mt-2" onclick="openCreatePlanModal()">
+        + إنشاء أول خطة مستفيد
+      </button>
+</div>
+<!-- Empty State: No Search Results -->
+<div class="hidden bg-surface-container-lowest p-12 rounded-2xl shadow-sm text-center flex flex-col items-center justify-center gap-4" id="state-no-search-view">
+<div class="w-20 h-20 rounded-2xl bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[44px]">search_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">لم يتم العثور على نتائج مطابقة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">تأكد من صحة الكلمات المفتاحية المدخلة أو قم بإعادة ضبط مرشحات البحث لإظهار كافة الخطط المتاحة.</p>
+<button class="h-12 px-6 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md mt-2" onclick="resetAllFilters()">
+        إعادة ضبط خيارات البحث
+      </button>
+</div>
+<!-- Error State View -->
+<div class="hidden bg-error-container/40 p-12 rounded-2xl text-center flex flex-col items-center justify-center gap-4" id="state-error-view">
+<div class="w-20 h-20 rounded-2xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[44px]">error_outline</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-error-container">تعذّر جلب بيانات خطط التأهيل السريرية</h3>
+<p class="font-body-md text-body-md text-on-error-container max-w-md">حدث خطأ مؤقت في الاتصال بقاعدة البيانات الطبية المشفرة. يرجى التحقق من اتصال الشبكة وإعادة المحاولة.</p>
+<button class="h-12 px-8 rounded-xl bg-error text-on-error font-label-md text-label-md shadow-md mt-2 flex items-center gap-2" onclick="retryLoadingData()">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>إعادة المحاولة السريرية</span>
+</button>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 1: CREATE NEW PLAN (CHOICE MODAL)    -->
+<!-- ========================================== -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="createPlanModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-2xl w-full p-8 shadow-2xl flex flex-col gap-6 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-4 border-b-0">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">post_add</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">إنشاء خطة تأهيل سريرية جديدة</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">حدد منهجية التأسيس المناسبة للحالة الطبية للمستفيد</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-xl hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" onclick="closeCreatePlanModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Option Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Option A: From Template -->
+<button class="group p-6 rounded-2xl bg-surface-container-low hover:bg-primary/5 text-right flex flex-col justify-between transition-all hover:shadow-md cursor-pointer" onclick="selectCreationPath('template')">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">auto_stories</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-semibold">موصى به</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">إنشاء من قالب معتمد</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">اختيار بروتوكول قياسي معتمد من مكتبة القوالب وتخصيص نسخة مستقلة للمستفيد دون المساس بالأصل.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-primary font-label-sm text-label-sm font-semibold">
+<span>استعراض وتطبيق القوالب</span>
+<span class="material-symbols-outlined text-[18px] rtl:rotate-180">arrow_forward</span>
+</div>
+</button>
+<!-- Option B: Custom from scratch -->
+<button class="group p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container text-right flex flex-col justify-between transition-all hover:shadow-md cursor-pointer" onclick="selectCreationPath('scratch')">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">design_services</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant">تخصيص كامل</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">إنشاء خطة مخصصة من الصفر</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">بناء خطة علاجية فارغة وتحديد التمارين، التكرارات، التردد الأسبوعي، ومؤشرات الأداء يدوياً بالكامل.</p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-on-surface-variant group-hover:text-on-surface font-label-sm text-label-sm font-semibold">
+<span>فتح منشئ الخطط الفارغة</span>
+<span class="material-symbols-outlined text-[18px] rtl:rotate-180">arrow_forward</span>
+</div>
+</button>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تخضع جميع الخطط الجديدة تلقائياً لبروتوكول التحقق من التوافق الحركي والسلامة السريرية في جسر.</span>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 2: CONFIRMATION / ARCHIVE CLINICAL   -->
+<!-- ========================================== -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="archiveConfirmModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-8 shadow-2xl flex flex-col gap-6 animate-in fade-in zoom-in-95 duration-200">
+<div class="w-16 h-16 rounded-2xl bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[36px]">archive</span>
+</div>
+<div class="flex flex-col text-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">تأكيد الأرشفة السريرية</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">هل أنت متأكد من رغبتك في أرشفة <span class="font-semibold text-on-surface" id="archiveTargetTitle">الخطة المحددة</span>؟</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-start gap-3 text-right">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">لن يتم حذف السجل الطبي للمستفيد، وستظل جميع تقارير الإنجاز والتسجيلات السابقة محفوظة في الأرشيف الطبي ويمكن استعادتها لاحقاً.</p>
+</div>
+<div class="flex items-center gap-3 justify-end pt-2">
+<button class="h-12 px-6 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" onclick="closeArchiveModal()">
+          إلغاء التراجع
+        </button>
+<button class="h-12 px-6 rounded-xl bg-error text-on-error font-label-md text-label-md hover:bg-error/90 transition-all shadow-md" onclick="executeArchive()">
+          تأكيد الأرشفة السريرية
+        </button>
+</div>
+</div>
+</div>
+<!-- Detail Preview Drawer / Modal -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="detailDrawerModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-xl w-full p-6 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="drawerTitle">تفاصيل الخطة التأهيلية</h3>
+<button class="w-10 h-10 rounded-xl hover:bg-surface-container text-on-surface-variant flex items-center justify-center" onclick="closeDetailDrawer()">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant flex flex-col gap-3" id="drawerBody">
+<!-- Injected via script -->
+</div>
+<div class="flex justify-end pt-4">
+<button class="h-12 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm" onclick="closeDetailDrawer()">
+          إغلاق النافذة
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Functional JavaScript for Micro-interactions & Switching -->
+<script>
+  // Main Tab Navigation Switcher
+  function switchMainTab(tab) {
+    const templatesBtn = document.getElementById('tab-templates');
+    const beneficiariesBtn = document.getElementById('tab-beneficiaries');
+    const templatesContent = document.getElementById('tab-templates-content');
+    const beneficiariesContent = document.getElementById('tab-beneficiaries-content');
+
+    if (tab === 'templates') {
+      templatesBtn.className = "h-12 px-6 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2.5 bg-surface-container-lowest text-primary shadow-sm";
+      beneficiariesBtn.className = "h-12 px-6 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2.5";
+      templatesContent.classList.remove('hidden');
+      beneficiariesContent.classList.add('hidden');
+    } else {
+      beneficiariesBtn.className = "h-12 px-6 rounded-xl font-label-md text-label-md transition-all flex items-center gap-2.5 bg-surface-container-lowest text-primary shadow-sm";
+      templatesBtn.className = "h-12 px-6 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2.5";
+      beneficiariesContent.classList.remove('hidden');
+      templatesContent.classList.add('hidden');
+    }
+  }
+
+  // Filter Templates in Tab 1
+  function filterTemplates() {
+    const searchVal = document.getElementById('template-search-input').value.toLowerCase();
+    const domainVal = document.getElementById('template-domain-select').value;
+    const statusVal = document.getElementById('template-status-select').value;
+
+    const cards = document.querySelectorAll('.template-card');
+    cards.forEach(card => {
+      const title = card.getAttribute('data-title').toLowerCase();
+      const domain = card.getAttribute('data-domain');
+      const status = card.getAttribute('data-status');
+
+      const matchesSearch = title.includes(searchVal);
+      const matchesDomain = (domainVal === 'all' || domain === domainVal);
+      const matchesStatus = (statusVal === 'all' || status === statusVal);
+
+      if (matchesSearch && matchesDomain && matchesStatus) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function resetTemplateFilters() {
+    document.getElementById('template-search-input').value = '';
+    document.getElementById('template-domain-select').value = 'all';
+    document.getElementById('template-status-select').value = 'all';
+    filterTemplates();
+  }
+
+  // Filter Beneficiaries in Tab 2
+  function filterBeneficiaries() {
+    const searchVal = document.getElementById('ben-search-input').value.toLowerCase();
+    const statusVal = document.getElementById('ben-status-select').value;
+    const rows = document.querySelectorAll('.beneficiary-row');
+
+    rows.forEach(row => {
+      const name = row.getAttribute('data-name').toLowerCase();
+      const plan = row.getAttribute('data-plan').toLowerCase();
+      const status = row.getAttribute('data-status');
+
+      const matchesSearch = name.includes(searchVal) || plan.includes(searchVal);
+      const matchesStatus = (statusVal === 'all' || status === statusVal);
+
+      if (matchesSearch && matchesStatus) {
+        row.classList.remove('hidden');
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+  }
+
+  function quickFilterActivePlans() {
+    switchMainTab('beneficiaries');
+    document.getElementById('ben-status-select').value = 'active';
+    filterBeneficiaries();
+  }
+
+  function sortBeneficiaries() {
+    const sortVal = document.getElementById('ben-sort-select').value;
+    const tbody = document.getElementById('beneficiary-table-body');
+    const rows = Array.from(tbody.querySelectorAll('.beneficiary-row'));
+
+    if (sortVal === 'name') {
+      rows.sort((a, b) => a.getAttribute('data-name').localeCompare(b.getAttribute('data-name'), 'ar'));
+    } else {
+      // Default natural order
+      rows.reverse();
+    }
+    rows.forEach(r => tbody.appendChild(r));
+  }
+
+  // Card Menus (More options dropdown)
+  function toggleCardMenu(menuId) {
+    const menu = document.getElementById(menuId);
+    const allMenus = document.querySelectorAll('.dropdown > div');
+    allMenus.forEach(m => {
+      if (m.id !== menuId) m.classList.add('hidden');
+    });
+    menu.classList.toggle('hidden');
+  }
+
+  // Close menus when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown > div').forEach(m => m.classList.add('hidden'));
+    }
+  });
+
+  // Modals Operations
+  function openCreatePlanModal() {
+    document.getElementById('createPlanModal').classList.remove('hidden');
+  }
+
+  function closeCreatePlanModal() {
+    document.getElementById('createPlanModal').classList.add('hidden');
+  }
+
+  function selectCreationPath(type) {
+  closeCreatePlanModal();
+  window.location.href = './انشاء خطة جديده.html?mode=' + encodeURIComponent(type);
+} else {
+      switchMainTab('beneficiaries');
+      toggleToast(true, 'تم فتح نموذج بناء خطة علاجية مخصصة جديدة');
+    }
+  }
+
+  function useTemplateInNewPlan(templateName) {
+  window.location.href = './انشاء خطة جديده.html?template=' + encodeURIComponent(templateName);
+}
+
+  function approveTemplate(id) {
+    toggleToast(true, 'تم اعتماد وتفعيل القالب في المنظومة السريرية بنجاح');
+  }
+
+  function approveDraftPlan(name) {
+    toggleToast(true, `تم اعتماد وتفعيل خطة المستفيد (${name}) بنجاح`);
+  }
+
+  // Archive Modal Logic
+  let currentArchiveTarget = '';
+  function openArchiveModal(title) {
+    currentArchiveTarget = title;
+    document.getElementById('archiveTargetTitle').textContent = title;
+    document.getElementById('archiveConfirmModal').classList.remove('hidden');
+  }
+
+  function closeArchiveModal() {
+    document.getElementById('archiveConfirmModal').classList.add('hidden');
+  }
+
+  function executeArchive() {
+    closeArchiveModal();
+    toggleToast(true, `تمت أرشفة "${currentArchiveTarget}" بنجاح ونقلها للأرشيف التاريخي.`);
+  }
+
+  // Detail Drawer Helper
+  function openDetailDrawer(title, content) {
+    document.getElementById('drawerTitle').textContent = title;
+    document.getElementById('drawerBody').innerHTML = `<p>${content}</p>`;
+    document.getElementById('detailDrawerModal').classList.remove('hidden');
+  }
+
+  function closeDetailDrawer() {
+    document.getElementById('detailDrawerModal').classList.add('hidden');
+  }
+
+  function previewTemplate(id) {
+    openDetailDrawer('معاينة القالب السريري', `عرض تفاصيل البروتوكول العلاجي #${id} مع التمارين التفاعلية والجرعات المعتمدة وتوصيات الأخصائي.`);
+  }
+
+  function viewPlanDetails(beneficiary, plan) {
+    openDetailDrawer(`ملف خطة: ${beneficiary}`, `الخطة: ${plan}<br>حالة الالتزام الحركي: ممتازة<br>عدد الجلسات المنجزة: 14 جلسة من أصل 18 جلسة مقررة.`);
+  }
+
+  function editPlanDetails(beneficiary) {
+    toggleToast(true, `فتح واجهة تعديل التمارين لـ ${beneficiary}`);
+  }
+
+  function restorePlan(beneficiary) {
+    toggleToast(true, `تمت استعادة خطة ${beneficiary} وإعادتها لقائمة الخطط النشطة`);
+  }
+
+  function exportPlansReport() {
+    toggleToast(true, 'جاري إنشاء وتصدير التقرير الإحصائي السريري بصيغة PDF...');
+  }
+
+  function openHistoryLog() {
+    openDetailDrawer('سجل التعديلات السريرية', 'سجل النشاط الطبي: قام د. سارة المنصور بتحديث 4 خطط علاجية خلال الـ 48 ساعة الماضية.');
+  }
+
+  function downloadReportPdf(name) {
+    toggleToast(true, `جاري تحميل التقرير النهائي للمستفيد: ${name}`);
+  }
+
+  // Toast Notification
+  function toggleToast(show, customMessage) {
+    const toast = document.getElementById('successToast');
+    if (show) {
+      if (customMessage) {
+        toast.querySelector('.font-label-md').textContent = customMessage;
+      }
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4500);
+    } else {
+      toast.classList.add('hidden');
+    }
+  }
+
+  // Interactive View Modes Simulator (For testing review requirements)
+  function switchViewMode(mode) {
+    const normalTemplates = document.getElementById('tab-templates-content');
+    const normalBeneficiaries = document.getElementById('tab-beneficiaries-content');
+    const simContainer = document.getElementById('simulation-container');
+
+    const loadingView = document.getElementById('state-loading-view');
+    const emptyTemplatesView = document.getElementById('state-empty-templates-view');
+    const emptyBeneficiariesView = document.getElementById('state-empty-beneficiaries-view');
+    const noSearchView = document.getElementById('state-no-search-view');
+    const errorView = document.getElementById('state-error-view');
+
+    // Reset buttons
+    ['normal', 'loading', 'empty-templates', 'empty-beneficiaries', 'no-search', 'error'].forEach(id => {
+      const btn = document.getElementById(`btn-state-${id}`);
+      if (btn) {
+        btn.className = "px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all";
+      }
+    });
+
+    const activeBtn = document.getElementById(`btn-state-${mode}`);
+    if (activeBtn) {
+      activeBtn.className = "px-3 py-1.5 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-all";
+    }
+
+    // Hide all sub views
+    loadingView.classList.add('hidden');
+    emptyTemplatesView.classList.add('hidden');
+    emptyBeneficiariesView.classList.add('hidden');
+    noSearchView.classList.add('hidden');
+    errorView.classList.add('hidden');
+
+    if (mode === 'normal') {
+      simContainer.classList.add('hidden');
+      switchMainTab('templates');
+    } else {
+      normalTemplates.classList.add('hidden');
+      normalBeneficiaries.classList.add('hidden');
+      simContainer.classList.remove('hidden');
+
+      if (mode === 'loading') loadingView.classList.remove('hidden');
+      if (mode === 'empty-templates') emptyTemplatesView.classList.remove('hidden');
+      if (mode === 'empty-beneficiaries') emptyBeneficiariesView.classList.remove('hidden');
+      if (mode === 'no-search') noSearchView.classList.remove('hidden');
+      if (mode === 'error') errorView.classList.remove('hidden');
+    }
+  }
+
+  function retryLoadingData() {
+    switchViewMode('loading');
+    setTimeout(() => {
+      switchViewMode('normal');
+      toggleToast(true, 'تمت إعادة مزامنة البيانات السريرية بنجاح');
+    }, 1200);
+  }
+
+  function resetAllFilters() {
+    switchViewMode('normal');
+    resetTemplateFilters();
+  }
+</script></main></div></body></html>

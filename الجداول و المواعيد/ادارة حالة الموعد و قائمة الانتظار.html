@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;font-family:'IBM Plex Sans Arabic',sans-serif;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#eff4ff","inverse-surface":"#233144","primary-fixed":"#cde5ff","error-container":"#ffdad6","tertiary-container":"#7936ea","surface-tint":"#006399","error":"#ba1a1a","outline-variant":"#c0c7d1","outline":"#707881","surface-container-highest":"#d5e3fc","on-primary":"#ffffff","surface-container":"#e6eeff","secondary":"#006a61","on-secondary-fixed-variant":"#005049","on-tertiary-fixed-variant":"#5a00c6","on-secondary-container":"#006f66","on-tertiary":"#ffffff","secondary-fixed-dim":"#6bd8cb","secondary-fixed":"#89f5e7","surface-container-high":"#dce9ff","surface-bright":"#f8f9ff","on-error":"#ffffff","on-primary-fixed-variant":"#004b74","secondary-container":"#86f2e4","primary-fixed-dim":"#94ccff","on-surface":"#0d1c2e","on-tertiary-container":"#e9dbff","on-secondary-fixed":"#00201d","tertiary":"#6003d1","on-background":"#0d1c2e","background":"#f8f9ff","surface-variant":"#d5e3fc","surface-container-lowest":"#ffffff","primary":"#00507d","on-tertiary-fixed":"#25005a","on-primary-fixed":"#001d32","surface-dim":"#ccdbf3","surface":"#f8f9ff","primary-container":"#0369a1","on-error-container":"#93000a","tertiary-fixed":"#eaddff","tertiary-fixed-dim":"#d2bbff","inverse-primary":"#94ccff","on-surface-variant":"#40474f","on-secondary":"#ffffff","on-primary-container":"#cbe4ff","inverse-on-surface":"#eaf1ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.75rem","margin-mobile":"1.25rem","space-md":"1.25rem","space-xl":"2.5rem","space-lg":"1.75rem",gutter:"1.5rem",margin:"2.5rem","gutter-mobile":"1rem","space-xs":"0.5rem"},fontFamily:{"headline-lg":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"],display:["IBM Plex Sans"],"body-lg":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"]},fontSize:{"headline-lg":["2.25rem",{lineHeight:"3rem",letterSpacing:"0",fontWeight:"700"}],"headline-sm":["1.25rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"600"}],"body-sm":["0.875rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"body-md":["1rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"400"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.375rem",letterSpacing:"0",fontWeight:"700"}],"label-sm":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0",fontWeight:"600"}],"label-md":["0.9375rem",{lineHeight:"1.375rem",letterSpacing:"0",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2.125rem",letterSpacing:"0",fontWeight:"600"}],display:["3rem",{lineHeight:"3.75rem",letterSpacing:"0",fontWeight:"700"}],"body-lg":["1.125rem",{lineHeight:"1.875rem",letterSpacing:"0",fontWeight:"400"}],"label-lg":["1.125rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6"><div class="flex flex-col gap-6"><div class="px-6 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-2xl">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight leading-tight">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant">بوابة الأخصائي المعالج</span></div></div><div class="px-4"><div class="bg-surface-container-low rounded-xl p-3 flex items-center gap-3"><span class="material-symbols-outlined text-secondary">verified_user</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">قسم التأهيل والرعاية</span><span class="font-body-sm text-body-sm text-on-surface-variant text-xs">حساب طبيب معتمد</span></div></div></div><nav class="flex flex-col gap-1.5 px-4" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="overview" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-xl">dashboard</span><span class="font-label-md text-label-md">لوحة التحكم العامة</span></a><a aria-current="page" class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all duration-150 bg-primary-container text-on-primary font-semibold shadow-sm" data-path="appointments-and-schedule" href="./المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="font-label-md text-label-md">المواعيد والجدول</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="patient-cases" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-xl">accessible</span><span class="font-label-md text-label-md">ملفات المستفيدين</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="telehealth-sessions" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-xl">video_camera_front</span><span class="font-label-md text-label-md">جلسات التأهيل المرئي</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="therapy-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-xl">assignment</span><span class="font-label-md text-label-md">الخطط العلاجية</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-xl">analytics</span><span class="font-label-md text-label-md">التقارير السريرية</span></a></nav></div><div class="px-4 flex flex-col gap-2"><a class="flex items-center gap-3.5 px-4 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="accessibility-settings" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-xl">accessibility_new</span><span class="font-label-md text-label-md">تيسير الوصول الحركي</span></a><a class="flex items-center gap-3.5 px-4 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all duration-150" data-path="support-center" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-xl">support_agent</span><span class="font-label-md text-label-md">المساعدة والدعم</span></a></div></aside><div class="pr-72"><header class="fixed top-0 left-0 right-72 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3 cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex items-center gap-2 bg-surface-container-low px-3.5 py-1.5 rounded-full text-secondary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>متاح للاستشارات الفورية</span></div><div class="hidden md:flex items-center gap-1.5 text-on-surface-variant bg-surface-container-low px-3 py-1.5 rounded-xl"><span class="material-symbols-outlined text-lg">hearing</span><span class="font-label-sm text-label-sm">النمط الصوتي مفعل</span></div></div><div class="flex items-center gap-4"><button aria-label="البحث" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors duration-150 cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-xl">search</span></button><button aria-label="التنبيهات الإكلينيكية" class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors duration-150" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold">د. سارة المنصور</span><span class="font-body-sm text-body-sm text-on-surface-variant text-xs">أخصائية علاج وظيفي</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA92SFmJipP0CTcfRu2KJJivcfSYrR4x3sYhJ-QsG4NiTWJjWM3T374tNRFe45AkWfa6VXzJxfkG8X8A662muZMz_jZbOhixr0xYJo-1hfztmVym9PQqaDBrLrV-iV_8DdIMJY92Ruw4NK_qbExDQF7NMftxwkjzuKpfOI-H9MGEpAf4TevQPYiRf-a0KuDqMw8sed6sZpb_IbdvzEmqU30-foTu2ekUqGyr-rPdA"/></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-8 py-8"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Clinical Status Header -->
+<div class="flex flex-col gap-6 mb-8">
+<!-- Breadcrumbs & Quick Connectivity Badge -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<nav aria-label="مسار التنقل" class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="../الرئيسية/code.html">
+<span class="material-symbols-outlined text-lg">home</span>
+<span>الرئيسية</span>
+</a>
+<span class="material-symbols-outlined text-sm opacity-60">arrow_back_ios</span>
+<a class="hover:text-primary transition-colors" href="./المواعيد و الجداول 1.html">المواعيد والجدول</a>
+<span class="material-symbols-outlined text-sm opacity-60">arrow_back_ios</span>
+<span class="text-primary font-semibold">إدارة حالة الموعد وقائمة الانتظار</span>
+</nav>
+<!-- Live Clinical Sync Badge -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold">نظام النداء المباشر متصل (Live Sync)</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm hidden md:block">
+          آخر تحديث: <span class="font-semibold text-on-surface" id="lastUpdatedClock">10:28:44 ص</span>
+</div>
+</div>
+</div>
+<!-- Main Title & Operational Actions Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-6 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-2xl">queue_music</span>
+</div>
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+              إدارة حالة الموعد وقائمة الانتظار
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              متابعة حالة المواعيد السريرية اليومية، تنظيم تدفق حضور وانتظار المستفيدين بالمركز، وإدارة جلسات الاستشارات عن بُعد.
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Control Action Buttons -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Date Navigator -->
+<div class="flex items-center bg-surface-container-low rounded-xl p-1 shadow-sm">
+<button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-lowest rounded-lg transition-colors" onclick="navigateDay(-1)" title="اليوم السابق" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+<div class="px-3.5 py-1 text-center">
+<div class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">event</span>
+<span>الأربعاء، 30 أكتوبر 2024</span>
+</div>
+<span class="text-[0.75rem] text-secondary font-medium">اليوم الحالي (الجدول الفعلي)</span>
+</div>
+<button class="w-9 h-9 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-lowest rounded-lg transition-colors" onclick="navigateDay(1)" title="اليوم التالي" type="button">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+</div>
+<button class="h-12 px-4 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 font-label-md text-label-md" onclick="window.location.href='./المواعيد و الجداول 1.html'" type="button">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+<span>الجدول الرئيسي</span>
+</button>
+<button class="h-12 px-5 rounded-xl bg-primary text-on-primary hover:bg-primary-container shadow-sm transition-all flex items-center gap-2 font-label-md text-label-md" onclick="refreshQueue()" type="button">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span>تحديث الحالات</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Badges Section -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+<!-- Total Appointments -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">إجمالي المواعيد</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">calendar_today</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-total">8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مواعيد مسجلة</span>
+</div>
+<div class="mt-3 flex items-center justify-between text-xs text-on-surface-variant pt-2 border-t border-surface-container">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-sm">apartment</span> 3 حضوري
+        </span>
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-sm">videocam</span> 5 عن بُعد
+        </span>
+</div>
+</div>
+<!-- Waiting Room Queue -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden border-2 border-secondary group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">في صالة الانتظار</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">airline_seat_recline_normal</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary" id="stat-waiting">2</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">جاهزون للاستدعاء</span>
+</div>
+<div class="mt-3 flex items-center gap-1.5 text-xs text-secondary-container bg-secondary/10 px-2 py-1 rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-secondary font-medium">متوسط الانتظار: 8 دقائق</span>
+</div>
+</div>
+<!-- Ongoing Sessions -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">جلسات جارية الآن</span>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl">sensors</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-tertiary" id="stat-active">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">جلسة قيد التنفيذ</span>
+</div>
+<div class="mt-3 flex items-center gap-1 text-xs text-tertiary font-medium pt-2 border-t border-surface-container">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>العيادة التأهيلية رقم #1</span>
+</div>
+</div>
+<!-- Completed & Documented -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">مكتمل وموثق</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">task_alt</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-completed">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تم إغلاق ملفاتها</span>
+</div>
+<div class="mt-3 flex items-center gap-1 text-xs text-on-surface-variant pt-2 border-t border-surface-container">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span>100% نسبة التوثيق الفوري</span>
+</div>
+</div>
+<!-- Pending / Follow-up -->
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">بانتظار التأكيد / الحضور</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-pending">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مستفيدين</span>
+</div>
+<div class="mt-3 flex items-center gap-1 text-xs text-error font-medium pt-2 border-t border-surface-container">
+<span class="material-symbols-outlined text-sm">warning</span>
+<span>موعد قادم يتطلب تأكيداً</span>
+</div>
+</div>
+</section>
+<!-- Clinic Waiting Room Queue Section (Floor / Physical Lounge) -->
+<section class="mb-10 bg-surface-container-lowest rounded-2xl shadow-sm p-6 relative overflow-hidden">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-6 gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md font-bold text-primary">
+              قائمة الانتظار للمواعيد الحضورية بالمركز
+            </h2>
+<span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-secondary-fixed text-on-secondary-fixed">
+              صالة الانتظار الرئيسية
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            تحديث مباشر وفق نداء شاشات الصالة ورقم الدور المعتمد للمراجعين الحاضرين في المركز.
+          </p>
+</div>
+</div>
+<!-- Quick Audio Call System Simulator -->
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2.5 rounded-xl">
+<span class="material-symbols-outlined text-secondary animate-pulse text-xl">volume_up</span>
+<div class="flex flex-col text-xs">
+<span class="font-semibold text-on-surface">نظام النداء الصوتي الآلي</span>
+<span class="text-on-surface-variant">مكبرات الصوت: عيادة #1 وعيادة #2 نشطة</span>
+</div>
+</div>
+</div>
+<!-- Active Physical Queue Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+<!-- Card #07 (Present / Waiting) -->
+<div class="bg-surface-container-low rounded-2xl p-5 shadow-sm flex flex-col justify-between relative border-r-4 border-secondary" id="queue-card-7">
+<div>
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-secondary text-on-secondary font-headline-sm text-headline-sm rounded-lg font-bold">
+                #07
+              </span>
+<span class="px-2.5 py-1 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold rounded-md">
+                وصل المستفيد / في صالة الانتظار
+              </span>
+</div>
+<span class="text-xs text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">timer</span> وصل قبل 8 د
+            </span>
+</div>
+<!-- Beneficiary Details -->
+<div class="space-y-2 mb-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">فيصل بن متعب العتيبي</h3>
+<span class="text-xs px-2 py-0.5 bg-surface-container rounded font-mono text-on-surface-variant">MRN-10483</span>
+</div>
+<p class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span>
+<span>العمر: 38 سنة | المرافق: سعد العتيبي (أخ)</span>
+</p>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest text-xs text-on-surface flex flex-col gap-1">
+<div class="flex items-center justify-between font-medium">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">medical_services</span> عيادة التأهيل الحركي (2)
+                </span>
+<span class="font-semibold">10:30 ص (45 دقيقة)</span>
+</div>
+<div class="text-on-surface-variant flex items-center justify-between">
+<span>وقت تسجيل الوصول: 10:22 ص</span>
+<span class="text-secondary font-semibold">جاهز للكشف الفوري</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-3 border-t border-surface-container">
+<button class="col-span-2 h-11 bg-secondary text-on-secondary hover:bg-secondary/90 rounded-xl font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-95" onclick="callPatientAudio('#07', 'فيصل بن متعب العتيبي', 'عيادة التأهيل الحركي (2)')" type="button">
+<span class="material-symbols-outlined text-lg">campaign</span>
+<span>استدعاء إلى العيادة عبر الشاشة</span>
+</button>
+<button class="h-10 bg-primary text-on-primary hover:bg-primary-container rounded-xl font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-all" onclick="startSession('APT-001', 'فيصل بن متعب العتيبي')" type="button">
+<span class="material-symbols-outlined text-base">play_circle</span>
+<span>بدء الكشف الآن</span>
+</button>
+<button class="h-10 bg-surface-container-lowest text-on-surface hover:bg-surface-container rounded-xl font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-all" onclick="openDetailsModal('APT-001')" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>عرض التفاصيل</span>
+</button>
+<button class="col-span-2 text-error hover:bg-error-container/40 rounded-lg py-1.5 text-xs font-semibold flex items-center justify-center gap-1 transition-colors" onclick="recordNoShow('APT-001', 'فيصل بن متعب العتيبي')" type="button">
+<span class="material-symbols-outlined text-sm">person_off</span>
+<span>تسجيل اعتذار أو عدم حضور</span>
+</button>
+</div>
+</div>
+<!-- Card #04 (Completed) -->
+<div class="bg-surface-container-low/60 rounded-2xl p-5 shadow-sm flex flex-col justify-between opacity-95" id="queue-card-4">
+<div>
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-headline-sm text-headline-sm rounded-lg font-bold">
+                #04
+              </span>
+<span class="px-2.5 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold rounded-md flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>مكتمل الكشف</span>
+</span>
+</div>
+<span class="text-xs text-on-surface-variant">انتهت الجلسة 10:15 ص</span>
+</div>
+<div class="space-y-2 mb-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">نورة الدوسري</h3>
+<span class="text-xs px-2 py-0.5 bg-surface-container rounded font-mono text-on-surface-variant">MRN-10482</span>
+</div>
+<p class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>الموعد الأصلي: 09:30 ص | الحضور: 09:18 ص</span>
+</p>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest text-xs text-on-surface flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span>العيادة: عيادة التأهيل الطبي (1)</span>
+<span class="text-secondary font-semibold">المدة: 45 دقيقة</span>
+</div>
+<span class="text-on-surface-variant">تم توثيق الملاحظات وخطة التمارين المنزلية.</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex items-center justify-between gap-2">
+<button class="flex-1 h-10 bg-surface-container-lowest text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded-xl flex items-center justify-center gap-1 transition-colors" onclick="openNotesModal('نورة الدوسري')" type="button">
+<span class="material-symbols-outlined text-base">description</span>
+<span>استعراض الملاحظات</span>
+</button>
+<button class="h-10 px-3 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded-xl flex items-center justify-center transition-colors" onclick="openDetailsModal('APT-004')" type="button">
+<span class="material-symbols-outlined text-base">info</span>
+</button>
+</div>
+</div>
+<!-- Card #12 (Upcoming Physical / Not Checked-in Yet) -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col justify-between border border-surface-container" id="queue-card-12">
+<div>
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-headline-sm text-headline-sm rounded-lg font-bold">
+                #12
+              </span>
+<span class="px-2.5 py-1 bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold rounded-md">
+                مؤكد (بانتظار الحضور)
+              </span>
+</div>
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> بعد 3 ساعات
+            </span>
+</div>
+<div class="space-y-2 mb-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">سلطان الزهراني</h3>
+<span class="text-xs px-2 py-0.5 bg-surface-container rounded font-mono text-on-surface-variant">MRN-10489</span>
+</div>
+<p class="text-xs text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+<span>صالة التمارين والعلاج الوظيفي | 02:00 م</span>
+</p>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-xs text-on-surface flex flex-col gap-1">
+<span class="text-on-surface font-medium">لم يسجل الوصول عند الاستقبال حتى الآن.</span>
+<span class="text-on-surface-variant">تم إرسال تذكير نصي برقم التذكرة والموعد.</span>
+</div>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container flex flex-col gap-2">
+<button class="h-10 bg-primary text-on-primary hover:bg-primary-container rounded-xl font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-all" onclick="checkInPatient('APT-006', 'سلطان الزهراني', '#12')" type="button">
+<span class="material-symbols-outlined text-base">how_to_reg</span>
+<span>تسجيل وصول المستفيد الآن</span>
+</button>
+<div class="flex items-center justify-between">
+<button class="text-xs text-primary font-semibold hover:underline" onclick="openDetailsModal('APT-006')" type="button">
+              تفاصيل ملف الحجز
+            </button>
+<button class="text-xs text-on-surface-variant hover:text-on-surface" onclick="rescheduleModal('سلطان الزهراني')" type="button">
+              إعادة جدولة
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: All Appointments & Telehealth Management -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-sm p-6 mb-10">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-primary">
+          قائمة كافة المواعيد والاستشارات عن بُعد والحضورية
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          إدارة شاملة لجميع الجلسات السريرية، روابط الغرف المرئية WebRTC، وسجلات النداء للمركز.
+        </p>
+</div>
+<!-- Quick Export / Print Tools -->
+<div class="flex items-center gap-2">
+<button class="h-10 px-3.5 bg-surface-container-low text-on-surface hover:bg-surface-container rounded-xl font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" onclick="printQueue()" type="button">
+<span class="material-symbols-outlined text-lg">print</span>
+<span>طباعة الكشف</span>
+</button>
+<button class="h-10 px-3.5 bg-surface-container-low text-on-surface hover:bg-surface-container rounded-xl font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" onclick="showExportToast()" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>تصدير Excel</span>
+</button>
+</div>
+</div>
+<!-- Search & Multi-Filters Toolbar -->
+<div class="flex flex-col gap-4 mb-6">
+<!-- Search Bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full h-12 pr-12 pl-4 rounded-xl bg-surface-container-low border-0 text-on-surface placeholder:text-on-surface-variant focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all font-body-md text-body-md" id="searchInput" onkeyup="filterAppointments()" placeholder="بحث برقم الموعد، اسم المستفيد، أو رقم الملف السريري..." type="text"/>
+<button class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface text-sm font-semibold px-2 py-1" onclick="clearSearch()" type="button">
+          مسح
+        </button>
+</div>
+<!-- Filter Controls: Type and Status Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<!-- Type Filter Chips -->
+<div class="flex flex-wrap items-center gap-2" id="typeFilters">
+<button class="px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary font-semibold shadow-sm" data-filter-type="all" onclick="setTypeFilter('all', this)" type="button">
+            الكل (8)
+          </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-filter-type="in_person" onclick="setTypeFilter('in_person', this)" type="button">
+            حضوري بالمركز (3)
+          </button>
+<button class="px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container" data-filter-type="telehealth" onclick="setTypeFilter('telehealth', this)" type="button">
+            استشارات عن بُعد WebRTC (5)
+          </button>
+</div>
+<!-- Status Filter Dropdown / Pills -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">حالة الموعد:</span>
+<select class="h-10 px-3 bg-surface-container-low text-on-surface rounded-xl font-label-sm text-label-sm border-0 focus:ring-2 focus:ring-primary" id="statusFilterSelect" onchange="filterAppointments()">
+<option value="all">جميع الحالات السريرية</option>
+<option value="in_waiting">وصل / في الانتظار</option>
+<option value="ongoing">جارٍ الآن</option>
+<option value="confirmed">مؤكد</option>
+<option value="completed">مكتمل وموثق</option>
+<option value="pending">بانتظار التأكيد</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Master Appointments Table -->
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-right border-collapse" id="appointmentsTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-3.5 px-4 rounded-r-xl">المستفيد والملف</th>
+<th class="py-3.5 px-4">نوع الموعد والمكان</th>
+<th class="py-3.5 px-4">الوقت والمدة</th>
+<th class="py-3.5 px-4">رقم الدور (حضوري)</th>
+<th class="py-3.5 px-4">الحالة السريرية</th>
+<th class="py-3.5 px-4 text-center rounded-l-xl">الإجراءات المتاحة</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface" id="tableBody">
+<!-- Item 1: Faisal (Physical, Waiting) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="فيصل بن متعب العتيبي MRN-10483 APT-001" data-status="in_waiting" data-type="in_person">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-sm">
+                  ف ع
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">فيصل بن متعب العتيبي</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10483</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-secondary font-medium">
+<span class="material-symbols-outlined text-base">apartment</span>
+<span>حضوري: عيادة #2</span>
+</div>
+<span class="text-xs text-on-surface-variant">تأهيل حركي - الدور الأول</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">10:30 ص</div>
+<span class="text-xs text-on-surface-variant">45 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-bold font-mono">
+                #07
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-secondary-fixed text-on-secondary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                في صالة الانتظار
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-secondary-fixed text-secondary transition-colors" onclick="callPatientAudio('#07', 'فيصل العتيبي', 'عيادة #2')" title="استدعاء عبر الشاشة" type="button">
+<span class="material-symbols-outlined text-lg">campaign</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container text-xs font-semibold flex items-center gap-1 transition-all" onclick="startSession('APT-001', 'فيصل بن متعب العتيبي')" title="بدء الجلسة" type="button">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+<span>بدء الجلسة</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-001')" title="التفاصيل" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Mohammed (Telehealth, Confirmed / Starting Soon) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="محمد السبيعي MRN-10484 APT-002" data-status="confirmed" data-type="telehealth">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-sm">
+                  م س
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">محمد السبيعي</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10484</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-base">videocam</span>
+<span>استشارة عن بُعد (مرئية)</span>
+</div>
+<span class="text-xs text-on-surface-variant">رابط WebRTC مشفّر</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">11:30 ص</div>
+<span class="text-xs text-secondary font-medium">يبدأ بعد 15 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                عن بُعد (لا دور)
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-fixed text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                مؤكد (جاهز للبدء)
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container text-xs font-semibold flex items-center gap-1 transition-all" onclick="openWebRTCRoom('محمد السبيعي')" title="فتح غرفة الفيديو" type="button">
+<span class="material-symbols-outlined text-sm">video_call</span>
+<span>فتح الغرفة المرئية</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="testAudioVideo()" title="فحص الصوت والكاميرا" type="button">
+<span class="material-symbols-outlined text-lg">settings_voice</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-002')" title="التفاصيل" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Ahmed (Telehealth, Completed) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="أحمد الهاشمي MRN-10480 APT-003" data-status="completed" data-type="telehealth">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant font-bold flex items-center justify-center text-sm">
+                  أ هـ
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">أحمد الهاشمي</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10480</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-base">videocam</span>
+<span>استشارة عن بُعد</span>
+</div>
+<span class="text-xs text-on-surface-variant">نطق وتخاطب منزلي</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">08:30 ص</div>
+<span class="text-xs text-on-surface-variant">المدة: 45 د</span>
+</td>
+<td class="py-4 px-4">
+<span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                عن بُعد (لا دور)
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-sm">verified</span>
+                مكتمل وموثق
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container text-xs font-semibold flex items-center gap-1 transition-colors" onclick="viewClinicalReport('أحمد الهاشمي')" type="button">
+<span class="material-symbols-outlined text-sm">article</span>
+<span>استعراض التقرير</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-003')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: Noura (Physical, Completed) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="نورة الدوسري MRN-10482 APT-004" data-status="completed" data-type="in_person">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant font-bold flex items-center justify-center text-sm">
+                  ن د
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">نورة الدوسري</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10482</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-base">apartment</span>
+<span>حضوري: عيادة #1</span>
+</div>
+<span class="text-xs text-on-surface-variant">تأهيل أطراف علوية</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">09:30 ص</div>
+<span class="text-xs text-on-surface-variant">المدة: 45 د</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-bold font-mono">
+                #04
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-sm">verified</span>
+                مكتمل وموثق
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-xs font-semibold flex items-center gap-1 transition-colors" onclick="openNotesModal('نورة الدوسري')" type="button">
+<span class="material-symbols-outlined text-sm">description</span>
+<span>الملاحظات</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-004')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: Sara (Telehealth, Confirmed / Link Sent) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="سارة الشمري MRN-10486 APT-005" data-status="confirmed" data-type="telehealth">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-sm">
+                  س ش
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">سارة الشمري</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10486</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-base">videocam</span>
+<span>استشارة عن بُعد</span>
+</div>
+<span class="text-xs text-on-surface-variant">علاج نفسي حركي وتكيف</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">01:00 م</div>
+<span class="text-xs text-on-surface-variant">45 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                عن بُعد (لا دور)
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-fixed text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                مؤكد (تم إرسال الرابط)
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container text-xs font-semibold flex items-center gap-1 transition-all" onclick="startTelehealthSession('APT-005', 'سارة الشمري')" type="button">
+<span class="material-symbols-outlined text-sm">video_call</span>
+<span>بدء الاستشارة</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="rescheduleModal('سارة الشمري')" title="إعادة جدولة" type="button">
+<span class="material-symbols-outlined text-lg">update</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-005')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Sultan (Physical, Confirmed / Not checked in) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="سلطان الزهراني MRN-10489 APT-006" data-status="confirmed" data-type="in_person">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant font-bold flex items-center justify-center text-sm">
+                  س ز
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">سلطان الزهراني</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10489</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-secondary font-medium">
+<span class="material-symbols-outlined text-base">fitness_center</span>
+<span>حضوري: صالة التمارين</span>
+</div>
+<span class="text-xs text-on-surface-variant">تأهيل الحبل الشوكي</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">02:00 م</div>
+<span class="text-xs text-on-surface-variant">45 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-bold font-mono">
+                #12
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-surface-container-high text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                مؤكد (لم يحضر بعد)
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container text-xs font-semibold flex items-center gap-1 transition-all" onclick="checkInPatient('APT-006', 'سلطان الزهراني', '#12')" type="button">
+<span class="material-symbols-outlined text-sm">how_to_reg</span>
+<span>تسجيل الوصول</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-006')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 7: Maha (Telehealth, Confirmed) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="مها الحربي MRN-10491 APT-007" data-status="confirmed" data-type="telehealth">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-sm">
+                  م ح
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">مها الحربي</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10491</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-base">videocam</span>
+<span>استشارة عن بُعد</span>
+</div>
+<span class="text-xs text-on-surface-variant">متابعة الأجهزة التعويضية</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">03:00 م</div>
+<span class="text-xs text-on-surface-variant">30 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                عن بُعد (لا دور)
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-fixed text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                مؤكد
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container text-xs font-semibold flex items-center gap-1 transition-colors" onclick="sendReminderSMS('مها الحربي')" type="button">
+<span class="material-symbols-outlined text-sm">send</span>
+<span>إرسال تذكير</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-007')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 8: Khaled (Telehealth, Pending Confirmation) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors appt-row" data-search="خالد التميمي MRN-10495 APT-008" data-status="pending" data-type="telehealth">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container font-bold flex items-center justify-center text-sm">
+                  خ ت
+                </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">خالد التميمي</span>
+<span class="text-xs text-on-surface-variant font-mono">MRN-10495</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-1.5 text-primary font-medium">
+<span class="material-symbols-outlined text-base">videocam</span>
+<span>استشارة عن بُعد</span>
+</div>
+<span class="text-xs text-on-surface-variant">تقييم مبدئي شامل</span>
+</td>
+<td class="py-4 px-4">
+<div class="font-semibold text-on-surface">03:45 م</div>
+<span class="text-xs text-on-surface-variant">45 دقيقة</span>
+</td>
+<td class="py-4 px-4">
+<span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+                عن بُعد (لا دور)
+              </span>
+</td>
+<td class="py-4 px-4 status-cell">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                بانتظار التأكيد (أُرسل تذكير)
+              </span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center justify-center gap-1.5 action-buttons">
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 text-xs font-semibold flex items-center gap-1 transition-all" onclick="confirmAppointment('APT-008', 'خالد التميمي')" type="button">
+<span class="material-symbols-outlined text-sm">done_all</span>
+<span>تأكيد الموعد</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="rescheduleModal('خالد التميمي')" title="إعادة جدولة" type="button">
+<span class="material-symbols-outlined text-lg">update</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" onclick="openDetailsModal('APT-008')" type="button">
+<span class="material-symbols-outlined text-lg">info</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty Filter Fallback -->
+<div class="hidden py-12 flex-col items-center justify-center text-center" id="noResultsNotice">
+<span class="material-symbols-outlined text-5xl text-on-surface-variant mb-2">search_off</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">لم يتم العثور على مواعيد مطابقة</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">يرجى تعديل معايير البحث أو اختيار فلتر آخر للاطلاع على المواعيد.</p>
+</div>
+</section>
+<!-- Interactive Modal Dialog: Patient & Appointment Dossier Details -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="detailsModal" onclick="closeDetailsModal(event)">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl transition-all" onclick="event.stopPropagation()">
+<!-- Modal Header -->
+<div class="p-6 bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">clinical_notes</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modalPatientName">تفاصيل الموعد السريري</h3>
+<span class="text-xs text-on-surface-variant font-mono" id="modalMRN">ملف رقم: MRN-10483</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeModalDirect()" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-6 space-y-4 max-h-[768px] overflow-y-auto font-body-md text-body-md">
+<div class="grid grid-cols-2 gap-4">
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<span class="text-xs text-on-surface-variant block mb-1">نوع الاستشارة / التخصص</span>
+<span class="font-semibold text-on-surface" id="modalSpecialty">علاج وظيفي وتأهيل حركي</span>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<span class="text-xs text-on-surface-variant block mb-1">وقت الموعد والمدة</span>
+<span class="font-semibold text-on-surface" id="modalTiming">10:30 ص (45 دقيقة)</span>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<span class="text-xs text-on-surface-variant block mb-1">طبيعة الحضور</span>
+<span class="font-semibold text-secondary" id="modalType">حضوري بالمركز - عيادة #2</span>
+</div>
+<div class="p-3.5 bg-surface-container-low rounded-xl">
+<span class="text-xs text-on-surface-variant block mb-1">حالة الحضور ورقم التذكرة</span>
+<span class="font-semibold text-on-surface" id="modalQueueNumber">رقم الدور: #07 (في الصالة)</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low/50 rounded-xl space-y-2">
+<span class="font-label-sm text-label-sm font-bold text-primary block">بيانات ميسّرة للمستفيد والتاريخ السريري:</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+            - المستفيد مصاب بضعف عصبي عضلي بالجانب الأيمن إثر إصابة سابقة.<br/>
+            - يتطلب مقعداً متحركاً مدعماً وتجهيزات سهولة وصول عند نقله للعيادة.<br/>
+            - يرافقه شقيقه ولديه إذن موافقة خطي معتمد في النظام الوطني للرعاية.
+          </p>
+</div>
+<div class="p-3.5 bg-secondary-fixed/30 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="text-xs font-semibold text-on-secondary-fixed-variant">التغطية التأمينية والاعتماد السريري:</span>
+</div>
+<span class="text-xs font-bold text-secondary">معتمد ومغطى بالكامل</span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-4 bg-surface-container-low flex items-center justify-end gap-3 border-t border-surface-container">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" onclick="closeModalDirect()" type="button">
+          إغلاق
+        </button>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container flex items-center gap-1.5 shadow-sm" onclick="printPatientPass()" type="button">
+<span class="material-symbols-outlined text-lg">badge</span>
+<span>طباعة بطاقة الدخول السريري</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Toast Notification Container -->
+<div class="fixed bottom-6 left-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold" id="toastTitle">تم بنجاح</span>
+<span class="text-xs text-surface-dim font-normal" id="toastMessage">تمت العملية وفق الإجراء الطبي.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Clinical Database Mock
+  const appointmentsDB = {
+    'APT-001': {
+      id: 'APT-001',
+      name: 'فيصل بن متعب العتيبي',
+      mrn: 'MRN-10483',
+      type: 'in_person',
+      location: 'عيادة التأهيل الحركي (2) - الدور الأول',
+      time: '10:30 ص (45 دقيقة)',
+      ticket: '#07',
+      status: 'in_waiting',
+      companion: 'سعد العتيبي (أخ)'
+    },
+    'APT-002': {
+      id: 'APT-002',
+      name: 'محمد السبيعي',
+      mrn: 'MRN-10484',
+      type: 'telehealth',
+      location: 'غرفة استشارة WebRTC مرئية مشفرة',
+      time: '11:30 ص (45 دقيقة)',
+      ticket: 'عن بُعد',
+      status: 'confirmed',
+      companion: 'بدون مرافق'
+    },
+    'APT-003': {
+      id: 'APT-003',
+      name: 'أحمد الهاشمي',
+      mrn: 'MRN-10480',
+      type: 'telehealth',
+      location: 'استشارة عن بُعد - تخاطب',
+      time: '08:30 ص (45 دقيقة)',
+      ticket: 'عن بُعد',
+      status: 'completed',
+      companion: 'والدة المستفيد'
+    },
+    'APT-004': {
+      id: 'APT-004',
+      name: 'نورة الدوسري',
+      mrn: 'MRN-10482',
+      type: 'in_person',
+      location: 'عيادة التأهيل الطبي (1)',
+      time: '09:30 ص (45 دقيقة)',
+      ticket: '#04',
+      status: 'completed',
+      companion: 'مرافقة صحية'
+    },
+    'APT-005': {
+      id: 'APT-005',
+      name: 'سارة الشمري',
+      mrn: 'MRN-10486',
+      type: 'telehealth',
+      location: 'استشارة عن بُعد - تأهيل تكيفي',
+      time: '01:00 م (45 دقيقة)',
+      ticket: 'عن بُعد',
+      status: 'confirmed',
+      companion: 'مستقلة'
+    },
+    'APT-006': {
+      id: 'APT-006',
+      name: 'سلطان الزهراني',
+      mrn: 'MRN-10489',
+      type: 'in_person',
+      location: 'صالة التمارين والعلاج الوظيفي',
+      time: '02:00 م (45 دقيقة)',
+      ticket: '#12',
+      status: 'confirmed',
+      companion: 'عبدالعزيز الزهراني (ابن)'
+    },
+    'APT-007': {
+      id: 'APT-007',
+      name: 'مها الحربي',
+      mrn: 'MRN-10491',
+      type: 'telehealth',
+      location: 'استشارة عن بُعد - أطراف تعويضية',
+      time: '03:00 م (30 دقيقة)',
+      ticket: 'عن بُعد',
+      status: 'confirmed',
+      companion: 'مستقلة'
+    },
+    'APT-008': {
+      id: 'APT-008',
+      name: 'خالد التميمي',
+      mrn: 'MRN-10495',
+      type: 'telehealth',
+      location: 'استشارة عن بُعد - تقييم مبدئي',
+      time: '03:45 م (45 دقيقة)',
+      ticket: 'عن بُعد',
+      status: 'pending',
+      companion: 'مستقل'
+    }
+  };
+
+  let activeTypeFilter = 'all';
+
+  // Live Toast Notification
+  function showToast(title, message, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastTitle.textContent = title;
+    toastMessage.textContent = message;
+    toastIcon.textContent = icon;
+
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 4000);
+  }
+
+  // Audio & Screen Call Dispatch
+  function callPatientAudio(ticket, name, room) {
+    showToast(`نداء آلي نشط: دور ${ticket}`, `تم إرسال إشعار النداء المرئي والصوتي بالصالة للمستفيد: ${name} للتوجه إلى ${room}.`, 'volume_up');
+  }
+
+  // Start Clinical Session
+  function startSession(id) {
+  window.location.href = './تفاصيل الموعد.html';
+}
+      const actionCell = row.querySelector('.action-buttons');
+      if (actionCell) {
+        actionCell.innerHTML = `
+          <button type="button" onclick="completeSession('${aptId}', '${name}')" class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary text-xs font-semibold flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">check</span>
+            <span>إنهاء وتوثيق الجلسة</span>
+          </button>
+          <button type="button" onclick="openDetailsModal('${aptId}')" class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+            <span class="material-symbols-outlined text-lg">info</span>
+          </button>
+        `;
+      }
+    }
+
+    // Update KPI Counters
+    const activeStat = document.getElementById('stat-active');
+    const waitingStat = document.getElementById('stat-waiting');
+    if (activeStat) activeStat.textContent = '2';
+    if (waitingStat) waitingStat.textContent = '1';
+
+    showToast('بدء الكشف الطبي', `تم تحويل حالة المستفيد ${name} إلى (جارٍ) وتفعيل محرر السجل السريري.`, 'play_circle');
+  }
+
+  // Complete Session
+  function completeSession(aptId, name) {
+    const row = document.querySelector(`tr[data-search*="${aptId}"]`);
+    if (row) {
+      row.setAttribute('data-status', 'completed');
+      const statusCell = row.querySelector('.status-cell');
+      if (statusCell) {
+        statusCell.innerHTML = `
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-surface-container text-secondary">
+            <span class="material-symbols-outlined text-sm">verified</span>
+            مكتمل وموثق
+          </span>
+        `;
+      }
+      const actionCell = row.querySelector('.action-buttons');
+      if (actionCell) {
+        actionCell.innerHTML = `
+          <button type="button" onclick="openNotesModal('${name}')" class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary text-xs font-semibold flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">description</span>
+            <span>الملاحظات</span>
+          </button>
+          <button type="button" onclick="openDetailsModal('${aptId}')" class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant">
+            <span class="material-symbols-outlined text-lg">info</span>
+          </button>
+        `;
+      }
+    }
+
+    const completedStat = document.getElementById('stat-completed');
+    const activeStat = document.getElementById('stat-active');
+    if (completedStat) completedStat.textContent = '4';
+    if (activeStat) activeStat.textContent = '1';
+
+    showToast('اكتملت الجلسة السريرية', `تم توثيق كافة بيانات جلسة المستفيد ${name} وتحديث السجل الطبي بنجاح.`, 'task_alt');
+  }
+
+  // Check-In Physical Beneficiary
+  function checkInPatient(aptId, name, ticket) {
+    const row = document.querySelector(`tr[data-search*="${aptId}"]`);
+    if (row) {
+      row.setAttribute('data-status', 'in_waiting');
+      const statusCell = row.querySelector('.status-cell');
+      if (statusCell) {
+        statusCell.innerHTML = `
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-secondary-fixed text-on-secondary-fixed">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            في صالة الانتظار
+          </span>
+        `;
+      }
+    }
+
+    const card12 = document.getElementById('queue-card-12');
+    if (card12) {
+      card12.classList.add('border-r-4', 'border-secondary', 'bg-surface-container-low');
+      card12.classList.remove('bg-surface-container-lowest');
+    }
+
+    const waitingStat = document.getElementById('stat-waiting');
+    if (waitingStat) waitingStat.textContent = (parseInt(waitingStat.textContent, 10) + 1).toString();
+
+    showToast('تم تسجيل الحضور الفعلي', `وصل المستفيد ${name} برقم الدور ${ticket} وهو الآن في صالة الانتظار.`, 'how_to_reg');
+  }
+
+  // WebRTC Room Launch
+  function openWebRTCRoom(name) {
+    showToast('بدء الاتصال المرئي WebRTC', `جاري إنشاء غرفة اتصال مرئية مشفرة وفائقة الأمان مع المستفيد: ${name}...`, 'videocam');
+  }
+
+  // Audio/Video System Test
+  function testAudioVideo() {
+    showToast('فحص الأجهزة', 'تم اختبار الميكروفون، الكاميرا، وسرعة البث. جميع الأنظمة الطبية جاهزة 100%.', 'settings_voice');
+  }
+
+  // Confirm Appointment
+  function confirmAppointment(aptId, name) {
+    const row = document.querySelector(`tr[data-search*="${aptId}"]`);
+    if (row) {
+      row.setAttribute('data-status', 'confirmed');
+      const statusCell = row.querySelector('.status-cell');
+      if (statusCell) {
+        statusCell.innerHTML = `
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-primary-fixed text-primary">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            مؤكد
+          </span>
+        `;
+      }
+    }
+
+    const pendingStat = document.getElementById('stat-pending');
+    if (pendingStat) pendingStat.textContent = '1';
+
+    showToast('تم تأكيد الموعد', `تم اعتماد موعد المستفيد ${name} وتحديث حالته إلى مؤكد.`, 'done_all');
+  }
+
+  // Send Reminder SMS
+  function sendReminderSMS(name) {
+    showToast('تذكير بالموعد', `تم إرسال رسالة نصية قصيرة (SMS) إلى هاتف المستفيد: ${name}.`, 'send');
+  }
+
+  // Reschedule Trigger
+  function rescheduleModal(name) {
+    showToast('إعادة الجدولة', `تم فتح خيارات المواعيد البديلة للمستفيد ${name}. يرجى اختيار التوقيت الجديد.`, 'update');
+  }
+
+  // No-Show Trigger
+  function recordNoShow(aptId, name) {
+    showToast('تسجيل اعتذار / عدم حضور', `تم تسجيل عدم حضور المستفيد ${name} وإتاحة الدور للمستفيد التالي.`, 'person_off');
+  }
+
+  // Filter Buttons Logic
+  function setTypeFilter(type, btnElement) {
+    activeTypeFilter = type;
+    const buttons = document.querySelectorAll('#typeFilters button');
+    buttons.forEach(btn => {
+      btn.className = 'px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container';
+    });
+    btnElement.className = 'px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary font-semibold shadow-sm';
+    filterAppointments();
+  }
+
+  // Filter Table Items
+  function filterAppointments() {
+    const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+    const statusVal = document.getElementById('statusFilterSelect').value;
+    const rows = document.querySelectorAll('#appointmentsTable tbody tr');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const rowType = row.getAttribute('data-type');
+      const rowStatus = row.getAttribute('data-status');
+      const searchData = (row.getAttribute('data-search') || '').toLowerCase();
+
+      const matchesType = (activeTypeFilter === 'all' || rowType === activeTypeFilter);
+      const matchesStatus = (statusVal === 'all' || rowStatus === statusVal);
+      const matchesSearch = (!searchVal || searchData.includes(searchVal));
+
+      if (matchesType && matchesStatus && matchesSearch) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    const noResults = document.getElementById('noResultsNotice');
+    if (noResults) {
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+      }
+    }
+  }
+
+  function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    filterAppointments();
+  }
+
+  // Patient Dossier Details Modal
+  function openDetailsModal(aptId) {
+    const item = appointmentsDB[aptId] || {
+      name: 'مستفيد الرعاية',
+      mrn: 'MRN-00000',
+      type: 'in_person',
+      location: 'عيادة المركز',
+      time: '10:00 ص',
+      ticket: '#00'
+    };
+
+    document.getElementById('modalPatientName').textContent = item.name;
+    document.getElementById('modalMRN').textContent = `ملف رقم: ${item.mrn}`;
+    document.getElementById('modalTiming').textContent = item.time;
+    document.getElementById('modalQueueNumber').textContent = `رقم الدور: ${item.ticket}`;
+    document.getElementById('modalType').textContent = item.location;
+
+    const modal = document.getElementById('detailsModal');
+    modal.classList.remove('hidden');
+  }
+
+  function closeDetailsModal(event) {
+    if (event.target === document.getElementById('detailsModal')) {
+      closeModalDirect();
+    }
+  }
+
+  function closeModalDirect() {
+    document.getElementById('detailsModal').classList.add('hidden');
+  }
+
+  function printPatientPass() {
+    showToast('طباعة التذكرة', 'تم إرسال بطاقة الكشف السريري لطابعة العيادة مباشرة.', 'print');
+    closeModalDirect();
+  }
+
+  function openNotesModal(name) {
+    showToast('ملاحظات الجلسة السريرية', `تم استدعاء السجل التوثيقي الخاص بالمستفيدة: ${name}.`, 'description');
+  }
+
+  function viewClinicalReport(id) {
+  window.location.href = '../التقدم و التقارير/التقارير.html';
+}
+
+  // General Queue Actions
+  function refreshQueue() {
+    showToast('تحديث مباشر', 'تمت مزامنة جميع الحالات السريرية مع نظام شاشات الاستقبال والنداء الصوتي.', 'sync');
+  }
+
+  function printQueue() {
+    window.print();
+  }
+
+  function showExportToast() {
+    showToast('تصدير القائمة', 'تم إنشاء وتنزيل ملف Excel الخاص بقائمة انتظار المواعيد لليوم.', 'download');
+  }
+
+  function navigateDay(direction) {
+    const label = direction > 0 ? 'اليوم التالي' : 'اليوم السابق';
+    showToast('تقليب الجدول', `جاري استعراض جدول مواعيد ${label}...`, 'event');
+  }
+</script></main></div></body></html>

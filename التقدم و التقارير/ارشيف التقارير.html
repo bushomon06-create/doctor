@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#707881","surface":"#f8f9ff","on-background":"#0d1c2e","inverse-on-surface":"#eaf1ff","on-tertiary":"#ffffff","on-primary":"#ffffff","tertiary":"#6003d1","on-error-container":"#93000a","on-secondary":"#ffffff","error-container":"#ffdad6","surface-container":"#e6eeff","outline-variant":"#c0c7d1","primary-fixed-dim":"#94ccff","tertiary-container":"#7936ea","primary":"#00507d","surface-container-lowest":"#ffffff","surface-bright":"#f8f9ff","inverse-primary":"#94ccff","on-surface":"#0d1c2e","primary-fixed":"#cde5ff","on-error":"#ffffff","secondary-fixed":"#89f5e7","background":"#f8f9ff","secondary":"#006a61","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","surface-container-highest":"#d5e3fc","tertiary-fixed":"#eaddff","on-secondary-fixed":"#00201d","on-primary-fixed":"#001d32","surface-tint":"#006399","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#004b74","on-tertiary-fixed-variant":"#5a00c6","surface-variant":"#d5e3fc","error":"#ba1a1a","on-primary-container":"#cbe4ff","surface-dim":"#ccdbf3","on-tertiary-container":"#e9dbff","tertiary-fixed-dim":"#d2bbff","primary-container":"#0369a1","on-tertiary-fixed":"#25005a","inverse-surface":"#233144","on-surface-variant":"#40474f","secondary-fixed-dim":"#6bd8cb","on-secondary-container":"#006f66","surface-container-high":"#dce9ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1.25rem","space-xs":"0.5rem","margin":"2.5rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","gutter":"1.5rem","space-sm":"0.75rem","space-xl":"2.5rem","space-lg":"1.75rem"},fontFamily:{"label-lg":["IBM Plex Sans Arabic","IBM Plex Sans"],"label-md":["IBM Plex Sans Arabic","IBM Plex Sans"],"display":["IBM Plex Sans Arabic","IBM Plex Sans"],"headline-lg-mobile":["IBM Plex Sans Arabic","IBM Plex Sans"],"label-sm":["IBM Plex Sans Arabic","IBM Plex Sans"],"body-lg":["IBM Plex Sans Arabic","IBM Plex Sans"],"body-sm":["IBM Plex Sans Arabic","IBM Plex Sans"],"headline-lg":["IBM Plex Sans Arabic","IBM Plex Sans"],"body-md":["IBM Plex Sans Arabic","IBM Plex Sans"],"headline-sm":["IBM Plex Sans Arabic","IBM Plex Sans"],"headline-md":["IBM Plex Sans Arabic","IBM Plex Sans"]},fontSize:{"label-lg":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"label-md":["0.9375rem",{"lineHeight":"1.375rem","letterSpacing":"0","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.75rem","letterSpacing":"0","fontWeight":"700"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.375rem","letterSpacing":"0","fontWeight":"700"}],"label-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.875rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"3rem","letterSpacing":"0","fontWeight":"700"}],"body-md":["1rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"600"}],"headline-md":["1.5rem",{"lineHeight":"2.125rem","letterSpacing":"0","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_12px_rgba(15,23,42,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-md flex items-center justify-between bg-surface-container-low/40"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[26px]">diversity_1</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">جسر للرعاية</span><span class="font-label-sm text-label-sm text-outline">منصة التأهيل الطبي</span></div></div></div><div class="px-space-md pt-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-outline">القائمة الرئيسية</span></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary shadow-sm font-semibold"><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">grid_view</span><span>لوحة التحكم</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="beneficiaries-directory" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">accessible_forward</span><span>المستفيدون</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clinical-assessments" href="./التقارير.html" aria-current="page"><span class="material-symbols-outlined text-[22px]">fact_check</span><span>التقييمات السريرية</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rehab-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment</span><span>خطط التأهيل</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary shadow-sm font-semibold" data-path="clinical-reports" href="./التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span>التقارير السريرية</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="schedule-calendar" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span>المواعيد والجدول</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="messaging-consultations" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">forum</span><span>الرسائل والتواصل</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span>مكتبة التمارين</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="clinical-support" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">support_agent</span><span>الدعم الإكلينيكي</span></a></nav></div><div class="p-space-sm flex flex-col gap-1"><div class="h-px bg-surface-container-high mx-space-sm my-space-xs"></div><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="professional-profile-settings" href="../الملف الشهصي و الاعدادات/الملف الشخصي.html"><span class="material-symbols-outlined text-[22px]">settings</span><span>الملف المهني والإعدادات</span></a></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter"><div class="h-20 w-full flex items-center justify-between gap-gutter cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex-1 max-w-lg"><div class="flex items-center gap-3 bg-surface-container-lowest px-space-md py-2.5 rounded-xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><span class="material-symbols-outlined text-outline text-[22px]">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="بحث سريع عن مريض، ملف سريري، تقرير..." type="search"/></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2"><button aria-label="التنبيهات السريرية" class="w-11 h-11 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors relative shadow-[0_1px_4px_rgba(0,0,0,0.02)] cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 left-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button aria-label="الوصول السريع للجلسات المباشرة" class="w-11 h-11 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-[0_1px_4px_rgba(0,0,0,0.02)]" type="button"><span class="material-symbols-outlined text-[22px]">videocam</span></button></div><div class="h-8 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 bg-surface-container-lowest px-3 py-1.5 rounded-2xl shadow-[0_1px_4px_rgba(0,0,0,0.02)]"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">د. سارة المنصور</span><span class="font-body-sm text-body-sm text-secondary leading-tight">أخصائية علاج طبيعي وتأهيل</span></div></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Toast Notification System -->
+<div class="fixed bottom-6 left-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-inverse-surface text-inverse-on-surface px-space-md py-3.5 rounded-xl shadow-xl" id="toastNotification">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container" id="toastIconContainer">
+<span class="material-symbols-outlined text-[20px]" id="toastIcon">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md" id="toastTitle">تم الإجراء بنجاح</span>
+<span class="font-body-sm text-body-sm opacity-90" id="toastMessage">تم تحديث بيانات التقرير الطبي ومزامنته.</span>
+</div>
+</div>
+<!-- State Simulator Banner (Top interactive testing bar) -->
+<div class="bg-surface-container-low px-gutter py-2.5 flex items-center justify-between border-b border-surface-container-high/60">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>محاكي الحالات التشغيلية (Clinical State Simulator):</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-3 py-1 rounded font-label-sm text-label-sm transition-colors bg-primary-container text-on-primary" id="btn-state-normal" onclick="setViewState('normal')" type="button">
+          الجدول المكتمل (19)
+        </button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm transition-colors text-on-surface-variant hover:text-on-surface" id="btn-state-loading" onclick="setViewState('loading')" type="button">
+          تحميل Skeleton
+        </button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm transition-colors text-on-surface-variant hover:text-on-surface" id="btn-state-empty" onclick="setViewState('empty')" type="button">
+          أرشيف فارغ
+        </button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm transition-colors text-on-surface-variant hover:text-on-surface" id="btn-state-no-results" onclick="setViewState('no-results')" type="button">
+          لا توجد نتائج بحث
+        </button>
+<button class="px-3 py-1 rounded font-label-sm text-label-sm transition-colors text-on-surface-variant hover:text-on-surface" id="btn-state-no-beneficiary" onclick="setViewState('no-beneficiary')" type="button">
+          مستفيد بدون تقارير
+        </button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-secondary font-label-sm text-label-sm px-2.5 py-1 rounded-md hover:bg-secondary-container/40 transition-colors flex items-center gap-1" onclick="triggerToast('تنزيل التقرير', 'تم تصدير التقرير الطبي بصيغة PDF وتوثيق البصمة الرقمية بنجاح.', 'download_done')" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>تجربة إشعار PDF</span>
+</button>
+<button class="text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-md hover:bg-primary-fixed/40 transition-colors flex items-center gap-1" onclick="triggerToast('مشاركة التقرير', 'تم إرسال الرابط المشفر بنجاح إلى بوبا العربية والمستفيد.', 'send')" type="button">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>تجربة إشعار المشاركة</span>
+</button>
+</div>
+</div>
+<!-- Main Content Container with standard spacing -->
+<div class="px-gutter py-space-md flex flex-col gap-space-lg max-w-[1580px] mx-auto w-full">
+<!-- Header & Action Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="../الرئيسية/code.html">الرئيسية</a>
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="./التقارير.html">التقارير السريرية</a>
+<span class="material-symbols-outlined text-[14px]">chevron_left</span>
+<span class="text-on-surface font-semibold">أرشيف التقارير</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">أرشيف التقارير السريرية</h1>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full">سجلات موثقة 100%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          استعرض التقارير التأهيلية السابقة، وابحث عنها، وأدر تقاريرك السريرية المعتمدة، والمسودات قيد المراجعة، وسجلات المشاركة مع الجهات الطبية والتأمينية بدقة فائقة.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.04)] hover:bg-surface-container-high transition-colors" onclick="openAuditModal()" type="button">
+<span class="material-symbols-outlined text-[20px] text-outline">history_edu</span>
+<span>سجل التدقيق والمشاركات</span>
+</button>
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-2 shadow-[0_1px_4px_rgba(0,0,0,0.04)] hover:bg-surface-container-high transition-colors" onclick="triggerToast('تصدير الأرشيف', 'بدء تجهيز حزمة ZIP مشفرة لجميع التقارير المعتمدة...', 'archive')" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">inventory_2</span>
+<span>تصدير مجمّع (ZIP/PDF)</span>
+</button>
+<a class="h-12 px-5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm hover:brightness-105 active:scale-[0.98] transition-all" href="./انشاء تقرير جديد 1.html" onclick="triggerToast('إنشاء تقرير', 'جاري توجيهك إلى منشئ التقارير التفاعلي...', 'edit_note')">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+<span>إنشاء تقرير جديد</span>
+</a>
+</div>
+</div>
+<!-- Calculated KPI Cards (Level 1 Elevation) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI Card 1: Total Reports -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">folder_special</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 bg-secondary-container/40 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+18.5% شهرياً</span>
+</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display text-[2.5rem] leading-none font-bold text-on-surface tracking-tight" id="kpi-total-val">19</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">إجمالي التقارير المسجلة</span>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">موزعة عبر 28 ملفاً مستفيداً</span>
+</div>
+</div>
+<!-- KPI Card 2: Approved Reports -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/5 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 bg-secondary-container/40 px-2 py-0.5 rounded-full">
+<span>73.7% من الإجمالي</span>
+</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display text-[2.5rem] leading-none font-bold text-on-surface tracking-tight" id="kpi-approved-val">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">التقارير المعتمدة سريرياً</span>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">موثقة بالتوقيع الرقمي للأخصائي</span>
+</div>
+</div>
+<!-- KPI Card 3: Drafts -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary/5 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">edit_document</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 bg-tertiary-fixed/60 px-2 py-0.5 rounded-full">
+<span>تحتاج استكمال</span>
+</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display text-[2.5rem] leading-none font-bold text-on-surface tracking-tight" id="kpi-drafts-val">2</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">المسودات قيد التحرير</span>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">في انتظار إرفاق القياسات الحركية</span>
+</div>
+</div>
+<!-- KPI Card 4: Shared Reports -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">share_reviews</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 bg-primary-fixed/80 px-2 py-0.5 rounded-full">
+<span>63.1% معدل المشاركة</span>
+</span>
+</div>
+<div class="mt-4 flex flex-col">
+<span class="font-display text-[2.5rem] leading-none font-bold text-on-surface tracking-tight" id="kpi-shared-val">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">التقارير التي تمت مشاركتها</span>
+<span class="font-body-sm text-body-sm text-outline mt-0.5">مع الأسرة، التأمين، والمستشفيات</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Container -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04),0_8px_24px_-4px_rgba(15,23,42,0.06)] overflow-hidden">
+<!-- Navigation Tabs Strip -->
+<div class="px-space-md pt-space-md bg-surface-container-lowest border-b border-surface-container-high/70 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-px" id="archiveTabs">
+<button class="tab-btn px-4 py-3 rounded-t-xl font-label-md text-label-md flex items-center gap-2 border-b-2 border-primary text-primary bg-primary/5 transition-all" data-tab="all" onclick="selectTab('all')" type="button">
+<span>جميع التقارير</span>
+<span class="px-2 py-0.5 rounded-full text-xs bg-primary text-on-primary font-bold tab-count">19</span>
+</button>
+<button class="tab-btn px-4 py-3 rounded-t-xl font-label-md text-label-md flex items-center gap-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition-all" data-tab="approved" onclick="selectTab('approved')" type="button">
+<span>التقارير المعتمدة</span>
+<span class="px-2 py-0.5 rounded-full text-xs bg-surface-container-high text-on-surface-variant font-bold tab-count">14</span>
+</button>
+<button class="tab-btn px-4 py-3 rounded-t-xl font-label-md text-label-md flex items-center gap-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition-all" data-tab="drafts" onclick="selectTab('drafts')" type="button">
+<span>المسودات</span>
+<span class="px-2 py-0.5 rounded-full text-xs bg-surface-container-high text-on-surface-variant font-bold tab-count">2</span>
+</button>
+<button class="tab-btn px-4 py-3 rounded-t-xl font-label-md text-label-md flex items-center gap-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition-all" data-tab="shared" onclick="selectTab('shared')" type="button">
+<span>التقارير المشاركة</span>
+<span class="px-2 py-0.5 rounded-full text-xs bg-surface-container-high text-on-surface-variant font-bold tab-count">12</span>
+</button>
+<button class="tab-btn px-4 py-3 rounded-t-xl font-label-md text-label-md flex items-center gap-2 border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition-all" data-tab="permanent" onclick="selectTab('permanent')" type="button">
+<span>المحفوظة كأرشيف دائم</span>
+<span class="px-2 py-0.5 rounded-full text-xs bg-surface-container-high text-on-surface-variant font-bold tab-count">3</span>
+</button>
+</div>
+<!-- Micro summary text -->
+<div class="text-outline font-label-sm text-label-sm pb-3 hidden sm:flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>مشفر متوافق مع نظام حماية البيانات الصحية (HIPAA/NDMO)</span>
+</div>
+</div>
+<!-- Advanced Filter & Search Toolbar -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col gap-space-sm border-b border-surface-container-high/60">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3">
+<!-- Search input -->
+<div class="lg:col-span-4 relative">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="searchInput" oninput="applyFilters()" placeholder="بحث برقم التقرير (REP-...)، اسم المستفيد، أو العنوان..." type="text"/>
+</div>
+<!-- Beneficiary filter (28 active real patients) -->
+<div class="lg:col-span-3">
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="beneficiaryFilter" onchange="applyFilters()">
+<option value="">جميع المستفيدين (28 مريضاً)</option>
+<option value="MRN-10294">أحمد عبدالعزيز الهاشمي (MRN-10294)</option>
+<option value="MRN-10483">فيصل العتيبي (MRN-10483)</option>
+<option value="MRN-10482">نورة الدوسري (MRN-10482)</option>
+<option value="MRN-10484">سارة الشمري (MRN-10484)</option>
+<option value="MRN-10485">محمد السبيعي (MRN-10485)</option>
+<option value="MRN-10488">ريم الخاطر (MRN-10488)</option>
+<option value="MRN-10489">سلطان الزهراني (MRN-10489)</option>
+<option value="MRN-10490">منيرة القحطاني (MRN-10490)</option>
+<option value="MRN-10492">لطيفة البواردي (MRN-10492)</option>
+<option value="MRN-10494">العنود الشهري (MRN-10494)</option>
+<option value="MRN-10495">مشعل الدخيل (MRN-10495)</option>
+<option value="MRN-10496">جواهر الرشيد (MRN-10496)</option>
+<option value="MRN-10499">زياد الشريف (MRN-10499)</option>
+<option value="MRN-10501">بندر المطيري (MRN-10501)</option>
+<option value="MRN-10502">هند التميمي (MRN-10502)</option>
+<option value="MRN-10503">خالد بن نايف (MRN-10503)</option>
+<option value="MRN-10504">نوف الحازمي (MRN-10504)</option>
+<option value="MRN-10505">عبدالله الغامدي (MRN-10505)</option>
+<option value="MRN-10506">شهد الفهد (MRN-10506)</option>
+<option value="MRN-10507">فهد العجلان (MRN-10507)</option>
+<option value="MRN-10508">حصة السديري (MRN-10508)</option>
+<option value="MRN-10509">ماجد الرقيب (MRN-10509)</option>
+<option value="MRN-10510">لولوة المهنا (MRN-10510)</option>
+<option value="MRN-10511">تركي المالكي (MRN-10511)</option>
+<option value="MRN-10512">غادة الصالح (MRN-10512)</option>
+<option value="MRN-10513">عمر الشعلان (MRN-10513)</option>
+<option value="MRN-10514">دانة الحربي (MRN-10514)</option>
+<option value="MRN-10515">يزيد القاسم (MRN-10515)</option>
+</select>
+</div>
+<!-- Report Type Filter -->
+<div class="lg:col-span-2">
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="typeFilter" onchange="applyFilters()">
+<option value="">نوع التقرير (الكل)</option>
+<option value="weekly">تقرير أسبوعي</option>
+<option value="monthly">تقرير شهري شامل</option>
+<option value="session">تقرير جلسة تأهيلية</option>
+</select>
+</div>
+<!-- Time Range Filter -->
+<div class="lg:col-span-2">
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="timeFilter" onchange="applyFilters()">
+<option value="all">كافة الفترات الزمنية</option>
+<option value="30days">آخر 30 يوماً</option>
+<option value="quarter">هذا الربع السنوي (Q2)</option>
+<option value="prev_quarter">الربع السابق (Q1)</option>
+</select>
+</div>
+<!-- Reset Filter Button -->
+<div class="lg:col-span-1 flex items-center">
+<button class="w-full h-12 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant flex items-center justify-center gap-1 font-label-sm text-label-sm transition-colors" onclick="resetFilters()" title="إعادة ضبط الفلاتر" type="button">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+<span class="lg:hidden">إعادة ضبط</span>
+</button>
+</div>
+</div>
+<!-- Filter Badges Counter -->
+<div class="flex items-center justify-between font-body-sm text-body-sm text-outline px-1 pt-1">
+<div class="flex items-center gap-2">
+<span>يتم عرض:</span>
+<span class="font-bold text-on-surface" id="visibleCounter">19</span>
+<span>من أصل 19 تقريراً مسجلاً في الأرشيف السريري</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="text-primary hover:underline flex items-center gap-1" onclick="triggerToast('تحديث فوري', 'تم مزامنة حالة التقارير مع الخادم السحابي الآن.', 'sync')" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>تحديث البيانات الحية</span>
+</button>
+</div>
+</div>
+</div>
+<!-- DATA VIEW AREA -->
+<div class="relative min-h-[460px]" id="dataContainer">
+<!-- Standard Data Table View -->
+<div class="w-full overflow-x-auto" id="tableView">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none border-b border-surface-container-high/60">
+<th class="py-4 px-4 whitespace-nowrap">رقم التقرير</th>
+<th class="py-4 px-4 whitespace-nowrap">عنوان التقرير السريري</th>
+<th class="py-4 px-4 whitespace-nowrap">المستفيد والملف الطبي</th>
+<th class="py-4 px-4 whitespace-nowrap">النوع</th>
+<th class="py-4 px-4 whitespace-nowrap">الفترة المشمولة</th>
+<th class="py-4 px-4 whitespace-nowrap">تاريخ الإنشاء</th>
+<th class="py-4 px-4 whitespace-nowrap">الأخصائي المشرف</th>
+<th class="py-4 px-4 whitespace-nowrap">الحالة والاعتماد</th>
+<th class="py-4 px-4 whitespace-nowrap">آخر تحديث</th>
+<th class="py-4 px-4 whitespace-nowrap text-center">الإجراءات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm text-on-surface" id="tableBody">
+<!-- Dynamically Populated or rendered from predefined dataset -->
+</tbody>
+</table>
+</div>
+<!-- View State: Skeleton Loading -->
+<div class="hidden p-space-md flex-col gap-4" id="stateLoading">
+<div class="animate-pulse flex flex-col gap-4">
+<div class="h-14 bg-surface-container-high rounded-xl w-full"></div>
+<div class="h-16 bg-surface-container rounded-xl w-full"></div>
+<div class="h-16 bg-surface-container rounded-xl w-full"></div>
+<div class="h-16 bg-surface-container rounded-xl w-full"></div>
+<div class="h-16 bg-surface-container rounded-xl w-full"></div>
+<div class="h-16 bg-surface-container rounded-xl w-full"></div>
+</div>
+</div>
+<!-- View State: Empty Archive -->
+<div class="hidden py-16 px-space-md flex flex-col items-center justify-center text-center" id="stateEmpty">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center text-outline mb-4">
+<span class="material-symbols-outlined text-[40px]">folder_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">لا توجد تقارير محفوظة حتى الآن</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2">
+            لم يتم إنشاء أو أرشفة أي تقارير سريرية بعد. يمكنك البدء بإعداد تقرير تقييم أو تقرير جلسة جديد الآن.
+          </p>
+<button class="mt-6 px-6 py-3 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm hover:brightness-105 transition-all" onclick="setViewState('normal')" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>إنشاء التقرير الأول</span>
+</button>
+</div>
+<!-- View State: No Search Results -->
+<div class="hidden py-16 px-space-md flex flex-col items-center justify-center text-center" id="stateNoResults">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center text-outline mb-4">
+<span class="material-symbols-outlined text-[40px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">لم يتم العثور على أي تقارير مطابقة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2">
+            تأكد من صحة رقم التقرير المدخل أو اسم المستفيد، أو جرّب إلغاء تحديد بعض الفلاتر.
+          </p>
+<button class="mt-6 px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="resetFilters(); setViewState('normal');" type="button">
+            إعادة تعيين البحث والفلاتر
+          </button>
+</div>
+<!-- View State: Beneficiary Has No Reports -->
+<div class="hidden py-16 px-space-md flex flex-col items-center justify-center text-center" id="stateNoBeneficiary">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-[40px]">person_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">لا توجد تقارير لهذا المستفيد بعد</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-2">
+            المستفيد مسجل في المنصة ولكن لم يصدر له تقرير سريري حتى الآن.
+          </p>
+<div class="flex items-center gap-3 mt-6">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="resetFilters(); setViewState('normal');" type="button">
+              عرض جميع المستفيدين
+            </button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-sm" onclick="triggerToast('تقرير جديد', 'فتح نموذج التقرير للمستفيد...', 'post_add')" type="button">
+              إصدار تقرير للمستفيد
+            </button>
+</div>
+</div>
+</div>
+<!-- Pagination & Bottom Metadata -->
+<div class="px-space-md py-4 bg-surface-container-low/30 border-t border-surface-container-high/60 flex flex-wrap items-center justify-between gap-4" id="tablePagination">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline">
+<span>الصفحة 1 من 1</span>
+<span>•</span>
+<span>الأرشيف يعرض كامل السجلات الـ 19 دون انقطاع</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest text-outline flex items-center justify-center disabled:opacity-40 shadow-sm cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center shadow-sm" type="button">
+            1
+          </button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest text-outline flex items-center justify-center disabled:opacity-40 shadow-sm cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- DRAWER / MODAL: Detailed Report Preview -->
+<div class="fixed inset-0 z-50 hidden bg-on-background/40 backdrop-blur-sm flex justify-end transition-opacity duration-300" id="reportDetailModal">
+<div class="w-full max-w-2xl bg-surface-container-lowest h-full overflow-y-auto shadow-2xl flex flex-col justify-between" id="reportDrawerContent">
+<!-- Drawer Header -->
+<div class="p-space-md border-b border-surface-container-high flex items-center justify-between bg-surface-container-low/40 sticky top-0 z-10 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">clinical_notes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight" id="modalReportTitle">تفاصيل التقرير السريري</span>
+<span class="font-body-sm text-body-sm text-outline" id="modalReportCode">REP-2024-9982</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" onclick="closeReportModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Body -->
+<div class="p-space-md flex flex-col gap-6">
+<!-- Status & Badge Ribbon -->
+<div class="flex items-center justify-between bg-surface-container-low p-4 rounded-xl">
+<div class="flex items-center gap-2" id="modalStatusContainer">
+<!-- Dynamic Badge -->
+</div>
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>معتمد وموثق بهيئة التخصصات الصحية</span>
+</div>
+</div>
+<!-- Beneficiary Info Card -->
+<div class="bg-surface-container-low/60 rounded-xl p-4 flex items-center gap-4">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="A dignified medical profile photograph of a Saudi therapy beneficiary in comfortable attire, softly illuminated portrait against clean clinical gradient background, IBM Plex Sans styling." id="modalBeneficiaryImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-SYET-bW1WkBNqin2VRoB9OQRlyjrwgOUr_2G8rCwXSwNwL2SwAsm1EEN8SmOsznjQmf5MhRZCzzNpZxLIzv0MqymjPhSDr91NhDvG6hK0jn3ss9GEF7Zqc4h0bNEfFYziPu-QNQdAiHP0SLRdPbtA_5pxGMYvtqV5YpnDM85ClP9COc5ZWm6ve5lYMliClVQYuHJUelJRU90Fwd70qPG5AttDrux2kYE_iJPJw"/>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold" id="modalBeneficiaryName">أحمد عبدالعزيز الهاشمي</span>
+<span class="font-label-sm text-label-sm text-primary px-2.5 py-0.5 rounded-full bg-primary/10" id="modalBeneficiaryMRN">MRN-10294</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-0.5" id="modalDiagnosis">التشخيص: إعادة تأهيل حركي ما بعد الجلطة الدماغية (Hemiparesis)</span>
+<div class="flex items-center gap-4 mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-outline">calendar_today</span> الفترة: <strong class="text-on-surface" id="modalPeriod">10 مايو - 17 مايو 2024</strong></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-outline">person</span> المشرف: <strong class="text-on-surface" id="modalSupervisor">د. سارة المنصور</strong></span>
+</div>
+</div>
+</div>
+<!-- Clinical Progress Scorecard (Inline Visual Indicator) -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-[0_1px_6px_rgba(0,0,0,0.03)] flex flex-col gap-3">
+<span class="font-label-md text-label-md text-on-surface font-bold">مؤشرات التقدم الوظيفي المرصودة</span>
+<div class="grid grid-cols-3 gap-3 text-center">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-display text-[1.5rem] font-bold text-primary block leading-none">82%</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">المدى الحركي (ROM)</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-display text-[1.5rem] font-bold text-secondary block leading-none">+24%</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">التوازن الثابت والديناميكي</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-display text-[1.5rem] font-bold text-tertiary block leading-none">12/12</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">جلسات منزلية منجزة</span>
+</div>
+</div>
+</div>
+<!-- Clinical Summary / Specialist Notes -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">notes</span>
+<span>ملاحظات الأخصائي السريري والتقييم الوظيفي</span>
+</span>
+<div class="p-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md leading-relaxed" id="modalNotes">
+            أظهر المستفيد تحسناً ملحوظاً في السيطرة على الطرف العلوي الأيمن مع انخفاض التشنج العضلي بمقياس Modified Ashworth من 2 إلى 1. تم إكمال جميع التمارين المقررة بنجاح مع تجاوب عائلي متميز في جلسات العلاج الطبيعي المنزلي الموجهة.
+          </div>
+</div>
+<!-- Clinical Recommendations -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<span>التوصيات والخطوات العلاجية القادمة</span>
+</span>
+<ul class="list-disc list-inside space-y-1.5 p-4 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant" id="modalRecommendations">
+<li>زيادة مقاومة تمارين التقوية للطرف العلوي باستخدام أشرطة المقاومة المرنة.</li>
+<li>الاستمرار في تمارين التوازن والوقوف المستقل لمدة 15 دقيقة يومياً بمساعدة مقدم الرعاية.</li>
+<li>جدولة إعادة التقييم الشامل لمقياس FIM خلال أسبوعين من تاريخ هذا التقرير.</li>
+</ul>
+</div>
+<!-- Attached Files & Digital Signature -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-on-surface font-bold">المرفقات وتوثيق الاعتماد</span>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high/40">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[24px]">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">الملف السريري النهائي المعتمد.pdf</span>
+<span class="font-body-sm text-body-sm text-outline">2.4 ميجابايت • مشفر بتشفير AES-256</span>
+</div>
+</div>
+<button class="text-primary hover:text-primary-container p-2" onclick="triggerToast('تحميل المرفق', 'بدأ تنزيل المرفق السريري...', 'download')" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- Digital Signature Stamp -->
+<div class="p-4 rounded-xl bg-secondary-container/20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">التوقيع الرقمي للأخصائي: د. سارة المنصور</span>
+<span class="font-body-sm text-body-sm text-outline">رقم التصنيف: SCFHS-294810 • البصمة الرقمية: SHA256:8f4c...3e1</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+</div>
+</div>
+<!-- Sharing & Dispatch History -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[20px]">history</span>
+<span>سجل المشاركة والإرسال لهذا التقرير</span>
+</span>
+<div class="space-y-2" id="modalShareLog">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">domain</span>
+<span class="font-label-sm text-label-sm text-on-surface">مستشفى الملك فيصل التخصصي</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">تم الاستلام: 18 مايو 2024 - 10:15 ص</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface">بوبا العربية للتأمين التعاوني</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">تمت المصادقة: 18 مايو 2024 - 11:30 ص</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md border-t border-surface-container-high bg-surface-container-low/80 flex items-center justify-between sticky bottom-0">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="closeReportModal()" type="button">
+          إغلاق المعاينة
+        </button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:bg-surface-container-high transition-colors" onclick="triggerToast('تنزيل PDF', 'جاري إنشاء ملف PDF للتقرير الطبي المعتمد مع البصمة الرقمية...', 'picture_as_pdf')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>تنزيل PDF</span>
+</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm hover:brightness-105 transition-all" onclick="triggerToast('مشاركة التقرير', 'تم فتح واجهة الإرسال المشفر للمستفيد والجهات الطبية.', 'share')" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>مشاركة التقرير</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- AUDIT & SHARE LOG MODAL (سجل التدقيق والمشاركات) -->
+<div class="fixed inset-0 z-50 hidden bg-on-background/40 backdrop-blur-sm flex items-center justify-center p-4" id="auditModal">
+<div class="w-full max-w-3xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[870px]">
+<div class="p-space-md border-b border-surface-container-high flex items-center justify-between bg-surface-container-low/50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">سجل التدقيق والمشاركات السريرية</span>
+<span class="font-body-sm text-body-sm text-outline">تتبع كامل لكل إجراء اعتماد، تعديل، تحميل، أو إرسال تقرير</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" onclick="closeAuditModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-space-md overflow-y-auto space-y-4">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">share</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">مشاركة تقرير REP-2024-9982 مع بوبا العربية</span>
+<span class="font-body-sm text-body-sm text-outline">اليوم - 11:30 ص</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">تم إرسال نسخة رقمية مشفرة لمطالبة التأمين الخاصة بالمستفيد: أحمد الهاشمي.</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">بواسطة: د. سارة المنصور (الأخصائي المعالج)</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">اعتماد وتوقيع التقرير الشهري REP-2024-9978</span>
+<span class="font-body-sm text-body-sm text-outline">أمس - 04:15 م</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">تم توقيع التقرير رقمياً وتثبيت البصمة الطبية للمستفيدة: نورة الدوسري.</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">بواسطة: د. سارة المنصور</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-outline shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">تنزيل نسخة PDF للتقرير REP-2024-9965</span>
+<span class="font-body-sm text-body-sm text-outline">15 مايو 2024 - 02:40 م</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">قام ولي أمر المستفيد فيصل العتيبي بتحميل التقرير عبر بوابة الأسرة.</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">عنوان IP الموثق: 176.44.120.91 (الرياض)</span>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">حفظ مسودة التقرير REP-2024-9993</span>
+<span class="font-body-sm text-body-sm text-outline">14 مايو 2024 - 09:20 ص</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">تم حفظ المسودة للمستفيد مشعل الدخيل بانتظار إرفاق قياسات ROM.</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">بواسطة: ك. طارق الزهراني</span>
+</div>
+</div>
+</div>
+<div class="p-space-md border-t border-surface-container-high bg-surface-container-low/40 flex items-center justify-end">
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md shadow-sm" onclick="closeAuditModal()" type="button">
+          تم الاطلاع
+        </button>
+</div>
+</div>
+</div>
+<!-- DELETE DRAFT CONFIRMATION MODAL -->
+<div class="fixed inset-0 z-50 hidden bg-on-background/40 backdrop-blur-sm flex items-center justify-center p-4" id="deleteModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-2xl shadow-2xl p-6 flex flex-col gap-4 text-center">
+<div class="w-16 h-16 rounded-full bg-error-container text-error mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">delete_forever</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تأكيد حذف المسودة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          هل أنت متأكد من رغبتك في حذف مسودة التقرير رقم <strong class="text-on-surface" id="deleteReportCode">REP-2024-9993</strong> نهائياً؟ لن يمكن التراجع عن هذا الإجراء.
+        </p>
+</div>
+<div class="flex items-center justify-center gap-3 mt-2">
+<button class="px-5 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="closeDeleteModal()" type="button">
+          إلغاء
+        </button>
+<button class="px-5 py-2.5 rounded-xl bg-error text-on-error font-label-md text-label-md shadow-sm hover:brightness-110 transition-all" onclick="confirmDeleteDraft()" type="button">
+          نعم، احذف المسودة
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Archiving & Filtering Engine -->
+<script>
+  // Complete Dataset of 19 Reports across the 28 registered beneficiaries
+  const reportsDatabase = [
+    {
+      id: "REP-2024-9982",
+      title: "تقرير التأهيل الحركي الأسبوعي - الطرف العلوي",
+      patientName: "أحمد عبدالعزيز الهاشمي",
+      patientMRN: "MRN-10294",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "10 مايو - 17 مايو 2024",
+      createdAt: "2024-05-18",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-05-18 11:30",
+      isPermanent: true,
+      diagnosis: "إعادة تأهيل حركي ما بعد الجلطة الدماغية (Hemiparesis)",
+      recipients: ["المستفيد", "مستشفى الملك فيصل", "بوبا العربية"],
+      notes: "تحسن في بسط الأصابع والقدرة على مسك الأشياء الخفيفة بدون مساعدة. انخفاض مقياس الألم إلى 2/10."
+    },
+    {
+      id: "REP-2024-9980",
+      title: "تقرير تقييم التوازن الديناميكي والوقوف",
+      patientName: "فيصل العتيبي",
+      patientMRN: "MRN-10483",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "15 مايو 2024",
+      createdAt: "2024-05-15",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-05-15 16:45",
+      isPermanent: false,
+      diagnosis: "إصابة الحبل الشوكي - مستوى L2 غير مكتمل",
+      recipients: ["المستفيد", "مدينة الأمير سلطان للخدمات الإنسانية"],
+      notes: "إنجاز 80% من بروتوكول الوقوف بمساندة المشاية. ثبات ممتاز في الجذع."
+    },
+    {
+      id: "REP-2024-9978",
+      title: "التقرير الشهري الشامل للتقدم الوظيفي (أبريل)",
+      patientName: "نورة الدوسري",
+      patientMRN: "MRN-10482",
+      type: "monthly",
+      typeLabel: "شهري شامل",
+      period: "01 أبريل - 30 أبريل 2024",
+      createdAt: "2024-05-02",
+      specialist: "د. سارة المنصور",
+      status: "approved",
+      statusLabel: "معتمد فقط",
+      updatedAt: "2024-05-02 14:10",
+      isPermanent: true,
+      diagnosis: "شلل دماغي تشنجي (Spastic CP - GMFCS II)",
+      recipients: [],
+      notes: "ارتفاع مؤشر FIM بمقدار 14 نقطة. تقدم لافت في صعود الدرج بمفردها مع استخدام الدرابزين."
+    },
+    {
+      id: "REP-2024-9993",
+      title: "مسودة تقرير تقييم النطق والتواصل المعرفي",
+      patientName: "مشعل الدخيل",
+      patientMRN: "MRN-10495",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "05 مايو - 12 مايو 2024",
+      createdAt: "2024-05-14",
+      specialist: "ك. طارق الزهراني",
+      status: "draft",
+      statusLabel: "مسودة قيد الإعداد",
+      updatedAt: "2024-05-14 09:20",
+      isPermanent: false,
+      diagnosis: "تأخر نمائي وحبسة كلامية خفيفة",
+      recipients: [],
+      notes: "بانتظار إرفاق تسجيلات النطق الصوتية واختبار الفهم السمعي."
+    },
+    {
+      id: "REP-2024-9975",
+      title: "تقرير جلسة العلاج الطبيعي المنزلي الموجهة",
+      patientName: "سارة الشمري",
+      patientMRN: "MRN-10484",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "12 مايو 2024",
+      createdAt: "2024-05-12",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-05-13 08:30",
+      isPermanent: false,
+      diagnosis: "تصلب متعدد (MS) - مرحلة الهجوع",
+      recipients: ["المستفيد", "مستشفى الحرس الوطني"],
+      notes: "تطبيق ناجح لتمارين مقاومة التعب الحراري مع استجابة عضلية جيدة."
+    },
+    {
+      id: "REP-2024-9971",
+      title: "تقرير دوري لتأهيل مفصل الركبة والمشي",
+      patientName: "محمد السبيعي",
+      patientMRN: "MRN-10485",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "01 مايو - 08 مايو 2024",
+      createdAt: "2024-05-09",
+      specialist: "ك. طارق الزهراني",
+      status: "approved",
+      statusLabel: "معتمد فقط",
+      updatedAt: "2024-05-09 13:15",
+      isPermanent: false,
+      diagnosis: "استبدال كامل لمفصل الركبة الثنائي",
+      recipients: [],
+      notes: "انثناء الركبة وصل إلى 115 درجة بدون ألم مفرط. المشي بدون عكاز لمسافة 50 متراً."
+    },
+    {
+      id: "REP-2024-9968",
+      title: "التقرير الشهري لتطور الاستقلالية الحركية",
+      patientName: "ريم الخاطر",
+      patientMRN: "MRN-10488",
+      type: "monthly",
+      typeLabel: "شهري شامل",
+      period: "01 أبريل - 30 أبريل 2024",
+      createdAt: "2024-05-03",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-05-03 17:00",
+      isPermanent: true,
+      diagnosis: "ضعف عضلي شوكي (SMA Type 3)",
+      recipients: ["المستفيد", "التعاونية للتأمين", "د. أحمد استشاري الأعصاب"],
+      notes: "الحفاظ على المدى الحركي الكامل وتراجع وتيرة التشنجات المسائية."
+    },
+    {
+      id: "REP-2024-9965",
+      title: "تقرير المتابعة السريرية للتدريب على المشي",
+      patientName: "سلطان الزهراني",
+      patientMRN: "MRN-10489",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "24 أبريل - 01 مايو 2024",
+      createdAt: "2024-05-02",
+      specialist: "ك. طارق الزهراني",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-05-02 18:30",
+      isPermanent: false,
+      diagnosis: "إعادة تأهيل طرف سفلي بعد كسر مضاعف",
+      recipients: ["المستفيد", "المستشفى العسكري"],
+      notes: "تحميل الوزن بنسبة 90% على الطرف الأيمن دون انزعاج."
+    },
+    {
+      id: "REP-2024-9960",
+      title: "مسودة تقرير خطة العلاج الوظيفي المنزلي",
+      patientName: "منيرة القحطاني",
+      patientMRN: "MRN-10490",
+      type: "monthly",
+      typeLabel: "شهري شامل",
+      period: "أبريل 2024",
+      createdAt: "2024-05-01",
+      specialist: "د. سارة المنصور",
+      status: "draft",
+      statusLabel: "مسودة قيد الإعداد",
+      updatedAt: "2024-05-01 11:20",
+      isPermanent: false,
+      diagnosis: "باركنسون مرحلة ثانية",
+      recipients: [],
+      notes: "في انتظار مراجعة نتائج استبيان التوازن البيتي مع المرافق."
+    },
+    {
+      id: "REP-2024-9958",
+      title: "تقرير جلسة تقييم التشنج العضلي (Ashworth Scale)",
+      patientName: "لطيفة البواردي",
+      patientMRN: "MRN-10492",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "28 أبريل 2024",
+      createdAt: "2024-04-28",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-04-29 10:00",
+      isPermanent: false,
+      diagnosis: "اعتلال عصبي محيطي",
+      recipients: ["المستفيد", "ميدغلف للتأمين"],
+      notes: "استجابة ممتازة لجلسة الإطالة وتراجع درجات التشنج الطرفي."
+    },
+    {
+      id: "REP-2024-9952",
+      title: "تقرير دوري لتمارين التوازن والتناسق العصبي",
+      patientName: "العنود الشهري",
+      patientMRN: "MRN-10494",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "15 أبريل - 22 أبريل 2024",
+      createdAt: "2024-04-23",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-04-23 15:45",
+      isPermanent: false,
+      diagnosis: "متلازمة غيلان باريه (طور التعافي)",
+      recipients: ["المستفيد", "مدينة الملك فهد الطبية"],
+      notes: "استعادة قوة القبضة اليدوية وتحسن زمن الوقوف الأحادي إلى 12 ثانية."
+    },
+    {
+      id: "REP-2024-9949",
+      title: "تقرير جلسة التوجيه الوظيفي للحياة اليومية (ADL)",
+      patientName: "جواهر الرشيد",
+      patientMRN: "MRN-10496",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "20 أبريل 2024",
+      createdAt: "2024-04-20",
+      specialist: "ك. طارق الزهراني",
+      status: "approved",
+      statusLabel: "معتمد فقط",
+      updatedAt: "2024-04-20 12:10",
+      isPermanent: false,
+      diagnosis: "ضعف عام بعد تنويم مديد",
+      recipients: [],
+      notes: "قدرة المستفيدة على ارتداء الملابس واستعمال أدوات المطبخ بأمان كامل."
+    },
+    {
+      id: "REP-2024-9945",
+      title: "تقرير أسبوعي لإعادة تأهيل التوازن الحركي",
+      patientName: "زياد الشريف",
+      patientMRN: "MRN-10499",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "10 أبريل - 17 أبريل 2024",
+      createdAt: "2024-04-18",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-04-18 14:00",
+      isPermanent: false,
+      diagnosis: "ترنح مخيخي (Cerebellar Ataxia)",
+      recipients: ["المستفيد", "بوبا العربية"],
+      notes: "انخفاض التمايل الجانبي أثناء المشي بخط مستقيم بفضل تمارين التركيز البصري."
+    },
+    {
+      id: "REP-2024-9940",
+      title: "تقرير التأهيل التنفسي وتوسيع السعة الرئوية",
+      patientName: "بندر المطيري",
+      patientMRN: "MRN-10501",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "05 أبريل - 12 أبريل 2024",
+      createdAt: "2024-04-13",
+      specialist: "ك. طارق الزهراني",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-04-13 16:30",
+      isPermanent: false,
+      diagnosis: "انسداد رئوي مزمن (COPD) مع تراجع حركي",
+      recipients: ["المستفيد", "مستشفى الملك خالد الجامعي"],
+      notes: "تحسن تشبع الأكسجين أثناء المشي لمدة 6 دقائق من 91% إلى 96%."
+    },
+    {
+      id: "REP-2024-9938",
+      title: "التقرير الشهري الشامل لبرنامج التأهيل المنزلي",
+      patientName: "هند التميمي",
+      patientMRN: "MRN-10502",
+      type: "monthly",
+      typeLabel: "شهري شامل",
+      period: "مارس 2024",
+      createdAt: "2024-04-02",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-04-02 13:00",
+      isPermanent: false,
+      diagnosis: "ضمور عضلات دوشين - رعاية منزلية داعمة",
+      recipients: ["المستفيد", "تكافل الراجحي للتأمين"],
+      notes: "استقرار الوضع الوظيفي ومنع حدوث أي قصر في الأوتار بفضل تمارين الإطالة اليومية."
+    },
+    {
+      id: "REP-2024-9932",
+      title: "تقرير جلسة تقييم الكرسي المتحرك والملاءمة البيئية",
+      patientName: "خالد بن نايف",
+      patientMRN: "MRN-10503",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "28 مارس 2024",
+      createdAt: "2024-03-29",
+      specialist: "د. سارة المنصور",
+      status: "approved",
+      statusLabel: "معتمد فقط",
+      updatedAt: "2024-03-29 11:15",
+      isPermanent: false,
+      diagnosis: "شلل سفلي ناتج عن حادث مروري",
+      recipients: [],
+      notes: "تم ضبط مساند الظهر ووسائد منع قرح الفراش واختبار المناورة داخل المنزل بنجاح."
+    },
+    {
+      id: "REP-2024-9928",
+      title: "تقرير المتابعة الحركية وتناسق الأطراف العلوية",
+      patientName: "نوف الحازمي",
+      patientMRN: "MRN-10504",
+      type: "weekly",
+      typeLabel: "أسبوعي",
+      period: "18 مارس - 25 مارس 2024",
+      createdAt: "2024-03-26",
+      specialist: "ك. طارق الزهراني",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-03-26 15:10",
+      isPermanent: false,
+      diagnosis: "التواء مفصل الكتف وتيبس حركي حاد",
+      recipients: ["المستفيد", "سلامة للتأمين"],
+      notes: "زيادة رفع الذراع لأعلى إلى 140 درجة دون مساعدة. برنامج التمارين يسير بسلاسة."
+    },
+    {
+      id: "REP-2024-9922",
+      title: "تقرير جلسة المعالجة اليدوية وتخفيف الآلام المزمنة",
+      patientName: "عبدالله الغامدي",
+      patientMRN: "MRN-10505",
+      type: "session",
+      typeLabel: "جلسة تأهيل",
+      period: "20 مارس 2024",
+      createdAt: "2024-03-21",
+      specialist: "د. سارة المنصور",
+      status: "approved",
+      statusLabel: "معتمد فقط",
+      updatedAt: "2024-03-21 17:40",
+      isPermanent: false,
+      diagnosis: "انزلاق غضروفي قطني L4-L5",
+      recipients: [],
+      notes: "تراجع ألم الساق الممتد وارتفاع القدرة على الانحناء للأمام بدون انضغاط عصبي."
+    },
+    {
+      id: "REP-2024-9915",
+      title: "التقرير الشهري الشامل لتقييم القدرات الحركية",
+      patientName: "شهد الفهد",
+      patientMRN: "MRN-10506",
+      type: "monthly",
+      typeLabel: "شهري شامل",
+      period: "فبراير 2024",
+      createdAt: "2024-03-01",
+      specialist: "د. سارة المنصور",
+      status: "approved_shared",
+      statusLabel: "معتمد ومشارك",
+      updatedAt: "2024-03-01 12:20",
+      isPermanent: false,
+      diagnosis: "تأخر حركي عام لدى الأطفال",
+      recipients: ["المستفيد", "مركز التأهيل الشامل", "بوبا العربية"],
+      notes: "اكتساب مهارة الحبو المتناسق والانتقال من الجلوس إلى الوقوف بمساندة الأثاث."
+    }
+  ];
+
+  let currentTab = 'all';
+  let activeDeletingId = null;
+
+  // Render Reports into the Table
+  function renderTable(data) {
+    const tbody = document.getElementById('tableBody');
+    tbody.innerHTML = '';
+
+    if (!data || data.length === 0) {
+      document.getElementById('tableView').classList.add('hidden');
+      document.getElementById('stateNoResults').classList.remove('hidden');
+      document.getElementById('visibleCounter').innerText = '0';
+      return;
+    }
+
+    document.getElementById('tableView').classList.remove('hidden');
+    document.getElementById('stateNoResults').classList.add('hidden');
+    document.getElementById('visibleCounter').innerText = data.length;
+
+    data.forEach(item => {
+      const tr = document.createElement('tr');
+      tr.className = "hover:bg-surface-container-low/60 transition-colors";
+
+      // Type Badge Styling
+      let typeBadge = '';
+      if (item.type === 'weekly') {
+        typeBadge = `<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-semibold">أسبوعي</span>`;
+      } else if (item.type === 'monthly') {
+        typeBadge = `<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-container/50 text-secondary font-semibold">شهري شامل</span>`;
+      } else {
+        typeBadge = `<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-tertiary-fixed/70 text-tertiary font-semibold">تقرير جلسة</span>`;
+      }
+
+      // Status Badge Styling
+      let statusBadge = '';
+      if (item.status === 'approved_shared') {
+        statusBadge = `
+          <div class="flex flex-col gap-0.5">
+            <span class="inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container w-fit">
+              <span class="material-symbols-outlined text-[13px]">share</span>
+              معتمد ومشارك
+            </span>
+            <span class="text-[11px] text-outline truncate max-w-[130px]" title="${item.recipients.join(', ')}">${item.recipients.join('، ')}</span>
+          </div>`;
+      } else if (item.status === 'approved') {
+        statusBadge = `
+          <span class="inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full bg-primary-fixed text-primary w-fit">
+            <span class="material-symbols-outlined text-[13px]">check_circle</span>
+            معتمد فقط
+          </span>`;
+      } else {
+        statusBadge = `
+          <span class="inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant w-fit">
+            <span class="material-symbols-outlined text-[13px]">edit</span>
+            مسودة قيد الإعداد
+          </span>`;
+      }
+
+      // Contextual Action Buttons
+      let actionButtons = '';
+      if (item.status === 'draft') {
+        actionButtons = `
+          <div class="flex items-center justify-center gap-1">
+            <button type="button" onclick="previewReport('${item.id}')" title="معاينة المسودة" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+            </button>
+            <button type="button" onclick="triggerToast('تحرير المسودة', 'فتح محرر التقرير لاستكمال القياسات...', 'edit')" title="استكمال التحرير" class="w-8 h-8 rounded-lg bg-primary-fixed hover:bg-primary-fixed-dim text-primary flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">edit_square</span>
+            </button>
+            <button type="button" onclick="openDeleteModal('${item.id}')" title="حذف المسودة" class="w-8 h-8 rounded-lg bg-error-container hover:brightness-95 text-error flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">delete</span>
+            </button>
+          </div>
+        `;
+      } else {
+        actionButtons = `
+          <div class="flex items-center justify-center gap-1">
+            <button type="button" onclick="previewReport('${item.id}')" title="عرض التقرير السريري" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+            </button>
+            <button type="button" onclick="triggerToast('تنزيل PDF', 'جاري تجهيز وتنزيل نسخة PDF للتقرير ${item.id}...', 'download')" title="تنزيل PDF" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+            </button>
+            <button type="button" onclick="triggerToast('مشاركة التقرير', 'تم فتح خيارات إرسال التقرير ${item.id}', 'share')" title="مشاركة التقرير" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">share</span>
+            </button>
+            <button type="button" onclick="openAuditModal()" title="سجل المشاركة" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-outline flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[18px]">history</span>
+            </button>
+          </div>
+        `;
+      }
+
+      tr.innerHTML = `
+        <td class="py-3.5 px-4 font-label-sm text-label-sm text-primary font-bold whitespace-nowrap">
+          ${item.id}
+        </td>
+        <td class="py-3.5 px-4 max-w-xs">
+          <div class="font-label-md text-label-md text-on-surface font-semibold truncate hover:text-clip" title="${item.title}">${item.title}</div>
+          <div class="text-xs text-outline truncate">${item.diagnosis}</div>
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-xs shrink-0">
+              ${item.patientName.split(' ')[0][0]}
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm font-semibold text-on-surface">${item.patientName}</span>
+              <span class="text-xs text-outline">${item.patientMRN}</span>
+            </div>
+          </div>
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap">
+          ${typeBadge}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap text-on-surface-variant font-body-sm text-body-sm">
+          ${item.period}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap text-on-surface-variant font-body-sm text-body-sm">
+          ${item.createdAt}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap font-label-sm text-label-sm text-on-surface">
+          ${item.specialist}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap">
+          ${statusBadge}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap text-xs text-outline">
+          ${item.updatedAt}
+        </td>
+        <td class="py-3.5 px-4 whitespace-nowrap text-center">
+          ${actionButtons}
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Filter & Search Engine
+  function applyFilters() {
+    const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+    const benVal = document.getElementById('beneficiaryFilter').value;
+    const typeVal = document.getElementById('typeFilter').value;
+    const timeVal = document.getElementById('timeFilter').value;
+
+    let filtered = reportsDatabase.filter(report => {
+      // Tab constraint
+      if (currentTab === 'approved' && report.status === 'draft') return false;
+      if (currentTab === 'drafts' && report.status !== 'draft') return false;
+      if (currentTab === 'shared' && report.status !== 'approved_shared') return false;
+      if (currentTab === 'permanent' && !report.isPermanent) return false;
+
+      // Search Query
+      if (searchVal) {
+        const matchesQuery = 
+          report.id.toLowerCase().includes(searchVal) ||
+          report.title.toLowerCase().includes(searchVal) ||
+          report.patientName.toLowerCase().includes(searchVal) ||
+          report.patientMRN.toLowerCase().includes(searchVal);
+        if (!matchesQuery) return false;
+      }
+
+      // Beneficiary MRN
+      if (benVal && report.patientMRN !== benVal) return false;
+
+      // Type Filter
+      if (typeVal && report.type !== typeVal) return false;
+
+      // Time range
+      if (timeVal === '30days') {
+        const reportDate = new Date(report.createdAt);
+        const cutoff = new Date('2024-04-18');
+        if (reportDate < cutoff) return false;
+      }
+
+      return true;
+    });
+
+    renderTable(filtered);
+  }
+
+  // Switch Tab
+  function selectTab(tabKey) {
+    currentTab = tabKey;
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      const isSelected = btn.getAttribute('data-tab') === tabKey;
+      if (isSelected) {
+        btn.classList.add('border-primary', 'text-primary', 'bg-primary/5');
+        btn.classList.remove('border-transparent', 'text-on-surface-variant');
+        const badge = btn.querySelector('.tab-count');
+        badge.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        badge.classList.add('bg-primary', 'text-on-primary');
+      } else {
+        btn.classList.remove('border-primary', 'text-primary', 'bg-primary/5');
+        btn.classList.add('border-transparent', 'text-on-surface-variant');
+        const badge = btn.querySelector('.tab-count');
+        badge.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        badge.classList.remove('bg-primary', 'text-on-primary');
+      }
+    });
+
+    applyFilters();
+  }
+
+  // Reset Filters
+  function resetFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('beneficiaryFilter').value = '';
+    document.getElementById('typeFilter').value = '';
+    document.getElementById('timeFilter').value = 'all';
+    applyFilters();
+  }
+
+  // State Simulator Switching
+  function setViewState(state) {
+    const states = ['normal', 'loading', 'empty', 'no-results', 'no-beneficiary'];
+    states.forEach(s => {
+      const btn = document.getElementById(`btn-state-${s}`);
+      if (btn) {
+        if (s === state) {
+          btn.classList.add('bg-primary-container', 'text-on-primary');
+          btn.classList.remove('text-on-surface-variant');
+        } else {
+          btn.classList.remove('bg-primary-container', 'text-on-primary');
+          btn.classList.add('text-on-surface-variant');
+        }
+      }
+    });
+
+    const tableView = document.getElementById('tableView');
+    const tablePagination = document.getElementById('tablePagination');
+    const stateLoading = document.getElementById('stateLoading');
+    const stateEmpty = document.getElementById('stateEmpty');
+    const stateNoResults = document.getElementById('stateNoResults');
+    const stateNoBeneficiary = document.getElementById('stateNoBeneficiary');
+
+    // Hide all
+    tableView.classList.add('hidden');
+    tablePagination.classList.add('hidden');
+    stateLoading.classList.add('hidden');
+    stateEmpty.classList.add('hidden');
+    stateNoResults.classList.add('hidden');
+    stateNoBeneficiary.classList.add('hidden');
+
+    if (state === 'normal') {
+      tableView.classList.remove('hidden');
+      tablePagination.classList.remove('hidden');
+      renderTable(reportsDatabase);
+    } else if (state === 'loading') {
+      stateLoading.classList.remove('hidden');
+    } else if (state === 'empty') {
+      stateEmpty.classList.remove('hidden');
+      document.getElementById('visibleCounter').innerText = '0';
+    } else if (state === 'no-results') {
+      stateNoResults.classList.remove('hidden');
+      document.getElementById('visibleCounter').innerText = '0';
+    } else if (state === 'no-beneficiary') {
+      stateNoBeneficiary.classList.remove('hidden');
+      document.getElementById('visibleCounter').innerText = '0';
+    }
+  }
+
+  // Drawer / Report Detail Preview
+  function previewReport(reportId) {
+    const item = reportsDatabase.find(r => r.id === reportId);
+    if (!item) return;
+
+    document.getElementById('modalReportTitle').innerText = item.title;
+    document.getElementById('modalReportCode').innerText = item.id;
+    document.getElementById('modalBeneficiaryName').innerText = item.patientName;
+    document.getElementById('modalBeneficiaryMRN').innerText = item.patientMRN;
+    document.getElementById('modalDiagnosis').innerText = `التشخيص: ${item.diagnosis}`;
+    document.getElementById('modalPeriod').innerText = item.period;
+    document.getElementById('modalSupervisor').innerText = item.specialist;
+    document.getElementById('modalNotes').innerText = item.notes;
+
+    // Status Ribbon
+    const statusContainer = document.getElementById('modalStatusContainer');
+    if (item.status === 'draft') {
+      statusContainer.innerHTML = `
+        <span class="material-symbols-outlined text-outline">edit_note</span>
+        <span class="font-label-md text-label-md font-bold text-on-surface">مسودة سريرية قيد الإعداد</span>
+      `;
+    } else {
+      statusContainer.innerHTML = `
+        <span class="material-symbols-outlined text-secondary">verified</span>
+        <span class="font-label-md text-label-md font-bold text-on-surface">تقرير سريري معتمد نهائياً</span>
+      `;
+    }
+
+    // Share log
+    const shareLog = document.getElementById('modalShareLog');
+    if (item.recipients && item.recipients.length > 0) {
+      shareLog.innerHTML = item.recipients.map(r => `
+        <div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[18px]">send</span>
+            <span class="font-label-sm text-label-sm text-on-surface">${r}</span>
+          </div>
+          <span class="font-body-sm text-body-sm text-outline">تمت المشاركة: ${item.updatedAt}</span>
+        </div>
+      `).join('');
+    } else {
+      shareLog.innerHTML = `
+        <div class="p-3 rounded-lg bg-surface-container-low text-outline font-body-sm text-body-sm text-center">
+          لم تتم مشاركة هذا التقرير مع جهات خارجية بعد (محفوظ داخلياً فقط).
+        </div>
+      `;
+    }
+
+    const modal = document.getElementById('reportDetailModal');
+    modal.classList.remove('hidden');
+  }
+
+  function closeReportModal() {
+    document.getElementById('reportDetailModal').classList.add('hidden');
+  }
+
+  // Audit Log Modal
+  function openAuditModal() {
+    document.getElementById('auditModal').classList.remove('hidden');
+  }
+  function closeAuditModal() {
+    document.getElementById('auditModal').classList.add('hidden');
+  }
+
+  // Delete Draft Modal
+  function openDeleteModal(reportId) {
+    activeDeletingId = reportId;
+    document.getElementById('deleteReportCode').innerText = reportId;
+    document.getElementById('deleteModal').classList.remove('hidden');
+  }
+  function closeDeleteModal() {
+    activeDeletingId = null;
+    document.getElementById('deleteModal').classList.add('hidden');
+  }
+  function confirmDeleteDraft() {
+    if (activeDeletingId) {
+      const idx = reportsDatabase.findIndex(r => r.id === activeDeletingId);
+      if (idx !== -1) {
+        reportsDatabase.splice(idx, 1);
+        closeDeleteModal();
+        triggerToast('حذف المسودة', `تم حذف مسودة التقرير ${activeDeletingId} بنجاح.`, 'delete');
+        applyFilters();
+      }
+    }
+  }
+
+  // Toast System
+  let toastTimeout;
+  function triggerToast(title, msg, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastTitle.innerText = title;
+    toastMessage.innerText = msg;
+    toastIcon.innerText = icon;
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 4000);
+  }
+
+  // Initial Load
+  document.addEventListener('DOMContentLoaded', () => {
+    renderTable(reportsDatabase);
+  });
+</script></main></div></body></html>

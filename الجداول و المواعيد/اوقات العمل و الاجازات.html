@@ -1,0 +1,1755 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_dashboard" name="shell-type">
+<title>أوقات العمل والإجازات — بوابة الأخصائي المعالج | جسر للرعاية</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+        font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c0c7d1;
+      border-radius: 9999px;
+    }
+    .modal-backdrop {
+      backdrop-filter: blur(4px);
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#6bd8cb",
+            "tertiary-fixed-dim": "#d2bbff",
+            "on-surface-variant": "#40474f",
+            "on-secondary-container": "#006f66",
+            "inverse-primary": "#94ccff",
+            "on-error": "#ffffff",
+            "surface-container": "#e6eeff",
+            "on-secondary": "#ffffff",
+            "tertiary": "#6003d1",
+            "background": "#f8f9ff",
+            "surface-container-low": "#eff4ff",
+            "surface-container-highest": "#d5e3fc",
+            "primary": "#00507d",
+            "tertiary-container": "#7936ea",
+            "inverse-surface": "#233144",
+            "secondary": "#006a61",
+            "tertiary-fixed": "#eaddff",
+            "error": "#ba1a1a",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#25005a",
+            "inverse-on-surface": "#eaf1ff",
+            "on-secondary-fixed-variant": "#005049",
+            "surface": "#f8f9ff",
+            "secondary-container": "#86f2e4",
+            "on-primary-container": "#cbe4ff",
+            "surface-tint": "#006399",
+            "primary-fixed": "#cde5ff",
+            "on-background": "#0d1c2e",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#dce9ff",
+            "primary-container": "#0369a1",
+            "on-tertiary-container": "#e9dbff",
+            "on-secondary-fixed": "#00201d",
+            "on-surface": "#0d1c2e",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#ccdbf3",
+            "surface-bright": "#f8f9ff",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#004b74",
+            "on-primary-fixed": "#001d32",
+            "secondary-fixed": "#89f5e7",
+            "on-tertiary-fixed-variant": "#5a00c6",
+            "surface-variant": "#d5e3fc",
+            "outline-variant": "#c0c7d1",
+            "outline": "#707881",
+            "primary-fixed-dim": "#94ccff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-primary">
+<!-- Sidebar (Right side for RTL) -->
+<aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest border-l border-surface-container-high z-50 flex flex-col justify-between py-6">
+<div class="flex flex-col gap-y-6">
+<div class="px-6 flex items-center justify-between">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">accessibility_new</span>
+</div>
+<div>
+<span class="text-base font-bold text-primary block leading-none">جسر للرعاية</span>
+<span class="text-xs text-on-surface-variant block mt-1">Jisr Care Telehealth</span>
+</div>
+</div>
+</div>
+<div class="mx-6 px-4 py-3 rounded-xl bg-surface-container-low flex items-center gap-x-3 border border-surface-container-high">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<div>
+<span class="text-xs text-secondary block font-bold">مركز جسر للتأهيل الطبي</span>
+<span class="text-[11px] text-on-surface-variant block">معتمد من وزارة الصحة</span>
+</div>
+</div>
+<nav class="flex flex-col gap-y-1.5 px-4">
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../الرئيسية/code.html">
+<span class="material-symbols-outlined text-[22px]">space_dashboard</span>
+<span class="">لوحة التحكم</span>
+</a>
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../المستفيدون/code.html">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+<span class="">المستفيدون</span>
+</a>
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../خطط التأهيل/الخطط  الرئيسية.html">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+<span class="">خطط التأهيل</span>
+</a>
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../التقدم و التقارير/التقارير.html">
+<span class="material-symbols-outlined text-[22px]">clinical_notes</span>
+<span class="">التقارير السريرية</span>
+</a>
+<!-- Active link -->
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl bg-primary-container text-on-primary font-bold shadow-sm transition-all text-sm" href="./المواعيد و الجداول 1.html" aria-current="page">
+<span class="material-symbols-outlined text-[22px]">calendar_clock</span>
+<span class="">المواعيد والجدول</span>
+</a>
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../الرسائل و التواصل/الرسائل و التواصل.html">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+<span class="">الرسائل والتواصل</span>
+</a>
+<a class="flex items-center gap-x-3.5 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../التمارين/code.html">
+<span class="material-symbols-outlined text-[22px]">fitness_center</span>
+<span class="">مكتبة التمارين</span>
+</a>
+</nav>
+</div>
+<div class="px-4 flex flex-col gap-y-2">
+<a class="flex items-center gap-x-3.5 px-4 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all text-sm font-medium" href="../الرسائل و التواصل/الرسائل و التواصل.html">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+<span class="">الدعم الفني والمساندة</span>
+</a>
+<div class="mx-2 pt-3 border-t border-surface-container-high flex items-center justify-between text-on-surface-variant text-xs">
+<span class="">الإصدار 2.4.0</span>
+<span class="material-symbols-outlined text-[18px]">info</span>
+</div>
+</div>
+</aside>
+<!-- Header Bar -->
+<div class="pr-72">
+<header class="fixed top-0 left-0 right-72 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-surface-container-high z-40 px-8 flex items-center justify-between">
+<div class="flex items-center gap-x-4 w-96 cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-10 pr-10 pl-4 rounded-xl bg-surface-container-low border border-transparent focus:border-primary text-on-surface placeholder:text-outline text-xs outline-none transition-colors" placeholder="بحث عن ملف مستفيد، جلسة، أو رمز طبي..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-x-5">
+<button aria-label="التنبيهات" class="relative w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'">
+<span class="material-symbols-outlined text-[22px]">notifications</span>
+<span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span>
+</button>
+<button aria-label="الجدول اليومي السريع" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">event_available</span>
+</button>
+<div class="h-8 w-px bg-surface-variant"></div>
+<div class="flex items-center gap-x-3">
+<div class="text-right">
+<span class="text-sm font-bold text-on-surface block leading-tight">د. سارة المنصور</span>
+<span class="text-xs text-on-surface-variant block">أخصائية تأهيل حركي وعظام</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-sm shadow-xs">
+<span class="">س</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="relative pt-16 bg-background w-full min-h-screen pb-16">
+<!-- Toast Alert -->
+<div class="fixed bottom-8 left-8 z-50 transform transition-all duration-300 pointer-events-none flex items-center gap-x-4 bg-inverse-surface text-inverse-on-surface px-6 py-4 rounded-2xl shadow-2xl border border-inverse-on-surface/10 max-w-md" id="toastNotification">
+<div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm" id="toastIconContainer">
+<span class="material-symbols-outlined text-[22px]" id="toastIcon">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-surface-container-lowest" id="toastTitle">تم الحفظ بنجاح</span>
+<span class="text-xs text-outline-variant mt-0.5" id="toastMessage">تم حفظ وإدراج الإجازة بنجاح في جدولك المعتمد دون أي تعارضات مع المواعيد القائمة ✓</span>
+</div>
+</div>
+<div class="p-8 max-w-[1440px] mx-auto w-full flex flex-col gap-y-8">
+<!-- Breadcrumbs & Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-y-4">
+<div class="flex flex-col gap-y-2">
+<nav aria-label="مسار التنقل" class="flex items-center gap-x-2 text-outline text-xs font-medium">
+<a class="hover:text-primary transition-colors" href="../الرئيسية/code.html">الرئيسية</a>
+<span class="material-symbols-outlined text-[14px] rtl:rotate-180">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="./المواعيد و الجداول 1.html">المواعيد والجدول</a>
+<span class="material-symbols-outlined text-[14px] rtl:rotate-180">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="./ادارة اوقات التوافر.html">إدارة أوقات التوفر</a>
+<span class="material-symbols-outlined text-[14px] rtl:rotate-180">chevron_left</span>
+<span class="text-on-surface font-bold">أوقات العمل والإجازات</span>
+</nav>
+<div class="flex items-center gap-x-3.5 mt-1">
+<h1 class="text-2xl md:text-3xl font-bold text-on-surface tracking-tight">أوقات العمل والإجازات</h1>
+<span class="inline-flex items-center gap-x-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-primary text-xs font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                بوابة الأخصائي المعالج
+              </span>
+</div>
+<p class="text-sm text-on-surface-variant max-w-4xl leading-relaxed">
+              إدارة ساعات الدوام الأسبوعية المنتظمة وفترات الاستراحة السريرية، وضبط الإجازات الرسمية والشخصية لتنظيم استقبال المواعيد.
+            </p>
+</div>
+<!-- Header Buttons -->
+<div class="flex items-center gap-x-3 shrink-0">
+<button class="h-11 px-5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container text-xs md:text-sm font-semibold border border-surface-container-high transition-all flex items-center gap-x-2 shadow-xs" onclick="window.location.href='./ادارة اوقات التوافر.html'" type="button">
+<span class="material-symbols-outlined text-[18px] rtl:rotate-180">arrow_forward</span>
+<span class="">العودة إلى إدارة التوفر</span>
+</button>
+<button class="h-11 px-6 rounded-xl bg-primary-container text-on-primary hover:bg-primary text-xs md:text-sm font-semibold shadow-sm hover:shadow transition-all flex items-center gap-x-2 active:scale-95" id="saveTopBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="">حفظ التغييرات</span>
+</button>
+</div>
+</div>
+<!-- Clinical Governance Banner -->
+<div class="rounded-2xl bg-surface-container-lowest p-5 border border-surface-container-high shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start md:items-center gap-x-3.5">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-x-2">
+<h4 class="text-sm font-bold text-on-surface">ضوابط حماية المواعيد المؤكدة</h4>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-secondary-fixed text-on-secondary-fixed">حوكمة سريرية</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                أي تعديل على ساعات العمل أو تسجيل إجازة يُراجع آلياً لضمان عدم التعارض مع المواعيد السريرية المؤكدة مسبقاً للمستفيدين. في حال وجود تداخل، يُطلب إعادة التنسيق المسبق مع المريض قبل التطبيق.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-x-2 shrink-0 self-end md:self-center">
+<span class="text-xs text-secondary font-bold flex items-center gap-x-1">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+              فحص التعارض الذاتي مفعّل
+            </span>
+</div>
+</div>
+<!-- Main Layout: Right (Schedule & Leaves) + Left (Sticky Summary & Actions) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Right Col (8 cols): Weekly Schedule + Leaves -->
+<div class="lg:col-span-8 flex flex-col gap-y-8">
+<!-- SECTION 1: Weekly Shift Hours & Breaks -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 md:p-7 border border-surface-container-high shadow-xs flex flex-col gap-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-surface-container-high">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div>
+<h2 class="text-lg font-bold text-on-surface">أيام وساعات العمل الأسبوعية</h2>
+<p class="text-xs text-on-surface-variant">حدد فترات الدوام الرسمي وفترات الاستراحة لكل يوم من أيام الأسبوع</p>
+</div>
+</div>
+<div class="flex items-center gap-x-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary text-xs font-semibold flex items-center gap-x-1.5 transition-colors border border-surface-container-high" id="copyScheduleBtn" title="نسخ إعدادات يوم الأحد إلى باقي أيام العمل" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span class="">نسخ جدول الأحد لبقية الأيام</span>
+</button>
+</div>
+</div>
+<!-- Days List Container (Rendered dynamically via JS) -->
+<div class="flex flex-col gap-y-4" id="weeklyDaysContainer"><div class="rounded-2xl p-5 border transition-all bg-surface border-surface-container-high">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="sun">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الأحد</span>
+                    
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="sun">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="sun">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="الفترة الصباحية" data-shift-name="sun_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="08:30" data-shift-start="sun_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="12:30" data-shift-end="sun_s1">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="sun_s1">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="الفترة المسائية" data-shift-name="sun_s2">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="13:30" data-shift-start="sun_s2">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="17:00" data-shift-end="sun_s2">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="sun_s2">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              
+                  <div class="p-3 rounded-xl bg-surface-container-low border border-surface-container-high/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-x-2.5">
+                      <span class="material-symbols-outlined text-outline text-[18px]">coffee</span>
+                      <input type="text" class="text-xs font-semibold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-40" value="استراحة سريرية وغداء" data-break-name="sun_b1">
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-1.5 text-xs">
+                        <span class="text-on-surface-variant text-[11px]">من:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="12:30" data-break-start="sun_b1">
+                        <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="13:30" data-break-end="sun_b1">
+                      </div>
+
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/30" title="حذف فترة الاستراحة" data-del-break="sun_b1">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                      </button>
+                    </div>
+                  </div>
+                </div></div><div class="rounded-2xl p-5 border transition-all bg-surface border-surface-container-high">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="mon">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الاثنين</span>
+                    
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="mon">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="mon">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="دوام متواصل" data-shift-name="mon_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="09:00" data-shift-start="mon_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="16:30" data-shift-end="mon_s1">
+                    </div>
+
+                    
+                  </div>
+                </div>
+              
+                  <div class="p-3 rounded-xl bg-surface-container-low border border-surface-container-high/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-x-2.5">
+                      <span class="material-symbols-outlined text-outline text-[18px]">coffee</span>
+                      <input type="text" class="text-xs font-semibold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-40" value="استراحة صلاة وغداء" data-break-name="mon_b1">
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-1.5 text-xs">
+                        <span class="text-on-surface-variant text-[11px]">من:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="13:00" data-break-start="mon_b1">
+                        <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="14:00" data-break-end="mon_b1">
+                      </div>
+
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/30" title="حذف فترة الاستراحة" data-del-break="mon_b1">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                      </button>
+                    </div>
+                  </div>
+                </div></div><div class="rounded-2xl p-5 border transition-all bg-surface border-surface-container-high">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="tue">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الثلاثاء</span>
+                    
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="tue">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="tue">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="دوام صباحي وميداني" data-shift-name="tue_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="08:30" data-shift-start="tue_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="14:30" data-shift-end="tue_s1">
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div></div><div class="rounded-2xl p-5 border transition-all bg-surface border-primary/40 ring-1 ring-primary/20">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="wed">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الأربعاء</span>
+                    <span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed text-[11px] font-bold">اليوم الحالي</span>
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="wed">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="wed">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="الفترة الأولى" data-shift-name="wed_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="08:30" data-shift-start="wed_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="12:30" data-shift-end="wed_s1">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="wed_s1">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="الفترة الثانية" data-shift-name="wed_s2">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="14:00" data-shift-start="wed_s2">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="17:30" data-shift-end="wed_s2">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="wed_s2">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              
+                  <div class="p-3 rounded-xl bg-surface-container-low border border-surface-container-high/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-x-2.5">
+                      <span class="material-symbols-outlined text-outline text-[18px]">coffee</span>
+                      <input type="text" class="text-xs font-semibold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-40" value="استراحة منتصف اليوم" data-break-name="wed_b1">
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-1.5 text-xs">
+                        <span class="text-on-surface-variant text-[11px]">من:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="12:30" data-break-start="wed_b1">
+                        <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="14:00" data-break-end="wed_b1">
+                      </div>
+
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/30" title="حذف فترة الاستراحة" data-del-break="wed_b1">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                      </button>
+                    </div>
+                  </div>
+                </div></div><div class="rounded-2xl p-5 border transition-all bg-surface border-surface-container-high">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="thu">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الخميس</span>
+                    
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="thu">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="thu">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="الدوام الميداني العام" data-shift-name="thu_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="09:00" data-shift-start="thu_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="16:00" data-shift-end="thu_s1">
+                    </div>
+
+                    
+                  </div>
+                </div>
+              
+                  <div class="p-3 rounded-xl bg-surface-container-low border border-surface-container-high/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-x-2.5">
+                      <span class="material-symbols-outlined text-outline text-[18px]">coffee</span>
+                      <input type="text" class="text-xs font-semibold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-40" value="استراحة الصلاة والغداء" data-break-name="thu_b1">
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-1.5 text-xs">
+                        <span class="text-on-surface-variant text-[11px]">من:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="13:00" data-break-start="thu_b1">
+                        <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="14:00" data-break-end="thu_b1">
+                      </div>
+
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/30" title="حذف فترة الاستراحة" data-del-break="thu_b1">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                      </button>
+                    </div>
+                  </div>
+                </div></div><div class="rounded-2xl p-5 border transition-all bg-surface-container-low/60 border-surface-container-high opacity-85">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-transparent">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" class="sr-only peer" data-day-toggle="fri">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">الجمعة</span>
+                    
+                  </div>
+                  <span class="text-xs text-outline font-normal">
+                    يوم راحة أسبوعية (مغلق)
+                  </span>
+                </div>
+              </div>
+
+              
+                <span class="px-3 py-1 rounded-full bg-surface-container text-outline text-xs font-medium flex items-center gap-x-1">
+                  <span class="material-symbols-outlined text-[16px]">nightlife</span>
+                  عطلة أسبوعية — لا تُقبل حجوزات
+                </span>
+              
+            </div>
+          </div><div class="rounded-2xl p-5 border transition-all bg-surface border-surface-container-high">
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b border-surface-container-high">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" checked="" class="sr-only peer" data-day-toggle="sat">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">السبت</span>
+                    
+                  </div>
+                  <span class="text-xs text-secondary font-medium">
+                    يوم عمل مفعّل
+                  </span>
+                </div>
+              </div>
+
+              
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="sat">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span class="">+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="sat">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span class="">+ فترة استراحة</span>
+                  </button>
+                </div>
+              
+            </div>
+          <div class="flex flex-col gap-y-3 pt-3.5">
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="استشارات تأهيلية عن بُعد" data-shift-name="sat_s1">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="10:00" data-shift-start="sat_s1">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="14:00" data-shift-end="sat_s1">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="sat_s1">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="فترة إضافية" data-shift-name="sat_s_1793847654353">
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="16:00" data-shift-start="sat_s_1793847654353">
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="19:00" data-shift-end="sat_s_1793847654353">
+                    </div>
+
+                    
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="sat_s_1793847654353">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    
+                  </div>
+                </div>
+              </div></div></div>
+</section>
+<!-- SECTION 2: Leaves (Official & Personal) -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 md:p-7 border border-surface-container-high shadow-xs flex flex-col gap-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-surface-container-high">
+<div class="flex items-center gap-x-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">event_busy</span>
+</div>
+<div>
+<h2 class="text-lg font-bold text-on-surface">الإجازات الرسمية والشخصية</h2>
+<p class="text-xs text-on-surface-variant">تسجيل الإجازات السنوية، المرضية، والمؤتمرات المعتمدة لحظر حجز المواعيد خلالها</p>
+</div>
+</div>
+<button class="h-10 px-4 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container text-xs font-bold shadow-xs transition-all flex items-center gap-x-2 self-start sm:self-auto" id="openAddLeaveModalBtn" type="button" onclick="document.getElementById('leaveModal').classList.remove('hidden');">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span class="">+ إضافة إجازة جديدة</span>
+</button>
+</div>
+<!-- Leaves List (Rendered dynamically) -->
+<div class="flex flex-col gap-y-3.5" id="leavesListContainer"><div class="rounded-xl bg-surface p-4 border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xs transition-all">
+            <div class="flex items-start gap-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[22px]">school</span>
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-2.5 flex-wrap">
+                  <h4 class="text-sm font-bold text-on-surface">إجازة المؤتمر السنوي للتأهيل الحركي</h4>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold flex items-center gap-x-1 bg-secondary-fixed text-on-secondary-fixed">
+                    <span class="material-symbols-outlined text-[13px]">done_all</span>
+                    معتمدة من إدارة المركز
+                  </span>
+                </div>
+                <div class="flex items-center gap-x-4 text-on-surface-variant text-xs flex-wrap">
+                  <span class="flex items-center gap-x-1">
+                    <span class="material-symbols-outlined text-[15px] text-outline">date_range</span>
+                    14 نوفمبر 2024 — 17 نوفمبر 2024 (4 أيام كاملة)
+                  </span>
+                  
+                    <span class="flex items-center gap-x-1">
+                      <span class="material-symbols-outlined text-[15px] text-outline">info</span>
+                      مهام تدريبية وأكاديمية رسمية برعاية المركز
+                    </span>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-x-2 shrink-0 self-end md:self-center">
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="تعديل الإجازة" data-edit-leave="leave_1">
+                <span class="material-symbols-outlined text-[18px]">edit</span>
+              </button>
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-error hover:bg-error-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="حذف الإجازة" data-delete-leave="leave_1">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          </div><div class="rounded-xl bg-surface p-4 border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xs transition-all">
+            <div class="flex items-start gap-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[22px]">person</span>
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-2.5 flex-wrap">
+                  <h4 class="text-sm font-bold text-on-surface">إجازة شخصية مجدولة</h4>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold flex items-center gap-x-1 bg-surface-container-highest text-on-surface-variant">
+                    <span class="material-symbols-outlined text-[13px]">hourglass_top</span>
+                    قيد مراجعة المنسق الطبي
+                  </span>
+                </div>
+                <div class="flex items-center gap-x-4 text-on-surface-variant text-xs flex-wrap">
+                  <span class="flex items-center gap-x-1">
+                    <span class="material-symbols-outlined text-[15px] text-outline">date_range</span>
+                    28 نوفمبر 2024 (يوم كامل)
+                  </span>
+                  
+                    <span class="flex items-center gap-x-1">
+                      <span class="material-symbols-outlined text-[15px] text-outline">info</span>
+                      ظرف عائلي خاص
+                    </span>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-x-2 shrink-0 self-end md:self-center">
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="تعديل الإجازة" data-edit-leave="leave_2">
+                <span class="material-symbols-outlined text-[18px]">edit</span>
+              </button>
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-error hover:bg-error-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="حذف الإجازة" data-delete-leave="leave_2">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          </div></div>
+</section>
+</div>
+<!-- Left Col (4 cols): Live Summary & Controls -->
+<div class="lg:col-span-4 flex flex-col gap-y-6 sticky top-20">
+<!-- Live Working Summary Card -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 border border-surface-container-high shadow-xs flex flex-col gap-y-5">
+<div class="flex items-center gap-x-3 pb-3 border-b border-surface-container-high">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+</div>
+<div>
+<h3 class="text-base font-bold text-on-surface">ملخص جدول العمل الأسبوعي</h3>
+<p class="text-xs text-on-surface-variant">احتساب مباشر ودقيق للساعات والاستراحات</p>
+</div>
+</div>
+<!-- Metrics Grid -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-low/80 p-3.5 rounded-xl border border-surface-container-high">
+<span class="text-xs text-on-surface-variant block">أيام العمل الأسبوعية</span>
+<div class="flex items-baseline gap-x-1 mt-1">
+<span class="text-2xl font-bold text-primary" id="summaryWorkDays">6</span>
+<span class="text-xs text-on-surface-variant">أيام</span>
+</div>
+</div>
+<div class="bg-surface-container-low/80 p-3.5 rounded-xl border border-surface-container-high">
+<span class="text-xs text-on-surface-variant block">صافي ساعات العمل</span>
+<div class="flex items-baseline gap-x-1 mt-1">
+<span class="text-2xl font-bold text-secondary" id="summaryTotalHours">38</span>
+<span class="text-xs text-on-surface-variant">ساعة / أسبوع</span>
+</div>
+</div>
+<div class="bg-surface-container-low/80 p-3.5 rounded-xl border border-surface-container-high">
+<span class="text-xs text-on-surface-variant block">إجمالي فترات الاستراحة</span>
+<div class="flex items-baseline gap-x-1 mt-1">
+<span class="text-2xl font-bold text-on-surface" id="summaryBreakHours">4.5</span>
+<span class="text-xs text-on-surface-variant">ساعات</span>
+</div>
+</div>
+<div class="bg-surface-container-low/80 p-3.5 rounded-xl border border-surface-container-high">
+<span class="text-xs text-on-surface-variant block">أيام الراحة الأسبوعية</span>
+<div class="flex items-baseline gap-x-1 mt-1">
+<span class="text-2xl font-bold text-outline" id="summaryRestDaysCount">1</span>
+<span class="text-xs text-on-surface-variant">أيام</span>
+</div>
+</div>
+</div>
+<!-- Days Breakdown Badges -->
+<div class="flex flex-col gap-y-2 pt-1">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-medium">أيام الراحة المحددة:</span>
+<span class="text-on-surface font-bold text-xs" id="summaryRestDaysList">الجمعة</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant font-medium">متوسط ساعات اليوم الفعلي:</span>
+<span class="text-on-surface font-bold text-xs" id="summaryAvgDailyHours">6.3 ساعات / يوم</span>
+</div>
+</div>
+<!-- Compliance Gauge -->
+<div class="pt-2">
+<div class="flex justify-between items-center text-xs mb-1.5">
+<span class="text-on-surface font-semibold">معدل الامتثال لنصاب وزارة الصحة</span>
+<span class="text-secondary font-bold" id="summaryCompliancePct">95%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-300" id="summaryComplianceBar" style="width: 95%;"></div>
+</div>
+<div class="flex items-center gap-x-1.5 mt-2 text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span class="">الحد السريري المسموح به: حتى 40 ساعة عمل أسبوعياً</span>
+</div>
+</div>
+</section>
+<!-- Save & Action Controls -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-surface-container-high shadow-xs flex flex-col gap-y-3">
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary hover:bg-primary text-sm font-bold shadow-sm hover:shadow transition-all flex items-center justify-center gap-x-2 active:scale-98" id="saveBottomBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span class="">حفظ التغييرات واعتماد الجدول</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container text-xs font-semibold border border-surface-container-high transition-all flex items-center justify-center gap-x-2" id="resetBottomBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span class="">إلغاء التعديلات واستعادة الأصل</span>
+</button>
+</div>
+<!-- Guidelines Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 border border-surface-container-high shadow-xs flex flex-col gap-y-3">
+<div class="flex items-center gap-x-2 text-primary font-bold text-xs">
+<span class="material-symbols-outlined text-[18px]">tips_and_updates</span>
+<span class="">إرشادات الجدولة</span>
+</div>
+<ul class="text-[12px] text-on-surface-variant flex flex-col gap-y-2 list-disc pr-4 leading-relaxed">
+<li class="">يجب ألا تتداخل فترات الاستراحة مع فترات الدوام أو تتجاوز وقت نهاية الدوام.</li>
+<li class="">الإجازات المسجلة تحجب إمكانية حجز أي مواعيد جديدة خلال تواريخها تلقائياً.</li>
+<li class="">يمكن تقسيم اليوم إلى فترتين صباحية ومسائية عبر زر "إضافة فترة دوام".</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Modal: Add / Edit Leave -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 modal-backdrop hidden" id="leaveModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl border border-surface-container-high max-w-lg w-full overflow-hidden transform transition-all"><div class="px-6 py-5 border-b border-surface-container-high flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-x-3"><div class="w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shadow-xs"><span class="material-symbols-outlined text-[22px]">event_available</span></div><div><h3 class="text-base font-bold text-on-surface leading-tight" id="leaveModalTitle">تسجيل إجازة رسمية أو شخصية جديدة</h3><p class="text-xs text-on-surface-variant mt-0.5">تسجيل الإجازة لمنع استقبال أو حجز مواعيد سريرية خلال فترتها</p></div></div><button class="text-outline hover:text-on-surface hover:bg-surface-container-low w-8 h-8 rounded-lg flex items-center justify-center transition-colors" id="closeLeaveModalBtn" type="button" onclick="document.getElementById('leaveModal').classList.add('hidden')"><span class="material-symbols-outlined text-[20px]">close</span></button></div><form class="p-6 flex flex-col gap-y-4" id="leaveForm" onsubmit="event.preventDefault(); const t=document.getElementById('leaveReasonInput').value||'إجازة مسجلة جديدة'; const tp=document.getElementById('leaveTypeSelect'); const tpName=tp.options[tp.selectedIndex].text; const sDate=document.getElementById('leaveStartDateInput').value||'2024-12-20'; const eDate=document.getElementById('leaveEndDateInput').value||sDate; const dur=(sDate===eDate)?`${sDate} (يوم كامل)`:`${sDate} — ${eDate}`; const list=document.getElementById('leavesListContainer'); const card=document.createElement('div'); card.className='rounded-xl bg-surface p-4 border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xs transition-all'; card.innerHTML=`&lt;div class='flex items-start gap-x-3.5'&gt;&lt;div class='w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0'&gt;&lt;span class='material-symbols-outlined text-[22px]'&gt;event_available&lt;/span&gt;&lt;/div&gt;&lt;div class='flex flex-col gap-y-1'&gt;&lt;div class='flex items-center gap-x-2.5 flex-wrap'&gt;&lt;h4 class='text-sm font-bold text-on-surface'&gt;${t}&lt;/h4&gt;&lt;span class='px-2.5 py-0.5 rounded-full text-[11px] font-bold flex items-center gap-x-1 bg-surface-container-highest text-on-surface-variant'&gt;&lt;span class='material-symbols-outlined text-[13px]'&gt;hourglass_top&lt;/span&gt;قيد مراجعة المنسق الطبي&lt;/span&gt;&lt;/div&gt;&lt;div class='flex items-center gap-x-4 text-on-surface-variant text-xs flex-wrap'&gt;&lt;span class='flex items-center gap-x-1'&gt;&lt;span class='material-symbols-outlined text-[15px] text-outline'&gt;date_range&lt;/span&gt;${dur}&lt;/span&gt;&lt;span class='flex items-center gap-x-1'&gt;&lt;span class='material-symbols-outlined text-[15px] text-outline'&gt;info&lt;/span&gt;${tpName}&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class='flex items-center gap-x-2 shrink-0 self-end md:self-center'&gt;&lt;button class='w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors border border-surface-container-high' type='button' title='تعديل الإجازة'&gt;&lt;span class='material-symbols-outlined text-[18px]'&gt;edit&lt;/span&gt;&lt;/button&gt;&lt;button class='w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-error hover:bg-error-container flex items-center justify-center transition-colors border border-surface-container-high' type='button' title='حذف الإجازة' onclick='this.closest(" .rounded-xl").remove()'=""><span class="material-symbols-outlined text-[18px]">delete</span>`; list.prepend(card); document.getElementById('leaveModal').classList.add('hidden'); const toast=document.getElementById('toastNotification'); if(toast){ document.getElementById('toastTitle').textContent='تم حفظ الإجازة بنجاح'; document.getElementById('toastMessage').textContent='تم تسجيل الإجازة والتحقق من عدم وجود تعارض مع المواعيد القائمة ✓'; toast.classList.remove('translate-y-24','opacity-0','pointer-events-none'); toast.classList.add('translate-y-0','opacity-100'); setTimeout(()=&gt;{ toast.classList.remove('translate-y-0','opacity-100'); toast.classList.add('translate-y-24','opacity-0','pointer-events-none'); },3600); }"&gt;<input id="leaveEditId" type="hidden" value=""><div><label class="text-xs font-bold text-on-surface block mb-1.5">نوع الإجازة <span class="text-error">*</span></label><select class="w-full h-11 px-3.5 rounded-xl bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none transition-colors" id="leaveTypeSelect"><option value="training" selected="">مؤتمر أو تدريب طبي معتمد</option><option value="annual">إجازة اعتيادية / سنوية</option><option value="sick">إجازة مرضية</option><option value="personal">إجازة شخصية / طارئة</option></select></div><div><label class="text-xs font-bold text-on-surface block mb-2">مدة الإجازة</label><div class="grid grid-cols-2 gap-3"><label class="flex items-center justify-center gap-x-2 p-2.5 rounded-xl border border-surface-container-high bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container"><input class="text-primary focus:ring-primary" id="leaveRadioSingle" name="leaveDurationType" type="radio" value="single" onchange="document.getElementById('endDateGroup').classList.add('hidden')"><span class="text-xs font-medium text-on-surface">يوم واحد</span></label><label class="flex items-center justify-center gap-x-2 p-2.5 rounded-xl border border-primary bg-primary-fixed/20 cursor-pointer transition-all"><input checked="" class="text-primary focus:ring-primary" id="leaveRadioMultiple" name="leaveDurationType" type="radio" value="multiple" onchange="document.getElementById('endDateGroup').classList.remove('hidden')"><span class="text-xs font-bold text-primary">عدة أيام (فترة محددة)</span></label></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div><label class="text-xs font-bold text-on-surface block mb-1.5">تاريخ البداية <span class="text-error">*</span></label><input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" id="leaveStartDateInput" required="" type="date" value="2024-12-20"></div><div id="endDateGroup"><label class="text-xs font-bold text-on-surface block mb-1.5">تاريخ النهاية <span class="text-error">*</span></label><input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" id="leaveEndDateInput" type="date" value="2024-12-24"></div></div><div><label class="text-xs font-bold text-on-surface block mb-1.5">السبب أو الوصف الأكاديمي/السريري <span class="text-error">*</span></label><textarea class="w-full p-3 rounded-xl bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none resize-none leading-relaxed" id="leaveReasonInput" rows="2" placeholder="أدخل تفاصيل ومبررات الإجازة...">مشاركة في ورشة عمل سريرية وتأهيلية متقدمة</textarea></div><div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container-high flex items-start gap-x-3 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">lock_clock</span><p class="leading-relaxed">يتم فحص التعارض آلياً والتأكد من خلو الفترة من مواعيد سريرية مؤكدة مسبقاً، ورفع الطلب لإدارة المركز للاعتماد الفوري.</p></div><div class="flex items-center justify-end gap-x-3 pt-3 border-t border-surface-container-high"><button class="h-11 px-5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-variant text-xs font-semibold transition-colors" id="cancelLeaveModalBtn" type="button" onclick="document.getElementById('leaveModal').classList.add('hidden')">إلغاء</button><button class="h-11 px-6 rounded-xl bg-primary-container text-on-primary hover:bg-primary text-xs md:text-sm font-bold shadow-sm transition-all flex items-center gap-x-2 active:scale-95" id="submitLeaveFormBtn" type="submit"><span class="material-symbols-outlined text-[18px]">check_circle</span><span class="">حفظ وإرسال الطلب للاعتماد</span></button></div></form></div>
+</div>
+<!-- Modal: Confirm Delete Leave -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 modal-backdrop hidden" id="deleteConfirmModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl border border-surface-container-high max-w-sm w-full p-6 flex flex-col gap-y-4">
+<div class="w-12 h-12 rounded-full bg-error-container text-error flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-[28px]">delete_forever</span>
+</div>
+<div class="text-center">
+<h4 class="text-base font-bold text-on-surface">حذف الإجازة المسجلة</h4>
+<p class="text-xs text-on-surface-variant mt-1">هل أنت متأكد من رغبتك في حذف هذه الإجازة؟ سيتم فتح مواعيد الحجز تلقائياً خلال هذه التواريخ مجدداً.</p>
+</div>
+<div class="flex items-center justify-center gap-x-3 pt-2">
+<button class="flex-1 h-10 rounded-xl bg-surface-container text-on-surface hover:bg-surface-variant text-xs font-semibold" id="cancelDeleteBtn" type="button">
+          إلغاء
+        </button>
+<button class="flex-1 h-10 rounded-xl bg-error text-on-error hover:bg-error/90 text-xs font-bold shadow-xs" id="confirmDeleteBtn" type="button">
+          تأكيد الحذف
+        </button>
+</div>
+</div>
+</div>
+<!-- JavaScript State & Interactivity -->
+<script>
+    (function() {
+      // 1. Initial State Data
+      const defaultSchedule = [
+        {
+          id: 'sun',
+          name: 'الأحد',
+          enabled: true,
+          shifts: [
+            { id: 's1', name: 'الفترة الصباحية', start: '08:30', end: '12:30' },
+            { id: 's2', name: 'الفترة المسائية', start: '13:30', end: '17:00' }
+          ],
+          breaks: [
+            { id: 'b1', name: 'استراحة سريرية وغداء', start: '12:30', end: '13:30' }
+          ]
+        },
+        {
+          id: 'mon',
+          name: 'الاثنين',
+          enabled: true,
+          shifts: [
+            { id: 's1', name: 'دوام متواصل', start: '09:00', end: '16:30' }
+          ],
+          breaks: [
+            { id: 'b1', name: 'استراحة صلاة وغداء', start: '13:00', end: '14:00' }
+          ]
+        },
+        {
+          id: 'tue',
+          name: 'الثلاثاء',
+          enabled: true,
+          shifts: [
+            { id: 's1', name: 'دوام صباحي وميداني', start: '08:30', end: '14:30' }
+          ],
+          breaks: []
+        },
+        {
+          id: 'wed',
+          name: 'الأربعاء',
+          isToday: true,
+          enabled: true,
+          shifts: [
+            { id: 's1', name: 'الفترة الأولى', start: '08:30', end: '12:30' },
+            { id: 's2', name: 'الفترة الثانية', start: '14:00', end: '17:30' }
+          ],
+          breaks: [
+            { id: 'b1', name: 'استراحة منتصف اليوم', start: '12:30', end: '14:00' }
+          ]
+        },
+        {
+          id: 'thu',
+          name: 'الخميس',
+          enabled: true,
+          shifts: [
+            { id: 's1', name: 'الدوام الميداني العام', start: '09:00', end: '16:00' }
+          ],
+          breaks: [
+            { id: 'b1', name: 'استراحة الصلاة والغداء', start: '13:00', end: '14:00' }
+          ]
+        },
+        {
+          id: 'fri',
+          name: 'الجمعة',
+          enabled: false,
+          shifts: [],
+          breaks: []
+        },
+        {
+          id: 'sat',
+          name: 'السبت',
+          enabled: false,
+          shifts: [
+            { id: 's1', name: 'استشارات تأهيلية عن بُعد', start: '10:00', end: '14:00' }
+          ],
+          breaks: []
+        }
+      ];
+
+      const defaultLeaves = [
+        {
+          id: 'leave_1',
+          title: 'إجازة المؤتمر السنوي للتأهيل الحركي',
+          type: 'official',
+          typeName: 'مؤتمر وورشة تدريبية',
+          status: 'approved',
+          statusName: 'معتمدة من إدارة المركز',
+          startDate: '2024-11-14',
+          endDate: '2024-11-17',
+          durationText: '14 نوفمبر 2024 — 17 نوفمبر 2024 (4 أيام كاملة)',
+          reason: 'مهام تدريبية وأكاديمية رسمية برعاية المركز'
+        },
+        {
+          id: 'leave_2',
+          title: 'إجازة شخصية مجدولة',
+          type: 'personal',
+          typeName: 'إجازة شخصية',
+          status: 'pending',
+          statusName: 'قيد مراجعة المنسق الطبي',
+          startDate: '2024-11-28',
+          endDate: '2024-11-28',
+          durationText: '28 نوفمبر 2024 (يوم كامل)',
+          reason: 'ظرف عائلي خاص'
+        }
+      ];
+
+      // Clone for active state
+      let schedule = JSON.parse(JSON.stringify(defaultSchedule));
+      let leaves = JSON.parse(JSON.stringify(defaultLeaves));
+      let activeLeaveToDelete = null;
+
+      // 2. Helper Functions
+      function timeToMinutes(tStr) {
+        if (!tStr) return 0;
+        const [h, m] = tStr.split(':').map(Number);
+        return (h * 60) + (m || 0);
+      }
+
+      function minutesToHoursFormatted(min) {
+        const h = Math.floor(min / 60);
+        const m = min % 60;
+        if (m === 0) return `${h}`;
+        return `${h}.${Math.round((m/60)*10)}`;
+      }
+
+      function showToast(title, message, isError = false) {
+        const toast = document.getElementById('toastNotification');
+        const toastTitle = document.getElementById('toastTitle');
+        const toastMessage = document.getElementById('toastMessage');
+        const toastIconContainer = document.getElementById('toastIconContainer');
+        const toastIcon = document.getElementById('toastIcon');
+
+        if (!toast) return;
+
+        toastTitle.textContent = title;
+        toastMessage.textContent = message;
+
+        if (isError) {
+          toastIconContainer.className = 'w-9 h-9 rounded-full bg-error flex items-center justify-center text-on-error shrink-0 shadow-sm';
+          toastIcon.textContent = 'warning';
+        } else {
+          toastIconContainer.className = 'w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm';
+          toastIcon.textContent = 'check_circle';
+        }
+
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        }, 3600);
+      }
+
+      // 3. Render Weekly Days
+      function renderSchedule() {
+        const container = document.getElementById('weeklyDaysContainer');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        schedule.forEach((day, index) => {
+          const card = document.createElement('div');
+          card.className = `rounded-2xl p-5 border transition-all ${
+            day.isToday ? 'bg-surface border-primary/40 ring-1 ring-primary/20' : 
+            day.enabled ? 'bg-surface border-surface-container-high' : 'bg-surface-container-low/60 border-surface-container-high opacity-85'
+          }`;
+
+          // Header: toggle + day name + action
+          let headerHTML = `
+            <div class="flex items-center justify-between flex-wrap gap-3 pb-3 border-b ${day.enabled ? 'border-surface-container-high' : 'border-transparent'}">
+              <div class="flex items-center gap-x-3.5">
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" ${day.enabled ? 'checked' : ''} class="sr-only peer" data-day-toggle="${day.id}">
+                  <div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:right-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+                </label>
+                <div>
+                  <div class="flex items-center gap-x-2">
+                    <span class="text-base font-bold text-on-surface">${day.name}</span>
+                    ${day.isToday ? '<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed text-[11px] font-bold">اليوم الحالي</span>' : ''}
+                  </div>
+                  <span class="text-xs ${day.enabled ? 'text-secondary font-medium' : 'text-outline font-normal'}">
+                    ${day.enabled ? 'يوم عمل مفعّل' : 'يوم راحة أسبوعية (مغلق)'}
+                  </span>
+                </div>
+              </div>
+
+              ${day.enabled ? `
+                <div class="flex items-center gap-x-2">
+                  <button type="button" class="text-primary hover:text-primary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-shift="${day.id}">
+                    <span class="material-symbols-outlined text-[16px]">more_time</span>
+                    <span>+ فترة دوام</span>
+                  </button>
+                  <button type="button" class="text-secondary hover:text-on-secondary-container text-xs font-semibold flex items-center gap-x-1 px-2.5 py-1.5 rounded-lg hover:bg-surface-container transition-colors" data-add-break="${day.id}">
+                    <span class="material-symbols-outlined text-[16px]">coffee</span>
+                    <span>+ فترة استراحة</span>
+                  </button>
+                </div>
+              ` : `
+                <span class="px-3 py-1 rounded-full bg-surface-container text-outline text-xs font-medium flex items-center gap-x-1">
+                  <span class="material-symbols-outlined text-[16px]">nightlife</span>
+                  عطلة أسبوعية — لا تُقبل حجوزات
+                </span>
+              `}
+            </div>
+          `;
+
+          // Body: Shifts & Breaks if enabled
+          let bodyHTML = '';
+          if (day.enabled) {
+            bodyHTML = `<div class="flex flex-col gap-y-3 pt-3.5">`;
+
+            // Shifts List
+            day.shifts.forEach((shift, sIdx) => {
+              bodyHTML += `
+                <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div class="flex items-center gap-x-2.5">
+                    <span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+                    <input type="text" class="text-xs font-bold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-36" value="${shift.name}" data-shift-name="${day.id}_${shift.id}"/>
+                  </div>
+                  
+                  <div class="flex items-center gap-x-3 flex-wrap">
+                    <div class="flex items-center gap-x-1.5 text-xs text-on-surface">
+                      <span class="text-on-surface-variant text-[11px]">من:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="${shift.start}" data-shift-start="${day.id}_${shift.id}"/>
+                      <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                      <input type="time" class="h-8 px-2 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-on-surface focus:border-primary outline-none" value="${shift.end}" data-shift-end="${day.id}_${shift.id}"/>
+                    </div>
+
+                    ${day.shifts.length > 1 ? `
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/40" title="حذف فترة الدوام" data-del-shift="${day.id}_${shift.id}">
+                        <span class="material-symbols-outlined text-[18px]">delete</span>
+                      </button>
+                    ` : ''}
+                  </div>
+                </div>
+              `;
+            });
+
+            // Breaks List
+            if (day.breaks && day.breaks.length > 0) {
+              day.breaks.forEach((brk) => {
+                bodyHTML += `
+                  <div class="p-3 rounded-xl bg-surface-container-low border border-surface-container-high/80 flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+                    <div class="flex items-center gap-x-2.5">
+                      <span class="material-symbols-outlined text-outline text-[18px]">coffee</span>
+                      <input type="text" class="text-xs font-semibold text-on-surface bg-transparent border-0 p-0 focus:ring-0 w-40" value="${brk.name}" data-break-name="${day.id}_${brk.id}"/>
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                      <div class="flex items-center gap-x-1.5 text-xs">
+                        <span class="text-on-surface-variant text-[11px]">من:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="${brk.start}" data-break-start="${day.id}_${brk.id}"/>
+                        <span class="text-on-surface-variant text-[11px] mr-1">إلى:</span>
+                        <input type="time" class="h-7 px-2 rounded-lg bg-surface-container-lowest border border-surface-container-high text-xs text-on-surface outline-none" value="${brk.end}" data-break-end="${day.id}_${brk.id}"/>
+                      </div>
+
+                      <button type="button" class="text-error hover:text-on-error-container p-1 rounded hover:bg-error-container/30" title="حذف فترة الاستراحة" data-del-break="${day.id}_${brk.id}">
+                        <span class="material-symbols-outlined text-[16px]">close</span>
+                      </button>
+                    </div>
+                  </div>
+                `;
+              });
+            }
+
+            bodyHTML += `</div>`;
+          }
+
+          card.innerHTML = headerHTML + bodyHTML;
+          container.appendChild(card);
+        });
+
+        attachScheduleEventListeners();
+        calculateAndRenderSummary();
+      }
+
+      // 4. Attach Event Listeners to Dynamic Schedule Elements
+      function attachScheduleEventListeners() {
+        // Toggle Day enable/disable
+        document.querySelectorAll('[data-day-toggle]').forEach(chk => {
+          chk.addEventListener('change', (e) => {
+            const dayId = e.target.getAttribute('data-day-toggle');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              targetDay.enabled = e.target.checked;
+              if (targetDay.enabled && targetDay.shifts.length === 0) {
+                targetDay.shifts.push({ id: 's1', name: 'الفترة الصباحية', start: '08:30', end: '14:30' });
+              }
+              renderSchedule();
+            }
+          });
+        });
+
+        // Add Shift
+        document.querySelectorAll('[data-add-shift]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const dayId = btn.getAttribute('data-add-shift');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const newId = 's_' + Date.now();
+              targetDay.shifts.push({
+                id: newId,
+                name: 'فترة إضافية',
+                start: '16:00',
+                end: '19:00'
+              });
+              renderSchedule();
+            }
+          });
+        });
+
+        // Add Break
+        document.querySelectorAll('[data-add-break]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const dayId = btn.getAttribute('data-add-break');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const newId = 'b_' + Date.now();
+              targetDay.breaks.push({
+                id: newId,
+                name: 'استراحة سريرية',
+                start: '12:30',
+                end: '13:30'
+              });
+              renderSchedule();
+            }
+          });
+        });
+
+        // Delete Shift
+        document.querySelectorAll('[data-del-shift]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const [dayId, shiftId] = btn.getAttribute('data-del-shift').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              targetDay.shifts = targetDay.shifts.filter(s => s.id !== shiftId);
+              renderSchedule();
+            }
+          });
+        });
+
+        // Delete Break
+        document.querySelectorAll('[data-del-break]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const [dayId, breakId] = btn.getAttribute('data-del-break').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              targetDay.breaks = targetDay.breaks.filter(b => b.id !== breakId);
+              renderSchedule();
+            }
+          });
+        });
+
+        // Input changes on Shift times
+        document.querySelectorAll('[data-shift-start]').forEach(inp => {
+          inp.addEventListener('change', (e) => {
+            const [dayId, shiftId] = e.target.getAttribute('data-shift-start').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const sh = targetDay.shifts.find(s => s.id === shiftId);
+              if (sh) {
+                sh.start = e.target.value;
+                calculateAndRenderSummary();
+              }
+            }
+          });
+        });
+
+        document.querySelectorAll('[data-shift-end]').forEach(inp => {
+          inp.addEventListener('change', (e) => {
+            const [dayId, shiftId] = e.target.getAttribute('data-shift-end').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const sh = targetDay.shifts.find(s => s.id === shiftId);
+              if (sh) {
+                if (timeToMinutes(e.target.value) <= timeToMinutes(sh.start)) {
+                  showToast('تنبيه في الوقت', 'وقت نهاية الدوام يجب أن يكون لاحقاً لوقت البداية', true);
+                }
+                sh.end = e.target.value;
+                calculateAndRenderSummary();
+              }
+            }
+          });
+        });
+
+        // Input changes on Break times
+        document.querySelectorAll('[data-break-start]').forEach(inp => {
+          inp.addEventListener('change', (e) => {
+            const [dayId, breakId] = e.target.getAttribute('data-break-start').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const brk = targetDay.breaks.find(b => b.id === breakId);
+              if (brk) {
+                brk.start = e.target.value;
+                calculateAndRenderSummary();
+              }
+            }
+          });
+        });
+
+        document.querySelectorAll('[data-break-end]').forEach(inp => {
+          inp.addEventListener('change', (e) => {
+            const [dayId, breakId] = e.target.getAttribute('data-break-end').split('_');
+            const targetDay = schedule.find(d => d.id === dayId);
+            if (targetDay) {
+              const brk = targetDay.breaks.find(b => b.id === breakId);
+              if (brk) {
+                brk.end = e.target.value;
+                calculateAndRenderSummary();
+              }
+            }
+          });
+        });
+      }
+
+      // 5. Calculate and Render Live Summary Card
+      function calculateAndRenderSummary() {
+        let activeDaysCount = 0;
+        let totalShiftMinutes = 0;
+        let totalBreakMinutes = 0;
+        const restDayNames = [];
+
+        schedule.forEach(day => {
+          if (day.enabled) {
+            activeDaysCount++;
+
+            // Sum shift minutes
+            day.shifts.forEach(s => {
+              const dur = timeToMinutes(s.end) - timeToMinutes(s.start);
+              if (dur > 0) totalShiftMinutes += dur;
+            });
+
+            // Sum break minutes
+            day.breaks.forEach(b => {
+              const bDur = timeToMinutes(b.end) - timeToMinutes(b.start);
+              if (bDur > 0) totalBreakMinutes += bDur;
+            });
+          } else {
+            restDayNames.push(day.name);
+          }
+        });
+
+        // Net working hours = Total Shifts - Total Breaks
+        const netWorkingMinutes = Math.max(0, totalShiftMinutes - totalBreakMinutes);
+        const netHoursFormatted = minutesToHoursFormatted(netWorkingMinutes);
+        const breakHoursFormatted = minutesToHoursFormatted(totalBreakMinutes);
+
+        // Update DOM
+        document.getElementById('summaryWorkDays').textContent = activeDaysCount;
+        document.getElementById('summaryTotalHours').textContent = netHoursFormatted;
+        document.getElementById('summaryBreakHours').textContent = breakHoursFormatted;
+        document.getElementById('summaryRestDaysCount').textContent = restDayNames.length;
+        document.getElementById('summaryRestDaysList').textContent = restDayNames.length > 0 ? restDayNames.join('، ') : 'لا يوجد أيام راحة';
+
+        const avgDaily = activeDaysCount > 0 ? (netWorkingMinutes / (activeDaysCount * 60)).toFixed(1) : 0;
+        document.getElementById('summaryAvgDailyHours').textContent = `${avgDaily} ساعات / يوم`;
+
+        // MOH compliance: max 40 hours
+        const maxStandardHours = 40;
+        const netHoursNum = parseFloat(netHoursFormatted);
+        const compliancePct = Math.min(100, Math.round((netHoursNum / maxStandardHours) * 100));
+
+        const bar = document.getElementById('summaryComplianceBar');
+        const textPct = document.getElementById('summaryCompliancePct');
+
+        if (textPct) textPct.textContent = `${compliancePct}%`;
+        if (bar) {
+          bar.style.width = `${compliancePct}%`;
+          if (netHoursNum > maxStandardHours) {
+            bar.className = 'bg-error h-full rounded-full transition-all duration-300';
+            textPct.className = 'text-error font-bold';
+          } else {
+            bar.className = 'bg-secondary h-full rounded-full transition-all duration-300';
+            textPct.className = 'text-secondary font-bold';
+          }
+        }
+      }
+
+      // 6. Render Leaves Section
+      function renderLeaves() {
+        const container = document.getElementById('leavesListContainer');
+        if (!container) return;
+
+        if (leaves.length === 0) {
+          container.innerHTML = `
+            <div class="p-8 text-center bg-surface-container-low rounded-xl border border-surface-container-high">
+              <span class="material-symbols-outlined text-[32px] text-outline">event_available</span>
+              <p class="text-xs text-on-surface-variant font-medium mt-1">لا توجد إجازات مسجلة حالياً.</p>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = '';
+
+        leaves.forEach(leave => {
+          const item = document.createElement('div');
+          item.className = 'rounded-xl bg-surface p-4 border border-surface-container-high flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-xs transition-all';
+
+          const isApproved = leave.status === 'approved';
+          const iconName = leave.type === 'official' ? 'school' : leave.type === 'sick' ? 'medical_information' : 'person';
+
+          item.innerHTML = `
+            <div class="flex items-start gap-x-3.5">
+              <div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[22px]">${iconName}</span>
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-2.5 flex-wrap">
+                  <h4 class="text-sm font-bold text-on-surface">${leave.title}</h4>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold flex items-center gap-x-1 ${
+                    isApproved ? 'bg-secondary-fixed text-on-secondary-fixed' : 'bg-surface-container-highest text-on-surface-variant'
+                  }">
+                    <span class="material-symbols-outlined text-[13px]">${isApproved ? 'done_all' : 'hourglass_top'}</span>
+                    ${leave.statusName || (isApproved ? 'معتمدة من إدارة المركز' : 'قيد مراجعة المنسق الطبي')}
+                  </span>
+                </div>
+                <div class="flex items-center gap-x-4 text-on-surface-variant text-xs flex-wrap">
+                  <span class="flex items-center gap-x-1">
+                    <span class="material-symbols-outlined text-[15px] text-outline">date_range</span>
+                    ${leave.durationText || leave.startDate}
+                  </span>
+                  ${leave.reason ? `
+                    <span class="flex items-center gap-x-1">
+                      <span class="material-symbols-outlined text-[15px] text-outline">info</span>
+                      ${leave.reason}
+                    </span>
+                  ` : ''}
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-x-2 shrink-0 self-end md:self-center">
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="تعديل الإجازة" data-edit-leave="${leave.id}">
+                <span class="material-symbols-outlined text-[18px]">edit</span>
+              </button>
+              <button class="w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-error hover:bg-error-container flex items-center justify-center transition-colors border border-surface-container-high" type="button" title="حذف الإجازة" data-delete-leave="${leave.id}">
+                <span class="material-symbols-outlined text-[18px]">delete</span>
+              </button>
+            </div>
+          `;
+
+          container.appendChild(item);
+        });
+
+        // Attach Leave action listeners
+        document.querySelectorAll('[data-edit-leave]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const lId = btn.getAttribute('data-edit-leave');
+            openEditLeaveModal(lId);
+          });
+        });
+
+        document.querySelectorAll('[data-delete-leave]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const lId = btn.getAttribute('data-delete-leave');
+            openDeleteConfirmModal(lId);
+          });
+        });
+      }
+
+      // 7. Leave Modal Handling
+      const leaveModal = document.getElementById('leaveModal');
+      const leaveForm = document.getElementById('leaveForm');
+      const openAddLeaveModalBtn = document.getElementById('openAddLeaveModalBtn');
+      const closeLeaveModalBtn = document.getElementById('closeLeaveModalBtn');
+      const cancelLeaveModalBtn = document.getElementById('cancelLeaveModalBtn');
+      const radioSingle = document.getElementById('leaveRadioSingle');
+      const radioMultiple = document.getElementById('leaveRadioMultiple');
+      const endDateGroup = document.getElementById('endDateGroup');
+      const leaveFormError = document.getElementById('leaveFormError');
+
+      function openAddLeaveModal() {
+        leaveForm.reset();
+        document.getElementById('leaveEditId').value = '';
+        document.getElementById('leaveModalTitle').textContent = 'إضافة إجازة جديدة';
+        radioMultiple.checked = true;
+        endDateGroup.classList.remove('hidden');
+        leaveFormError.classList.add('hidden');
+        leaveModal.classList.remove('hidden');
+      }
+
+      function openEditLeaveModal(id) {
+        const item = leaves.find(l => l.id === id);
+        if (!item) return;
+
+        document.getElementById('leaveEditId').value = item.id;
+        document.getElementById('leaveModalTitle').textContent = 'تعديل الإجازة المسجلة';
+        document.getElementById('leaveTitleInput').value = item.title;
+        document.getElementById('leaveTypeSelect').value = item.type;
+        document.getElementById('leaveStatusSelect').value = item.status;
+        document.getElementById('leaveStartDateInput').value = item.startDate;
+        document.getElementById('leaveEndDateInput').value = item.endDate || item.startDate;
+        document.getElementById('leaveReasonInput').value = item.reason || '';
+
+        if (item.startDate === item.endDate) {
+          radioSingle.checked = true;
+          endDateGroup.classList.add('hidden');
+        } else {
+          radioMultiple.checked = true;
+          endDateGroup.classList.remove('hidden');
+        }
+
+        leaveFormError.classList.add('hidden');
+        leaveModal.classList.remove('hidden');
+      }
+
+      function closeLeaveModal() {
+        leaveModal.classList.add('hidden');
+      }
+
+      if (openAddLeaveModalBtn) openAddLeaveModalBtn.addEventListener('click', openAddLeaveModal);
+      if (closeLeaveModalBtn) closeLeaveModalBtn.addEventListener('click', closeLeaveModal);
+      if (cancelLeaveModalBtn) cancelLeaveModalBtn.addEventListener('click', closeLeaveModal);
+
+      radioSingle.addEventListener('change', () => {
+        if (radioSingle.checked) endDateGroup.classList.add('hidden');
+      });
+      radioMultiple.addEventListener('change', () => {
+        if (radioMultiple.checked) endDateGroup.classList.remove('hidden');
+      });
+
+      leaveForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const editId = document.getElementById('leaveEditId').value;
+        const title = document.getElementById('leaveTitleInput').value.trim();
+        const type = document.getElementById('leaveTypeSelect').value;
+        const status = document.getElementById('leaveStatusSelect').value;
+        const startDate = document.getElementById('leaveStartDateInput').value;
+        let endDate = document.getElementById('leaveEndDateInput').value;
+
+        if (radioSingle.checked || !endDate) {
+          endDate = startDate;
+        }
+
+        if (new Date(endDate) < new Date(startDate)) {
+          leaveFormError.classList.remove('hidden');
+          return;
+        }
+
+        leaveFormError.classList.add('hidden');
+
+        const statusNames = {
+          'approved': 'معتمدة من إدارة المركز',
+          'pending': 'قيد مراجعة المنسق الطبي'
+        };
+        const typeNames = {
+          'official': 'إجازة رسمية / مهنية',
+          'annual': 'إجازة سنوية',
+          'personal': 'إجازة شخصية',
+          'sick': 'إجازة مرضية'
+        };
+
+        const durationText = (startDate === endDate) ? `${startDate} (يوم كامل)` : `${startDate} — ${endDate}`;
+
+        if (editId) {
+          // Update
+          const target = leaves.find(l => l.id === editId);
+          if (target) {
+            target.title = title;
+            target.type = type;
+            target.typeName = typeNames[type];
+            target.status = status;
+            target.statusName = statusNames[status];
+            target.startDate = startDate;
+            target.endDate = endDate;
+            target.durationText = durationText;
+            target.reason = document.getElementById('leaveReasonInput').value.trim();
+          }
+          showToast('تم تعديل الإجازة', 'تم تحديث بيانات الإجازة وحفظها بنجاح.');
+        } else {
+          // New
+          const newLeave = {
+            id: 'leave_' + Date.now(),
+            title,
+            type,
+            typeName: typeNames[type],
+            status,
+            statusName: statusNames[status],
+            startDate,
+            endDate,
+            durationText,
+            reason: document.getElementById('leaveReasonInput').value.trim()
+          };
+          leaves.push(newLeave);
+          showToast('تمت إضافة الإجازة', 'تم تسجيل الإجازة وحظر فتراتها بنجاح.');
+        }
+
+        closeLeaveModal();
+        renderLeaves();
+      });
+
+      // 8. Delete Confirmation Modal
+      const deleteConfirmModal = document.getElementById('deleteConfirmModal');
+      const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+      const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+
+      function openDeleteConfirmModal(id) {
+        activeLeaveToDelete = id;
+        deleteConfirmModal.classList.remove('hidden');
+      }
+
+      function closeDeleteConfirmModal() {
+        activeLeaveToDelete = null;
+        deleteConfirmModal.classList.add('hidden');
+      }
+
+      if (cancelDeleteBtn) cancelDeleteBtn.addEventListener('click', closeDeleteConfirmModal);
+      if (confirmDeleteBtn) {
+        confirmDeleteBtn.addEventListener('click', () => {
+          if (activeLeaveToDelete) {
+            leaves = leaves.filter(l => l.id !== activeLeaveToDelete);
+            renderLeaves();
+            showToast('تم حذف الإجازة', 'تم حذف الإجازة وإعادة إتاحة الحجوزات السريرية.');
+          }
+          closeDeleteConfirmModal();
+        });
+      }
+
+      // 9. Copy Sunday schedule to all other working days
+      const copyScheduleBtn = document.getElementById('copyScheduleBtn');
+      if (copyScheduleBtn) {
+        copyScheduleBtn.addEventListener('click', () => {
+          const sun = schedule.find(d => d.id === 'sun');
+          if (!sun) return;
+
+          schedule.forEach(day => {
+            if (day.id !== 'sun' && day.id !== 'fri') { // Don't overwrite Friday (official weekend)
+              day.enabled = true;
+              day.shifts = JSON.parse(JSON.stringify(sun.shifts));
+              day.breaks = JSON.parse(JSON.stringify(sun.breaks));
+            }
+          });
+
+          renderSchedule();
+          showToast('تم تكرار الجدول', 'تم تطبيق إعدادات يوم الأحد على أيام العمل الأسبوعية بنجاح.');
+        });
+      }
+
+      // 10. Global Action Buttons (Save & Reset)
+      const saveTopBtn = document.getElementById('saveTopBtn');
+      const saveBottomBtn = document.getElementById('saveBottomBtn');
+      const resetBottomBtn = document.getElementById('resetBottomBtn');
+
+      function handleSaveAll() {
+        showToast('تم اعتماد الجدول بنجاح', 'تم حفظ وتحديث ساعات العمل والإجازات دون أي تعارضات سريرية.');
+      }
+
+      if (saveTopBtn) saveTopBtn.addEventListener('click', handleSaveAll);
+      if (saveBottomBtn) saveBottomBtn.addEventListener('click', handleSaveAll);
+
+      if (resetBottomBtn) {
+        resetBottomBtn.addEventListener('click', () => {
+          schedule = JSON.parse(JSON.stringify(defaultSchedule));
+          leaves = JSON.parse(JSON.stringify(defaultLeaves));
+          renderSchedule();
+          renderLeaves();
+          showToast('تمت استعادة الإعدادات', 'تم التراجع عن كافة التعديلات واسترجاع الجدول الافتراضي.');
+        });
+      }
+
+      // Initial Render
+      renderSchedule();
+      renderLeaves();
+    })();
+  </script>
+
+
+
+
+</body></html>

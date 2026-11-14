@@ -1,0 +1,2001 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed": "#cde5ff",
+          "outline": "#707881",
+          "secondary-fixed-dim": "#6bd8cb",
+          "secondary": "#006a61",
+          "on-error-container": "#93000a",
+          "inverse-surface": "#233144",
+          "on-secondary-container": "#006f66",
+          "surface-bright": "#f8f9ff",
+          "secondary-fixed": "#89f5e7",
+          "surface": "#f8f9ff",
+          "error-container": "#ffdad6",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#004b74",
+          "on-primary-fixed": "#001d32",
+          "on-secondary": "#ffffff",
+          "on-tertiary-container": "#e9dbff",
+          "tertiary": "#6003d1",
+          "secondary-container": "#86f2e4",
+          "surface-dim": "#ccdbf3",
+          "inverse-primary": "#94ccff",
+          "surface-container-high": "#dce9ff",
+          "tertiary-container": "#7936ea",
+          "surface-container": "#e6eeff",
+          "surface-container-low": "#eff4ff",
+          "primary": "#00507d",
+          "background": "#f8f9ff",
+          "on-secondary-fixed": "#00201d",
+          "on-secondary-fixed-variant": "#005049",
+          "on-background": "#0d1c2e",
+          "surface-variant": "#d5e3fc",
+          "primary-container": "#0369a1",
+          "primary-fixed-dim": "#94ccff",
+          "tertiary-fixed-dim": "#d2bbff",
+          "on-primary": "#ffffff",
+          "error": "#ba1a1a",
+          "surface-container-highest": "#d5e3fc",
+          "inverse-on-surface": "#eaf1ff",
+          "surface-tint": "#006399",
+          "on-tertiary": "#ffffff",
+          "on-tertiary-fixed-variant": "#5a00c6",
+          "on-tertiary-fixed": "#25005a",
+          "on-surface-variant": "#40474f",
+          "tertiary-fixed": "#eaddff",
+          "surface-container-lowest": "#ffffff",
+          "outline-variant": "#c0c7d1",
+          "on-primary-container": "#cbe4ff",
+          "on-surface": "#0d1c2e"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin-mobile": "1.25rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1.25rem",
+          "space-sm": "0.75rem",
+          "margin": "2.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.5rem",
+          "space-lg": "1.75rem"
+        },
+        "fontFamily": {
+          "headline-sm": [
+            "IBM Plex Sans"
+          ],
+          "label-lg": [
+            "IBM Plex Sans"
+          ],
+          "body-lg": [
+            "IBM Plex Sans"
+          ],
+          "headline-md": [
+            "IBM Plex Sans"
+          ],
+          "label-md": [
+            "IBM Plex Sans"
+          ],
+          "body-md": [
+            "IBM Plex Sans"
+          ],
+          "headline-lg": [
+            "IBM Plex Sans"
+          ],
+          "label-sm": [
+            "IBM Plex Sans"
+          ],
+          "body-sm": [
+            "IBM Plex Sans"
+          ],
+          "headline-lg-mobile": [
+            "IBM Plex Sans"
+          ],
+          "display": [
+            "IBM Plex Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.875rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.5rem",
+            {
+              "lineHeight": "2.125rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "0.9375rem",
+            {
+              "lineHeight": "1.375rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "2.25rem",
+            {
+              "lineHeight": "3rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "0.8125rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.75rem",
+            {
+              "lineHeight": "2.375rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ],
+          "display": [
+            "3rem",
+            {
+              "lineHeight": "3.75rem",
+              "letterSpacing": "0",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed right-0 top-0 bottom-0 w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-md flex items-center justify-start gap-space-sm bg-surface-container-lowest"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight">جسر للرعاية</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">بوابة الأخصائي المعالج</span></div></div><div class="px-space-md py-space-xs"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">dashboard</span><span>لوحة التحكم</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">groups</span><span>المستفيدون</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="clinical-assessments" href="./التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span>التقييمات السريرية</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment</span><span>خطط التأهيل</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-3 transition-all bg-primary-container text-on-primary font-label-md rounded-xl shadow-sm" data-path="progress-reports" href="./الرئيسية التقدم و الالتزام.html"><span class="material-symbols-outlined text-[22px]">monitoring</span><span>التقدم والتقارير</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_clock</span><span>المواعيد والجدول</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="messages" href="../الرسائل و التواصل/الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">forum</span><span>الرسائل والتواصل</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="exercise-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span>مكتبة التمارين</span></a><a class="flex items-center gap-space-sm px-space-md py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="profile-settings" href="../الملف الشهصي و الاعدادات/الملف الشخصي.html"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span>الملف المهني والإعدادات</span></a></nav></div></div><div class="p-space-md"><div class="bg-secondary-fixed/20 p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span><span class="font-label-sm text-label-sm text-on-surface font-bold">خط الاستجابة السريرية</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px]">24/7</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">دعم مباشر لحالات الرعاية العاجلة وتنسيق الجلسات الحرجة للمستفيدين.</p><button class="mt-space-xs w-full py-2 px-space-sm bg-secondary text-on-secondary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-space-xs hover:bg-on-secondary-container transition-colors" type="button" onclick="window.location.href='../خطط التأهيل/الخطط  الرئيسية.html'" onclick="window.location.href='../خطط التأهيل/الخطط  الرئيسية.html'" onclick="window.location.href='../التمارين/code.html'" onclick="window.location.href='../الرسائل و التواصل/الرسائل و التواصل.html'" onclick="window.location.href='../خطط التأهيل/انشاء خطة جديده.html'"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span>الاتصال بالطوارئ</span></button></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-20 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute right-space-sm text-outline pointer-events-none text-[20px]">search</span><input aria-label="بحث سريع" class="w-full h-11 pr-11 pl-space-md bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="بحث عن مستفيد، تقرير سريري، أو رقم الملف..." type="search"></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs"><button aria-label="تكبير الخط وسهولة القراءة" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" type="button" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[20px]">text_increase</span></button><button aria-label="القراءة الصوتية" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative"><button aria-label="التنبيهات السريرية" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-2 left-2 w-2 h-2 rounded-full bg-error"></span></div></div><div class="h-8 w-[1px] bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight text-right">د. سارة المنصور</span><span class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight text-right">استشاري علاج طبيعي وتأهيل</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive View State Simulation Script & Filtering Core -->
+<script>
+    window.setOperationalState = function(stateKey) {
+      const states = ['state-live', 'state-skeleton', 'state-empty', 'state-error'];
+      states.forEach(s => {
+        const el = document.getElementById(s);
+        if (el) el.classList.add('hidden');
+      });
+      const activeEl = document.getElementById('state-' + stateKey);
+      if (activeEl) activeEl.classList.remove('hidden');
+
+      // Update state pill buttons active look
+      document.querySelectorAll('.state-pill-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      const activeBtn = document.getElementById('btn-state-' + stateKey);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        activeBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      }
+    };
+
+    window.filterBeneficiaries = function() {
+      const searchVal = (document.getElementById('beneficiary-search')?.value || '').toLowerCase().trim();
+      const planVal = document.getElementById('filter-plan-status')?.value || 'all';
+      const adhVal = document.getElementById('filter-adherence')?.value || 'all';
+      const coachVal = document.getElementById('filter-coach')?.value || 'all';
+
+      const rows = document.querySelectorAll('.beneficiary-data-row');
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const name = (row.dataset.name || '').toLowerCase();
+        const mrn = (row.dataset.mrn || '').toLowerCase();
+        const plan = row.dataset.planStatus || '';
+        const adherence = parseInt(row.dataset.adherence || '-1', 10);
+        const coach = row.dataset.coach || '';
+
+        let matchSearch = !searchVal || name.includes(searchVal) || mrn.includes(searchVal);
+        let matchPlan = (planVal === 'all') || (plan === planVal);
+        let matchCoach = (coachVal === 'all') || (coach === coachVal);
+
+        let matchAdherence = true;
+        if (adhVal === 'high') matchAdherence = adherence >= 80;
+        else if (adhVal === 'medium') matchAdherence = adherence >= 50 && adherence < 80;
+        else if (adhVal === 'low') matchAdherence = adherence >= 0 && adherence < 50;
+        else if (adhVal === 'none') matchAdherence = adherence === -1;
+
+        if (matchSearch && matchPlan && matchCoach && matchAdherence) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      const countBadge = document.getElementById('visible-records-count');
+      if (countBadge) countBadge.textContent = visibleCount + ' مستفيد';
+      const emptySearchBox = document.getElementById('empty-search-fallback');
+      if (emptySearchBox) {
+        if (visibleCount === 0) emptySearchBox.classList.remove('hidden');
+        else emptySearchBox.classList.add('hidden');
+      }
+    };
+
+    window.toggleTimePill = function(pillEl) {
+      document.querySelectorAll('.time-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      pillEl.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      pillEl.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    };
+  </script>
+<!-- TOP CONTEXT BAR & OPERATIONAL STATE SIMULATOR DOCK -->
+<div class="px-space-xl py-space-sm bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] flex flex-wrap items-center justify-between gap-space-md">
+<!-- Breadcrumb & Timestamp -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="hover:text-primary transition-colors cursor-pointer">لوحة التحكم</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_left</span>
+<span class="text-primary font-bold">التقدم ومسار التعافي السريري</span>
+</div>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-body-sm text-body-sm text-[12px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">sync</span>
+        محدث لحظياً: الأحد 16 شعبان 1445 هـ (11:42 ص)
+      </span>
+</div>
+<!-- Simulator Switcher -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl">
+<span class="font-label-sm text-[11px] text-on-surface-variant px-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> محاكي العرض:
+      </span>
+<button class="state-pill-btn px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all" id="btn-state-live" onclick="setOperationalState('live')" type="button">
+        البيانات الحية (28 مستفيد)
+      </button>
+<button class="state-pill-btn px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-skeleton" onclick="setOperationalState('skeleton')" type="button">
+        جاري التحميل
+      </button>
+<button class="state-pill-btn px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-empty" onclick="setOperationalState('empty')" type="button">
+        فارغ / لا بيانات
+      </button>
+<button class="state-pill-btn px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-error" onclick="setOperationalState('error')" type="button">
+        انقطاع المزامنة
+      </button>
+</div>
+</div>
+<!-- SKELETON STATE VIEW (HIDDEN BY DEFAULT) -->
+<div class="hidden px-space-xl py-space-lg flex flex-col gap-space-lg animate-pulse" id="state-skeleton">
+<div class="h-14 bg-surface-container-high rounded-2xl w-2/3"></div>
+<div class="grid grid-cols-5 gap-space-md">
+<div class="h-28 bg-surface-container rounded-2xl"></div>
+<div class="h-28 bg-surface-container rounded-2xl"></div>
+<div class="h-28 bg-surface-container rounded-2xl"></div>
+<div class="h-28 bg-surface-container rounded-2xl"></div>
+<div class="h-28 bg-surface-container rounded-2xl"></div>
+</div>
+<div class="h-44 bg-surface-container-low rounded-2xl"></div>
+<div class="h-96 bg-surface-container-lowest rounded-2xl shadow-sm"></div>
+</div>
+<!-- EMPTY STATE VIEW (HIDDEN BY DEFAULT) -->
+<div class="hidden px-space-xl py-space-xl flex flex-col items-center justify-center text-center min-h-[500px]" id="state-empty">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[40px]">query_stats</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">لا توجد سجلات متابعة بعد</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+      لم يتم تعيين خطط تأهيلية أو تسجيل مؤشرات التزام للمجموعة الحالية. يمكنك تعيين خطة سريرية جديدة للمستفيدين.
+    </p>
+<button class="px-space-lg py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="setOperationalState('live')" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>العودة للبيانات الحية المكتملة</span>
+</button>
+</div>
+<!-- ERROR STATE VIEW (HIDDEN BY DEFAULT) -->
+<div class="hidden px-space-xl py-space-xl flex flex-col items-center justify-center text-center min-h-[500px]" id="state-error">
+<div class="w-20 h-20 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[40px]">sync_problem</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-error mb-space-xs">تعذر جلب قياسات الالتزام اللحظية</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+      حدث انقطاع مؤقت في الاتصال بقاعدة البيانات السريرية المركزية. سجلات المستفيدين الـ 28 محفوظة محلياً.
+    </p>
+<button class="px-space-lg py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm" onclick="setOperationalState('live')" type="button">
+<span class="material-symbols-outlined text-[20px]">replay</span>
+<span>إعادة محاولة المزامنة</span>
+</button>
+</div>
+<!-- LIVE STATE VIEW (MAIN CLINICAL DASHBOARD) -->
+<div class="flex flex-col w-full px-space-xl py-space-lg gap-space-lg" id="state-live">
+<!-- HERO / TITLE & CONTROLS HEADER -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">التقدم ومتابعة الالتزام السريري</h1>
+<span class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-container inline-block"></span>
+            28 مستفيداً مسجلاً
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          متابعة مؤشرات إنجاز المستفيدين الـ 28 ومدى الالتزام بالبروتوكولات التأهيلية المعتمدة والتنبيهات السريرية الاستباقية
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Text-to-speech / Accessibility Assistant -->
+<button class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-primary flex items-center justify-center transition-colors" title="استماع إلى ملخص التقدم الصوتي" type="button">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+</button>
+<!-- Clinical Protocol Refresh -->
+<button class="w-12 h-12 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-primary flex items-center justify-center transition-colors" onclick="filterBeneficiaries()" title="تحديث المؤشرات" type="button">
+<span class="material-symbols-outlined text-[22px]">refresh</span>
+</button>
+<!-- Export Clinical Report -->
+<button class="h-12 px-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-sm hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>تصدير تقرير الالتزام (PDF / Excel)</span>
+</button>
+</div>
+</div>
+<!-- FILTER BAR & TIME HORIZON CONTROLLER -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="flex-1 min-w-[280px] max-w-lg">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute right-3.5 text-outline pointer-events-none text-[22px]">search</span>
+<input class="w-full h-12 pr-11 pl-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="beneficiary-search" oninput="filterBeneficiaries()" placeholder="بحث باسم المستفيد أو رقم السجل الطبي (مثل: MRN-10481)..." type="search">
+</div>
+</div>
+<!-- Time Range Pills -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl">
+<button class="time-pill px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface-variant transition-all hover:text-on-surface" onclick="toggleTimePill(this)" type="button">
+            هذا الأسبوع
+          </button>
+<button class="time-pill px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" onclick="toggleTimePill(this)" type="button">
+            هذا الشهر (نشط)
+          </button>
+<button class="time-pill px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface-variant transition-all hover:text-on-surface" onclick="toggleTimePill(this)" type="button">
+            آخر 3 أشهر
+          </button>
+<button class="time-pill px-3 py-2 rounded-lg font-label-md text-label-md bg-surface-container-low text-on-surface-variant transition-all hover:text-on-surface flex items-center gap-1" onclick="toggleTimePill(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>مخصصة</span>
+</button>
+</div>
+</div>
+<!-- Secondary Filter Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Plan Status Dropdown -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">حالة الخطة:</span>
+<select class="h-10 px-3 pr-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="filter-plan-status" onchange="filterBeneficiaries()">
+<option value="all">كافة الحالات (28)</option>
+<option value="active">خطط سارية نشطة (22)</option>
+<option value="pending">قيد المراجعة والاعتماد (3)</option>
+<option value="none">لا توجد خطة نشطة (3)</option>
+</select>
+</div>
+<!-- Adherence Level Dropdown -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">مستوى الالتزام:</span>
+<select class="h-10 px-3 pr-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="filter-adherence" onchange="filterBeneficiaries()">
+<option value="all">كافة المستويات</option>
+<option value="high">مرتفع ممتاز (80% فما فوق)</option>
+<option value="medium">متوسط منتظم (50% - 79%)</option>
+<option value="low">منخفض بحاجة لدعم (أقل من 50%)</option>
+<option value="none">بدون بيانات تقدم (—)</option>
+</select>
+</div>
+<!-- Movement Coach Dropdown -->
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">المشرف الحركي:</span>
+<select class="h-10 px-3 pr-2 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-xl focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="filter-coach" onchange="filterBeneficiaries()">
+<option value="all">جميع المشرفين</option>
+<option value="طارق">ك. طارق الزهراني</option>
+<option value="هند">ك. هند السالم</option>
+<option value="ريم">ك. ريم التميمي</option>
+<option value="فهد">ك. فهد الدوسري</option>
+<option value="سارة">د. سارة المنصور</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>المعروض:</span>
+<span class="font-label-sm text-label-sm font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-md" id="visible-records-count">28 مستفيد</span>
+</div>
+</div>
+</div>
+<!-- 5 STATS CLINICAL KPI METRIC TILES -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1: Total Beneficiaries -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_8px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">إجمالي المستفيدين</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">28</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مستفيد مسجل</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 font-body-sm text-[12px] text-secondary">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>سجلات طبية نشطة وموثقة</span>
+</div>
+</div>
+<!-- Card 2: Active Rehabilitation Plans -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_8px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">خطط تأهيل نشطة</span>
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">assignment_turned_in</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">22</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">خطة سارية</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-[12px] text-on-surface-variant">
+<span>نسبة التغطية الكلية:</span>
+<span class="font-bold text-secondary">78.5%</span>
+</div>
+</div>
+<!-- Card 3: Pending Plans -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_8px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">خطط قيد المراجعة</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">بانتظار الاعتماد</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 font-body-sm text-[12px] text-primary">
+<span class="material-symbols-outlined text-[14px]">history</span>
+<span>تتطلب مصادقة الأخصائي</span>
+</div>
+</div>
+<!-- Card 4: Needs Clinical Follow-up -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_8px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-error font-bold">يحتاجون إلى متابعة</span>
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-[22px]">notification_important</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-error">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">حالات سريرية</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-1 font-body-sm text-[12px] text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>انخفاض التزام / شكوى ألم</span>
+</div>
+</div>
+<!-- Card 5: Average Clinical Adherence -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_2px_8px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">متوسط الالتزام العام</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">analytics</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">79.4%</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">↑ +3.2%</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-body-sm text-[12px] text-on-surface-variant">
+<span>استبعاد راحة الجمعة:</span>
+<span class="font-medium text-secondary">معتمد سريرياً</span>
+</div>
+</div>
+</div>
+<!-- PRIORITY CLINICAL ATTENTION SECTION (EXACTLY 5 FLAGGED CASES) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">flag</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">حالات تستدعي التدخل والمتابعة العاجلة</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[12px] font-bold">5 حالات محددة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تنبيهات استباقية بناءً على خوارزميات الالتزام وملاحظات المشرفين الحركيين</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 bg-surface-container-low px-3 py-1.5 rounded-xl">
+<span class="material-symbols-outlined text-[16px] text-primary">health_and_safety</span>
+          استجابة مطلوبة خلال 24 ساعة
+        </span>
+</div>
+<!-- Grid of the 5 Urgent Cases -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Case 1: فاطمة حسن -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md bg-error text-on-error font-label-sm text-[11px] font-bold">التزام 45%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">MRN-102</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-sm">
+                ف ح
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">فاطمة حسن</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">مشرف: ك. هند السالم</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant mt-2 leading-relaxed bg-surface-container-lowest p-2 rounded-lg">
+              صعوبة ملحوظة في تمارين الاستطالة المتقدمة للطرف السفلي. تستوجب تعديل شدة الخطة.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-2">
+<span class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> نشاط: اليوم 08:30 ص
+            </span>
+<button class="w-full py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span>مراجعة وتقييم</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Case 2: فيصل العتيبي -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-primary font-label-sm text-[11px] font-bold">بانتظار الاعتماد</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">MRN-10483</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold font-label-sm">
+                ف ع
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">فيصل العتيبي</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">مشرف: ك. طارق الزهراني</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant mt-2 leading-relaxed bg-surface-container-lowest p-2 rounded-lg">
+              تقرير ألم متقطع بمقياس 6/10 عند محاولة بسط مفصل الركبة. الخطة بانتظار تعديلك.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-2">
+<span class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> نشاط: أمس 05:10 م
+            </span>
+<button class="w-full py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span>اعتماد البروتوكول</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Case 3: ريم الخاطر -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-primary font-label-sm text-[11px] font-bold">انحراف تماثل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">MRN-10488</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-sm">
+                ر خ
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">ريم الخاطر</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">مشرف: ك. ريم التميمي</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant mt-2 leading-relaxed bg-surface-container-lowest p-2 rounded-lg">
+              انحراف ملحوظ في قياسات التماثل الحركي يستوجب إعادة فحص الزوايا السريرية الدقيقة.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-2">
+<span class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> نشاط: اليوم 10:20 ص
+            </span>
+<button class="w-full py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span>قياس الزوايا</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Case 4: نورة العبدالله -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md bg-error text-on-error font-label-sm text-[11px] font-bold">التزام 30%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">MRN-105</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold font-label-sm">
+                ن ع
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">نورة العبدالله</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">مشرف: د. سارة المنصور</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant mt-2 leading-relaxed bg-surface-container-lowest p-2 rounded-lg">
+              انقطاع 4 أيام متتالية عن تسجيل التمارين المنزلية المقررة دون إبداء سبب مرضي.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-2">
+<span class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> نشاط: منذ 4 أيام
+            </span>
+<button class="w-full py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span>تواصل مباشر</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Case 5: العنود الشهري -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-highest text-primary font-label-sm text-[11px] font-bold">تورم موضعي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">MRN-10494</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-sm">
+                ع ش
+              </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">العنود الشهري</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">مشرف: ك. فهد الدوسري</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-[12px] text-on-surface-variant mt-2 leading-relaxed bg-surface-container-lowest p-2 rounded-lg">
+              تورم موضعي مفصلي خفيف مسجل بتقرير المتابعة الحركية يتطلب تخفيف المقاومة.
+            </p>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col gap-2">
+<span class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> نشاط: أمس 02:40 م
+            </span>
+<button class="w-full py-2 bg-primary text-on-primary font-label-sm text-label-sm rounded-lg flex items-center justify-center gap-1 hover:bg-primary-container transition-colors" type="button">
+<span>تعديل المقاومة</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- CLINICAL ANALYTICS & VISUAL PROGRESS METRICS -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Chart 1: Weekly Adherence Trend -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex flex-col gap-1 mb-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">معدل الالتزام الأسبوعي</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-[11px]">الشهر الجاري</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">معدل تنفيذ الجلسات اليومية للمستفيدين (يوم الجمعة راحة غير محسوب)</p>
+</div>
+<!-- Inline Visual Chart (SVG Bars) -->
+<div class="w-full pt-space-xs pb-space-sm">
+<div class="grid grid-cols-4 gap-space-sm items-end h-36">
+<!-- Week 1: 76% -->
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">76%</span>
+<div class="w-full bg-surface-container-high rounded-t-lg relative overflow-hidden" style="height: 76%;">
+<div class="absolute inset-0 bg-primary/70"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الأسبوع 1</span>
+</div>
+<!-- Week 2: 81% -->
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">81%</span>
+<div class="w-full bg-surface-container-high rounded-t-lg relative overflow-hidden" style="height: 81%;">
+<div class="absolute inset-0 bg-primary/80"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الأسبوع 2</span>
+</div>
+<!-- Week 3: 78% -->
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">78%</span>
+<div class="w-full bg-surface-container-high rounded-t-lg relative overflow-hidden" style="height: 78%;">
+<div class="absolute inset-0 bg-primary/75"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الأسبوع 3</span>
+</div>
+<!-- Current Week: 82.5% -->
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold">82.5%</span>
+<div class="w-full bg-secondary-fixed-dim rounded-t-lg relative overflow-hidden shadow-sm" style="height: 82.5%;">
+<div class="absolute inset-0 bg-secondary"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">الحالي</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-[12px] text-on-surface-variant bg-surface-container-low p-2 rounded-xl">
+<span class="flex items-center gap-1 font-body-sm text-[12px]">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span> الهدف المؤسسي: 80%
+          </span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">تحقيق مستمر (+2.5%)</span>
+</div>
+</div>
+<!-- Chart 2: Plan Status Breakdown (22 Active, 3 Pending, 3 None) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex flex-col gap-1 mb-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">توزيع خطط التأهيل</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">28 حالة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">تصنيف المستفيدين طبقاً للجاهزية والاعتماد السريري للبروتوكول</p>
+</div>
+<!-- Donut Visual representation via CSS / SVG -->
+<div class="flex items-center justify-center py-space-xs">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Active: 22/28 = 78.5% -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78.5, 100" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Pending: 3/28 = 10.7% -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="10.7, 100" stroke-dashoffset="-78.5" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- None: 3/28 = 10.7% -->
+<path class="text-outline-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="10.7, 100" stroke-dashoffset="-89.2" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">22</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">خطة نشطة</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between text-[12px]">
+<span class="flex items-center gap-1.5 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> نشطة وسارية</span>
+<span class="font-bold text-on-surface">22 مستفيد (78.5%)</span>
+</div>
+<div class="flex items-center justify-between text-[12px]">
+<span class="flex items-center gap-1.5 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> قيد المراجعة</span>
+<span class="font-bold text-on-surface">3 مستفيدين (10.7%)</span>
+</div>
+<div class="flex items-center justify-between text-[12px]">
+<span class="flex items-center gap-1.5 text-on-surface"><span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span> بانتظار إعداد الخطة</span>
+<span class="font-bold text-on-surface">3 مستفيدين (10.7%)</span>
+</div>
+</div>
+</div>
+<!-- Chart 3: Adherence Distribution -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col justify-between">
+<div class="flex flex-col gap-1 mb-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">توزيع مستويات الالتزام</h3>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed/40 text-primary font-label-sm text-[11px]">22 حالة نشطة</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">تصنيف الحالات التي تملك بيانات أداء فعلية مسجلة</p>
+</div>
+<div class="flex flex-col gap-space-md py-space-xs">
+<!-- Level 1: High +80% -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ممتاز (+80%)
+              </span>
+<span class="text-on-surface font-bold">14 مستفيداً (63.6%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 63.6%;"></div>
+</div>
+</div>
+<!-- Level 2: Medium 50-79% -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> متوسط منتظم (50% - 79%)
+              </span>
+<span class="text-on-surface font-bold">6 مستفيدين (27.3%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 27.3%;"></div>
+</div>
+</div>
+<!-- Level 3: Low <50% -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">priority_high</span> منخفض يحتاج تحفيز (&lt;50%)
+              </span>
+<span class="text-on-surface font-bold">2 مستفيدين (9.1%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 9.1%;"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">
+            الحالات المنخفضة (فاطمة حسن ونورة العبدالله) مفعل لها تنبيهات تحفيزية صوتية ورسائل تشجيعية عبر التطبيق.
+          </p>
+</div>
+</div>
+</div>
+<!-- COMPLETE BENEFICIARY PROGRESS TABLE (EXACT 28 BENEFICIARIES) -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-[0_2px_12px_rgba(15,23,42,0.04)] flex flex-col overflow-hidden">
+<!-- Table Header & Controls -->
+<div class="p-space-lg flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">سجل تقدم المستفيدين التفصيلي</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[12px]">28 سجلاً مكتملاً</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">جدول سريري مستمر لجميع المستفيدين الـ 28 الموثقين بالنظام مع إمكانية الفرز والإجراءات المباشرة</p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>معايير توثيق الجودة السريرية نشطة</span>
+</div>
+</div>
+<!-- Table Container with Horizontal Scroll Support -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm text-[13px]">
+<th class="py-3.5 px-space-md text-right">المستفيد والسجل</th>
+<th class="py-3.5 px-space-md text-right">الخطة التأهيلية الحالية</th>
+<th class="py-3.5 px-space-md text-center">حالة الخطة</th>
+<th class="py-3.5 px-space-md text-right">نسبة الالتزام</th>
+<th class="py-3.5 px-space-md text-center">التمارين المكتملة</th>
+<th class="py-3.5 px-space-md text-right">آخر نشاط مسجل</th>
+<th class="py-3.5 px-space-md text-right">المشرف الحركي</th>
+<th class="py-3.5 px-space-md text-center">حالة المتابعة</th>
+<th class="py-3.5 px-space-md text-center">الإجراء</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-on-surface font-body-sm text-body-sm">
+<!-- 1. عبدالله التميمي (Active, 94%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="94" data-coach="طارق" data-mrn="MRN-10481" data-name="عبدالله التميمي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ع ت</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">عبدالله التميمي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10481 • 28 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل الرباط الصليبي (المرحلة 3)</span>
+<span class="text-[11px] text-secondary">بروتوكول رياضي متقدم</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">94%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">28 / 30</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 09:15 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 2. نورة الدوسري (Active, 88%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="88" data-coach="هند" data-mrn="MRN-10482" data-name="نورة الدوسري" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">ن د</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">نورة الدوسري</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10482 • 34 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل العمود الفقري وأسفل الظهر</span>
+<span class="text-[11px] text-on-surface-variant">تمارين الاستقرار الجذعي</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">88%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">21 / 24</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 10:40 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 3. فيصل العتيبي (Pending, Needs Follow-up) -->
+<tr class="beneficiary-data-row bg-surface-container-high/30 hover:bg-surface-container-high transition-colors" data-adherence="55" data-coach="طارق" data-mrn="MRN-10483" data-name="فيصل العتيبي" data-plan-status="pending">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ف ع</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">فيصل العتيبي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10483 • 41 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">خطة تقوية أوتار الركبة بعد التنظير</span>
+<span class="text-[11px] text-error font-medium">شكوى ألم 6/10 مسجلة</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[12px] font-bold">قيد المراجعة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 55%;"></div>
+</div>
+<span class="font-bold text-primary font-mono text-[13px]">55%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">11 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 05:10 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-bold">بحاجة لمراجعة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-colors" type="button">اعتماد التعديل</button>
+</td>
+</tr>
+<!-- 4. سارة الشمري (Active, 92%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="92" data-coach="ريم" data-mrn="MRN-10484" data-name="سارة الشمري" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">س ش</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">سارة الشمري</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10484 • 25 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل الكاحل وتحسين التوازن الحركي</span>
+<span class="text-[11px] text-secondary">إصابة التواء من الدرجة الثانية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">92%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">23 / 25</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 08:00 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 5. محمد السبيعي (Active, 85%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="85" data-coach="فهد" data-mrn="MRN-10485" data-name="محمد السبيعي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">م س</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">محمد السبيعي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10485 • 52 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل مفصل الكتف المتجمد</span>
+<span class="text-[11px] text-on-surface-variant">مدى حركي إيجابي</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 85%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">85%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">17 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 07:30 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 6. هند المطيري (NO ACTIVE PLAN / NO PROGRESS DATA) -->
+<tr class="beneficiary-data-row bg-surface-container-low/50 hover:bg-surface-container transition-colors" data-adherence="-1" data-coach="سارة" data-mrn="MRN-10486" data-name="هند المطيري" data-plan-status="none">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline font-bold flex items-center justify-center text-label-sm shrink-0">هـ م</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">هند المطيري</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10486 • 39 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-sm text-label-sm text-outline italic">لا توجد خطة نشطة / بانتظار التقييم</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[12px]">لا توجد خطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-outline font-body-sm text-[12px]">لا توجد بيانات تقدم بعد</span>
+</td>
+<td class="py-3.5 px-space-md text-center text-outline text-[12px]">—</td>
+<td class="py-3.5 px-space-md text-[12px] text-outline">غير مسجل</td>
+<td class="py-3.5 px-space-md text-[12px]">د. سارة المنصور</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[11px]">بانتظار الخطة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors" type="button">بدء التقييم</button>
+</td>
+</tr>
+<!-- 7. تركي المقرن (Active, 80%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="80" data-coach="طارق" data-mrn="MRN-10487" data-name="تركي المقرن" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ت م</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">تركي المقرن</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10487 • 29 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">إعادة تأهيل ما بعد كسر عظم العضد</span>
+<span class="text-[11px] text-on-surface-variant">تمارين المقاومة التدريجية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 80%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">80%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">16 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 11:10 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 8. ريم الخاطر (Pending, Needs Follow-up) -->
+<tr class="beneficiary-data-row bg-surface-container-high/30 hover:bg-surface-container-high transition-colors" data-adherence="60" data-coach="ريم" data-mrn="MRN-10488" data-name="ريم الخاطر" data-plan-status="pending">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ر خ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">ريم الخاطر</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10488 • 22 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل المشي والتوازن الحركي العصبي</span>
+<span class="text-[11px] text-primary font-medium">انحراف تماثل يستدعي قياس الزوايا</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[12px] font-bold">قيد المراجعة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+<span class="font-bold text-primary font-mono text-[13px]">60%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">12 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 10:20 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-[11px] font-bold">بحاجة لمراجعة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-colors" type="button">مراجعة الزوايا</button>
+</td>
+</tr>
+<!-- 9. سلطان الزهراني (Active, 90%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="90" data-coach="طارق" data-mrn="MRN-10489" data-name="سلطان الزهراني" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">س ز</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">سلطان الزهراني</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10489 • 31 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل مفصل الورك والطرف السفلي</span>
+<span class="text-[11px] text-secondary">استجابة وظيفية ممتازة</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 90%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">90%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">27 / 30</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 04:15 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 10. منيرة القحطاني (Active, 86%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="86" data-coach="هند" data-mrn="MRN-10490" data-name="منيرة القحطاني" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">م ق</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">منيرة القحطاني</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10490 • 46 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل عضلات الرقبة والفقرات العنقية</span>
+<span class="text-[11px] text-on-surface-variant">تخفيف الإجهاد المكتبي</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 86%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">86%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">19 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 09:45 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 11. خالد الحازمي (NO ACTIVE PLAN / NO PROGRESS DATA) -->
+<tr class="beneficiary-data-row bg-surface-container-low/50 hover:bg-surface-container transition-colors" data-adherence="-1" data-coach="طارق" data-mrn="MRN-10491" data-name="خالد الحازمي" data-plan-status="none">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline font-bold flex items-center justify-center text-label-sm shrink-0">خ ح</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">خالد الحازمي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10491 • 37 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-sm text-label-sm text-outline italic">لا توجد خطة نشطة / بانتظار التقييم</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[12px]">لا توجد خطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-outline font-body-sm text-[12px]">لا توجد بيانات تقدم بعد</span>
+</td>
+<td class="py-3.5 px-space-md text-center text-outline text-[12px]">—</td>
+<td class="py-3.5 px-space-md text-[12px] text-outline">غير مسجل</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[11px]">بانتظار الخطة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors" type="button">إعداد خطة</button>
+</td>
+</tr>
+<!-- 12. لطيفة البواردي (Active, 95%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="95" data-coach="ريم" data-mrn="MRN-10492" data-name="لطيفة البواردي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ل ب</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">لطيفة البواردي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10492 • 27 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل وظيفي للرسغ والأوتار الباسطة</span>
+<span class="text-[11px] text-secondary">تحسن سريع ملحوظ</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 95%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">95%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">19 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 09:00 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 13. فهد الغامدي (Active, 82%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="82" data-coach="فهد" data-mrn="MRN-10493" data-name="فهد الغامدي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">ف غ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">فهد الغامدي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10493 • 44 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">برنامج تعافي الغضروف الهلالي</span>
+<span class="text-[11px] text-on-surface-variant">تمارين هوائية منخفضة الشدة</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">82%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">18 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 06:20 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 14. العنود الشهري (Pending, Needs Follow-up) -->
+<tr class="beneficiary-data-row bg-surface-container-high/30 hover:bg-surface-container-high transition-colors" data-adherence="52" data-coach="فهد" data-mrn="MRN-10494" data-name="العنود الشهري" data-plan-status="pending">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ع ش</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">العنود الشهري</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10494 • 33 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل المفصل العجزي الحرقفي</span>
+<span class="text-[11px] text-error font-medium">تورم موضعي مسجل بتقرير المتابعة</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[12px] font-bold">قيد المراجعة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 52%;"></div>
+</div>
+<span class="font-bold text-primary font-mono text-[13px]">52%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">12 / 23</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 02:40 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-bold">بحاجة لمراجعة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-colors" type="button">تعديل المقاومة</button>
+</td>
+</tr>
+<!-- 15. مشعل الدخيل (Active, 89%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="89" data-coach="طارق" data-mrn="MRN-10495" data-name="مشعل الدخيل" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">م د</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">مشعل الدخيل</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10495 • 36 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل ما بعد جراحة وتر أخيل</span>
+<span class="text-[11px] text-secondary">تحميل وزني متدرج</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 89%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">89%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">25 / 28</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 07:45 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 16. جواهر الرشيد (Active, 91%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="91" data-coach="هند" data-mrn="MRN-10496" data-name="جواهر الرشيد" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">ج ر</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">جواهر الرشيد</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10496 • 48 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل متلازمة النفق الرسغي</span>
+<span class="text-[11px] text-secondary">تمارين انزلاق العصب</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 91%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">91%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">20 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 10:05 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 17. عمر السديري (NO ACTIVE PLAN / NO PROGRESS DATA) -->
+<tr class="beneficiary-data-row bg-surface-container-low/50 hover:bg-surface-container transition-colors" data-adherence="-1" data-coach="فهد" data-mrn="MRN-10497" data-name="عمر السديري" data-plan-status="none">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline font-bold flex items-center justify-center text-label-sm shrink-0">ع س</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">عمر السديري</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10497 • 55 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-sm text-label-sm text-outline italic">لا توجد خطة نشطة / بانتظار التقييم</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[12px]">لا توجد خطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-outline font-body-sm text-[12px]">لا توجد بيانات تقدم بعد</span>
+</td>
+<td class="py-3.5 px-space-md text-center text-outline text-[12px]">—</td>
+<td class="py-3.5 px-space-md text-[12px] text-outline">غير مسجل</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[11px]">بانتظار الخطة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors" type="button">إعداد خطة</button>
+</td>
+</tr>
+<!-- 18. شهد السليم (Active, 84%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="84" data-coach="ريم" data-mrn="MRN-10498" data-name="شهد السليم" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ش س</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">شهد السليم</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10498 • 26 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل انحناء العمود الفقري (الجنف)</span>
+<span class="text-[11px] text-on-surface-variant">تمارين شوث العلاجية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 84%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">84%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">21 / 25</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 09:30 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 19. زياد الشريف (Active, 87%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="87" data-coach="طارق" data-mrn="MRN-10499" data-name="زياد الشريف" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">ز ش</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">زياد الشريف</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10499 • 38 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل الكوع (مرفق لاعب التنس)</span>
+<span class="text-[11px] text-secondary">تمارين الإطالة اللامركزية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 87%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">87%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">19 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 08:50 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 20. أسماء الخالدي (Pending) -->
+<tr class="beneficiary-data-row bg-surface-container-high/20 hover:bg-surface-container-high transition-colors" data-adherence="58" data-coach="هند" data-mrn="MRN-10500" data-name="أسماء الخالدي" data-plan-status="pending">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary font-bold flex items-center justify-center text-label-sm shrink-0">أ خ</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">أسماء الخالدي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10500 • 30 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">برنامج الاستشفاء بعد استبدال الصابونة</span>
+<span class="text-[11px] text-primary">بانتظار تحديث درجات الثني</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-[12px] font-bold">قيد المراجعة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 58%;"></div>
+</div>
+<span class="font-bold text-primary font-mono text-[13px]">58%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">14 / 24</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 03:15 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-[11px]">مراجعة روتينية</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">مراجعة الخطة</button>
+</td>
+</tr>
+<!-- 21. ريان الحربي (Active, 81%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="81" data-coach="فهد" data-mrn="MRN-10501" data-name="ريان الحربي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ر ح</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">ريان الحربي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10501 • 24 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل عضلات الفخذ الضامة</span>
+<span class="text-[11px] text-secondary">إعادة التوازن العضلي</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 81%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">81%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">17 / 21</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 10:15 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 22. غادة النعيمي (Active, 93%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="93" data-coach="ريم" data-mrn="MRN-10502" data-name="غادة النعيمي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">غ ن</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">غادة النعيمي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10502 • 35 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل الحوض وصحة العمود الفقري</span>
+<span class="text-[11px] text-secondary">تمارين بيلاتس علاجية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 93%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">93%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">26 / 28</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 08:20 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 23. يزن الحارثي (Active, 88%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="88" data-coach="طارق" data-mrn="MRN-10503" data-name="يزن الحارثي" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ي ح</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">يزن الحارثي</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10503 • 21 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل تمزق ألياف العضلة الخلفية</span>
+<span class="text-[11px] text-secondary">بروتوكول عودة للملاعب</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">88%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">22 / 25</td>
+<td class="py-3.5 px-space-md text-[12px]">أمس 07:15 م</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 24. هيفاء البابطين (Active, 85%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="85" data-coach="هند" data-mrn="MRN-10504" data-name="هيفاء البابطين" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">هـ ب</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">هيفاء البابطين</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10504 • 42 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل خشونة مفصل الركبة المبكرة</span>
+<span class="text-[11px] text-on-surface-variant">تمارين مائية وتفريغ وزن</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 85%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">85%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">17 / 20</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 09:10 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 25. صالح الجاسر (Active, 82%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="82" data-coach="فهد" data-mrn="MRN-10505" data-name="صالح الجاسر" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">ص ج</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">صالح الجاسر</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10505 • 60 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل ما بعد الجلطة الدماغية (الحركي)</span>
+<span class="text-[11px] text-secondary">تحسن التوافق العصبي العضلي</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">82%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">18 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 10:50 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. فهد الدوسري</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومستمر</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 26. أمل السليمان (Active, 89%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="89" data-coach="ريم" data-mrn="MRN-10506" data-name="أمل السليمان" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center text-label-sm shrink-0">أ س</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">أمل السليمان</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10506 • 31 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">برنامج الاستشفاء بعد إجهاد العضلة الرباعية</span>
+<span class="text-[11px] text-secondary">إطالات ديناميكية</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 89%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">89%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">25 / 28</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 08:45 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. ريم التميمي</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+<!-- 27. باسل المطلق (NO ACTIVE PLAN / NO PROGRESS DATA) -->
+<tr class="beneficiary-data-row bg-surface-container-low/50 hover:bg-surface-container transition-colors" data-adherence="-1" data-coach="طارق" data-mrn="MRN-10507" data-name="باسل المطلق" data-plan-status="none">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-outline font-bold flex items-center justify-center text-label-sm shrink-0">ب م</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">باسل المطلق</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10507 • 27 سنة (ذكر)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-sm text-label-sm text-outline italic">لا توجد خطة نشطة / بانتظار التقييم</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[12px]">لا توجد خطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-outline font-body-sm text-[12px]">لا توجد بيانات تقدم بعد</span>
+</td>
+<td class="py-3.5 px-space-md text-center text-outline text-[12px]">—</td>
+<td class="py-3.5 px-space-md text-[12px] text-outline">غير مسجل</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. طارق الزهراني</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-outline font-label-sm text-[11px]">بانتظار الخطة</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors" type="button">إعداد خطة</button>
+</td>
+</tr>
+<!-- 28. دلال المنصور (Active, 91%) -->
+<tr class="beneficiary-data-row hover:bg-surface-container-lowest/60 transition-colors" data-adherence="91" data-coach="هند" data-mrn="MRN-10508" data-name="دلال المنصور" data-plan-status="active">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary font-bold flex items-center justify-center text-label-sm shrink-0">د م</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">دلال المنصور</span>
+<span class="font-mono text-[11px] text-on-surface-variant">MRN-10508 • 40 سنة (أنثى)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold">تأهيل مفصل الكتف وقوة العضلة الدالية</span>
+<span class="text-[11px] text-secondary">تحسن مؤشرات الألم إلى 1/10</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[12px] font-bold">نشطة</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 91%;"></div>
+</div>
+<span class="font-bold text-secondary font-mono text-[13px]">91%</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center font-mono text-[13px] font-medium">20 / 22</td>
+<td class="py-3.5 px-space-md text-[12px]">اليوم 11:00 ص</td>
+<td class="py-3.5 px-space-md text-[12px]">ك. هند السالم</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/30 text-secondary font-label-sm text-[11px] font-semibold">مستقر ومتميز</span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">عرض التفاصيل</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty Search Fallback (Hidden by default) -->
+<div class="hidden p-space-xl flex flex-col items-center justify-center text-center" id="empty-search-fallback">
+<span class="material-symbols-outlined text-[36px] text-outline mb-2">person_search</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">لا توجد سجلات مطابقة للبحث أو التصفية</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1 mb-3">يرجى تعديل معايير البحث أو إعادة ضبط خيارات التصفية لعرض السجلات.</p>
+<button class="px-4 py-2 bg-surface-container text-primary font-label-sm text-label-sm rounded-xl" onclick="document.getElementById('beneficiary-search').value=''; document.getElementById('filter-plan-status').value='all'; document.getElementById('filter-adherence').value='all'; document.getElementById('filter-coach').value='all'; filterBeneficiaries();" type="button">إعادة ضبط الفلاتر</button>
+</div>
+<!-- Table Bottom Metadata & Pagination Bar -->
+<div class="px-space-lg py-space-md bg-surface-container-lowest flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-[13px]">
+<span>عرض كامل لـ <strong class="text-on-surface font-mono">28</strong> مستفيداً مسجلاً في عيادتك السريرية</span>
+<span>•</span>
+<span class="text-secondary font-medium">البيانات مطابقة للسجلات الطبية SCREEN_6 و SCREEN_8</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center cursor-not-allowed opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<span class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold">1</span>
+<button class="w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center cursor-not-allowed opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CLINICAL OBSERVATION & REST PROTOCOL NOTICE BANNER -->
+<div class="bg-secondary-fixed/20 p-space-md rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">بروتوكول الراحة والاستشفاء الأسبوعي المعتمد</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl leading-relaxed">
+            وفقاً لتوصيات الجمعية السعودية للعلاج الطبيعي والتأهيل، تم استبعاد أيام الجمعة تلقائياً من احتساب نسب الالتزام، واعتبارها فترات استشفاء عضلي حيوي لكافة المستفيدين.
+          </p>
+</div>
+</div>
+<button class="px-space-md py-3 rounded-xl bg-secondary text-on-secondary font-label-sm text-label-sm shrink-0 hover:bg-on-secondary-container transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>اعتماد تقرير الأسبوع السريري</span>
+</button>
+</div>
+</div>
+</div></main></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  const mrn = params.get('mrn') || params.get('beneficiaryId');
+  if (name || mrn) {
+    const banner = document.createElement('div');
+    banner.className = 'mb-4 p-3 bg-primary-container text-on-primary rounded-xl flex items-center justify-between text-sm shadow-sm';
+    banner.innerHTML = `
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-lg">person_pin</span>
+        <span>عرض مؤشرات التقدم والالتزام للمستفيد: <strong>${name || ''} (${mrn || ''})</strong></span>
+      </div>
+      <a href="./الرئيسية التقدم و الالتزام.html" class="px-2 py-1 bg-surface-container-lowest text-primary rounded-lg text-xs font-bold hover:opacity-90">إلغاء التحديد</a>
+    `;
+    const mainCont = document.querySelector('main') || document.body;
+    mainCont.insertBefore(banner, mainCont.children[1] || mainCont.firstChild);
+  }
+});
+</script>
+</body></html>

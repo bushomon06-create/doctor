@@ -1,0 +1,675 @@
+<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-primary-fixed":"#001d32","tertiary-container":"#7936ea","secondary":"#006a61","primary":"#00507d","on-tertiary-container":"#e9dbff","tertiary":"#6003d1","primary-container":"#0369a1","inverse-surface":"#233144","on-background":"#0d1c2e","on-secondary-fixed":"#00201d","surface-variant":"#d5e3fc","secondary-fixed":"#89f5e7","secondary-fixed-dim":"#6bd8cb","error-container":"#ffdad6","on-secondary-container":"#006f66","surface-tint":"#006399","surface-container":"#e6eeff","primary-fixed-dim":"#94ccff","surface-container-highest":"#d5e3fc","on-primary":"#ffffff","surface":"#f8f9ff","outline-variant":"#c0c7d1","on-primary-fixed-variant":"#004b74","on-tertiary-fixed-variant":"#5a00c6","on-secondary-fixed-variant":"#005049","surface-container-low":"#eff4ff","on-secondary":"#ffffff","on-surface-variant":"#40474f","tertiary-fixed":"#eaddff","on-primary-container":"#cbe4ff","secondary-container":"#86f2e4","error":"#ba1a1a","inverse-primary":"#94ccff","primary-fixed":"#cde5ff","tertiary-fixed-dim":"#d2bbff","inverse-on-surface":"#eaf1ff","surface-dim":"#ccdbf3","on-tertiary":"#ffffff","on-tertiary-fixed":"#25005a","on-error-container":"#93000a","surface-container-high":"#dce9ff","on-error":"#ffffff","outline":"#707881","on-surface":"#0d1c2e","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.75rem","margin-mobile":"1.25rem","space-lg":"1.75rem","space-xl":"2.5rem","space-xs":"0.5rem","gutter":"1.5rem","gutter-mobile":"1rem","margin":"2.5rem","space-md":"1.25rem"},fontFamily:{"headline-lg-mobile":["IBM Plex Sans"],"label-sm":["IBM Plex Sans"],"display":["IBM Plex Sans"],"label-md":["IBM Plex Sans"],"headline-sm":["IBM Plex Sans"],"body-md":["IBM Plex Sans"],"label-lg":["IBM Plex Sans"],"body-sm":["IBM Plex Sans"],"body-lg":["IBM Plex Sans"],"headline-lg":["IBM Plex Sans"],"headline-md":["IBM Plex Sans"]},fontSize:{"headline-lg-mobile":["1.75rem",{"lineHeight":"2.375rem","letterSpacing":"0","fontWeight":"700"}],"label-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"600"}],"display":["3rem",{"lineHeight":"3.75rem","letterSpacing":"0","fontWeight":"700"}],"label-md":["0.9375rem",{"lineHeight":"1.375rem","letterSpacing":"0","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"400"}],"label-lg":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1.125rem",{"lineHeight":"1.875rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"3rem","letterSpacing":"0","fontWeight":"700"}],"headline-md":["1.5rem",{"lineHeight":"2.125rem","letterSpacing":"0","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)] justify-between"><div class="flex flex-col flex-1 overflow-y-auto px-4 py-6"><div class="flex items-center gap-space-sm px-3 mb-8"><div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[24px]">accessibility_new</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">منصة جسر</span><span class="font-label-sm text-label-sm text-secondary font-semibold">بوابة الأخصائي المعالج</span></div></div><div class="px-3 pb-2"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">الخدمات السريرية</span></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_-2px_rgba(3,105,161,0.2)]"><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../الرئيسية/code.html"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="">لوحة التحكم</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beneficiaries" href="../المستفيدون/code.html"><span class="material-symbols-outlined text-[22px]">family_restroom</span><span class="">المستفيدون</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rehabilitation-plans" href="../خطط التأهيل/الخطط  الرئيسية.html"><span class="material-symbols-outlined text-[22px]">assignment_turned_in</span><span class="">خطط التأهيل</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clinical-reports" href="../التقدم و التقارير/التقارير.html"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="">التقارير السريرية</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="appointments-schedule" href="../الجداول و المواعيد/المواعيد و الجداول 1.html"><span class="material-symbols-outlined text-[22px]">calendar_clock</span><span class="">المواعيد والجدول</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="messages-communication" href="./الرسائل و التواصل.html"><span class="material-symbols-outlined text-[22px]">forum</span><span class="">الرسائل والتواصل</span></a><a aria-current="page" class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl transition-all bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_-2px_rgba(3,105,161,0.2)]" data-path="communities-groups" href="./المجموعات.html"><span class="material-symbols-outlined text-[22px]">groups</span><span class="">المجتمعات والمجموعات</span></a><a class="flex items-center gap-space-sm px-3.5 py-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="exercises-library" href="../التمارين/code.html"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="">مكتبة التمارين</span></a></nav></div><div class="p-4 bg-surface-container/60 m-3 rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span><span class="font-label-sm text-label-sm text-on-surface">الدعم الفني والمساندة</span></div><span class="font-label-sm text-label-sm text-primary font-bold hover:underline cursor-pointer">مساعدة</span></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/85 backdrop-blur-xl z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md cursor-pointer" title="الملف الشخصي" onclick="window.location.href='../الملف الشهصي و الاعدادات/الملف الشخصي.html'"<div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-2 rounded-xl text-on-surface-variant shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)]"><span class="material-symbols-outlined text-[20px] text-outline">search</span><span class="font-body-sm text-body-sm text-outline">البحث عن مستفيد، ملف علاجي، أو تمرين...</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed/50 px-3 py-1.5 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-secondary-fixed font-semibold">الجلسات المباشرة: نشط</span></div></div><div class="flex items-center gap-space-md"><button aria-label="التنبيهات السريرية" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors cursor-pointer" title="الإشعارات" onclick="window.location.href='../الملف الشهصي و الاعدادات/الاشعارات.html'"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button aria-label="إمكانية الوصول والخط" class="w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">record_voice_over</span></button><div class="flex items-center gap-space-sm pl-2"><div class="text-left flex flex-col"><span class="font-label-md text-label-md text-on-surface">د. سارة المنصور</span><span class="font-label-sm text-label-sm text-outline">أخصائي علاج طبيعي وتأهيلي</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter bg-surface min-h-screen pb-16"><div class="flex flex-col w-full max-w-7xl mx-auto">
+<!-- Toast Notification Container -->
+<div class="fixed bottom-6 left-6 z-50 transform transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-xl translate-y-24 opacity-0" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md" id="toastText">فتح لوحة إعدادات وإدارة "مجموعة تأهيل الركبة والمشي"</span>
+</div>
+<!-- Facebook Groups Style Clean Header -->
+<section class="mt-8 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">المجموعات التأهيلية</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      مساحات تواصل تفاعلية آمنة تجمعك بالمستفيدين وأسرهم لمتابعة خطط التعافي والإجابة على الاستفسارات.
+    </p>
+</div>
+<button class="self-start md:self-auto h-11 px-5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-sm flex items-center gap-2 transition-all cursor-pointer" onclick="toggleCreateGroupModal(true)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span class="">إنشاء مجموعة جديدة</span>
+</button>
+</section>
+<!-- Simple Tab Navigation & Quick Filter / Search Bar -->
+<div class="bg-surface-container-lowest p-2.5 rounded-2xl shadow-[0_1px_4px_rgba(15,23,42,0.04)] mb-8 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+<!-- Clean Main Tabs -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="px-5 py-2.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all flex items-center gap-2 cursor-pointer" id="tabMyGroups" onclick="switchGroupTab('my-groups')">
+<span class="material-symbols-outlined text-[19px]">group</span>
+<span class="">مجموعاتي</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary text-[12px] font-bold" id="myGroupsCount">5</span>
+</button>
+<button class="px-5 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 cursor-pointer" id="tabDiscoverGroups" onclick="switchGroupTab('discover')">
+<span class="material-symbols-outlined text-[19px]">explore</span>
+<span class="">اكتشف مجموعات أخرى</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[12px] font-semibold">3</span>
+</button>
+</div>
+<!-- Search Input -->
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute right-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-11 pr-10 pl-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="groupSearchInput" oninput="filterGroups(this.value)" placeholder="البحث عن مجموعة..." type="text">
+</div>
+</div>
+<!-- SECTION 1: MY GROUPS (Facebook Groups Grid) -->
+<div class="flex flex-col gap-4" id="myGroupsSection">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">المجموعات التي تشرف عليها أو انضممت إليها</span>
+<span class="font-body-sm text-body-sm text-outline">مرتبة حسب أحدث تفاعل</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" id="myGroupsGrid">
+<!-- Group Card 1 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<!-- Cover Photo Banner -->
+<div class="h-32 w-full relative bg-gradient-to-r from-primary to-primary-container overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[12px] font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+            أخصائي مشرف
+          </span>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+            3 استفسارات جديدة
+          </span>
+</div>
+<!-- Group Identity & Meta -->
+<div class="px-5 pt-0 pb-4 relative">
+<!-- Group Icon overlapping cover -->
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[30px]">directions_walk</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجموعة تأهيل الركبة والمشي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            برامج التعافي بعد استبدال المفاصل والرباط الصليبي، وتدريبات استعادة المشي الآمن والاتزان.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              540 عضواً
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+              14 منشوراً اليوم
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-5 pb-5 pt-2 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="openGroupDetailModal('knee-gait')">
+<span class="">زيارة المجموعة</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<div class="relative manage-dropdown-wrapper"><button class="h-10 px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1 cursor-pointer" onclick="event.stopPropagation(); toggleManageMenu(this)" title="إعدادات وإشراف المجموعة"><span class="material-symbols-outlined text-[18px]">settings</span><span class="">إدارة</span></button><div class="manage-menu hidden absolute bottom-12 left-0 w-48 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container py-1.5 z-50"><button class="w-full px-3.5 py-2.5 flex items-center gap-2 hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm text-right transition-colors" onclick="openGroupSettings('مجموعة أسر مصابي السكتة الدماغية'); closeAllManageMenus();"><span class="material-symbols-outlined text-[18px] text-outline">tune</span><span class="">إعدادات المجموعة</span></button><button class="w-full px-3.5 py-2.5 flex items-center gap-2 hover:bg-error-container/30 text-error font-label-sm text-label-sm text-right transition-colors" onclick="openDeleteModal('مجموعة أسر مصابي السكتة الدماغية', this); closeAllManageMenus();"><span class="material-symbols-outlined text-[18px] text-error">delete</span><span class="">حذف المجموعة</span></button></div></div>
+</div>
+</div>
+<!-- Group Card 2 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<!-- Cover Photo Banner -->
+<div class="h-32 w-full relative bg-gradient-to-r from-tertiary to-tertiary-container overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[12px] font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+            أخصائي مشرف
+          </span>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[11px] font-semibold">
+            مجموعة خاصة
+          </span>
+</div>
+<!-- Group Identity & Meta -->
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[30px]">psychology</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجموعة أسر مصابي السكتة الدماغية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            دعم تأهيلي حركي وإدراكي، التغلب على تشنجات الأطراف، وإرشادات نقل المريض اليومية بأمان.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              320 عضواً
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+              8 منشورات اليوم
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-5 pb-5 pt-2 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="openGroupDetailModal('stroke-families')">
+<span class="">زيارة المجموعة</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<div class="relative manage-dropdown-wrapper"><button class="h-10 px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1 cursor-pointer" onclick="event.stopPropagation(); toggleManageMenu(this)" title="إعدادات وإشراف المجموعة"><span class="material-symbols-outlined text-[18px]">settings</span><span class="">إدارة</span></button><div class="manage-menu hidden absolute bottom-12 left-0 w-48 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container py-1.5 z-50"><button class="w-full px-3.5 py-2.5 flex items-center gap-2 hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm text-right transition-colors" onclick="openGroupSettings('مجتمع دعم أسر كبار السن والمفاصل'); closeAllManageMenus();"><span class="material-symbols-outlined text-[18px] text-outline">tune</span><span class="">إعدادات المجموعة</span></button><button class="w-full px-3.5 py-2.5 flex items-center gap-2 hover:bg-error-container/30 text-error font-label-sm text-label-sm text-right transition-colors" onclick="openDeleteModal('مجتمع دعم أسر كبار السن والمفاصل', this); closeAllManageMenus();"><span class="material-symbols-outlined text-[18px] text-error">delete</span><span class="">حذف المجموعة</span></button></div></div>
+</div>
+</div>
+<!-- Group Card 3 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<!-- Cover Photo Banner -->
+<div class="h-32 w-full relative bg-gradient-to-r from-secondary to-teal-700 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[12px] font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+            أخصائي مشرف
+          </span>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[11px] font-semibold">
+            مكتمل المراجعة
+          </span>
+</div>
+<!-- Group Identity & Meta -->
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[30px]">elderly</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجتمع دعم أسر كبار السن والمفاصل</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            تمارين الاتزان المنزلي للوقاية من السقوط، وتوجيهات الحفاظ على المرونة الحركية والاستقلالية.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              410 أعضاء
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+              5 منشورات اليوم
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-5 pb-5 pt-2 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="openGroupDetailModal('elderly-joints')">
+<span class="">زيارة المجموعة</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button class="h-10 px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1 cursor-pointer" onclick="manageGroup('مجتمع دعم أسر كبار السن والمفاصل')" title="إعدادات وإشراف المجموعة">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span class="">إدارة</span>
+</button>
+</div>
+</div>
+<!-- Group Card 4 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<!-- Cover Photo Banner -->
+<div class="h-32 w-full relative bg-gradient-to-r from-blue-700 to-indigo-800 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[12px] font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            عضو معالج
+          </span>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[11px] font-semibold">
+            عامة
+          </span>
+</div>
+<!-- Group Identity & Meta -->
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">local_hospital</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">ملتقى أخصائيي العلاج الطبيعي والتأهيلي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            مساحة مهنية سريرية بين الأخصائيين لتبادل أفضل البروتوكولات الطبية ومناقشة الحالات المعقدة.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              1,240 أخصائياً
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+              22 منشوراً اليوم
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="px-5 pb-5 pt-2 flex items-center gap-2">
+<button class="flex-1 h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="showToast('جاري الانتقال إلى ملتقى الأخصائيين...')">
+<span class="">زيارة المجموعة</span>
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: DISCOVER GROUPS (Initially Hidden / Switchable) -->
+<div class="flex flex-col gap-4 hidden" id="discoverGroupsSection">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">مجموعات مقترحة بحاجة لخبرتك السريرية كمرشد معتمد</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">انضمام فوري بكبسة زر</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" id="discoverGroupsGrid">
+<!-- Discover Card 1 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<div class="h-32 w-full relative bg-gradient-to-r from-purple-700 to-pink-600 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[12px] font-semibold flex items-center gap-1 shadow-sm">
+            مطلوب أخصائي أطفال
+          </span>
+</div>
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">child_care</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجتمع أبطال التعافي الحركي للأطفال</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            تأهيل الشلل الدماغي والضمور العضلي ومساعدة الأسر في تنفيذ التمارين المحفزة مبكراً.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              280 أسرة
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium">نشاط مرتفع</span>
+</div>
+</div>
+</div>
+<div class="px-5 pb-5 pt-2">
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="joinGroup(this, 'مجتمع أبطال التعافي الحركي للأطفال')">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span class="">انضمام كمرشد معتمد</span>
+</button>
+</div>
+</div>
+<!-- Discover Card 2 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<div class="h-32 w-full relative bg-gradient-to-r from-emerald-600 to-teal-800 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[12px] font-semibold flex items-center gap-1 shadow-sm">
+            إصابات رياضية
+          </span>
+</div>
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">sports_martial_arts</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجتمع تأهيل الإصابات الرياضية والرباط</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            العودة للملاعب وإعادة بناء قوة الأوتار بعد العمليات الجراحية وتمزقات العضلات.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              610 رياضيين
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium">تفاعل يومي مكثف</span>
+</div>
+</div>
+</div>
+<div class="px-5 pb-5 pt-2">
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="joinGroup(this, 'مجتمع تأهيل الإصابات الرياضية والرباط')">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span class="">انضمام كمرشد معتمد</span>
+</button>
+</div>
+</div>
+<!-- Discover Card 3 -->
+<div class="group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between" style="display: flex;">
+<div>
+<div class="h-32 w-full relative bg-gradient-to-r from-amber-600 to-orange-700 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-on-surface font-label-sm text-[12px] font-semibold flex items-center gap-1 shadow-sm">
+            تأهيل وظيفي
+          </span>
+</div>
+<div class="px-5 pt-0 pb-4 relative">
+<div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+<div class="w-full h-full rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-[30px]">front_hand</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">مجتمع دعم متلازمة النفق الرسغي والأطراف العلوية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+            تمارين تخفيف ضغط الأعصاب وتسهيل الحركات الدقيقة لليد والكتف في بيئة العمل والمنزل.
+          </p>
+<div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-outline">group</span>
+              190 عضواً
+            </span>
+<span class="">•</span>
+<span class="text-secondary font-medium">جديد</span>
+</div>
+</div>
+</div>
+<div class="px-5 pb-5 pt-2">
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer" onclick="joinGroup(this, 'مجتمع دعم متلازمة النفق الرسغي والأطراف العلوية')">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span class="">انضمام كمرشد معتمد</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty Search State -->
+<div class="hidden py-16 flex-col items-center justify-center text-center" id="noGroupsFound">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-[32px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">لم يتم العثور على مجموعات مطابقة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">يرجى تجربة كلمات بحث أخرى أو التحقق من قسم الاكتشاف.</p>
+</div>
+<!-- MODAL: Group Full Details Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="groupDetailModal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+<div class="px-6 py-4 bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-on-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" id="groupModalIcon">directions_walk</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary" id="groupModalTitle">مجموعة تأهيل الركبة والمشي</h3>
+<span class="font-body-sm text-body-sm text-on-primary/80" id="groupModalSubtitle">معلومات الإشراف والأنشطة السريرية</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg hover:bg-on-primary/20 flex items-center justify-center text-on-primary cursor-pointer" onclick="toggleGroupDetailModal(false)">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="p-6 overflow-y-auto flex flex-col gap-5">
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container-low p-4 rounded-xl text-center">
+<span class="font-body-sm text-body-sm text-outline">إجمالي الأعضاء</span>
+<span class="font-headline-md text-headline-md text-on-surface block font-bold" id="groupModalMemberCount">540 مستفيداً وأسرة</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl text-center">
+<span class="font-body-sm text-body-sm text-outline">الاستفسارات النشطة</span>
+<span class="font-headline-md text-headline-md text-error block font-bold" id="groupModalInquiriesCount">3 استفسارات بانتظارك</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl text-center">
+<span class="font-body-sm text-body-sm text-outline">حالة الإشراف</span>
+<span class="font-headline-md text-headline-md text-secondary block font-bold">مشرف نشط</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">نبذة وأهداف المجموعة:</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="groupModalDescription">المسار السريري التخصصي لاستعادة التوازن بعد عمليات المفاصل وتأهيل أوتار الركبة والغضاريف. يتم تدريب المستفيدين على المشي الطبيعي التدريجي.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">قواعد المجتمع المشترك:</h4>
+<div class="bg-surface-container p-4 rounded-xl flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<p class="">1. يحق للأخصائي المعالج مراجعة الاستفسارات وتقديم التوجيه الحركي والتمارين الوقائية.</p>
+<p class="">2. لا يُسمح بتداول وصفات عشبية أو أدوية دون إشراف طبي معتمد.</p>
+<p class="">3. تحترم خصوصية الأسر، ولا تُشارك الصور الشخصية للأطفال إلا بموافقة صريحة.</p>
+</div>
+</div>
+</div>
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">أنتِ مسجلة كأخصائي معالج رئيسي في هذه المجموعة</span>
+<button class="h-10 px-6 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold cursor-pointer hover:bg-primary-container" onclick="showToast('تم الدخول إلى حائط المجموعة الكامل'); toggleGroupDetailModal(false);">
+        دخول الحائط الكامل
+      </button>
+</div>
+</div>
+</div>
+<!-- MODAL: Create New Group Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="createGroupModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">group_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">إنشاء مجموعة جديدة</h3>
+<span class="font-body-sm text-body-sm text-outline">إنشاء مساحة تواصل لأسر ومستفيدي مسار علاجي محدد</span>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-outline cursor-pointer" onclick="toggleCreateGroupModal(false)">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">اسم المجموعة</label>
+<input class="w-full h-11 px-4 rounded-xl bg-surface text-on-surface border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="newGroupNameInput" placeholder="مثال: مجموعة تأهيل العمود الفقري وآلام الظهر..." type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">خصوصية المجموعة</label>
+<select class="w-full h-11 px-4 rounded-xl bg-surface text-on-surface border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm">
+<option>مجموعة خاصة (للمستفيدين المسجلين فقط)</option>
+<option>مجموعة عامة (متاحة لكافة الأسر للتوعية)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">وصف المجموعة والهدف السريري</label>
+<textarea class="w-full p-3 rounded-xl bg-surface text-on-surface border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm resize-none" id="newGroupDescInput" placeholder="اكتب الهدف التأهيلي والفئة المستهدفة..." rows="3"></textarea>
+</div>
+</div>
+<div class="px-6 py-4 bg-surface-container-low flex items-center justify-end gap-2 border-t border-surface-container">
+<button class="h-10 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md cursor-pointer" onclick="toggleCreateGroupModal(false)">إلغاء</button>
+<button class="h-10 px-5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold cursor-pointer flex items-center gap-1.5" onclick="createNewGroupSubmit()">
+<span class="">إنشاء المجموعة</span>
+</button>
+</div>
+</div>
+</div><!-- MODAL: Delete Confirmation Modal --><div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="deleteGroupModal"><div class="bg-surface-container-lowest w-full max-w-md rounded-2xl shadow-2xl overflow-hidden flex flex-col"><div class="p-6 flex flex-col items-center text-center gap-4"><div class="w-14 h-14 rounded-full bg-error-container flex items-center justify-center text-error"><span class="material-symbols-outlined text-[28px]">delete_forever</span></div><div class="flex flex-col gap-1.5"><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">تأكيد حذف المجموعة</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">هل أنت متأكد من حذف هذه المجموعة؟ سيتم حذف المجموعة من قائمة المجتمعات ولن تعود متاحة لأعضائها.</p><div class="mt-2 p-2.5 bg-surface-container-low rounded-xl font-label-md text-label-md text-error font-semibold" id="deleteGroupNameLabel">مجموعة تأهيل الركبة والمشي</div></div></div><div class="px-6 py-4 bg-surface-container-low flex items-center justify-end gap-3 border-t border-surface-container"><button class="h-10 px-5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors cursor-pointer" onclick="toggleDeleteModal(false)">إلغاء</button><button class="h-10 px-5 rounded-xl bg-error hover:bg-error/90 text-on-error font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 cursor-pointer shadow-sm" onclick="confirmDeleteGroup()"><span class="material-symbols-outlined text-[18px]">delete</span><span class="">حذف المجموعة</span></button></div></div></div><!-- MODAL: Group Settings Modal --><div class="fixed inset-0 z-50 hidden bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="groupSettingsModal"><div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden flex flex-col"><div class="px-6 py-4 bg-surface-container-low flex items-center justify-between border-b border-surface-container"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">tune</span></div><div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">إعدادات المجموعة</h3><span class="font-body-sm text-body-sm text-outline" id="settingsGroupNameSubtitle">إدارة الصلاحيات والبيانات</span></div></div><button class="w-9 h-9 rounded-lg hover:bg-surface-container flex items-center justify-center text-outline cursor-pointer" onclick="toggleSettingsModal(false)"><span class="material-symbols-outlined text-[22px]">close</span></button></div><div class="p-6 flex flex-col gap-4"><div class="flex items-center justify-between p-3 bg-surface-container-low rounded-xl"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">صلاحيات الانضمام المباشر</span><span class="font-body-sm text-body-sm text-outline">قبول المستفيدين تلقائياً أو بموافقة الأخصائي</span></div><span class="material-symbols-outlined text-secondary text-[24px]">toggle_on</span></div><div class="flex items-center justify-between p-3 bg-surface-container-low rounded-xl"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">تثبيت المنشورات الإرشادية</span><span class="font-body-sm text-body-sm text-outline">السماح بظهور التنبيهات العلاجية بأعلى الحائط</span></div><span class="material-symbols-outlined text-secondary text-[24px]">toggle_on</span></div><div class="flex items-center justify-between p-3 bg-surface-container-low rounded-xl"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">الإشعارات اليومية للمستجدات</span><span class="font-body-sm text-body-sm text-outline">إرسال تنبيه بكل استفسار عاجل</span></div><span class="material-symbols-outlined text-secondary text-[24px]">toggle_on</span></div></div><div class="px-6 py-4 bg-surface-container-low flex items-center justify-end gap-2 border-t border-surface-container"><button class="h-10 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md cursor-pointer" onclick="toggleSettingsModal(false)">إلغاء</button><button class="h-10 px-5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold cursor-pointer" onclick="saveGroupSettings()">حفظ التغييرات</button></div></div></div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const toastText = document.getElementById('toastText');
+    if (!toast || !toastText) return;
+    toastText.innerText = message;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3200);
+  }
+
+  function switchGroupTab(tab) {
+    const tabMy = document.getElementById('tabMyGroups');
+    const tabDisc = document.getElementById('tabDiscoverGroups');
+    const secMy = document.getElementById('myGroupsSection');
+    const secDisc = document.getElementById('discoverGroupsSection');
+    const searchInput = document.getElementById('groupSearchInput');
+
+    if (searchInput) searchInput.value = '';
+    filterGroups('');
+
+    if (tab === 'my-groups') {
+      tabMy.className = 'px-5 py-2.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all flex items-center gap-2 cursor-pointer';
+      tabDisc.className = 'px-5 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 cursor-pointer';
+      secMy.classList.remove('hidden');
+      secDisc.classList.add('hidden');
+    } else {
+      tabDisc.className = 'px-5 py-2.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all flex items-center gap-2 cursor-pointer';
+      tabMy.className = 'px-5 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2 cursor-pointer';
+      secDisc.classList.remove('hidden');
+      secMy.classList.add('hidden');
+    }
+  }
+
+  function filterGroups(query) {
+    const q = query.trim().toLowerCase();
+    const activeSection = document.getElementById('myGroupsSection').classList.contains('hidden') 
+      ? document.getElementById('discoverGroupsSection') 
+      : document.getElementById('myGroupsSection');
+    
+    const cards = activeSection.querySelectorAll('.group-item');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = card.querySelector('.group-name')?.innerText.toLowerCase() || '';
+      const text = card.innerText.toLowerCase();
+      if (!q || name.includes(q) || text.includes(q)) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const noResult = document.getElementById('noGroupsFound');
+    if (noResult) {
+      if (visibleCount === 0 && q) {
+        noResult.classList.remove('hidden');
+        noResult.classList.add('flex');
+      } else {
+        noResult.classList.add('hidden');
+        noResult.classList.remove('flex');
+      }
+    }
+  }
+
+  function joinGroup(btn, name) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>تم الانضمام كمرشد</span>';
+    btn.className = 'w-full h-10 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold cursor-default flex items-center justify-center gap-1.5';
+    btn.disabled = true;
+    showToast(`مبارك! أصبحت الآن أخصائياً مرشداً في "${name}"`);
+  }
+
+  function manageGroup(groupName) {
+    showToast(`فتح لوحة إعدادات وإدارة "${groupName}"`);
+  }
+
+  function toggleCreateGroupModal(show) {
+    const modal = document.getElementById('createGroupModal');
+    if (!modal) return;
+    if (show) modal.classList.remove('hidden');
+    else modal.classList.add('hidden');
+  }
+
+  function createNewGroupSubmit() {
+    const nameInput = document.getElementById('newGroupNameInput');
+    const name = nameInput?.value.trim();
+    if (!name) {
+      alert('يرجى كتابة اسم المجموعة');
+      return;
+    }
+
+    const grid = document.getElementById('myGroupsGrid');
+    if (grid) {
+      const newCard = document.createElement('div');
+      newCard.className = 'group-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_2px_8px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_24px_-4px_rgba(15,23,42,0.08)] border border-surface-container transition-all flex flex-col justify-between';
+      newCard.innerHTML = `
+        <div>
+          <div class="h-32 w-full relative bg-gradient-to-r from-teal-700 to-primary overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[12px] font-bold flex items-center gap-1 shadow-sm">
+              <span class="material-symbols-outlined text-[14px]">shield_person</span>
+              أخصائي مشرف ومؤسس
+            </span>
+          </div>
+          <div class="px-5 pt-0 pb-4 relative">
+            <div class="-mt-8 mb-3 w-16 h-16 rounded-2xl bg-surface-container-lowest p-1 shadow-md inline-block">
+              <div class="w-full h-full rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[30px]">groups</span>
+              </div>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-name">${escapeHtml(name)}</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 line-clamp-2 leading-relaxed">
+              مجموعة سريرية جديدة مخصصة للمتابعة والتأهيل.
+            </p>
+            <div class="flex items-center gap-4 mt-4 pt-3 border-t border-surface-container font-label-sm text-label-sm text-outline">
+              <span class="flex items-center gap-1 text-on-surface font-semibold">
+                <span class="material-symbols-outlined text-[16px] text-outline">group</span>
+                عضو واحد (أنتِ)
+              </span>
+              <span>•</span>
+              <span class="text-secondary font-medium">تم الإنشاء للتو</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-5 pb-5 pt-2 flex items-center gap-2">
+          <button onclick="showToast('تم فتح المجموعة الجديدة')" class="flex-1 h-10 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+            <span>زيارة المجموعة</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          </button>
+          <button onclick="manageGroup('${escapeHtml(name)}')" class="h-10 px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1 cursor-pointer">
+            <span class="material-symbols-outlined text-[18px]">settings</span>
+            <span>إدارة</span>
+          </button>
+        </div>
+      `;
+      grid.prepend(newCard);
+      
+      const countBadge = document.getElementById('myGroupsCount');
+      if (countBadge) {
+        countBadge.innerText = parseInt(countBadge.innerText, 10) + 1;
+      }
+    }
+
+    if (nameInput) nameInput.value = '';
+    const descInput = document.getElementById('newGroupDescInput');
+    if (descInput) descInput.value = '';
+    toggleCreateGroupModal(false);
+    showToast(`تم إنشاء مجموعة "${name}" بنجاح!`);
+  }
+
+  function openGroupDetailModal(groupKey) {
+    const modal = document.getElementById('groupDetailModal');
+    const title = document.getElementById('groupModalTitle');
+    const desc = document.getElementById('groupModalDescription');
+    const members = document.getElementById('groupModalMemberCount');
+    const inquiries = document.getElementById('groupModalInquiriesCount');
+    const icon = document.getElementById('groupModalIcon');
+
+    if (!modal) return;
+
+    if (groupKey === 'knee-gait') {
+      title.innerText = 'مجموعة تأهيل الركبة والمشي';
+      desc.innerText = 'المسار السريري التخصصي لاستعادة التوازن بعد عمليات المفاصل وتأهيل أوتار الركبة والغضاريف. يتم تدريب المستفيدين على المشي الطبيعي التدريجي.';
+      members.innerText = '540 مستفيداً وأسرة';
+      inquiries.innerText = '3 استفسارات بانتظارك';
+      icon.innerText = 'directions_walk';
+    } else if (groupKey === 'stroke-families') {
+      title.innerText = 'مجموعة أسر مصابي السكتة الدماغية';
+      desc.innerText = 'دعم أسر المصابين في التعامل مع التشنجات العضلية (Spasticity)، تمارين نقل المريض اليومية بأمان، وبرامج التكامل المعرفي والحركي.';
+      members.innerText = '320 أسرة';
+      inquiries.innerText = 'استفساران بانتظارك';
+      icon.innerText = 'psychology';
+    } else {
+      title.innerText = 'مجتمع دعم أسر كبار السن والمفاصل';
+      desc.innerText = 'توجيهات كبار السن لتقوية العضلات الرباعية وثبات الجذع، مع تقييم بيئة المنزل لمنع الانزلاق والسقوط المتكرر.';
+      members.innerText = '410 أعضاء';
+      inquiries.innerText = 'مكتمل المراجعة';
+      icon.innerText = 'elderly';
+    }
+
+    modal.classList.remove('hidden');
+  }
+
+  function toggleGroupDetailModal(show) {
+    const modal = document.getElementById('groupDetailModal');
+    if (modal) {
+      if (show) modal.classList.remove('hidden');
+      else modal.classList.add('hidden');
+    }
+  }
+
+  function escapeHtml(string) {
+    return String(string)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+</script>
+</main></div>
+
+
+</body></html>
